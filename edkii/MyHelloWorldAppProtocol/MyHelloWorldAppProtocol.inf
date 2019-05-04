@@ -1,0 +1,26 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldAppProtocol
+  FILE_GUID = 69A69543-FA9F-485E-9A3E-EA70FDCFC82F
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldAppProtocolEntry 
+  
+[Sources] 
+  MyHelloWorldAppProtocol.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  UefiShellCEntryLib
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib

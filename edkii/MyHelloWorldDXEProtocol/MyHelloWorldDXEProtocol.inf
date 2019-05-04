@@ -1,0 +1,32 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldDXEProtocol 
+  FILE_GUID = 79A6DE69-F09C-495f-9937-AB70FDCFC82F
+  MODULE_TYPE = UEFI_DRIVER
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldDXEProtocolEntry 
+  
+[Sources] 
+  MyHelloWorldDXEProtocol.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  UefiDriverEntryPoint
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  DxeHobLib
+
+  
+[depex]
+  TRUE
+

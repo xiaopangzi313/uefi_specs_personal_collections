@@ -1,0 +1,32 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldDXEHob 
+  FILE_GUID = 69E6DE6D-F09F-485f-9937-EB70FDCFC82F
+  MODULE_TYPE = UEFI_DRIVER
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldDXEHobEntry 
+  
+[Sources] 
+  MyHelloWorldDXEHob.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  UefiDriverEntryPoint
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  DxeHobLib
+
+  
+[depex]
+  TRUE
+

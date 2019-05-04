@@ -1,0 +1,28 @@
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MyHelloWorldEvent 
+  FILE_GUID                      = 6987936C-EF34-44db-AE97-1FA5E4ED2117
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = MyHelloWorldEventEntry
+  
+[Sources]  
+  MyHelloWorldEvent.c
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  BaseLib
+  UefiLib
+  DebugLib
+  PrintLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  BaseMemoryLib
+  MemoryAllocationLib

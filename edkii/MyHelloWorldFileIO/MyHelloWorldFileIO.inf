@@ -1,0 +1,57 @@
+[Defines]
+  INF_VERSION = 0x00010006
+  BASE_NAME = MyHelloWorldFileIO
+  FILE_GUID = c912f194-7f0e-4803-b907-b757b806ec73
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = ShellCEntryLib
+  VALID_ARCHITECTURES = X64
+  
+[Sources] 
+  MyHelloWorldFileIO.c
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  BaseLib
+  ShellCEntryLib
+  UefiLib
+  UefiApplicationEntryPoint
+  PcdLib
+  DebugLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  BaseMemoryLib
+  CompilerStub
+  MemoryAllocationLib
+  SortLib
+  PrintLib
+  UefiShellDriver1CommandsLib
+  HandleParsingLib
+  
+[Protocols]
+  gEfiUnicodeCollation2ProtocolGuid                       # ALWAYS_CONSUMED
+  gEfiDevicePathProtocolGuid                              # ALWAYS_CONSUMED
+  gEfiLoadedImageProtocolGuid                             # ALWAYS_CONSUMED
+  gEfiSimpleFileSystemProtocolGuid                        # ALWAYS_CONSUMED
+  gEfiDevicePathToTextProtocolGuid                        # ALWAYS_CONSUMED
+  gEfiPlatformDriverOverrideProtocolGuid
+  gEfiBlockIoProtocolGuid                                 ## TO_START
+  gEfiDriverBindingProtocolGuid
+  gEfiComponentNameProtocolGuid    
+  gEfiDiskIoProtocolGuid
+  gEfiPciIoProtocolGuid
+  gEfiSimplePointerProtocolGuid
+  gEfiSimpleTextInputExProtocolGuid
+  gEfiShellProtocolGuid
+  
+[Pcd.common]
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultPlatformLang
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultPlatformLangCodes
+  
+[Guids]
+  gEfiFileSystemInfoGuid
+  gEfiFileInfoGuid

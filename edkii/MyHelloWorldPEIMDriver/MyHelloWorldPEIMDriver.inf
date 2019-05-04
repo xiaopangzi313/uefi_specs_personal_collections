@@ -1,0 +1,28 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldPEIMDriver 
+  FILE_GUID = 69E6DE6D-F09E-485f-9937-EB70FDCFC82B
+  MODULE_TYPE = PEIM
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldPEIMDriverEntry 
+  
+[Sources] 
+  MyHelloWorldPEIMDriver.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  BaseLib
+  PeimEntryPoint
+  BaseMemoryLib
+  DebugLib
+  PeiServicesLib
+  PrintLib
+  #PeiLib
+  #EfiCommonLib
+
+[depex]
+  TRUE

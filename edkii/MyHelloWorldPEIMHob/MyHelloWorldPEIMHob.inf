@@ -1,0 +1,27 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldPEIMHob 
+  FILE_GUID = 6BE6DE6D-FB9E-485f-9A37-EB70FDCFC82B
+  MODULE_TYPE = PEIM
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldPEIMHobEntry 
+  
+[Sources] 
+  MyHelloWorldPEIMHob.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  BaseLib
+  PeimEntryPoint
+  BaseMemoryLib
+  DebugLib
+  PeiServicesLib
+  PeiLib
+  EfiCommonLib
+
+[depex]
+  TRUE

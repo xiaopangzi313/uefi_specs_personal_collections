@@ -1,0 +1,36 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldPCD
+  FILE_GUID = 69A6DE6D-FA9F-485D-3A3D-EA70FDCFC82F
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldPCDEntry
+  
+[Sources] 
+  MyHelloWorldPCD.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  UefiShellCEntryLib
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  PcdLib
+
+#use to operate bool value
+[FeaturePcd]
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintEnable  ## CONSUMES
+
+#
+[Pcd]
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintString  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintTimes    ## SOMETIMES_CONSUMES
