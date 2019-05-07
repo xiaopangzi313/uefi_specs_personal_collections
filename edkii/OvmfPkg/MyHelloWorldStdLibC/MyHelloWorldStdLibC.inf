@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION = 0x00010006
+  BASE_NAME = MyHelloWorldStdLibC
+  FILE_GUID = c912f194-7f0e-4803-b907-b757b806ec73
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = ShellCEntryLib
+  VALID_ARCHITECTURES = X64
+  
+[Sources] 
+  MyHelloWorldStdLibC.c
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  StdLib/StdLib.dec
+  
+[LibraryClasses]
+  LibC
+  LibStdio
+  ShellCEntryLib
