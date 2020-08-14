@@ -22,7 +22,12 @@ $git clone https://github.com/xiaopangzi313/uefi_specs_personal_collections
 This repo contains a documentation package including some opensouce spec about `UEFI` and a code package using to debug the `UEFI` module. 
 
 ## Examples
+- Set up the Qemu Runtime enviroment
 ![link](https://img-blog.csdnimg.cn/20190426233121435.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9wYW5nemkzMTM=,size_16,color_FFFFFF,t_70).
+
+- Run a first EFI App
+![link2](https://img-blog.csdnimg.cn/20190427011651223.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9wYW5nemkzMTM=,size_16,color_FFFFFF,t_70).
+
 
 ## Related Efforts
 
@@ -34,4 +39,4 @@ Current maintainer is only me, and my email is 755056591@qq.com. If you want to 
 [blog](https://blog.csdn.net/xiaopangzi313/). Wecome more developers to join my repo!
 
 ## Licence
-[MIT](https://github.com/RichardLitt/standard-readme/blob/master/LICENSE) © Darren
+[MIT](https://github.com/RichardLitt/standard-readme/blob/master/LICENSE) © Richard Littauer
