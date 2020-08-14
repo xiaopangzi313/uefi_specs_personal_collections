@@ -1,13 +1,13 @@
 # uefi_specs_personal_collections
 This repo  contains some UEFI learning documents collected by individuals. Although these documents are not comprehensive enough, they are still helpful for beginner developers. 
 
-- [Backgroud](Background)
-- [Install](Install)
-- [Usage](Usage)
-- [Examples](Examples)
-- [Maintainers](Maintainers)
-- [Contributing](Contributing)
-- [Licence](Licence)
+- [Backgroud](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [Licence](#licence)
 
 ## Background
 To help the new BIOS learners to quikly grasp the UEFI technology, I have created a series of UEFI demos which can be run successfully in `QEMU`. Welcome the more UEFI developers to submit the code patchs and suggestions. 
