@@ -614,6 +614,7 @@
   OvmfPkg/HelloWorld/HelloWorld.inf
   OvmfPkg/MyHelloWorldAppProtocol/MyHelloWorldAppProtocol.inf
   OvmfPkg/MyHelloWorldApp/MyHelloWorldApp.inf
+  OvmfPkg/MyVariable/MyVariable.inf
   
   OvmfPkg/ResetVector/ResetVector.inf
   #
