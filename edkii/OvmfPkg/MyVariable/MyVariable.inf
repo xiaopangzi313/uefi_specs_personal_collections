@@ -1,0 +1,27 @@
+[Defines]
+  INF_VERSION = 0x00010006
+  BASE_NAME = MyVariable
+  FILE_GUID = 69A6DE6D-FA9F-485E-9A3E-EA70FDCFC82A
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHVariableAppEntry
+
+[Sources]
+  MyVariable.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiShellCEntryLib
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  PcdLib
