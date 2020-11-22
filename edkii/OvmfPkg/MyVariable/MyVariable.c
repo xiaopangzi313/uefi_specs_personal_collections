@@ -19,7 +19,7 @@ MyHVariableAppEntry(
   EFI_STATUS                         Status = EFI_SUCCESS;
   UINTN                              DataSize;
   UINT64                             CSDNEnable = 1;
-  EFI_GUID  gEfiCsdnEnableGuid = { 0xb71604c2, 0xb8bd, 0x4dec, { 0x88, 0x78, 0xbc, 0xcf, 0x1d, 0xa2, 0x26, 0xc3 }};
+  EFI_GUID  gEfiCsdnEnableGuid = { 0xb71604d2, 0xb8ba, 0x4d9c, { 0x78, 0x88, 0xac, 0xcf, 0x1d, 0xa2, 0x26, 0xc3 }};
 
   DataSize = sizeof (CSDNEnable);
   Status = gRT->SetVariable (
