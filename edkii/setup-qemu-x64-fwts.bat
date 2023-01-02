@@ -1,0 +1,1 @@
+chcp 65001 && "C:\Program Files\qemu\qemu-system-x86_64.exe" -bios "Build\OvmfX64\DEBUG_VS2013x86\FV\OVMF.fd" -M "pc" -m 4096 -cpu "qemu64" -boot order=dc  -serial stdio -hda fwts-live-22.03.00-x86_64.img 

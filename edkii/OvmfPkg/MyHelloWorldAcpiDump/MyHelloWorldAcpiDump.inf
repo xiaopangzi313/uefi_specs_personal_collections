@@ -1,0 +1,29 @@
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = MyHelloWorldAcpiDump
+  FILE_GUID                      = b912f198-0004-2019-0227-b757b806ed83
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  MyHelloWorldAcpiDump.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  SortLib
+  PrintLib
+  DebugLib
+  BaseLib
+  UefiLib  
+
+[Guids]
+
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid

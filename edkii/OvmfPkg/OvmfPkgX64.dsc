@@ -607,6 +607,9 @@
 #
 ################################################################################
 [Components]
+  OvmfPkg/HelloWorldPci/HelloWorldPci.inf
+  OvmfPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
+  OvmfPkg/MyHelloWorldAcpiDump/MyHelloWorldAcpiDump.inf
   OvmfPkg/MyHelloWorldStdLibC/MyHelloWorldStdLibC.inf
   OvmfPkg/MyHelloWorldFileIO/MyHelloWorldFileIO.inf
   OvmfPkg/MyHelloWorldPCD/MyHelloWorldPCD.inf
