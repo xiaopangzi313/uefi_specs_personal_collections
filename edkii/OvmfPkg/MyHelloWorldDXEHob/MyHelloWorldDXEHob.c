@@ -36,6 +36,16 @@ MyHelloWorldDXEHobEntry(
     }
     Hob.Raw = GET_NEXT_HOB (Hob);
   }  
+  
+  Hob.Raw = GetHobList ();
+  //Dump all hobs transfered from PEI
+  for (; !END_OF_HOB_LIST(Hob); Hob.Raw = GET_NEXT_HOB(Hob)) {
+    DEBUG((DEBUG_ERROR, "[Csdn] Guid:%g Type:0x%x Length:%x\n",
+  	Hob.Guid,
+  	Hob.Header->HobType,
+  	Hob.Header->HobLength
+  	));
+  }
   DEBUG ((EFI_D_ERROR , "[MyHelloWorldHob] MyHelloWorldDXEHobEntry End..\n"));
   return Status;
 }
