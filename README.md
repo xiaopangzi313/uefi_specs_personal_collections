@@ -27,6 +27,18 @@ This repo contains a documentation package including some opensouce spec about `
 - Run the first EFI App
 ![link2](https://img-blog.csdnimg.cn/20190427011651223.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9wYW5nemkzMTM=,size_16,color_FFFFFF,t_70).
 
+- Dump Hobs from UEFI shell 
+![link3](https://img-blog.csdnimg.cn/a56af1f3e3e8487a8da79f494714df22.png#pic_center)
+
+- Dump Variable from UEFI shell 
+![link4](https://img-blog.csdnimg.cn/20201121142940550.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9wYW5nemkzMTM=,size_16,color_FFFFFF,t_70#pic_center)
+
+![link5](https://img-blog.csdnimg.cn/20201122155115197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9wYW5nemkzMTM=,size_16,color_FFFFFF,t_70#pic_center)
+
+- Install/Dump Acpi tables from UEFI shell 
+![link6](https://img-blog.csdnimg.cn/d24d2e3381894f6885b31ba4c30fb685.png#pic_center)
+![link7](https://img-blog.csdnimg.cn/c175f54a657241febc1eeb5ece2968f2.png#pic_center)
+![link8](https://img-blog.csdnimg.cn/0a802d2273f741478b39d7d5baad8a6e.png#pic_center)
 
 ## Maintainers
 [Darren](https://github.com/xiaopangzi313/)
