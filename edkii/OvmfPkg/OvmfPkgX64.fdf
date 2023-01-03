@@ -290,6 +290,7 @@ INF  OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
 INF  MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 INF  OvmfPkg/AcpiPlatformDxe/AcpiPlatformDxe.inf
 INF  RuleOverride=ACPITABLE OvmfPkg/AcpiTables/AcpiTables.inf
+INF  RuleOverride=DRIVER_ACPITABLE OvmfPkg/MyHelloworldInstallAcpiDxe/MyHelloworldInstallAcpiDxe.inf
 INF  MdeModulePkg/Universal/Acpi/S3SaveStateDxe/S3SaveStateDxe.inf
 INF  MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe/BootScriptExecutorDxe.inf
 INF  MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
@@ -547,4 +548,14 @@ FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
     PE32     PE32                    $(INF_OUTPUT)/$(MODULE_NAME).efi
     UI       STRING="$(MODULE_NAME)" Optional
     VERSION  STRING="$(INF_VERSION)" Optional BUILD_NUM=$(BUILD_NUMBER)
+  }
+
+[Rule.Common.DXE_RUNTIME_DRIVER.DRIVER_ACPITABLE]
+  FILE DRIVER = $(NAMED_GUID) {
+    DXE_DEPEX DXE_DEPEX Optional       $(INF_OUTPUT)/$(MODULE_NAME).depex
+    PE32      PE32                     $(INF_OUTPUT)/$(MODULE_NAME).efi
+    RAW ACPI  Optional                |.acpi
+    RAW ASL   Optional                |.aml
+    UI        STRING="$(MODULE_NAME)" Optional
+    VERSION   STRING="$(INF_VERSION)" Optional BUILD_NUM=$(BUILD_NUMBER)
   }

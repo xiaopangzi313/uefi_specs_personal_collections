@@ -1,0 +1,39 @@
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = MyHelloworldInstallAcpiDxe
+  FILE_GUID                      = c913f198-0004-2020-0237-b757b806ed85
+  VERSION_STRING                 = 0.1
+  MODULE_TYPE 					 = DXE_RUNTIME_DRIVER
+  ENTRY_POINT                    = MyHelloWorldInsatllAcpiEntry
+  
+
+[Sources]
+  MyHelloworldInstallAcpiDxe.c
+  csdn.asl
+  csdnhw.asi
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  DxeServicesLib
+
+
+[Guids]
+
+[Protocols]
+  gEfiAcpiTableProtocolGuid
+  
+[Depex]
+  gEfiAcpiTableProtocolGuid
+  
