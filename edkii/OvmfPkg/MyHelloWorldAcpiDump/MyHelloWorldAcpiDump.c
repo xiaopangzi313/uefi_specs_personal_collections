@@ -225,6 +225,7 @@ UefiMain (
         Rsdp = gST->ConfigurationTable[i].VendorTable;
 	    if (Rsdp != NULL) {
 	  	  DumpAllAcpiTables(Rsdp, ImageProtocol);
+		  break;
 	    }
       }
     }

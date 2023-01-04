@@ -1,17 +1,22 @@
 /** @file
   Platform BDS customizations.
 
-  Copyright (c) 2004 - 2019, Intel Corporation. All rights reserved.<BR>
-  SPDX-License-Identifier: BSD-2-Clause-Patent
+  Copyright (c) 2004 - 2018, Intel Corporation. All rights reserved.<BR>
+  This program and the accompanying materials are licensed and made available
+  under the terms and conditions of the BSD License which accompanies this
+  distribution.  The full text of the license may be found at
+  http://opensource.org/licenses/bsd-license.php
+
+  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS, WITHOUT
+  WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 
 **/
 
 #include "BdsPlatform.h"
+#include <Guid/XenInfo.h>
 #include <Guid/RootBridgesConnectedEventGroup.h>
 #include <Protocol/FirmwareVolume2.h>
-#include <Library/PlatformBmPrintScLib.h>
 #include <Library/Tcg2PhysicalPresenceLib.h>
-#include <Library/XenPlatformLib.h>
 
 
 //
@@ -252,7 +257,7 @@ RemoveStaleFvFileOptions (
       DevicePathString = ConvertDevicePathToText(BootOptions[Index].FilePath,
                            FALSE, FALSE);
       DEBUG ((
-        EFI_ERROR (Status) ? DEBUG_WARN : DEBUG_VERBOSE,
+        EFI_ERROR (Status) ? EFI_D_WARN : EFI_D_VERBOSE,
         "%a: removing stale Boot#%04x %s: %r\n",
         __FUNCTION__,
         (UINT32)BootOptions[Index].OptionNumber,
@@ -353,10 +358,9 @@ PlatformBootManagerBeforeConsole (
 {
   EFI_HANDLE    Handle;
   EFI_STATUS    Status;
-  UINT16        FrontPageTimeout;
   RETURN_STATUS PcdStatus;
 
-  DEBUG ((DEBUG_INFO, "PlatformBootManagerBeforeConsole\n"));
+  DEBUG ((EFI_D_INFO, "PlatformBootManagerBeforeConsole\n"));
   InstallDevicePathCallback ();
 
   VisitAllInstancesOfProtocol (&gEfiPciRootBridgeIoProtocolGuid,
@@ -399,32 +403,10 @@ PlatformBootManagerBeforeConsole (
   //
   EfiBootManagerDispatchDeferredImages ();
 
-  PlatformInitializeConsole (
-    XenDetected() ? gXenPlatformConsole : gPlatformConsole);
-
-  FrontPageTimeout = GetFrontPageTimeoutFromQemu ();
-  PcdStatus = PcdSet16S (PcdPlatformBootTimeOut, FrontPageTimeout);
+  PlatformInitializeConsole (gPlatformConsole);
+  PcdStatus = PcdSet16S (PcdPlatformBootTimeOut,
+                GetFrontPageTimeoutFromQemu ());
   ASSERT_RETURN_ERROR (PcdStatus);
-  //
-  // Reflect the PCD in the standard Timeout variable.
-  //
-  Status = gRT->SetVariable (
-                  EFI_TIME_OUT_VARIABLE_NAME,
-                  &gEfiGlobalVariableGuid,
-                  (EFI_VARIABLE_NON_VOLATILE |
-                   EFI_VARIABLE_BOOTSERVICE_ACCESS |
-                   EFI_VARIABLE_RUNTIME_ACCESS),
-                  sizeof FrontPageTimeout,
-                  &FrontPageTimeout
-                  );
-  DEBUG ((
-    EFI_ERROR (Status) ? DEBUG_ERROR : DEBUG_VERBOSE,
-    "%a: SetVariable(%s, %u): %r\n",
-    __FUNCTION__,
-    EFI_TIME_OUT_VARIABLE_NAME,
-    FrontPageTimeout,
-    Status
-    ));
 
   PlatformRegisterOptionsAndKeys ();
 
@@ -610,7 +592,7 @@ PrepareLpcBridgeDevicePath (
   DevPathStr = ConvertDevicePathToText (DevicePath, FALSE, FALSE);
   if (DevPathStr != NULL) {
     DEBUG((
-      DEBUG_INFO,
+      EFI_D_INFO,
       "BdsPlatform.c+%d: COM%d DevPath: %s\n",
       __LINE__,
       gPnp16550ComPortDeviceNode.UID + 1,
@@ -642,7 +624,7 @@ PrepareLpcBridgeDevicePath (
   DevPathStr = ConvertDevicePathToText (DevicePath, FALSE, FALSE);
   if (DevPathStr != NULL) {
     DEBUG((
-      DEBUG_INFO,
+      EFI_D_INFO,
       "BdsPlatform.c+%d: COM%d DevPath: %s\n",
       __LINE__,
       gPnp16550ComPortDeviceNode.UID + 1,
@@ -966,7 +948,7 @@ DetectAndPreparePlatformPciDevicePath (
     // Add IsaKeyboard to ConIn,
     // add IsaSerial to ConOut, ConIn, ErrOut
     //
-    DEBUG ((DEBUG_INFO, "Found LPC Bridge device\n"));
+    DEBUG ((EFI_D_INFO, "Found LPC Bridge device\n"));
     PrepareLpcBridgeDevicePath (Handle);
     return EFI_SUCCESS;
   }
@@ -977,7 +959,7 @@ DetectAndPreparePlatformPciDevicePath (
     //
     // Add them to ConOut, ConIn, ErrOut.
     //
-    DEBUG ((DEBUG_INFO, "Found PCI 16550 SERIAL device\n"));
+    DEBUG ((EFI_D_INFO, "Found PCI 16550 SERIAL device\n"));
     PreparePciSerialDevicePath (Handle);
     return EFI_SUCCESS;
   }
@@ -989,7 +971,7 @@ DetectAndPreparePlatformPciDevicePath (
     //
     // Add them to ConOut.
     //
-    DEBUG ((DEBUG_INFO, "Found PCI display device\n"));
+    DEBUG ((EFI_D_INFO, "Found PCI display device\n"));
     PreparePciDisplayDevicePath (Handle);
     return EFI_SUCCESS;
   }
@@ -1118,7 +1100,7 @@ SetPciIntLine (
     }
     if (RootBusNumber == 0 && RootSlot == 0) {
       DEBUG((
-        DEBUG_ERROR,
+        EFI_D_ERROR,
         "%a: PCI host bridge (00:00.0) should have no interrupts!\n",
         __FUNCTION__
         ));
@@ -1169,7 +1151,7 @@ SetPciIntLine (
       Status = PciIo->GetLocation (PciIo, &Segment, &Bus, &Device, &Function);
       ASSERT_EFI_ERROR (Status);
 
-      DEBUG ((DEBUG_VERBOSE, "%a: [%02x:%02x.%x] %s -> 0x%02x\n", __FUNCTION__,
+      DEBUG ((EFI_D_VERBOSE, "%a: [%02x:%02x.%x] %s -> 0x%02x\n", __FUNCTION__,
         (UINT32)Bus, (UINT32)Device, (UINT32)Function, DevPathString,
         IrqLine));
 
@@ -1231,13 +1213,7 @@ PciAcpiInitialization (
       PciWrite8 (PCI_LIB_ADDRESS (0, 0x1f, 0, 0x6b), 0x0b); // H
       break;
     default:
-      if (XenDetected ()) {
-        //
-        // There is no PCI bus in this case.
-        //
-        return;
-      }
-      DEBUG ((DEBUG_ERROR, "%a: Unknown Host Bridge Device ID: 0x%04x\n",
+      DEBUG ((EFI_D_ERROR, "%a: Unknown Host Bridge Device ID: 0x%04x\n",
         __FUNCTION__, mHostBridgeDevId));
       ASSERT (FALSE);
       return;
@@ -1252,6 +1228,38 @@ PciAcpiInitialization (
   // Set ACPI SCI_EN bit in PMCNTRL
   //
   IoOr16 ((PciRead32 (Pmba) & ~BIT0) + 4, BIT0);
+}
+
+/**
+  This function detects if OVMF is running on Xen.
+
+**/
+STATIC
+BOOLEAN
+XenDetected (
+  VOID
+  )
+{
+  EFI_HOB_GUID_TYPE         *GuidHob;
+  STATIC INTN               FoundHob = -1;
+
+  if (FoundHob == 0) {
+    return FALSE;
+  } else if (FoundHob == 1) {
+    return TRUE;
+  }
+
+  //
+  // See if a XenInfo HOB is available
+  //
+  GuidHob = GetFirstGuidHob (&gEfiXenInfoGuid);
+  if (GuidHob == NULL) {
+    FoundHob = 0;
+    return FALSE;
+  }
+
+  FoundHob = 1;
+  return TRUE;
 }
 
 EFI_STATUS
@@ -1287,7 +1295,7 @@ ConnectRecursivelyIfPciMassStorage (
     DevPathStr = ConvertDevicePathToText (DevicePath, FALSE, FALSE);
     if (DevPathStr != NULL) {
       DEBUG((
-        DEBUG_INFO,
+        EFI_D_INFO,
         "Found %s device: %s\n",
         (IS_CLASS1 (PciHeader, PCI_CLASS_MASS_STORAGE) ?
          L"Mass Storage" :
@@ -1324,7 +1332,7 @@ EmuVariablesUpdatedCallback (
   IN  VOID      *Context
   )
 {
-  DEBUG ((DEBUG_INFO, "EmuVariablesUpdatedCallback\n"));
+  DEBUG ((EFI_D_INFO, "EmuVariablesUpdatedCallback\n"));
   UpdateNvVarsOnFileSystem ();
 }
 
@@ -1393,7 +1401,7 @@ PlatformBdsConnectSequence (
   UINTN         Index;
   RETURN_STATUS Status;
 
-  DEBUG ((DEBUG_INFO, "PlatformBdsConnectSequence\n"));
+  DEBUG ((EFI_D_INFO, "PlatformBdsConnectSequence\n"));
 
   Index = 0;
 
@@ -1501,7 +1509,6 @@ CompareBootOption (
   return (BOOLEAN) (BootOptionPriority ((EFI_BOOT_MANAGER_LOAD_OPTION  *) Buffer1) > BootOptionPriority ((EFI_BOOT_MANAGER_LOAD_OPTION  *) Buffer2));
 }
 
-
 /**
   Do the platform specific action after the console is ready
 
@@ -1523,10 +1530,10 @@ PlatformBootManagerAfterConsole (
 {
   EFI_BOOT_MODE                      BootMode;
 
-  DEBUG ((DEBUG_INFO, "PlatformBootManagerAfterConsole ...\n"));
+  DEBUG ((EFI_D_INFO, "PlatformBootManagerAfterConsole\n"));
 
   if (PcdGetBool (PcdOvmfFlashVariablesEnable)) {
-    DEBUG ((DEBUG_INFO, "PlatformBdsPolicyBehavior: not restoring NvVars "
+    DEBUG ((EFI_D_INFO, "PlatformBdsPolicyBehavior: not restoring NvVars "
       "from disk since flash variables appear to be supported.\n"));
   } else {
     //
@@ -1540,7 +1547,7 @@ PlatformBootManagerAfterConsole (
   // Get current Boot Mode
   //
   BootMode = GetBootModeHob ();
-  DEBUG ((DEBUG_INFO, "Boot Mode:%x ...\n", BootMode));
+  DEBUG ((DEBUG_INFO, "Boot Mode:%x\n", BootMode));
 
   //
   // Go the different platform policy with different boot mode
@@ -1575,22 +1582,16 @@ PlatformBootManagerAfterConsole (
 
   EfiBootManagerRefreshAllBootOption ();
 
-
   //
   // Register UEFI Shell
   //
   PlatformRegisterFvBootOption (
-    &gUefiShellFileGuid, L"EFI Internal Shell", LOAD_OPTION_ACTIVE
+    PcdGetPtr (PcdShellFile), L"EFI Internal Shell", LOAD_OPTION_ACTIVE
     );
 
-  DEBUG ((EFI_D_ERROR," [CSDN]: EfiBootManagerSortLoadOptionVariable before.\n"));
   EfiBootManagerSortLoadOptionVariable (LoadOptionTypeBoot, CompareBootOption);
-  DEBUG ((EFI_D_ERROR," [CSDN]: EfiBootManagerSortLoadOptionVariable after.\n"));
-
   RemoveStaleFvFileOptions ();
   SetBootOrderFromQemu ();
-
-  PlatformBmPrintScRegisterHandler ();
 }
 
 /**
@@ -1684,7 +1685,7 @@ InstallDevicePathCallback (
   VOID
   )
 {
-  DEBUG ((DEBUG_INFO, "Registered NotifyDevPath Event\n"));
+  DEBUG ((EFI_D_INFO, "Registered NotifyDevPath Event\n"));
   mEfiDevPathEvent = EfiCreateProtocolNotifyEvent (
                           &gEfiDevicePathProtocolGuid,
                           TPL_CALLBACK,
@@ -1708,18 +1709,9 @@ PlatformBootManagerWaitCallback (
 {
   EFI_GRAPHICS_OUTPUT_BLT_PIXEL_UNION Black;
   EFI_GRAPHICS_OUTPUT_BLT_PIXEL_UNION White;
-  UINT16                              TimeoutInitial;
+  UINT16                              Timeout;
 
-  TimeoutInitial = PcdGet16 (PcdPlatformBootTimeOut);
-
-  //
-  // If PcdPlatformBootTimeOut is set to zero, then we consider
-  // that no progress update should be enacted (since we'd only
-  // ever display a one-shot progress of either 0% or 100%).
-  //
-  if (TimeoutInitial == 0) {
-    return;
-  }
+  Timeout = PcdGet16 (PcdPlatformBootTimeOut);
 
   Black.Raw = 0x00000000;
   White.Raw = 0x00FFFFFF;
@@ -1729,7 +1721,7 @@ PlatformBootManagerWaitCallback (
     Black.Pixel,
     L"Start boot option",
     White.Pixel,
-    (TimeoutInitial - TimeoutRemain) * 100 / TimeoutInitial,
+    (Timeout - TimeoutRemain) * 100 / Timeout,
     0
     );
 }
