@@ -1,0 +1,43 @@
+
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = DumpMsrApp
+  FILE_GUID                      = DD306088-4011-4B59-98ED-DB3314EE3BB9
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = DumpMsrEntry
+
+[Sources]
+  DumpMsr.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  DevicePathLib
+  DxeServicesTableLib
+  HobLib
+  MemoryAllocationLib
+  UefiLib
+  UefiBootServicesTableLib
+  PrintLib
+
+[Protocols]
+  gEfiSimpleFileSystemProtocolGuid                        # ALWAYS_CONSUMED
+  gEfiBlockIoProtocolGuid                                 ## TO_START
+  gEfiDiskIoProtocolGuid
+  gEfiSimplePointerProtocolGuid
+  gEfiShellProtocolGuid
+  
+[Guids]
+  gEfiFileSystemInfoGuid
+  gEfiFileInfoGuid
+
+

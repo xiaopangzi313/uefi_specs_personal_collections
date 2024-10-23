@@ -17,7 +17,7 @@
   FILE_GUID                      = b912f198-0005-2019-0228-b757b806ec83
   MODULE_TYPE                    = UEFI_APPLICATION
   VERSION_STRING                 = 0.1
-  ENTRY_POINT                    = UefiMain
+  ENTRY_POINT                    = DumpHobEntry
 
 [Sources]
   DumpHobs.c
@@ -29,20 +29,22 @@
 
 [LibraryClasses]
   UefiApplicationEntryPoint
-  SortLib
-  PrintLib
-  DebugLib
+  UefiLib
   BaseLib
-  UefiShellCEntryLib
-  ShellLib
-  UefiLib  
-  HobLib
+  BaseMemoryLib
   DebugLib
-
-[Guids]
+  MemoryAllocationLib
+  HobLib
+  UefiBootServicesTableLib
+  PrintLib
 
 [Protocols]
-  gEfiLoadedImageProtocolGuid
-  gEfiSimpleFileSystemProtocolGuid
-  gEfiShellInterfaceGuid
-  gEfiShellParametersProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid                        # ALWAYS_CONSUMED
+  gEfiBlockIoProtocolGuid                                 ## TO_START
+  gEfiDiskIoProtocolGuid
+  gEfiSimplePointerProtocolGuid
+  gEfiShellProtocolGuid
+  
+[Guids]
+  gEfiFileSystemInfoGuid
+  gEfiFileInfoGuid
