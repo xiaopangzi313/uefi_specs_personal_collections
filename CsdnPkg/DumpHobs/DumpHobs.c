@@ -74,8 +74,6 @@ WriteHobData(
     CHAR16                             *NewFileName;
 	  UINTN                              Size;
 
-
-
   Status = gEfiShellProtocol->OpenFileByName((CONST CHAR16*)OutputFile, &FileHandle, EFI_FILE_MODE_CREATE | EFI_FILE_MODE_WRITE | EFI_FILE_MODE_READ); 
   if (EFI_ERROR(Status)){
     DEBUG((DEBUG_ERROR, "Please Input Valid Filename!\n"));
@@ -86,7 +84,7 @@ WriteHobData(
   // Get the file size.
   //
   FileSize = 0;
-  Status = ShellProtocol->GetFileSize (FileHandle, &FileSize);
+  Status = gEfiShellProtocol->GetFileSize (FileHandle, &FileSize);
   //
   // Check if file exists
   //
@@ -136,9 +134,6 @@ DumpHobEntry (
   Status = EFI_SUCCESS;
   CHAR16                    OFile[BUFFER_MAX_SIZE];
   
-  
-  Status = OpenShellProtocol(&gEfiShellProtocol);
-
   DEBUG ((EFI_D_ERROR , "[Csdn] DumpHobEntry Start..\n"));
   
   Status = OpenShellProtocol(&gEfiShellProtocol);
@@ -159,9 +154,3 @@ DumpHobEntry (
   DEBUG ((DEBUG_ERROR, "[Csdn] %a Exit\n",__FUNCTION__));
   return Status;
 }
-
- {
-    #<LibraryClasses>
-    #BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
-    #NULL|CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
-  #}

@@ -1,0 +1,32 @@
+[Defines]
+ INF_VERSION                = 0x00010007
+ BASE_NAME                  = CsdnDxeCommunication
+ FILE_GUID                  = BCB84004-0047-409E-9798-6789DF8D8B07
+ MODULE_TYPE                = DXE_DRIVER
+ VERSION_STRING             = 1.0
+ PI_SPECIFICATION_VERSION   = 0x0001000A
+ ENTRY_POINT                = CsdnDxeCommunicationEntryPoint
+
+[Sources]
+ CsdnDxeCommunication.c
+
+[Packages]
+ MdePkg/MdePkg.dec
+ MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+ UefiDriverEntryPoint
+ BaseMemoryLib
+ DebugLib
+ UefiLib
+ UefiBootServicesTableLib
+
+[Protocols]
+ gEfiSmmCommunicationProtocolGuid
+
+[Guids]
+ gEdkiiPiSmmCommunicationRegionTableGuid
+
+[Depex]
+ gEfiSmmCommunicationProtocolGuid AND
+ gEdkiiPiSmmCommunicationRegionTableGuid

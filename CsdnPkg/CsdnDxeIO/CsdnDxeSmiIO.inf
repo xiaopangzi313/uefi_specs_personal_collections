@@ -1,0 +1,29 @@
+
+[Defines]
+ INF_VERSION                = 0x00010007
+ BASE_NAME                  = CsdnDxeIO
+ FILE_GUID                  = BCB94008-0045-409E-9794-6789DF858B08
+ MODULE_TYPE                = DXE_DRIVER
+ VERSION_STRING             = 1.0
+ PI_SPECIFICATION_VERSION   = 0x0001000A
+ ENTRY_POINT                = CsdnDxeSmiIOEntryPoint
+
+[Sources]
+ CsdnDxeSmiIO.c
+
+[Packages]
+ MdePkg/MdePkg.dec
+ MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+ UefiDriverEntryPoint
+ BaseMemoryLib
+ DebugLib
+ IoLib
+
+[Protocols]
+
+[Guids]
+
+[Depex]
+ TRUE

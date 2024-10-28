@@ -1,0 +1,29 @@
+
+[Defines]
+ INF_VERSION                = 0x00010007
+ BASE_NAME                  = CsdnSmm
+ FILE_GUID                  = BCB94004-0037-409E-9798-6789DF8D8B07
+ MODULE_TYPE                = DXE_SMM_DRIVER
+ VERSION_STRING             = 1.0
+ PI_SPECIFICATION_VERSION   = 0x0001000A
+ ENTRY_POINT                = CsdnSmmEntryPoint
+
+[Sources]
+ CsdnSmm.c
+
+[Packages]
+ MdePkg/MdePkg.dec
+ MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+ UefiDriverEntryPoint
+ BaseMemoryLib
+ DebugLib
+ SmmServicesTableLib
+
+[Protocols]
+
+[Guids]
+
+[Depex]
+ TRUE

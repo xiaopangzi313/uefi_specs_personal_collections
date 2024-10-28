@@ -1,0 +1,6 @@
+
+
+Method(CSDN, 1, Serialized) {
+    Store (Arg0, Local0);
+    Store (0x59, IO80);
+}

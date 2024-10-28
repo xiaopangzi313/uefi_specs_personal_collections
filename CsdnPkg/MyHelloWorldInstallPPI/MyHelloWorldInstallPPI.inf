@@ -1,0 +1,29 @@
+[Defines] 
+  INF_VERSION = 0x00010006 
+  BASE_NAME = MyHelloWorldInstallPPI 
+  FILE_GUID = 69E6DE5D-F09E-485E-9936-EB70FDCFC82A
+  MODULE_TYPE = PEIM
+  VERSION_STRING = 1.0
+  ENTRY_POINT = MyHelloWorldInstallPPIEntry 
+  
+[Sources] 
+  MyHelloWorldInstallPPI.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  BaseLib
+  PeimEntryPoint
+  BaseMemoryLib
+  DebugLib
+  PeiServicesLib
+  PrintLib
+  #PeiLib
+  #EfiCommonLib
+
+[depex]
+  TRUE
+

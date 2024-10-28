@@ -1,0 +1,10 @@
+[ppis]
+ gEfiPeiMemoryDiscoveredPpiGuid 
+ gEdkiiPeiMpServices2PpiGuid
+
+[ppis]
+ gEfiPeiMemoryDiscoveredPpiGuid  AND
+ gEdkiiPeiMpServices2PpiGuid
+
+
+

@@ -1,0 +1,43 @@
+[Defines]
+  INF_VERSION = 0x00010006
+  BASE_NAME = MyHelloWorldFileIO
+  FILE_GUID = c912f194-7f0e-4803-b907-b757b806ec73
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+[Sources] 
+  MyHelloWorldFileIO.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  UefiLib
+  DebugLib
+  IntrinsicLib
+
+  
+[Protocols]
+  gEfiSimpleFileSystemProtocolGuid                        # ALWAYS_CONSUMED
+  gEfiBlockIoProtocolGuid                                 ## TO_START
+  gEfiDiskIoProtocolGuid
+  gEfiSimpleTextInputExProtocolGuid
+  gEfiShellProtocolGuid
+  
+  
+[Guids]
+  gEfiFileSystemInfoGuid
+  gEfiFileInfoGuid
+
+[BuildOptions]
+  MSFT:*_*_*_CC_FLAGS = /GL-
