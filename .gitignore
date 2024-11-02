@@ -1,4 +1,10 @@
-edk2/
+edk2
 Csdn/Build
 HDD_BOOT.img
 csdn_busybox2.img
+build_fw.bat
+lauch_fw.bat
+lauch_fw_busy.bat
+build_fw.sh
+lauch_fw.sh
+lauch_fw_busy.sh

@@ -1,0 +1,1 @@
+"C:\Program Files\qemu\qemu-system-x86_64.exe"  -bios D:\uefi_specs_personal_collections\Csdn\Build\OvmfX64\DEBUG_VS2019\FV\OVMF.fd -M "pc" -m 512 -cpu "qemu64"  -boot order=dc  -hda csdn_busybox2.img -serial stdio
