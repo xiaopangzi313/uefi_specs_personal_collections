@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\806040ca-dad9-4978-a3b4-2d2ab0c8a48fQemuKernelLoaderFsDxe\806040ca-dad9-4978-a3b4-2d2ab0c8a48fSEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\QemuKernelLoaderFsDxe\QemuKernelLoaderFsDxe\OUTPUT\QemuKernelLoaderFsDxe.depex

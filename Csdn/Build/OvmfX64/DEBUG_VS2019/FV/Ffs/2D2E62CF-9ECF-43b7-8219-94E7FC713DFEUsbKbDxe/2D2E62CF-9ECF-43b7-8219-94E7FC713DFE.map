@@ -1,0 +1,341 @@
+ UsbKbDxe
+
+ Timestamp is 6725e4a4 (Sat Nov  2 16:36:52 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001c8H .text                   CODE
+ 0001:000001c8 00004b98H .text$mn                CODE
+ 0002:00000000 00001798H .rdata                  DATA
+ 0002:00001798 00000030H .rdata$voltmd           DATA
+ 0002:000017c8 00000158H .rdata$zzzdbg           DATA
+ 0003:00000000 00000898H .data                   DATA
+ 0003:00000898 0000006aH .bss                    DATA
+ 0004:00000000 0000033cH .pdata                  DATA
+ 0005:00000000 00000230H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemCompareMem      0000000000000350     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000370     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000390     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       TdVmCall                   00000000000003b0     BaseLib:TdVmcall.obj
+ 0001:00000170       TdCall                     0000000000000430     BaseLib:TdCall.obj
+ 0001:000001c8       _ModuleEntryPoint          0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001e4       ProcessLibraryConstructorList 00000000000004a4 f   UsbKbDxe:AutoGen.obj
+ 0001:00000520       ProcessModuleEntryPointList 00000000000007e0 f   UsbKbDxe:AutoGen.obj
+ 0001:000005f8       USBKeyboardDriverBindingSupported 00000000000008b8 f   UsbKbDxe:EfiKey.obj
+ 0001:000006b4       USBKeyboardDriverBindingStart 0000000000000974 f   UsbKbDxe:EfiKey.obj
+ 0001:00000bc4       USBKeyboardDriverBindingStop 0000000000000e84 f   UsbKbDxe:EfiKey.obj
+ 0001:00000e6c       USBKeyboardReadKeyStrokeWorker 000000000000112c f   UsbKbDxe:EfiKey.obj
+ 0001:00000ee4       USBKeyboardReset           00000000000011a4 f   UsbKbDxe:EfiKey.obj
+ 0001:00000fac       USBKeyboardReadKeyStroke   000000000000126c f   UsbKbDxe:EfiKey.obj
+ 0001:00001060       USBKeyboardWaitForKey      0000000000001320 f   UsbKbDxe:EfiKey.obj
+ 0001:00001110       USBKeyboardTimerHandler    00000000000013d0 f   UsbKbDxe:EfiKey.obj
+ 0001:00001160       IsKeyRegistered            0000000000001420 f   UsbKbDxe:EfiKey.obj
+ 0001:000011d0       USBKeyboardResetEx         0000000000001490 f   UsbKbDxe:EfiKey.obj
+ 0001:00001244       USBKeyboardReadKeyStrokeEx 0000000000001504 f   UsbKbDxe:EfiKey.obj
+ 0001:000012a4       USBKeyboardSetState        0000000000001564 f   UsbKbDxe:EfiKey.obj
+ 0001:0000137c       USBKeyboardRegisterKeyNotify 000000000000163c f   UsbKbDxe:EfiKey.obj
+ 0001:000014c0       USBKeyboardUnregisterKeyNotify 0000000000001780 f   UsbKbDxe:EfiKey.obj
+ 0001:0000159c       KeyNotifyProcessHandler    000000000000185c f   UsbKbDxe:EfiKey.obj
+ 0001:0000167c       GetCurrentKeyboardLayout   000000000000193c f   UsbKbDxe:KeyBoard.obj
+ 0001:00001738       GetKeyDescriptor           00000000000019f8 f   UsbKbDxe:KeyBoard.obj
+ 0001:00001770       SetKeyboardLayoutEvent     0000000000001a30 f   UsbKbDxe:KeyBoard.obj
+ 0001:00001944       ReleaseKeyboardLayoutResources 0000000000001c04 f   UsbKbDxe:KeyBoard.obj
+ 0001:000019d8       InitKeyboardLayout         0000000000001c98 f   UsbKbDxe:KeyBoard.obj
+ 0001:00001af8       InitUSBKeyboard            0000000000001db8 f   UsbKbDxe:KeyBoard.obj
+ 0001:00001d74       KeyboardHandler            0000000000002034 f   UsbKbDxe:KeyBoard.obj
+ 0001:00002094       USBParseKey                0000000000002354 f   UsbKbDxe:KeyBoard.obj
+ 0001:00002350       InitializeKeyState         0000000000002610 f   UsbKbDxe:KeyBoard.obj
+ 0001:00002430       UsbKeyCodeToEfiInputKey    00000000000026f0 f   UsbKbDxe:KeyBoard.obj
+ 0001:000026fc       InitQueue                  00000000000029bc f   UsbKbDxe:KeyBoard.obj
+ 0001:00002780       Enqueue                    0000000000002a40 f   UsbKbDxe:KeyBoard.obj
+ 0001:00002850       Dequeue                    0000000000002b10 f   UsbKbDxe:KeyBoard.obj
+ 0001:000028f0       SetKeyLED                  0000000000002bb0 f   UsbKbDxe:KeyBoard.obj
+ 0001:000029a0       USBKeyboardRepeatHandler   0000000000002c60 f   UsbKbDxe:KeyBoard.obj
+ 0001:000029f8       USBKeyboardRecoveryHandler 0000000000002cb8 f   UsbKbDxe:KeyBoard.obj
+ 0001:00002a34       UsbKeyboardComponentNameGetDriverName 0000000000002cf4 f   UsbKbDxe:ComponentName.obj
+ 0001:00002a68       UsbKeyboardComponentNameGetControllerName 0000000000002d28 f   UsbKbDxe:ComponentName.obj
+ 0001:00002b94       InternalBaseLibIsListValid 0000000000002e54 f   BaseLib:LinkedList.obj
+ 0001:00002c00       InsertTailList             0000000000002ec0 f   BaseLib:LinkedList.obj
+ 0001:00002c54       GetFirstNode               0000000000002f14 f   BaseLib:LinkedList.obj
+ 0001:00002c88       GetNextNode                0000000000002f48 f   BaseLib:LinkedList.obj
+ 0001:00002cbc       IsListEmpty                0000000000002f7c f   BaseLib:LinkedList.obj
+ 0001:00002cf4       IsNull                     0000000000002fb4 f   BaseLib:LinkedList.obj
+ 0001:00002d38       RemoveEntryList            0000000000002ff8 f   BaseLib:LinkedList.obj
+ 0001:00002d80       CopyMem                    0000000000003040 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002e1c       ZeroMem                    00000000000030dc f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00002e8c       DebugPrint                 000000000000314c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002eb0       DebugPrintMarker           0000000000003170 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002f3c       DebugAssert                00000000000031fc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002fb8       InternalAllocatePool       0000000000003278 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002fe8       AllocateZeroPool           00000000000032a8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003010       InternalAllocateCopyPool   00000000000032d0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003088       FreePool                   0000000000003348 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000030cc       IsLanguageSupported        000000000000338c f   UefiLib:UefiLib.obj
+ 0001:00003154       LookupUnicodeString2       0000000000003414 f   UefiLib:UefiLib.obj
+ 0001:00003248       AddUnicodeString2          0000000000003508 f   UefiLib:UefiLib.obj
+ 0001:00003418       InternalReportStatusCode   00000000000036d8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000034d0       ReportStatusCodeWithDevicePath 0000000000003790 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000036d4       UsbClearEndpointHalt       0000000000003994 f   UefiUsbLib:UsbDxeLib.obj
+ 0001:00003808       HiiAddPackages             0000000000003ac8 f   UefiHiiLib:HiiLib.obj
+ 0001:00003954       StrLen                     0000000000003c14 f   BaseLib:String.obj
+ 0001:000039cc       AsciiStrLen                0000000000003c8c f   BaseLib:String.obj
+ 0001:00003a38       AsciiStrnCmp               0000000000003cf8 f   BaseLib:String.obj
+ 0001:00003b04       StrnLenS                   0000000000003dc4 f   BaseLib:SafeString.obj
+ 0001:00003b5c       CopyGuid                   0000000000003e1c f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00003c0c       SerialPortWrite            0000000000003ecc f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00003c90       AsciiSPrint                0000000000003f50 f   BasePrintLib:PrintLib.obj
+ 0001:00003cbc       BasePrintLibFillBuffer     0000000000003f7c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003cf0       BasePrintLibValueToString  0000000000003fb0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003d5c       BasePrintLibSPrintMarker   000000000000401c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004c68       BasePrintLibSPrint         0000000000004f28 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004c8c       IsTdxGuest                 0000000000004f4c f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00004cb8       TdIoRead8                  0000000000004f78 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00004d10       TdIoWrite8                 0000000000004fd0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000005020     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000005048     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_08MPLGJDDF@UsbKbDxe@ 0000000000005070     UsbKbDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0HO@DKOKIIFB@d?3?2uefi_specs_personal_collecti@ 0000000000005080     UsbKbDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_0EP@BOCMAILO@D?3?2uefi_specs_personal_collecti@ 0000000000005100     UsbKbDxe:EfiKey.obj
+ 0002:00000130       ??_C@_0CC@GPKLMMDL@UsbKeyboardDevice?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005150     UsbKbDxe:EfiKey.obj
+ 0002:00000160       ??_C@_1CK@JMALMCC@?$AAG?$AAe?$AAn?$AAe?$AAr?$AAi?$AAc?$AA?5?$AAU?$AAs?$AAb?$AA?5?$AAK?$AAe?$AAy@ 0000000000005180     UsbKbDxe:EfiKey.obj
+ 0002:0000018c       ??_C@_03LKLGDMJI@eng@      00000000000051ac     UsbKbDxe:EfiKey.obj
+ 0002:00000190       ??_C@_02LFNMGJAP@en@       00000000000051b0     UsbKbDxe:EfiKey.obj
+ 0002:00000198       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 00000000000051b8     UsbKbDxe:EfiKey.obj
+ 0002:000001b0       ??_C@_0DM@CHNNECGH@RegsiteredData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5@ 00000000000051d0     UsbKbDxe:EfiKey.obj
+ 0002:000001f0       ??_C@_0BP@NFJAKEPG@KeyboardLayout?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005210     UsbKbDxe:KeyBoard.obj
+ 0002:00000210       ??_C@_0FB@CJJBEKDC@D?3?2uefi_specs_personal_collecti@ 0000000000005230     UsbKbDxe:KeyBoard.obj
+ 0002:00000268       ??_C@_0DG@BIHALBAF@UsbKeyboardDevice?9?$DOKeyConvertio@ 0000000000005288     UsbKbDxe:KeyBoard.obj
+ 0002:000002a0       ??_C@_0BJ@OFBFBLCH@UsbNsKey?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000052c0     UsbKbDxe:KeyBoard.obj
+ 0002:000002c0       ??_C@_0BI@DNICFLOF@Context?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000052e0     UsbKbDxe:KeyBoard.obj
+ 0002:000002d8       ??_C@_0CB@GAEFPFEK@Queue?9?$DOBuffer?$FL0?$FN?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 00000000000052f8     UsbKbDxe:KeyBoard.obj
+ 0002:00000300       ??_C@_0BM@EBJADBNE@ItemSize?5?$DN?$DN?5Queue?9?$DOItemSize@ 0000000000005320     UsbKbDxe:KeyBoard.obj
+ 0002:00000320       ??_C@_0BM@EPDCADGB@Queue?9?$DOItemSize?5?$DN?$DN?5ItemSize@ 0000000000005340     UsbKbDxe:KeyBoard.obj
+ 0002:00000340       EfiKeyToUsbKeyCodeConvertionTable 0000000000005360     UsbKbDxe:KeyBoard.obj
+ 0002:000003b0       ModifierValueToEfiScanCodeConvertionTable 00000000000053d0     UsbKbDxe:KeyBoard.obj
+ 0002:000003dc       ??_C@_06DALJLGPG@eng?$DLen@ 00000000000053fc     UsbKbDxe:ComponentName.obj
+ 0002:000003e8       ??_C@_1CI@DMPFHDAP@?$AAU?$AAs?$AAb?$AA?5?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr@ 0000000000005408     UsbKbDxe:ComponentName.obj
+ 0002:00000410       ??_C@_0FG@OACBHPPO@D?3?2uefi_specs_personal_collecti@ 0000000000005430     UsbKbDxe:ComponentName.obj
+ 0002:00000468       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005488     BaseLib:LinkedList.obj
+ 0002:00000480       ??_C@_0EM@NCJPOFNN@D?3?2uefi_specs_personal_collecti@ 00000000000054a0     BaseLib:LinkedList.obj
+ 0002:000004d0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000054f0     BaseLib:LinkedList.obj
+ 0002:000004f8       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005518     BaseLib:LinkedList.obj
+ 0002:00000518       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005538     BaseLib:LinkedList.obj
+ 0002:00000538       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000005558     BaseLib:LinkedList.obj
+ 0002:00000560       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000005580     BaseLib:LinkedList.obj
+ 0002:00000588       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000055a8     BaseLib:LinkedList.obj
+ 0002:000005a0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000055c0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000005f0       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 0000000000005610     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000650       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005670     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000690       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000056b0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000006b0       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 00000000000056d0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000710       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000005730     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000748       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005768     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000760       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000005780     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000007c0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000057e0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000007d8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000057f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000800       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 0000000000005820     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000870       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005890     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000888       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000058a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008a0       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 00000000000058c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000908       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000005928     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000950       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000005970     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000009c0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000059e0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000009f8       ??_C@_0BL@JFODOCGB@DevicePath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a18     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000a18       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a38     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000a30       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000005a50     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000ab0       ??_C@_0GF@MFAMBDAB@D?3?2uefi_specs_personal_collecti@ 0000000000005ad0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000b20       ??_C@_0FB@KFBGMLJM@D?3?2uefi_specs_personal_collecti@ 0000000000005b40     UefiLib:UefiDriverModel.obj
+ 0002:00000b80       ??_C@_0GK@HIFHPALF@D?3?2uefi_specs_personal_collecti@ 0000000000005ba0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000bf0       ??_C@_0BN@HMHGLLOO@ExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c10     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000c10       ??_C@_0BG@BPIKKLEE@ExtendedDataSize?5?$CB?$DN?50@ 0000000000005c30     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000c28       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c48     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000c68       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c88     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000ca8       ??_C@_0BG@CBCHCMKB@UsbIo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005cc8     UefiUsbLib:UsbDxeLib.obj
+ 0002:00000cc0       ??_C@_0EO@CBPFCMEG@D?3?2uefi_specs_personal_collecti@ 0000000000005ce0     UefiUsbLib:UsbDxeLib.obj
+ 0002:00000d10       ??_C@_0BH@DKNELEEN@Status?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005d30     UefiUsbLib:UsbDxeLib.obj
+ 0002:00000d30       ??_C@_0EI@GGNCGJ@D?3?2uefi_specs_personal_collecti@ 0000000000005d50     UefiUsbLib:Hid.obj
+ 0002:00000d80       ??_C@_0FB@IJGKLPLP@D?3?2uefi_specs_personal_collecti@ 0000000000005da0     UefiHiiLib:HiiLib.obj
+ 0002:00000dd8       ??_C@_0CA@OEKIMLLB@PackageListGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005df8     UefiHiiLib:HiiLib.obj
+ 0002:00000df8       mEndOfPakageList           0000000000005e18     UefiHiiLib:HiiLib.obj
+ 0002:00000e00       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e20     UefiHiiLib:HiiString.obj
+ 0002:00000e20       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 0000000000005e40     BaseLib:String.obj
+ 0002:00000e68       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005e88     BaseLib:String.obj
+ 0002:00000e90       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005eb0     BaseLib:String.obj
+ 0002:00000ed0       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005ef0     BaseLib:String.obj
+ 0002:00000f08       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000005f28     BaseLib:String.obj
+ 0002:00000f28       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000005f48     BaseLib:String.obj
+ 0002:00000f48       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000005f68     BaseLib:String.obj
+ 0002:00000f90       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 0000000000005fb0     BaseLib:Unaligned.obj
+ 0002:00000fe0       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000006000     BaseLib:SafeString.obj
+ 0002:00001030       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006050     BaseLib:SafeString.obj
+ 0002:00001050       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000006070     BaseLib:DivU64x32.obj
+ 0002:00001060       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000006080     BasePrintLib:PrintLibInternal.obj
+ 0002:000010c0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000060e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001108       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006128     BasePrintLib:PrintLibInternal.obj
+ 0002:00001130       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006150     BasePrintLib:PrintLibInternal.obj
+ 0002:00001180       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000061a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001210       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000006230     BasePrintLib:PrintLibInternal.obj
+ 0002:00001298       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000062b8     BasePrintLib:PrintLibInternal.obj
+ 0002:000012a8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000062c8     BasePrintLib:PrintLibInternal.obj
+ 0002:000012b8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000062d8     BasePrintLib:PrintLibInternal.obj
+ 0002:000012f0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000006310     BasePrintLib:PrintLibInternal.obj
+ 0002:00001300       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000006320     BasePrintLib:PrintLibInternal.obj
+ 0002:0000131c       ??_C@_04JIMNDDED@?$CF08X@  000000000000633c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001324       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006344     BasePrintLib:PrintLibInternal.obj
+ 0002:00001328       ??_C@_01LIIJDEN@?$AN@      0000000000006348     BasePrintLib:PrintLibInternal.obj
+ 0002:00001330       mWarningString             0000000000006350     BasePrintLib:PrintLibInternal.obj
+ 0002:00001400       mErrorString               0000000000006420     BasePrintLib:PrintLibInternal.obj
+ 0002:000016e0       mHexStr                    0000000000006700     BasePrintLib:PrintLibInternal.obj
+ 0002:000016f0       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000006710     BaseLib:DivU64x32Remainder.obj
+ 0002:00001798       __volatile_metadata        00000000000067b8     <linker-defined>
+ 0003:00000000       gEfiStatusCodeSpecificDataGuid 0000000000006940     UsbKbDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000006950     UsbKbDxe:AutoGen.obj
+ 0003:00000020       gUsbKeyboardLayoutKeyGuid  0000000000006960     UsbKbDxe:AutoGen.obj
+ 0003:00000030       gEfiComponentName2ProtocolGuid 0000000000006970     UsbKbDxe:AutoGen.obj
+ 0003:00000040       gEfiDevicePathProtocolGuid 0000000000006980     UsbKbDxe:AutoGen.obj
+ 0003:00000050       gEfiHiiConfigRoutingProtocolGuid 0000000000006990     UsbKbDxe:AutoGen.obj
+ 0003:00000060       gUsbKeyboardLayoutPackageGuid 00000000000069a0     UsbKbDxe:AutoGen.obj
+ 0003:00000070       gEfiSimpleTextInputExProtocolGuid 00000000000069b0     UsbKbDxe:AutoGen.obj
+ 0003:00000080       gEfiSimpleTextInProtocolGuid 00000000000069c0     UsbKbDxe:AutoGen.obj
+ 0003:00000090       gEfiUsbIoProtocolGuid      00000000000069d0     UsbKbDxe:AutoGen.obj
+ 0003:000000a0       gEfiHiiImageProtocolGuid   00000000000069e0     UsbKbDxe:AutoGen.obj
+ 0003:000000b0       gEfiDevicePathUtilitiesProtocolGuid 00000000000069f0     UsbKbDxe:AutoGen.obj
+ 0003:000000c0       gEfiHiiDatabaseProtocolGuid 0000000000006a00     UsbKbDxe:AutoGen.obj
+ 0003:000000d0       gEfiHiiStringProtocolGuid  0000000000006a10     UsbKbDxe:AutoGen.obj
+ 0003:000000e0       gEfiHiiKeyBoardLayoutGuid  0000000000006a20     UsbKbDxe:AutoGen.obj
+ 0003:000000f0       gEfiDriverBindingProtocolGuid 0000000000006a30     UsbKbDxe:AutoGen.obj
+ 0003:00000100       gEfiComponentNameProtocolGuid 0000000000006a40     UsbKbDxe:AutoGen.obj
+ 0003:00000110       gEfiCallerIdGuid           0000000000006a50     UsbKbDxe:AutoGen.obj
+ 0003:00000120       gEfiHiiFontProtocolGuid    0000000000006a60     UsbKbDxe:AutoGen.obj
+ 0003:00000130       gUsbKeyboardDriverBinding  0000000000006a70     UsbKbDxe:EfiKey.obj
+ 0003:00000160       mUsbKeyboardLayoutBin      0000000000006aa0     UsbKbDxe:KeyBoard.obj
+ 0003:00000848       gUsbKeyboardComponentName2 0000000000007188     UsbKbDxe:ComponentName.obj
+ 0003:00000860       gUsbKeyboardComponentName  00000000000071a0     UsbKbDxe:ComponentName.obj
+ 0003:00000878       mUsbKeyboardDriverNameTable 00000000000071b8     UsbKbDxe:ComponentName.obj
+ 0003:000008a0       gST                        00000000000071e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000008a8       gBS                        00000000000071e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000008b0       gImageHandle               00000000000071f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000008b8       mDevicePathLibDevicePathUtilities 00000000000071f8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000008c0       gRT                        0000000000007200     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000008c8       gHiiString                 0000000000007208     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000008d0       gHiiFont                   0000000000007210     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000008d8       gHiiConfigRouting          0000000000007218     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000008e0       gHiiImage                  0000000000007220     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000008e8       gHiiDatabase               0000000000007228     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000008f0       mReportStatusCodeLibStatusCodeProtocol 0000000000007230     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000900       gParity                    0000000000007240     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000901       gBreakSet                  0000000000007241     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000001c8
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000149       TdVmCall.no_return_data    0000000000000409     BaseLib:TdVmcall.obj
+ 0001:000001bb       TdCall.exit                000000000000047b     BaseLib:TdCall.obj
+ 0003:00000898       mCcProbeGuestType          00000000000071d8     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000899       mCcProbed                  00000000000071d9     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000008f8       mDeadLoopComparator        0000000000007238     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$USBKeyboardRepeatHandler 00000000000075a0     UsbKbDxe:KeyBoard.obj
+ 0005:00000000       $unwind$GetFirstNode       00000000000075a0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        00000000000075a0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$InternalBaseLibIsListValid 00000000000075a0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$IsListEmpty        00000000000075a0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    00000000000075a0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           00000000000075a0     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  00000000000075a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$AllocateZeroPool   00000000000075a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 00000000000075a8     UsbKbDxe:AutoGen.obj
+ 0005:00000008       $unwind$UsbKeyCodeToEfiInputKey 00000000000075a8     UsbKbDxe:KeyBoard.obj
+ 0005:00000020       $unwind$ProcessModuleEntryPointList 00000000000075c0     UsbKbDxe:AutoGen.obj
+ 0005:0000002c       $unwind$USBKeyboardDriverBindingSupported 00000000000075cc     UsbKbDxe:EfiKey.obj
+ 0005:0000003c       $unwind$USBKeyboardDriverBindingStart 00000000000075dc     UsbKbDxe:EfiKey.obj
+ 0005:00000054       $unwind$USBKeyboardDriverBindingStop 00000000000075f4     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$IsKeyRegistered    0000000000007608     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$USBKeyboardReadKeyStrokeEx 0000000000007608     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$USBKeyboardReadKeyStrokeWorker 0000000000007608     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$USBKeyboardResetEx 0000000000007608     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$USBKeyboardSetState 0000000000007608     UsbKbDxe:EfiKey.obj
+ 0005:00000068       $unwind$InitQueue          0000000000007608     UsbKbDxe:KeyBoard.obj
+ 0005:00000068       $unwind$ReleaseKeyboardLayoutResources 0000000000007608     UsbKbDxe:KeyBoard.obj
+ 0005:00000068       $unwind$InsertTailList     0000000000007608     BaseLib:LinkedList.obj
+ 0005:00000068       $unwind$IsNull             0000000000007608     BaseLib:LinkedList.obj
+ 0005:00000068       $unwind$AsciiStrLen        0000000000007608     BaseLib:String.obj
+ 0005:00000068       $unwind$ZeroMem            0000000000007608     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000068       $unwind$InternalAllocateCopyPool 0000000000007608     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000074       $unwind$USBKeyboardReset   0000000000007614     UsbKbDxe:EfiKey.obj
+ 0005:00000074       $unwind$Dequeue            0000000000007614     UsbKbDxe:KeyBoard.obj
+ 0005:00000074       $unwind$AsciiStrnCmp       0000000000007614     BaseLib:String.obj
+ 0005:00000074       $unwind$StrLen             0000000000007614     BaseLib:String.obj
+ 0005:00000074       $unwind$CopyGuid           0000000000007614     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000074       $unwind$BasePrintLibValueToString 0000000000007614     BasePrintLib:PrintLibInternal.obj
+ 0005:00000074       $unwind$IsLanguageSupported 0000000000007614     UefiLib:UefiLib.obj
+ 0005:00000074       $unwind$SerialPortWrite    0000000000007614     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:00000084       $unwind$USBKeyboardReadKeyStroke 0000000000007624     UsbKbDxe:EfiKey.obj
+ 0005:00000094       $unwind$KeyNotifyProcessHandler 0000000000007634     UsbKbDxe:EfiKey.obj
+ 0005:00000094       $unwind$USBKeyboardWaitForKey 0000000000007634     UsbKbDxe:EfiKey.obj
+ 0005:00000094       $unwind$InternalReportStatusCode 0000000000007634     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000a8       $unwind$USBKeyboardTimerHandler 0000000000007648     UsbKbDxe:EfiKey.obj
+ 0005:000000a8       $unwind$TdIoWrite8         0000000000007648     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000000b0       $unwind$USBKeyboardRegisterKeyNotify 0000000000007650     UsbKbDxe:EfiKey.obj
+ 0005:000000b0       $unwind$AddUnicodeString2  0000000000007650     UefiLib:UefiLib.obj
+ 0005:000000c8       $unwind$USBKeyboardUnregisterKeyNotify 0000000000007668     UsbKbDxe:EfiKey.obj
+ 0005:000000c8       $unwind$Enqueue            0000000000007668     UsbKbDxe:KeyBoard.obj
+ 0005:000000c8       $unwind$CopyMem            0000000000007668     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000dc       $unwind$GetCurrentKeyboardLayout 000000000000767c     UsbKbDxe:KeyBoard.obj
+ 0005:000000e8       $unwind$SetKeyboardLayoutEvent 0000000000007688     UsbKbDxe:KeyBoard.obj
+ 0005:00000104       $unwind$InitKeyboardLayout 00000000000076a4     UsbKbDxe:KeyBoard.obj
+ 0005:00000110       $unwind$InitUSBKeyboard    00000000000076b0     UsbKbDxe:KeyBoard.obj
+ 0005:00000124       $unwind$KeyboardHandler    00000000000076c4     UsbKbDxe:KeyBoard.obj
+ 0005:0000013c       $unwind$USBParseKey        00000000000076dc     UsbKbDxe:KeyBoard.obj
+ 0005:00000154       $unwind$SetKeyLED          00000000000076f4     UsbKbDxe:KeyBoard.obj
+ 0005:00000160       $unwind$USBKeyboardRecoveryHandler 0000000000007700     UsbKbDxe:KeyBoard.obj
+ 0005:00000168       $unwind$UsbKeyboardComponentNameGetDriverName 0000000000007708     UsbKbDxe:ComponentName.obj
+ 0005:00000170       $unwind$UsbKeyboardComponentNameGetControllerName 0000000000007710     UsbKbDxe:ComponentName.obj
+ 0005:00000180       $unwind$DebugPrint         0000000000007720     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000188       $unwind$DebugPrintMarker   0000000000007728     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000019c       $unwind$DebugAssert        000000000000773c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001a4       $unwind$FreePool           0000000000007744     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000001a4       $unwind$InternalAllocatePool 0000000000007744     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000001ac       $unwind$LookupUnicodeString2 000000000000774c     UefiLib:UefiLib.obj
+ 0005:000001c4       $unwind$ReportStatusCodeWithDevicePath 0000000000007764     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000001dc       $unwind$UsbClearEndpointHalt 000000000000777c     UefiUsbLib:UsbDxeLib.obj
+ 0005:000001f0       $unwind$HiiAddPackages     0000000000007790     UefiHiiLib:HiiLib.obj
+ 0005:00000204       $unwind$AsciiSPrint        00000000000077a4     BasePrintLib:PrintLib.obj
+ 0005:0000020c       $unwind$BasePrintLibSPrintMarker 00000000000077ac     BasePrintLib:PrintLibInternal.obj
+ 0005:00000228       $unwind$TdIoRead8          00000000000077c8     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000228       $unwind$BasePrintLibSPrint 00000000000077c8     BasePrintLib:PrintLibInternal.obj

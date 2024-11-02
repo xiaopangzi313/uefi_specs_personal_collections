@@ -1,0 +1,182 @@
+## @file
+# Provide EFI_SIMPLE_FILE_SYSTEM_PROTOCOL instances on virtio-fs devices.
+#
+# Copyright (C) 2020, Red Hat, Inc.
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+# Permission Model of this driver:
+#
+# Regardless of the UID and GID values this driver send in the FUSE request
+# header, the daemon (that is, the Virtio Filesystem device) always acts with
+# root privileges on the host side. The only time the daemon considers said UID
+# and GID fields is when creating a new file or directory. Thus, the guest
+# driver cannot rely on the host for enforcing any file mode permissions,
+# regardless of the "personality" that the guest driver poses as, because
+# "root" on the host side ignores all file mode bits.
+#
+# Therefore the guest driver has to do its own permission checking, and use the
+# host-side file mode bits only as a kind of "metadata storage" or "reminder"
+# -- hopefully in a way that makes some sense on the host side too.
+#
+# The complete mapping between the EFI_FILE_PROTOCOL and the host-side file
+# mode bits is described below.
+#
+# - The guest driver poses as UID 0, GID 0, PID 1.
+#
+# - If and only if all "w" bits are missing from a file on the host side, then
+#   the file or directory is reported as EFI_FILE_READ_ONLY in the guest. When
+#   setting EFI_FILE_READ_ONLY in the guest, all "w" bits (0222) are cleared on
+#   the host; when clearing EFI_FILE_READ_ONLY in the guest, all "w" bits are
+#   set on the host. Viewed from the host side, this sort of reflects that an
+#   EFI_FILE_READ_ONLY file should not be written by anyone.
+#
+# - The attributes EFI_FILE_HIDDEN, EFI_FILE_SYSTEM, EFI_FILE_RESERVED, and
+#   EFI_FILE_ARCHIVE are never reported in the guest, and they are silently
+#   ignored when a SetInfo() call or a file-creating Open() call requests them.
+#
+# - On the host, files are created with 0666 file mode bits, directories are
+#   created with 0777 file mode bits.
+#
+# - In the guest, the EFI_FILE_READ_ONLY attribute only controls the permitted
+#   open mode. In particular, on directories, the EFI_FILE_READ_ONLY attribute
+#   does not prevent the creation or deletion of entries inside the directory;
+#   EFI_FILE_READ_ONLY only prevents the renaming, deleting, flushing (syncing)
+#   and touching of the directory itself (with "touching" meaning updating the
+#   timestamps). The fact that EFI_FILE_READ_ONLY being set on a directory is
+#   irrelevant in the guest with regard to entry creation/deletion, is
+#   well-mirrored by the fact that virtiofsd -- which runs as root, regardless
+#   of guest driver personality -- ignores the absence of "w" permissions on a
+#   host-side directory, when creating or removing entries in it.
+#
+# - When an EFI_FILE_PROTOCOL is opened read-only, then the Delete(), Write()
+#   and Flush() member functions are disabled for it. Additionally, SetInfo()
+#   is restricted to flipping the EFI_FILE_READ_ONLY bit (which takes effect at
+#   the next Open()).
+#
+# - As a consequence of the above, for deleting a directory, it must be
+#   presented in the guest as openable for writing.
+#
+# - We diverge from the UEFI spec, and permit Flush() on a directory that has
+#   been opened read-write; otherwise the only way to invoke FUSE_FSYNCDIR on a
+#   directory would be to Close() it.
+#
+# - OpenVolume() opens the root directory for read-only access. The Open()
+#   member function may open it for read-write access. While the root directory
+#   cannot be renamed or deleted, opening it for read-write access is useful
+#   for calling Flush(), according to the previous paragraph, or for updating
+#   the root directory's timestamps with SetInfo().
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010035
+  BASE_NAME                  = VirtioFsDxe
+  FILE_GUID                  = 7BD9DDF7-8B83-488E-AEC9-24C78610289C
+  MODULE_TYPE                = UEFI_DRIVER
+  ENTRY_POINT                = VirtioFsEntryPoint
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  OvmfPkg/OvmfPkg.dec
+
+[Binaries.X64]
+  PE32|VirtioFsDxe.efi
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## PRODUCES
+  gEfiComponentName2ProtocolGuid
+
+  ## PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## BY_START
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## TO_START
+  gVirtioDeviceProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  gEfiFileInfoGuid
+
+  gEfiFileSystemInfoGuid
+
+  gEfiFileSystemVolumeLabelInfoIdGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/TdxLib/TdxLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  PcAtChipsetPkg/Library/SerialIoLib/SerialIoLib.inf
+#  MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+#  OvmfPkg/Library/CcProbeLib/DxeCcProbeLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  OvmfPkg/Library/VirtioLib/VirtioLib.inf
+
+[Depex.X64]
+#  (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+
+
+
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:DEBUG_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2019_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:DEBUG_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
+##   MSFT:DEBUG_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw /D DISABLE_NEW_DEPRECATED_INTERFACES /D TDX_GUEST_SUPPORTED /D ENABLE_MD5_DEPRECATED_INTERFACES
+##   MSFT:DEBUG_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:DEBUG_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2019_X64_NASM_FLAGS = -Ox -f win64 -g
+##   MSFT:DEBUG_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG
+##   MSFT:DEBUG_VS2019_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE

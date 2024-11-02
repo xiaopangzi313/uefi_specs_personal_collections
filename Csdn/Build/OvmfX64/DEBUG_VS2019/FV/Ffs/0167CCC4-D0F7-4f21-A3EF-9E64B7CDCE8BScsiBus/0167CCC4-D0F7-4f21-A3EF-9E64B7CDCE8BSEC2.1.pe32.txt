@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\0167CCC4-D0F7-4f21-A3EF-9E64B7CDCE8BScsiBus\0167CCC4-D0F7-4f21-A3EF-9E64B7CDCE8BSEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Bus\Scsi\ScsiBusDxe\ScsiBusDxe\OUTPUT\ScsiBus.efi

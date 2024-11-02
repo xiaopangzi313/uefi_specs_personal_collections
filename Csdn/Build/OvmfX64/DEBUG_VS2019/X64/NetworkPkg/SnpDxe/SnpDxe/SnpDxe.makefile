@@ -1,0 +1,1 @@
+d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\NetworkPkg\SnpDxe\SnpDxe\Makefile

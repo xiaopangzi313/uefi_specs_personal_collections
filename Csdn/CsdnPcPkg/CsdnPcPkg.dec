@@ -1,0 +1,30 @@
+## @file
+#  EFI/Framework Open Virtual Machine Firmware (OVMF) platform
+#
+#  Copyright (c) 2020, Rebecca Cran <rebecca@bsdio.com>
+#  Copyright (c) 2006 - 2019, Intel Corporation. All rights reserved.<BR>
+#  Copyright (c) 2014, Pluribus Networks, Inc.
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = OvmfPkg
+  PACKAGE_GUID                   = 871E6CC6-9A62-4BC1-807A-0AA3D69891A7
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[LibraryClasses]
+[PcdsFeatureFlag]
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintEnable|TRUE|BOOLEAN|0x0001200d
+  
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+  # @Prompt HellowWorld print times.
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintTimes|10|UINT32|0x40000005
+
+  # @Prompt HelloWorld print string.
+  gEfiMdeModulePkgTokenSpaceGuid.PcdMyHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004

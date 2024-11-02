@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\5E523CB4-D397-4986-87BD-A6DD8B22F455AtaAtapiPassThruDxe\5E523CB4-D397-4986-87BD-A6DD8B22F455SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Bus\Ata\AtaAtapiPassThru\AtaAtapiPassThru\OUTPUT\AtaAtapiPassThruDxe.efi

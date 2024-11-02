@@ -1,0 +1,1257 @@
+##  @file
+#  This is the shell application
+#
+#  (C) Copyright 2013 Hewlett-Packard Development Company, L.P.<BR>
+#  Copyright (c) 2009 - 2018, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Shell
+  FILE_GUID                  = 7C04A583-9E3E-4f1c-AD65-E05268D0B4D1
+  MODULE_TYPE                = UEFI_APPLICATION
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = UefiMain
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[Binaries.X64]
+  PE32|Shell.efi
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  # shell 2.0
+  ## SOMETIMES_CONSUMES
+  # shell 2.0
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  ## PRODUCES
+  gEfiShellProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## PRODUCES
+  gEfiShellParametersProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiSimpleTextInputExProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiSimpleTextInProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## UNDEFINED
+  ## CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  gEfiUnicodeCollation2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_PRODUCES
+  gEfiHiiPackageListProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  ## UNDEFINED
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  ## UNDEFINED
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiDevicePathToTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  ## UNDEFINED
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  ## SOMETIMES_CONSUMES
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  ## UNDEFINED
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  ## UNDEFINED
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## CONSUMES
+  ## UNDEFINED
+  gEfiHiiStringProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiHiiImageProtocolGuid
+
+  ## CONSUMES
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiHiiDatabaseProtocolGuid
+
+  ## CONSUMES
+  ## UNDEFINED
+  gEfiHiiConfigRoutingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiFormBrowser2ProtocolGuid
+
+  ## CONSUMES
+  ## UNDEFINED
+  gEfiStatusCodeRuntimeProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiFirmwareVolume2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiLoadFileProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiLoadFile2ProtocolGuid
+
+  # 'old' shell
+  ## SOMETIMES_CONSUMES
+  # 'old' shell
+  ## SOMETIMES_CONSUMES
+  gEfiShellEnvironment2Guid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiShellInterfaceGuid
+
+  ## UNDEFINED
+  gEfiBusSpecificDriverOverrideProtocolGuid
+
+  ## UNDEFINED
+  gEfiPlatformDriverOverrideProtocolGuid
+
+  ## UNDEFINED
+  gEfiPlatformToDriverConfigurationProtocolGuid
+
+  ## UNDEFINED
+  gEfiDriverSupportedEfiVersionProtocolGuid
+
+  ## UNDEFINED
+  gEfiLoadedImageDevicePathProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiSimplePointerProtocolGuid
+
+  ## UNDEFINED
+  gEfiAbsolutePointerProtocolGuid
+
+  ## UNDEFINED
+  gEfiSerialIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiEdidDiscoveredProtocolGuid
+
+  ## UNDEFINED
+  gEfiEdidActiveProtocolGuid
+
+  ## UNDEFINED
+  gEfiEdidOverrideProtocolGuid
+
+  ## UNDEFINED
+  gEfiTapeIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiDiskIoProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiBlockIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiUnicodeCollationProtocolGuid
+
+  ## UNDEFINED
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiPciRootBridgeIoProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiPciIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiScsiPassThruProtocolGuid
+
+  ## UNDEFINED
+  gEfiScsiIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiExtScsiPassThruProtocolGuid
+
+  ## UNDEFINED
+  gEfiIScsiInitiatorNameProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiUsbIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiUsbHcProtocolGuid
+
+  ## UNDEFINED
+  gEfiUsb2HcProtocolGuid
+
+  ## UNDEFINED
+  gEfiDebugSupportProtocolGuid
+
+  ## UNDEFINED
+  gEfiDebugPortProtocolGuid
+
+  ## UNDEFINED
+  gEfiDecompressProtocolGuid
+
+  ## UNDEFINED
+  gEfiAcpiTableProtocolGuid
+
+  ## UNDEFINED
+  gEfiEbcProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleNetworkProtocolGuid
+
+  ## UNDEFINED
+  gEfiNetworkInterfaceIdentifierProtocolGuid
+
+  ## UNDEFINED
+  gEfiNetworkInterfaceIdentifierProtocolGuid_31
+
+  ## UNDEFINED
+  gEfiPxeBaseCodeProtocolGuid
+
+  ## UNDEFINED
+  gEfiPxeBaseCodeCallbackProtocolGuid
+
+  ## UNDEFINED
+  gEfiBisProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiManagedNetworkServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiManagedNetworkProtocolGuid
+
+  ## UNDEFINED
+  gEfiArpServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiArpProtocolGuid
+
+  ## UNDEFINED
+  gEfiDhcp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiDhcp4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcp4ProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiIp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiIp4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiIp4ConfigProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiIp4Config2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiUdp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiUdp4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiMtftp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiMtftp4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiAuthenticationInfoProtocolGuid
+
+  ## UNDEFINED
+  gEfiHashServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiHashProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiHiiConfigAccessProtocolGuid
+
+  ## UNDEFINED
+  gEfiDeviceIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiUgaIoProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiIp6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiIp6ProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiIp6ConfigProtocolGuid
+
+  ## UNDEFINED
+  gEfiMtftp6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiMtftp6ProtocolGuid
+
+  ## UNDEFINED
+  gEfiDhcp6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiDhcp6ProtocolGuid
+
+  ## UNDEFINED
+  gEfiUdp6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiUdp6ProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcp6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcp6ProtocolGuid
+
+  ## UNDEFINED
+  gEfiVlanConfigProtocolGuid
+
+  ## UNDEFINED
+  gEfiEapProtocolGuid
+
+  ## UNDEFINED
+  gEfiEapManagementProtocolGuid
+
+  ## UNDEFINED
+  gEfiFtp4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiFtp4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiIpSecConfigProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## UNDEFINED
+  gEfiDriverHealthProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiDeferredImageLoadProtocolGuid
+
+  ## UNDEFINED
+  gEfiUserCredentialProtocolGuid
+
+  ## UNDEFINED
+  gEfiUserManagerProtocolGuid
+
+  ## UNDEFINED
+  gEfiAtaPassThruProtocolGuid
+
+  ## UNDEFINED
+  gEfiFirmwareManagementProtocolGuid
+
+  ## UNDEFINED
+  gEfiIpSecProtocolGuid
+
+  ## UNDEFINED
+  gEfiIpSec2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiKmsProtocolGuid
+
+  ## UNDEFINED
+  gEfiBlockIo2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiStorageSecurityCommandProtocolGuid
+
+  ## UNDEFINED
+  gEfiUserCredential2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcgProtocolGuid
+
+  ## UNDEFINED
+  ## UNDEFINED
+  gEfiDriverFamilyOverrideProtocolGuid
+
+  ## UNDEFINED
+  gEfiIdeControllerInitProtocolGuid
+
+  ## UNDEFINED
+  gEfiDiskIo2ProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiAdapterInformationProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiShellDynamicCommandProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiDiskInfoProtocolGuid
+
+  ## UNDEFINED
+  gEfiBdsArchProtocolGuid
+
+  ## UNDEFINED
+  ## CONSUMES
+  gEfiCpuArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMetronomeArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMonotonicCounterArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiRealTimeClockArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiResetArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiRuntimeArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiSecurityArchProtocolGuid
+
+  ## UNDEFINED
+  ## CONSUMES
+  gEfiTimerArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiVariableWriteArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiVariableArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiSecurityPolicyProtocolGuid
+
+  ## UNDEFINED
+  gEfiWatchdogTimerArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmbusHcProtocolGuid
+
+  ## UNDEFINED
+  gEfiFirmwareVolumeBlockProtocolGuid
+
+  ## UNDEFINED
+  gEfiCapsuleArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMpServiceProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciHostBridgeResourceAllocationProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciPlatformProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciOverrideProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciEnumerationCompleteProtocolGuid
+
+  ## UNDEFINED
+  gEfiIncompatiblePciDeviceSupportProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciHotPlugInitProtocolGuid
+
+  ## UNDEFINED
+  gEfiPciHotPlugRequestProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmbiosProtocolGuid
+
+  ## UNDEFINED
+  gEfiS3SaveStateProtocolGuid
+
+  ## UNDEFINED
+  gEfiS3SmmSaveStateProtocolGuid
+
+  ## UNDEFINED
+  gEfiRscHandlerProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmRscHandlerProtocolGuid
+
+  ## UNDEFINED
+  gEfiAcpiSdtProtocolGuid
+
+  ## UNDEFINED
+  gEfiSioProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmCpuIo2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmBase2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmAccess2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmControl2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmConfigurationProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmReadyToLockProtocolGuid
+
+  ## UNDEFINED
+  gEfiDxeSmmReadyToLockProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmCommunicationProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmStatusCodeProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmCpuProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmPciRootBridgeIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmSwDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmSxDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmPeriodicTimerDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmUsbDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmGpiDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmStandbyButtonDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmPowerButtonDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmIoTrapDispatch2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiFirmwareVolumeBlock2ProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiCpuIo2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiLegacyRegion2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiSecurity2ArchProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmmEndOfDxeProtocolGuid
+
+  ## UNDEFINED
+  gEfiIsaHcProtocolGuid
+
+  ## UNDEFINED
+  gEfiIsaHcServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiSioControlProtocolGuid
+
+  ## UNDEFINED
+  gEfiI2cMasterProtocolGuid
+
+  ## UNDEFINED
+  gEfiI2cIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiI2cEnumerateProtocolGuid
+
+  ## UNDEFINED
+  gEfiI2cHostProtocolGuid
+
+  ## UNDEFINED
+  gEfiI2cBusConfigurationManagementProtocolGuid
+
+  ## UNDEFINED
+  gEfiTcg2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiTimestampProtocolGuid
+
+  ## UNDEFINED
+  ## CONSUMES
+  gEfiRngProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiNvmExpressPassThruProtocolGuid
+
+  ## UNDEFINED
+  gEfiHash2ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiHash2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiBlockIoCryptoProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmartCardReaderProtocolGuid
+
+  ## UNDEFINED
+  gEfiSmartCardEdgeProtocolGuid
+
+  ## UNDEFINED
+  gEfiUsbFunctionIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothHcProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothIoServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothConfigProtocolGuid
+
+  ## UNDEFINED
+  gEfiRegularExpressionProtocolGuid
+
+  ## UNDEFINED
+  gEfiBootManagerPolicyProtocolGuid
+
+  ## UNDEFINED
+  gEfiConfigKeywordHandlerProtocolGuid
+
+  ## UNDEFINED
+  gEfiWiFiProtocolGuid
+
+  ## UNDEFINED
+  gEfiEapManagement2ProtocolGuid
+
+  ## UNDEFINED
+  gEfiEapConfigurationProtocolGuid
+
+  ## UNDEFINED
+  gEfiPkcs7VerifyProtocolGuid
+
+  ## UNDEFINED
+  gEfiDns4ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiDns4ProtocolGuid
+
+  ## UNDEFINED
+  gEfiDns6ServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiDns6ProtocolGuid
+
+  ## UNDEFINED
+  gEfiHttpServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiHttpProtocolGuid
+
+  ## UNDEFINED
+  gEfiHttpUtilitiesProtocolGuid
+
+  ## UNDEFINED
+  gEfiRestProtocolGuid
+
+  ## UNDEFINED
+  gEfiRestExProtocolGuid
+
+  ## UNDEFINED
+  gEfiRedfishDiscoverProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmEndOfDxeProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmIoTrapDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmPowerButtonDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmStandbyButtonDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmGpiDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmUsbDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmPeriodicTimerDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmSxDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmSwDispatchProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmPciRootBridgeIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmCpuProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmStatusCodeProtocolGuid
+
+  ## UNDEFINED
+  gEfiDxeMmReadyToLockProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmConfigurationProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmReadyToLockProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmControlProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmAccessProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmBaseProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmCpuIoProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmRscHandlerProtocolGuid
+
+  ## UNDEFINED
+  gEfiMmCommunicationProtocolGuid
+
+  ## UNDEFINED
+  gEfiTlsServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiTlsProtocolGuid
+
+  ## UNDEFINED
+  gEfiTlsConfigurationProtocolGuid
+
+  ## UNDEFINED
+  gEfiSupplicantServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiSupplicantProtocolGuid
+
+  ## UNDEFINED
+  gEfiWiFi2ProtocolGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES
+  gEfiRamDiskProtocolGuid
+
+  ## UNDEFINED
+  gEfiHiiImageDecoderProtocolGuid
+
+  ## UNDEFINED
+  gEfiHiiImageExProtocolGuid
+
+  ## UNDEFINED
+  gEfiSdMmcPassThruProtocolGuid
+
+  ## UNDEFINED
+  gEfiEraseBlockProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothAttributeProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothAttributeServiceBindingProtocolGuid
+
+  ## UNDEFINED
+  gEfiBluetoothLeConfigProtocolGuid
+
+  ## UNDEFINED
+  gEfiUfsDeviceConfigProtocolGuid
+
+  ## UNDEFINED
+  gEfiHttpBootCallbackProtocolGuid
+
+  ## UNDEFINED
+  gEfiResetNotificationProtocolGuid
+
+  ## UNDEFINED
+  gEfiPartitionInfoProtocolGuid
+
+  ## UNDEFINED
+  gEfiHiiPopupProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiBootLogoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEdkiiVariablePolicyProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEdkiiPlatformBootManagerProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES ## GUID
+  gShellVariableGuid
+
+  ## SOMETIMES_PRODUCES ## GUID
+  gShellAliasGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventAfterReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  ## UNDEFINED
+  ## SOMETIMES_PRODUCES ## Variable:L"BootCurrent" (The boot option of current boot)
+  ## SOMETIMES_CONSUMES ## Variable:L"BootXX" (Boot option variable)
+  ## SOMETIMES_CONSUMES ## Variable:L"BootOrder" (The boot option array)
+  ## SOMETIMES_CONSUMES ## Variable:L"DriverOrder" (The driver order list)
+  ## SOMETIMES_CONSUMES ## Variable:L"ConIn" (The device path of console in device)
+  ## SOMETIMES_CONSUMES ## Variable:L"ConOut" (The device path of console out device)
+  ## SOMETIMES_CONSUMES ## Variable:L"ErrOut" (The device path of error out device)
+  ## SOMETIMES_CONSUMES ## GUID
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiAcpi20TableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiAcpi10TableGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEdkiiIfrBitVarstoreGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  ## SOMETIMES_CONSUMES ## GUID
+  ## UNDEFINED
+  ## UNDEFINED
+  ## UNDEFINED
+  gEfiFileInfoGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiStatusCodeSpecificDataGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiStatusCodeDataTypeDebugGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiDxeServicesTableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiShellEnvironment2ExtGuid
+
+  ## UNDEFINED
+  gEfiPcAnsiGuid
+
+  ## UNDEFINED
+  gEfiVT100Guid
+
+  ## UNDEFINED
+  gEfiVT100PlusGuid
+
+  ## UNDEFINED
+  gEfiVTUTF8Guid
+
+  ## UNDEFINED
+  gEfiStandardErrorDeviceGuid
+
+  ## UNDEFINED
+  ## CONSUMES ## GUID
+  gEfiConsoleInDeviceGuid
+
+  ## UNDEFINED
+  ## CONSUMES ## GUID
+  gEfiConsoleOutDeviceGuid
+
+  ## UNDEFINED
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiFileSystemInfoGuid
+
+  ## UNDEFINED
+  gEfiPartTypeSystemPartGuid
+
+  ## UNDEFINED
+  gEfiPartTypeLegacyMbrGuid
+
+  ## UNDEFINED
+  gHandleParsingHiiGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  ## SOMETIMES_CONSUMES
+  gEfiAdapterInfoMediaStateGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiAdapterInfoNetworkBootGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiAdapterInfoSanMacAddressGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiAdapterInfoUndiIpv6SupportGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable (The identifier of memory type information type in system table)
+  ## SOMETIMES_CONSUMES ## HOB (The hob holding memory type information)
+  ## SOMETIMES_CONSUMES ## Variable:L"MemoryTypeInformation."
+  ## SOMETIMES_PRODUCES ## Variable:L"MemoryTypeInformation."
+  gEfiMemoryTypeInformationGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEdkiiStatusCodeDataTypeVariableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoAhciInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoIdeInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoScsiInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoSdMmcInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoUfsInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiSasDevicePathGuid
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellBcfgHiiGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiSmbiosTableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiSmbios3TableGuid
+
+  ## CONSUMES
+  gEfiRngAlgorithmRaw
+
+  ## CONSUMES
+  gEfiRngAlgorithmSp80090Ctr256Guid
+
+  ## CONSUMES
+  gEfiRngAlgorithmSp80090Hmac256Guid
+
+  ## CONSUMES
+  gEfiRngAlgorithmSp80090Hash256Guid
+
+  ## CONSUMES
+  gEfiRngAlgorithmArmRndr
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellLevel2HiiGuid
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellLevel1HiiGuid
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellLevel3HiiGuid
+
+  ## PRODUCES ## HII
+  gShellDriver1HiiGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiMpsTableGuid
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellDebug1HiiGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiMemoryAttributesTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiRtPropertiesTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiSystemResourceTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiDebugImageInfoTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiImageSecurityDatabaseGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiJsonConfigDataTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiJsonCapsuleDataTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiJsonCapsuleResultTableGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable
+  gEfiConfProfilesTableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiConfProfilesUefiSpecGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiConfProfilesEbbrSpec21Guid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiConfProfilesEbbrSpec22Guid
+
+  ## UNDEFINED
+  gShellInstall1HiiGuid
+
+  ## SOMETIMES_CONSUMES ## HII
+  gShellNetwork1HiiGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/TdxLib/TdxLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  PcAtChipsetPkg/Library/SerialIoLib/SerialIoLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+#  OvmfPkg/Library/CcProbeLib/DxeCcProbeLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
+#  MdePkg/Library/DxeHobLib/DxeHobLib.inf
+#  MdeModulePkg/Library/UefiSortLib/UefiSortLib.inf
+#  MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf
+#  MdePkg/Library/UefiFileHandleLib/UefiFileHandleLib.inf
+#  MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+#  MdeModulePkg/Library/VariablePolicyHelperLib/VariablePolicyHelperLib.inf
+#  MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
+#  MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
+#  MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
+#  MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf
+#  MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf
+#  ShellPkg/Library/UefiShellLib/UefiShellLib.inf
+#  ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.inf
+#  MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
+#  ShellPkg/Library/UefiShellCommandLib/UefiShellCommandLib.inf
+#  ShellPkg/Library/UefiShellBcfgCommandLib/UefiShellBcfgCommandLib.inf
+#  NetworkPkg/Library/DxeNetLib/DxeNetLib.inf
+#  MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+#  ShellPkg/Library/UefiShellLevel2CommandsLib/UefiShellLevel2CommandsLib.inf
+#  ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib.inf
+#  ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.inf
+#  ShellPkg/Library/UefiShellDriver1CommandsLib/UefiShellDriver1CommandsLib.inf
+#  ShellPkg/Library/UefiShellDebug1CommandsLib/UefiShellDebug1CommandsLib.inf
+#  ShellPkg/Library/UefiShellInstall1CommandsLib/UefiShellInstall1CommandsLib.inf
+#  ShellPkg/Library/UefiShellNetwork1CommandsLib/UefiShellNetwork1CommandsLib.inf
+
+[Depex.X64]
+#  (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiUnicodeCollation2ProtocolGuid) AND (gEfiRngProtocolGuid)
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:DEBUG_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2019_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:DEBUG_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
+##   MSFT:DEBUG_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw /D DISABLE_NEW_DEPRECATED_INTERFACES /D TDX_GUEST_SUPPORTED /D ENABLE_MD5_DEPRECATED_INTERFACES
+##   MSFT:DEBUG_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:DEBUG_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2019_X64_NASM_FLAGS = -Ox -f win64 -g
+##   MSFT:DEBUG_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG
+##   MSFT:DEBUG_VS2019_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE

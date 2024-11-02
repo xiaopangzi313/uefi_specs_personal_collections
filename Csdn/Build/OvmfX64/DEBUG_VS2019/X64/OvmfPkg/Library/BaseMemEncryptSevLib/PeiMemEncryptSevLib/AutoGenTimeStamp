@@ -1,0 +1,10 @@
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\MemEncryptSevLib.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\VirtualMemory.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\PeiMemEncryptSevLibInternal.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\PeiDxeVirtualMemory.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\PeiMemEncryptSevLib.inf
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\PeiDxeMemEncryptSevLibInternal.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\PeiSnpSystemRamValidate.c
+d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\Library\BaseMemEncryptSevLib\PeiMemEncryptSevLib\DEBUG\AutoGen.h
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\SnpPageStateChangeInternal.c
+D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\VirtualMemory.h

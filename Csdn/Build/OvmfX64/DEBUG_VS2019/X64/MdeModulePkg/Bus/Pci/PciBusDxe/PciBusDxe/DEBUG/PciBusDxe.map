@@ -1,0 +1,603 @@
+ PciBusDxe
+
+ Timestamp is 6725e4ad (Sat Nov  2 16:37:01 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001c8H .text                   CODE
+ 0001:000001c8 0000cce0H .text$mn                CODE
+ 0002:00000000 000022f4H .rdata                  DATA
+ 0002:000022f4 00000030H .rdata$voltmd           DATA
+ 0002:00002324 00000158H .rdata$zzzdbg           DATA
+ 0003:00000000 000002e0H .data                   DATA
+ 0003:000002e0 00000160H .bss                    DATA
+ 0004:00000000 0000072cH .pdata                  DATA
+ 0005:00000000 000006dcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemCompareMem      0000000000000320     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       CpuPause                   0000000000000340     BaseLib:CpuPause.obj
+ 0001:00000090       InternalMemSetMem          0000000000000350     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000370     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000390     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       TdVmCall                   00000000000003b0     BaseLib:TdVmcall.obj
+ 0001:00000170       TdCall                     0000000000000430     BaseLib:TdCall.obj
+ 0001:000001c8       _ModuleEntryPoint          0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001e4       ProcessLibraryConstructorList 00000000000004a4 f   PciBusDxe:AutoGen.obj
+ 0001:0000040c       ProcessModuleEntryPointList 00000000000006cc f   PciBusDxe:AutoGen.obj
+ 0001:00000524       PciBusDriverBindingSupported 00000000000007e4 f   PciBusDxe:PciBus.obj
+ 0001:00000634       PciBusDriverBindingStart   00000000000008f4 f   PciBusDxe:PciBus.obj
+ 0001:000008f4       PciBusDriverBindingStop    0000000000000bb4 f   PciBusDxe:PciBus.obj
+ 0001:00000a1c       PciEnumerator              0000000000000cdc f   PciBusDxe:PciEnumerator.obj
+ 0001:00000b34       PciRootBridgeEnumerator    0000000000000df4 f   PciBusDxe:PciEnumerator.obj
+ 0001:00000cc0       ProcessOptionRom           0000000000000f80 f   PciBusDxe:PciEnumerator.obj
+ 0001:00000d78       PciAssignBusNumber         0000000000001038 f   PciBusDxe:PciEnumerator.obj
+ 0001:00000f1c       GetMaxOptionRomSize        00000000000011dc f   PciBusDxe:PciEnumerator.obj
+ 0001:00000fc4       GetMaxResourceConsumerDevice 0000000000001284 f   PciBusDxe:PciEnumerator.obj
+ 0001:000010ec       PciHostBridgeAdjustAllocation 00000000000013ac f   PciBusDxe:PciEnumerator.obj
+ 0001:0000138c       ConstructAcpiResourceRequestor 000000000000164c f   PciBusDxe:PciEnumerator.obj
+ 0001:00001594       PciBridgeEnumerator        0000000000001854 f   PciBusDxe:PciEnumerator.obj
+ 0001:0000161c       PciBridgeResourceAllocator 00000000000018dc f   PciBusDxe:PciEnumerator.obj
+ 0001:000018bc       NotifyPhase                0000000000001b7c f   PciBusDxe:PciEnumerator.obj
+ 0001:000019d4       PreprocessController       0000000000001c94 f   PciBusDxe:PciEnumerator.obj
+ 0001:00001b08       PciHotPlugRequestNotify    0000000000001dc8 f   PciBusDxe:PciEnumerator.obj
+ 0001:00001ca4       PciBusComponentNameGetDriverName 0000000000001f64 f   PciBusDxe:ComponentName.obj
+ 0001:00001da4       PciBusComponentNameGetControllerName 0000000000002064 f   PciBusDxe:ComponentName.obj
+ 0001:00001db0       FreePciDevice              0000000000002070 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00001e14       DestroyPciDeviceTree       00000000000020d4 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00001e98       RegisterPciDevice          0000000000002158 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:000021a8       RemoveAllPciDeviceOnBridge 0000000000002468 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002258       DeRegisterPciDevice        0000000000002518 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002480       StartPciDevicesOnBridge    0000000000002740 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:000026d0       StartPciDevices            0000000000002990 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002784       CreateRootBridge           0000000000002a44 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:0000291c       GetRootBridgeByHandle      0000000000002bdc f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002984       PciDeviceExisted           0000000000002c44 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002a20       LocateVgaDeviceOnHostBridge 0000000000002ce0 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002a98       LocateVgaDevice            0000000000002d58 f   PciBusDxe:PciDeviceSupport.obj
+ 0001:00002b38       PciDevicePresent           0000000000002df8 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00002bc8       PciPciDeviceInfoCollector  0000000000002e88 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00002cfc       PciSearchDevice            0000000000002fbc f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00002f6c       DumpPciBars                000000000000322c f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003078       GatherDeviceInfo           0000000000003338 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003158       GatherPpbInfo              0000000000003418 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000033d8       VfBarExisted               0000000000003698 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003508       BarExisted                 00000000000037c8 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000035f8       PciTestSupportedAttribute  00000000000038b8 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003758       PciSetDeviceAttribute      0000000000003a18 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000038d0       ProcessOptionRomLight      0000000000003b90 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003a00       DetermineDeviceAttribute   0000000000003cc0 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003c6c       UpdatePciInfo              0000000000003f2c f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00003ed0       PciIovParseVfBar           0000000000004190 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00004140       PciParseBar                0000000000004400 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000043a0       InitializePpb              0000000000004660 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000044c8       InitializeP2C              0000000000004788 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000045cc       AuthenticatePciDevice      000000000000488c f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:000046a4       CreatePciIoDevice          0000000000004964 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00004b90       PciEnumeratorLight         0000000000004e50 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00004cc4       ResetAllPpbBusNumber       0000000000004f84 f   PciBusDxe:PciEnumeratorSupport.obj
+ 0001:00004dfc       GetBackPcCardBar           00000000000050bc f   PciBusDxe:PciLib.obj
+ 0001:00004f38       RemoveRejectedPciDevices   00000000000051f8 f   PciBusDxe:PciLib.obj
+ 0001:000050a8       DumpBridgeResource         0000000000005368 f   PciBusDxe:PciLib.obj
+ 0001:00005300       FindResourceNode           00000000000055c0 f   PciBusDxe:PciLib.obj
+ 0001:0000538c       DumpResourceMap            000000000000564c f   PciBusDxe:PciLib.obj
+ 0001:000055dc       PciHostBridgeResourceAllocator 000000000000589c f   PciBusDxe:PciLib.obj
+ 0001:00005ebc       PciAllocateBusNumber       000000000000617c f   PciBusDxe:PciLib.obj
+ 0001:00005f58       PciScanBus                 0000000000006218 f   PciBusDxe:PciLib.obj
+ 0001:000064f4       PciRootBridgeP2CProcess    00000000000067b4 f   PciBusDxe:PciLib.obj
+ 0001:00006614       PciHostBridgeEnumerator    00000000000068d4 f   PciBusDxe:PciLib.obj
+ 0001:00006ab4       LocalLoadFile2             0000000000006d74 f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:00006d04       LoadFile2                  0000000000006fc4 f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:00006d7c       GetOpRomInfo               000000000000703c f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:00006e5c       LoadOpRomImage             000000000000711c f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:0000712c       RomDecode                  00000000000073ec f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:000071f8       ProcessOpRomImage          00000000000074b8 f   PciBusDxe:PciOptionRomSupport.obj
+ 0001:0000742c       InsertResourceNode         00000000000076ec f   PciBusDxe:PciResourceSupport.obj
+ 0001:00007570       MergeResourceTree          0000000000007830 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00007644       CalculateApertureIo16      0000000000007904 f   PciBusDxe:PciResourceSupport.obj
+ 0001:000078d0       CalculateResourceAperture  0000000000007b90 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00007aa4       GetResourceFromDevice      0000000000007d64 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00007d0c       CreateResourceNode         0000000000007fcc f   PciBusDxe:PciResourceSupport.obj
+ 0001:00007dd0       CreateResourceMap          0000000000008090 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008184       DegradeResource            0000000000008444 f   PciBusDxe:PciResourceSupport.obj
+ 0001:000083e8       ProgramResource            00000000000086a8 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008624       ProgramVfBar               00000000000088e4 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008774       ProgramPpbApperture        0000000000008a34 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008a28       ProgramUpstreamBridgeForRom 0000000000008ce8 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008b80       ResourceRequestExisted     0000000000008e40 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008bb0       InitializeResourcePool     0000000000008e70 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008c04       DestroyResourceTree        0000000000008ec4 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008ca8       ProgramP2C                 0000000000008f68 f   PciBusDxe:PciResourceSupport.obj
+ 0001:00008f48       ApplyResourcePadding       0000000000009208 f   PciBusDxe:PciResourceSupport.obj
+ 0001:000090d8       PciIoVerifyBarAccess       0000000000009398 f   PciBusDxe:PciIo.obj
+ 0001:00009164       PciIoVerifyConfigAccess    0000000000009424 f   PciBusDxe:PciIo.obj
+ 0001:00009238       PciIoPollMem               00000000000094f8 f   PciBusDxe:PciIo.obj
+ 0001:0000933c       PciIoPollIo                00000000000095fc f   PciBusDxe:PciIo.obj
+ 0001:0000943c       PciIoMemRead               00000000000096fc f   PciBusDxe:PciIo.obj
+ 0001:0000952c       PciIoMemWrite              00000000000097ec f   PciBusDxe:PciIo.obj
+ 0001:0000961c       PciIoIoRead                00000000000098dc f   PciBusDxe:PciIo.obj
+ 0001:0000970c       PciIoIoWrite               00000000000099cc f   PciBusDxe:PciIo.obj
+ 0001:000097fc       PciIoConfigRead            0000000000009abc f   PciBusDxe:PciIo.obj
+ 0001:000098b8       PciIoConfigWrite           0000000000009b78 f   PciBusDxe:PciIo.obj
+ 0001:00009974       PciIoCopyMem               0000000000009c34 f   PciBusDxe:PciIo.obj
+ 0001:00009a90       PciIoMap                   0000000000009d50 f   PciBusDxe:PciIo.obj
+ 0001:00009be4       PciIoUnmap                 0000000000009ea4 f   PciBusDxe:PciIo.obj
+ 0001:00009c74       PciIoAllocateBuffer        0000000000009f34 f   PciBusDxe:PciIo.obj
+ 0001:00009d58       PciIoFreeBuffer            000000000000a018 f   PciBusDxe:PciIo.obj
+ 0001:00009ddc       PciIoFlush                 000000000000a09c f   PciBusDxe:PciIo.obj
+ 0001:00009e4c       PciIoGetLocation           000000000000a10c f   PciBusDxe:PciIo.obj
+ 0001:00009f00       CheckBarType               000000000000a1c0 f   PciBusDxe:PciIo.obj
+ 0001:00009f40       SupportPaletteSnoopAttributes 000000000000a200 f   PciBusDxe:PciIo.obj
+ 0001:0000a084       PciIoAttributes            000000000000a344 f   PciBusDxe:PciIo.obj
+ 0001:0000a444       PciIoGetBarAttributes      000000000000a704 f   PciBusDxe:PciIo.obj
+ 0001:0000a644       PciIoSetBarAttributes      000000000000a904 f   PciBusDxe:PciIo.obj
+ 0001:0000a710       GetDriver                  000000000000a9d0 f   PciBusDxe:PciDriverOverride.obj
+ 0001:0000a954       AddDriver                  000000000000ac14 f   PciBusDxe:PciDriverOverride.obj
+ 0001:0000a9fc       PciRomAddImageMapping      000000000000acbc f   PciBusDxe:PciRomTable.obj
+ 0001:0000ab00       PciOperateRegister         000000000000adc0 f   PciBusDxe:PciCommand.obj
+ 0001:0000abb4       LocateCapabilityRegBlock   000000000000ae74 f   PciBusDxe:PciCommand.obj
+ 0001:0000ac88       LocatePciExpressCapabilityRegBlock 000000000000af48 f   PciBusDxe:PciCommand.obj
+ 0001:0000ad6c       PciHPCInitialized          000000000000b02c f   PciBusDxe:PciHotPlugSupport.obj
+ 0001:0000ad74       EfiCompareDevicePath       000000000000b034 f   PciBusDxe:PciHotPlugSupport.obj
+ 0001:0000add0       SupportsPcieHotplug        000000000000b090 f   PciBusDxe:PciHotPlugSupport.obj
+ 0001:0000ae84       GetResourcePaddingForHpb   000000000000b144 f   PciBusDxe:PciHotPlugSupport.obj
+ 0001:0000af18       IsPciHotPlugBus            000000000000b1d8 f   PciBusDxe:PciHotPlugSupport.obj
+ 0001:0000afa4       InternalBaseLibIsListValid 000000000000b264 f   BaseLib:LinkedList.obj
+ 0001:0000b010       InsertHeadList             000000000000b2d0 f   BaseLib:LinkedList.obj
+ 0001:0000b060       InsertTailList             000000000000b320 f   BaseLib:LinkedList.obj
+ 0001:0000b0b4       GetFirstNode               000000000000b374 f   BaseLib:LinkedList.obj
+ 0001:0000b0e8       IsListEmpty                000000000000b3a8 f   BaseLib:LinkedList.obj
+ 0001:0000b120       IsNull                     000000000000b3e0 f   BaseLib:LinkedList.obj
+ 0001:0000b164       RemoveEntryList            000000000000b424 f   BaseLib:LinkedList.obj
+ 0001:0000b1ac       LShiftU64                  000000000000b46c f   BaseLib:LShiftU64.obj
+ 0001:0000b1f0       ZeroMem                    000000000000b4b0 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0000b260       CopyGuid                   000000000000b520 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000b310       CopyMem                    000000000000b5d0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000b3ac       CompareMem                 000000000000b66c f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:0000b484       DebugPrint                 000000000000b744 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000b4a8       DebugPrintMarker           000000000000b768 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000b534       DebugAssert                000000000000b7f4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000b5b0       InternalAllocatePool       000000000000b870 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b5e0       AllocateZeroPool           000000000000b8a0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b608       InternalReallocatePool     000000000000b8c8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b684       FreePool                   000000000000b944 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b6c8       DevicePathNodeLength       000000000000b988 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000b710       IsDevicePathEnd            000000000000b9d0 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000b788       SetDevicePathNodeLength    000000000000ba48 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000b808       UefiDevicePathLibLocateProtocol 000000000000bac8 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000b844       InternalReportStatusCode   000000000000bb04 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000b8fc       ReportStatusCodeWithDevicePath 000000000000bbbc f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000b95c       ReportStatusCodeWithExtendedData 000000000000bc1c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000bb3c       IsLanguageSupported        000000000000bdfc f   UefiLib:UefiLib.obj
+ 0001:0000bbc4       AsciiStrLen                000000000000be84 f   BaseLib:String.obj
+ 0001:0000bc30       AsciiStrnCmp               000000000000bef0 f   BaseLib:String.obj
+ 0001:0000bcfc       StrnLenS                   000000000000bfbc f   BaseLib:SafeString.obj
+ 0001:0000bd54       AsciiSPrint                000000000000c014 f   BasePrintLib:PrintLib.obj
+ 0001:0000bd80       BasePrintLibFillBuffer     000000000000c040 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000bdb4       BasePrintLibValueToString  000000000000c074 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000be20       BasePrintLibSPrintMarker   000000000000c0e0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000cd2c       BasePrintLibSPrint         000000000000cfec f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000cd50       SerialPortWrite            000000000000d010 f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:0000cdd4       IsTdxGuest                 000000000000d094 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:0000ce00       TdIoRead8                  000000000000d0c0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:0000ce58       TdIoWrite8                 000000000000d118 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000d180     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000d1a8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_09GPDMBMGN@PciBusDxe@ 000000000000d1d0     PciBusDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0IA@PDPPJMG@d?3?2uefi_specs_personal_collecti@ 000000000000d1e0     PciBusDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_0FA@OKNOEOAI@D?3?2uefi_specs_personal_collecti@ 000000000000d260     PciBusDxe:PciBus.obj
+ 0002:00000130       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 000000000000d2b0     PciBusDxe:PciEnumerator.obj
+ 0002:00000150       ??_C@_0FH@JCDBEALB@D?3?2uefi_specs_personal_collecti@ 000000000000d2d0     PciBusDxe:PciEnumerator.obj
+ 0002:000001b0       ??_C@_0EE@IKEDHICG@PciBus?3?5?$FL?$CF02x?$HM?$CF02x?$HM?$CF02x?$FN?5was?5re@ 000000000000d330     PciBusDxe:PciEnumerator.obj
+ 0002:000001f8       ??_C@_0BH@KCPHABPE@Config?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000d378     PciBusDxe:PciEnumerator.obj
+ 0002:00000210       ??_C@_03LKLGDMJI@eng@      000000000000d390     PciBusDxe:ComponentName.obj
+ 0002:00000214       ??_C@_02LFNMGJAP@en@       000000000000d394     PciBusDxe:ComponentName.obj
+ 0002:00000218       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000d398     PciBusDxe:ComponentName.obj
+ 0002:00000220       ??_C@_1BO@KGOCMPB@?$AAP?$AAC?$AAI?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 000000000000d3a0     PciBusDxe:ComponentName.obj
+ 0002:00000240       ??_C@_0BM@PALCLDCI@PciIoDevice?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000d3c0     PciBusDxe:PciDeviceSupport.obj
+ 0002:00000260       ??_C@_0FK@IJCMKAFG@D?3?2uefi_specs_personal_collecti@ 000000000000d3e0     PciBusDxe:PciDeviceSupport.obj
+ 0002:000002c0       ??_C@_0BL@PIPGGDMK@RootBridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000d440     PciBusDxe:PciDeviceSupport.obj
+ 0002:000002e0       ??_C@_17PCGIELBB@?$AAP?$AAP?$AAB@ 000000000000d460     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000002e8       ??_C@_17POIICCF@?$AAP?$AA2?$AAC@ 000000000000d468     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000002f0       ??_C@_17KACLLMCF@?$AAP?$AAC?$AAI@ 000000000000d470     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000300       ??_C@_0EF@OLBJLCGL@PciBus?3?5Discovered?5?$CFs?5?$EA?5?$FL?$CF02x?$HM?$CF@ 000000000000d480     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000348       ??_C@_0DK@FDMBBOOH@?5?5?5Padding?3?5Type?5?$DN?5?$CFs?$DL?5Alignmen@ 000000000000d4c8     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000390       ??_C@_0EL@OPMBGO@?5?5?5BAR?$FL?$CFd?$FN?3?5Type?5?$DN?5?$CFs?$DL?5Alignmen@ 000000000000d510     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000003e0       ??_C@_0EL@EKLNIJIN@?5VFBAR?$FL?$CFd?$FN?3?5Type?5?$DN?5?$CFs?$DL?5Alignmen@ 000000000000d560     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:0000042c       ??_C@_01EEMJAFIK@?6@       000000000000d5ac     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000430       ??_C@_0BC@IHOMMDMH@BarIndex?5?$DM?50x0006@ 000000000000d5b0     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000450       ??_C@_0FO@HMOJOIGM@D?3?2uefi_specs_personal_collecti@ 000000000000d5d0     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000004b0       ??_C@_0CI@MPCLEEDK@PciIoDevice?9?$DOSrIovCapabilityOff@ 000000000000d630     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000004d8       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 000000000000d658     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000004f0       ??_C@_0FD@LCCLEFBP@?$FLPciBus?$FNBAR?5probing?5for?5upper?53@ 000000000000d670     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000548       ??_C@_0DC@NFJAOHFH@?5ARI?3?5forwarding?5enabled?5for?5PP@ 000000000000d6c8     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000580       ??_C@_0BI@KPMGBKDC@?5ARI?3?5CapOffset?5?$DN?50x?$CFx?6@ 000000000000d700     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000598       ??_C@_0CB@BBEOIKLP@PciIoDevice?9?$DOSystemPageSize?5?$CB?$DN?5@ 000000000000d718     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:000005c0       ??_C@_0FB@IBAAOOOH@?5SR?9IOV?3?5SupportedPageSize?5?$DN?50x@ 000000000000d740     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000620       ??_C@_0EF@DPGFBABN@?5?5?5?5?5?5?5?5?5InitialVFs?5?$DN?50x?$CFx?$DL?5Res@ 000000000000d7a0     PciBusDxe:PciEnumeratorSupport.obj
+ 0002:00000670       mBarTypeStr                000000000000d7f0     PciBusDxe:PciLib.obj
+ 0002:000006c8       ??_C@_1O@KPKDPEHK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw@ 000000000000d848     PciBusDxe:PciLib.obj
+ 0002:000006d8       ??_C@_1O@IKBDMIBA@?$AA?5?$AA?5?$AAI?$AAo?$AA1?$AA6@ 000000000000d858     PciBusDxe:PciLib.obj
+ 0002:000006e8       ??_C@_1O@EILJPOEM@?$AA?5?$AA?5?$AAI?$AAo?$AA3?$AA2@ 000000000000d868     PciBusDxe:PciLib.obj
+ 0002:000006f8       ??_C@_1O@OJAAHHIJ@?$AA?5?$AAM?$AAe?$AAm?$AA3?$AA2@ 000000000000d878     PciBusDxe:PciLib.obj
+ 0002:00000708       ??_C@_1O@DGPMEMM@?$AAP?$AAM?$AAe?$AAm?$AA3?$AA2@ 000000000000d888     PciBusDxe:PciLib.obj
+ 0002:00000718       ??_C@_1O@JMKGLJOG@?$AA?5?$AAM?$AAe?$AAm?$AA6?$AA4@ 000000000000d898     PciBusDxe:PciLib.obj
+ 0002:00000728       ??_C@_1O@HGMJAKKD@?$AAP?$AAM?$AAe?$AAm?$AA6?$AA4@ 000000000000d8a8     PciBusDxe:PciLib.obj
+ 0002:00000738       ??_C@_1O@HAHDDFBD@?$AA?5?$AAO?$AAp?$AAR?$AAo?$AAm@ 000000000000d8b8     PciBusDxe:PciLib.obj
+ 0002:00000748       ??_C@_1O@GCIPIGP@?$AA?5?$AA?5?$AA?5?$AA?5?$AAI?$AAo@ 000000000000d8c8     PciBusDxe:PciLib.obj
+ 0002:00000758       ??_C@_1O@JHKBEAMD@?$AA?5?$AA?5?$AA?5?$AAM?$AAe?$AAm@ 000000000000d8d8     PciBusDxe:PciLib.obj
+ 0002:00000770       ??_C@_0FA@JNGBGFAB@D?3?2uefi_specs_personal_collecti@ 000000000000d8f0     PciBusDxe:PciLib.obj
+ 0002:000007c0       ??_C@_0DM@ILBPKNGA@Type?5?$DN?5?$CFs?$DL?5Base?5?$DN?50x?$CFlx?$DL?7Length@ 000000000000d940     PciBusDxe:PciLib.obj
+ 0002:00000800       ??_C@_0FA@JKJBBKFL@?5?5?5Base?5?$DN?50x?$CFlx?$DL?7Length?5?$DN?50x?$CFlx@ 000000000000d980     PciBusDxe:PciLib.obj
+ 0002:00000850       ??_C@_05LHKIFIIE@?$CF02x?$FN@ 000000000000d9d0     PciBusDxe:PciLib.obj
+ 0002:00000858       ??_C@_03CLPLIPJG@?$CK?$CK?$FN@ 000000000000d9d8     PciBusDxe:PciLib.obj
+ 0002:00000860       ??_C@_0DF@FHBJNCEK@?5?5?5Base?5?$DN?5Padding?$DL?7Length?5?$DN?50x?$CF@ 000000000000d9e0     PciBusDxe:PciLib.obj
+ 0002:00000898       ??_C@_0M@DKJHPNCC@?$DL?5Type?5?$DN?5?$CFs@ 000000000000da18     PciBusDxe:PciLib.obj
+ 0002:000008a8       ??_C@_0BK@HJNNCNN@PciBus?3?5Resource?5Map?5for?5@ 000000000000da28     PciBusDxe:PciLib.obj
+ 0002:000008c8       ??_C@_0BJ@DAKBBGFG@Bridge?5?$FL?$CF02x?$HM?$CF02x?$HM?$CF02x?$FN?6@ 000000000000da48     PciBusDxe:PciLib.obj
+ 0002:000008e4       ??_C@_11LOCGONAA@@         000000000000da64     PciBusDxe:PciLib.obj
+ 0002:000008e8       ??_C@_0BA@MGJKOHNK@Root?5Bridge?5?$CFs?6@ 000000000000da68     PciBusDxe:PciLib.obj
+ 0002:000008f8       ??_C@_0BP@FJPDPNPE@ChildResources?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000da78     PciBusDxe:PciLib.obj
+ 0002:00000918       ??_C@_0CM@HJDEJGKM@PciBus?3?5HostBridge?9?$DOSubmitResou@ 000000000000da98     PciBusDxe:PciLib.obj
+ 0002:00000948       ??_C@_0BO@LEHEHLJP@RootBridgeDev?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dac8     PciBusDxe:PciLib.obj
+ 0002:00000968       ??_C@_0DJ@CKMHDPCC@PciBus?3?5HostBridge?9?$DONotifyPhase@ 000000000000dae8     PciBusDxe:PciLib.obj
+ 0002:000009a8       ??_C@_0BJ@MCOEEAON@IoBridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000db28     PciBusDxe:PciLib.obj
+ 0002:000009c8       ??_C@_0BM@ICCBNNHJ@Mem32Bridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000db48     PciBusDxe:PciLib.obj
+ 0002:000009e8       ??_C@_0BN@PJHMNMGE@PMem32Bridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000db68     PciBusDxe:PciLib.obj
+ 0002:00000a08       ??_C@_0BM@GMCKFFNM@Mem64Bridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000db88     PciBusDxe:PciLib.obj
+ 0002:00000a28       ??_C@_0BN@BHHHFEMB@PMem64Bridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dba8     PciBusDxe:PciLib.obj
+ 0002:00000a48       ??_C@_0CP@DNHDPIDA@Process?5Option?5ROM?3?5BAR?5Base?1Le@ 000000000000dbc8     PciBusDxe:PciLib.obj
+ 0002:00000a80       ??_C@_0FF@CBHNHBCP@ERROR?3?5?$CF02x?3?$CF02x?3?$CF02x?5device?5AR@ 000000000000dc00     PciBusDxe:PciLib.obj
+ 0002:00000ad8       ??_C@_0CH@GNAJPPGH@PCI?9IOV?5ScanBus?5?9?5SubBusNumber?5@ 000000000000dc58     PciBusDxe:PciLib.obj
+ 0002:00000b00       ??_C@_0DA@OCBPNCNA@PCI?9IOV?5ScanBus?5?9?5SubBusNumber?5@ 000000000000dc80     PciBusDxe:PciLib.obj
+ 0002:00000b30       ??_C@_0BI@OPGPBDJB@PCI?5Bus?5First?5Scanning?6@ 000000000000dcb0     PciBusDxe:PciLib.obj
+ 0002:00000b48       ??_C@_0CE@DGCPKKD@Some?5root?5HPC?5failed?5to?5initial@ 000000000000dcc8     PciBusDxe:PciLib.obj
+ 0002:00000b70       ??_C@_0BJ@FPPBFAFG@PCI?5Bus?5Second?5Scanning?6@ 000000000000dcf0     PciBusDxe:PciLib.obj
+ 0002:00000b90       ??_C@_0EJ@KHELGAA@Pcir?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8P?8?$CJ?5?$HM?5?$CI?8@ 000000000000dd10     PciBusDxe:PciOptionRomSupport.obj
+ 0002:00000be0       ??_C@_0FN@DOFOCDKE@D?3?2uefi_specs_personal_collecti@ 000000000000dd60     PciBusDxe:PciOptionRomSupport.obj
+ 0002:00000c40       ??_C@_0EE@LMGIHGBF@?$CI?$CIEFI_PCI_EXPANSION_ROM_HEADER?5@ 000000000000ddc0     PciBusDxe:PciOptionRomSupport.obj
+ 0002:00000c88       ??_C@_0CM@IJHLCIPD@PciOptionRomImageDevicePath?5?$CB?$DN?5@ 000000000000de08     PciBusDxe:PciOptionRomSupport.obj
+ 0002:00000cc0       ??_C@_0FM@FGFGDPPA@D?3?2uefi_specs_personal_collecti@ 000000000000de40     PciBusDxe:PciResourceSupport.obj
+ 0002:00000d20       ??_C@_0BH@FADJPNGA@Bridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dea0     PciBusDxe:PciResourceSupport.obj
+ 0002:00000d38       ??_C@_0BI@NKLBECE@ResNode?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000deb8     PciBusDxe:PciResourceSupport.obj
+ 0002:00000d50       ??_C@_0BE@PIEANEGO@Dst?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ded0     PciBusDxe:PciResourceSupport.obj
+ 0002:00000d68       ??_C@_0BE@PDBFNIOD@Res?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dee8     PciBusDxe:PciResourceSupport.obj
+ 0002:00000d80       ??_C@_0BF@EOHCCBCM@PaddingAperture?5?$DN?$DN?50@ 000000000000df00     PciBusDxe:PciResourceSupport.obj
+ 0002:00000da0       ??_C@_0FL@KABPJOHN@?$CINode?9?$DOResourceUsage?5?$DN?$DN?5PciResU@ 000000000000df20     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e00       ??_C@_0ED@KBGCMOKD@Node?9?$DOResourceUsage?5?$DM?5?$CIsizeof?5?$CI@ 000000000000df80     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e48       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dfc8     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e60       ??_C@_0BD@LPGMHOCJ@Node?9?$DOBar?5?$DM?50x0006@ 000000000000dfe0     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e78       ??_C@_0O@MAABBJKP@Node?9?$DOVirtual@ 000000000000dff8     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e88       ??_C@_04JHIGEHFN@Temp@     000000000000e008     PciBusDxe:PciResourceSupport.obj
+ 0002:00000e90       ??_C@_0EP@LGHFALCH@D?3?2uefi_specs_personal_collecti@ 000000000000e010     PciBusDxe:PciIo.obj
+ 0002:00000ee0       ??_C@_0FL@PPCAJNDP@D?3?2uefi_specs_personal_collecti@ 000000000000e060     PciBusDxe:PciDriverOverride.obj
+ 0002:00000f40       ??_C@_0DB@HOBGKJBD@IsNull?5?$CI?$CGPciIoDevice?9?$DOOptionRom@ 000000000000e0c0     PciBusDxe:PciDriverOverride.obj
+ 0002:00000f80       ??_C@_0EJ@LKKFCCGI@?$CIDriverImageHandle?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 000000000000e100     PciBusDxe:PciDriverOverride.obj
+ 0002:00000fd0       ??_C@_0CD@KAMMIDOJ@LocatePciExpressCapabilityRegBl@ 000000000000e150     PciBusDxe:PciCommand.obj
+ 0002:00001000       ??_C@_0ED@MJKPNIMA@?$CFa?3?5?$FL?$CF02x?$HM?$CF02x?$HM?$CF02x?$FN?5failed?5to?5@ 000000000000e180     PciBusDxe:PciCommand.obj
+ 0002:00001048       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e1c8     BaseLib:LinkedList.obj
+ 0002:00001060       ??_C@_0EM@NCJPOFNN@D?3?2uefi_specs_personal_collecti@ 000000000000e1e0     BaseLib:LinkedList.obj
+ 0002:000010b0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000e230     BaseLib:LinkedList.obj
+ 0002:000010d8       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e258     BaseLib:LinkedList.obj
+ 0002:000010f8       ??_C@_0CI@BMHOPIIO@InternalBaseLibIsListValid?5?$CIFir@ 000000000000e278     BaseLib:LinkedList.obj
+ 0002:00001120       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e2a0     BaseLib:LinkedList.obj
+ 0002:00001140       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 000000000000e2c0     BaseLib:LinkedList.obj
+ 0002:00001168       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 000000000000e2e8     BaseLib:LinkedList.obj
+ 0002:00001190       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 000000000000e310     BaseLib:LinkedList.obj
+ 0002:000011a8       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 000000000000e328     BaseLib:LShiftU64.obj
+ 0002:000011c0       ??_C@_0EL@PKACDBFD@D?3?2uefi_specs_personal_collecti@ 000000000000e340     BaseLib:LShiftU64.obj
+ 0002:00001210       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e390     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001230       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 000000000000e3b0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001290       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000e410     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000012d0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000e450     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001320       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 000000000000e4a0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001380       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000e500     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000013c0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000e540     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:000013f0       ??_C@_0FP@MJKEJMKF@D?3?2uefi_specs_personal_collecti@ 000000000000e570     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001450       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e5d0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001470       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e5f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001490       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 000000000000e610     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000014f0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 000000000000e670     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001508       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e688     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001530       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 000000000000e6b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000015a0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e720     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000015b8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e738     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000015d0       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 000000000000e750     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001640       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 000000000000e7c0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000016b0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 000000000000e830     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000016e8       ??_C@_0BL@JFODOCGB@DevicePath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e868     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001710       ??_C@_0EH@ENCEEKKL@?$CILength?5?$DO?$DN?5sizeof?5?$CIEFI_DEVICE_P@ 000000000000e890     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001758       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e8d8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001770       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 000000000000e8f0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000017f0       ??_C@_0GK@HIFHPALF@D?3?2uefi_specs_personal_collecti@ 000000000000e970     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001860       ??_C@_0BN@HMHGLLOO@ExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e9e0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001880       ??_C@_0BG@BPIKKLEE@ExtendedDataSize?5?$CB?$DN?50@ 000000000000ea00     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001898       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ea18     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000018d8       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ea58     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001920       ??_C@_0FB@KFBGMLJM@D?3?2uefi_specs_personal_collecti@ 000000000000eaa0     UefiLib:UefiDriverModel.obj
+ 0002:00001980       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 000000000000eb00     BaseLib:Unaligned.obj
+ 0002:000019d0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eb50     BaseLib:String.obj
+ 0002:000019f0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 000000000000eb70     BaseLib:String.obj
+ 0002:00001a38       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 000000000000ebb8     BaseLib:String.obj
+ 0002:00001a60       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000ebe0     BaseLib:String.obj
+ 0002:00001a98       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 000000000000ec18     BaseLib:String.obj
+ 0002:00001ab8       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 000000000000ec38     BaseLib:String.obj
+ 0002:00001ad8       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 000000000000ec58     BaseLib:String.obj
+ 0002:00001b20       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 000000000000eca0     BaseLib:SafeString.obj
+ 0002:00001b70       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000ecf0     BaseLib:SafeString.obj
+ 0002:00001b90       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000ed10     BaseLib:DivU64x32.obj
+ 0002:00001ba0       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 000000000000ed20     BasePrintLib:PrintLibInternal.obj
+ 0002:00001c00       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000ed80     BasePrintLib:PrintLibInternal.obj
+ 0002:00001c48       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000edc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001c70       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000edf0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001cc0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000ee40     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d50       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000eed0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001dd8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000ef58     BasePrintLib:PrintLibInternal.obj
+ 0002:00001de8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000ef68     BasePrintLib:PrintLibInternal.obj
+ 0002:00001df8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000ef78     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e30       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000efb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e40       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000efc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e5c       ??_C@_04JIMNDDED@?$CF08X@  000000000000efdc     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e64       ??_C@_02PCIJFNDE@?$AN?6@   000000000000efe4     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e68       ??_C@_01LIIJDEN@?$AN@      000000000000efe8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e70       mWarningString             000000000000eff0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f40       mErrorString               000000000000f0c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002220       mHexStr                    000000000000f3a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002230       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 000000000000f3b0     BaseLib:DivU64x32Remainder.obj
+ 0002:00002290       __xmm@00000000000000010000000000000001 000000000000f410     PciBusDxe:PciResourceSupport.obj
+ 0002:000022f4       __volatile_metadata        000000000000f474     <linker-defined>
+ 0003:00000000       gEfiStatusCodeSpecificDataGuid 000000000000f600     PciBusDxe:AutoGen.obj
+ 0003:00000010       gEdkiiDeviceIdentifierTypePciGuid 000000000000f610     PciBusDxe:AutoGen.obj
+ 0003:00000020       gEfiPciRootBridgeIoProtocolGuid 000000000000f620     PciBusDxe:AutoGen.obj
+ 0003:00000030       gEfiStatusCodeRuntimeProtocolGuid 000000000000f630     PciBusDxe:AutoGen.obj
+ 0003:00000040       gEfiLoadedImageDevicePathProtocolGuid 000000000000f640     PciBusDxe:AutoGen.obj
+ 0003:00000050       gEfiComponentName2ProtocolGuid 000000000000f650     PciBusDxe:AutoGen.obj
+ 0003:00000060       gEfiIncompatiblePciDeviceSupportProtocolGuid 000000000000f660     PciBusDxe:AutoGen.obj
+ 0003:00000070       gEfiPciHotPlugRequestProtocolGuid 000000000000f670     PciBusDxe:AutoGen.obj
+ 0003:00000080       gEfiDevicePathProtocolGuid 000000000000f680     PciBusDxe:AutoGen.obj
+ 0003:00000090       gEfiPciIoProtocolGuid      000000000000f690     PciBusDxe:AutoGen.obj
+ 0003:000000a0       gEfiPciHostBridgeResourceAllocationProtocolGuid 000000000000f6a0     PciBusDxe:AutoGen.obj
+ 0003:000000b0       gEfiBusSpecificDriverOverrideProtocolGuid 000000000000f6b0     PciBusDxe:AutoGen.obj
+ 0003:000000c0       gEfiDevicePathToTextProtocolGuid 000000000000f6c0     PciBusDxe:AutoGen.obj
+ 0003:000000d0       gEfiPciOverrideProtocolGuid 000000000000f6d0     PciBusDxe:AutoGen.obj
+ 0003:000000e0       gEfiDevicePathUtilitiesProtocolGuid 000000000000f6e0     PciBusDxe:AutoGen.obj
+ 0003:000000f0       gEfiPciEnumerationCompleteProtocolGuid 000000000000f6f0     PciBusDxe:AutoGen.obj
+ 0003:00000100       gEfiPciHotPlugInitProtocolGuid 000000000000f700     PciBusDxe:AutoGen.obj
+ 0003:00000110       gEdkiiDeviceSecurityProtocolGuid 000000000000f710     PciBusDxe:AutoGen.obj
+ 0003:00000120       gEdkiiIoMmuProtocolGuid    000000000000f720     PciBusDxe:AutoGen.obj
+ 0003:00000130       gEfiPciPlatformProtocolGuid 000000000000f730     PciBusDxe:AutoGen.obj
+ 0003:00000140       gEfiDriverBindingProtocolGuid 000000000000f740     PciBusDxe:AutoGen.obj
+ 0003:00000150       gEfiComponentNameProtocolGuid 000000000000f750     PciBusDxe:AutoGen.obj
+ 0003:00000160       gEfiDecompressProtocolGuid 000000000000f760     PciBusDxe:AutoGen.obj
+ 0003:00000170       gEfiCallerIdGuid           000000000000f770     PciBusDxe:AutoGen.obj
+ 0003:00000180       gEfiLoadFile2ProtocolGuid  000000000000f780     PciBusDxe:AutoGen.obj
+ 0003:00000190       gPciBusDriverBinding       000000000000f790     PciBusDxe:PciBus.obj
+ 0003:000001c0       mPciHotPlugRequest         000000000000f7c0     PciBusDxe:PciBus.obj
+ 0003:000001c8       gAllOne                    000000000000f7c8     PciBusDxe:PciBus.obj
+ 0003:000001d0       gFullEnumeration           000000000000f7d0     PciBusDxe:PciBus.obj
+ 0003:000001d8       gPciBusComponentName       000000000000f7d8     PciBusDxe:ComponentName.obj
+ 0003:000001f0       gPciBusComponentName2      000000000000f7f0     PciBusDxe:ComponentName.obj
+ 0003:00000210       mPciBusDriverNameTable     000000000000f810     PciBusDxe:ComponentName.obj
+ 0003:00000230       mPciIoInterface            000000000000f830     PciBusDxe:PciIo.obj
+ 0003:000002e0       gIncompatiblePciDeviceSupport 000000000000f8e0     PciBusDxe:PciBus.obj
+ 0003:000002e8       gPciHostBridgeNumber       000000000000f8e8     PciBusDxe:PciBus.obj
+ 0003:000002f0       gAllZero                   000000000000f8f0     PciBusDxe:PciBus.obj
+ 0003:000002f8       mReserveIsaAliases         000000000000f8f8     PciBusDxe:PciResourceSupport.obj
+ 0003:000002f9       mReserveVgaAliases         000000000000f8f9     PciBusDxe:PciResourceSupport.obj
+ 0003:000002fa       mPolicyDetermined          000000000000f8fa     PciBusDxe:PciResourceSupport.obj
+ 0003:00000300       mMaxNumberOfPciRomImages   000000000000f900     PciBusDxe:PciRomTable.obj
+ 0003:00000308       mRomImageTable             000000000000f908     PciBusDxe:PciRomTable.obj
+ 0003:00000310       mNumberOfPciRomImages      000000000000f910     PciBusDxe:PciRomTable.obj
+ 0003:00000318       gPciHotPlugInit            000000000000f918     PciBusDxe:PciHotPlugSupport.obj
+ 0003:00000320       gPciRootHpcData            000000000000f920     PciBusDxe:PciHotPlugSupport.obj
+ 0003:00000328       gPciRootHpcPool            000000000000f928     PciBusDxe:PciHotPlugSupport.obj
+ 0003:00000330       gPciRootHpcCount           000000000000f930     PciBusDxe:PciHotPlugSupport.obj
+ 0003:00000340       gST                        000000000000f940     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000348       gBS                        000000000000f948     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000350       gImageHandle               000000000000f950     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000358       mDevicePathLibDevicePathToText 000000000000f958     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000360       mDevicePathLibDevicePathUtilities 000000000000f960     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000368       gRT                        000000000000f968     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000370       mReportStatusCodeLibStatusCodeProtocol 000000000000f970     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000380       gParity                    000000000000f980     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000381       gBreakSet                  000000000000f981     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000390       mPciDevicePool             000000000000f990     <common>
+ 0003:000003a0       gPciHostBrigeHandles       000000000000f9a0     <common>
+ 0003:00000420       gPciOverrideProtocol       000000000000fa20     <common>
+ 0003:00000428       mDeviceSecurityProtocol    000000000000fa28     <common>
+ 0003:00000430       mIoMmuProtocol             000000000000fa30     <common>
+ 0003:00000438       gPciPlatformProtocol       000000000000fa38     <common>
+
+ entry point at        0001:000001c8
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002fa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              000000000000030a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 0000000000000313     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000149       TdVmCall.no_return_data    0000000000000409     BaseLib:TdVmcall.obj
+ 0001:000001bb       TdCall.exit                000000000000047b     BaseLib:TdCall.obj
+ 0003:00000338       mCcProbeGuestType          000000000000f938     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000339       mCcProbed                  000000000000f939     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000378       mDeadLoopComparator        000000000000f978     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$FreePciDevice      0000000000010180     PciBusDxe:PciDeviceSupport.obj
+ 0005:00000000       $unwind$PciIoVerifyBarAccess 0000000000010180     PciBusDxe:PciIo.obj
+ 0005:00000000       $unwind$ResourceRequestExisted 0000000000010180     PciBusDxe:PciResourceSupport.obj
+ 0005:00000000       $unwind$GetFirstNode       0000000000010180     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$InternalBaseLibIsListValid 0000000000010180     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$IsListEmpty        0000000000010180     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    0000000000010180     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000010180     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$DevicePathNodeLength 0000000000010180     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000010180     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$AllocateZeroPool   0000000000010180     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000010188     PciBusDxe:AutoGen.obj
+ 0005:00000008       $unwind$GetMaxResourceConsumerDevice 0000000000010188     PciBusDxe:PciEnumerator.obj
+ 0005:00000008       $unwind$EfiCompareDevicePath 0000000000010188     PciBusDxe:PciHotPlugSupport.obj
+ 0005:00000008       $unwind$PciIoFreeBuffer    0000000000010188     PciBusDxe:PciIo.obj
+ 0005:00000008       $unwind$LoadFile2          0000000000010188     PciBusDxe:PciOptionRomSupport.obj
+ 0005:00000008       $unwind$DestroyResourceTree 0000000000010188     PciBusDxe:PciResourceSupport.obj
+ 0005:00000008       $unwind$ReportStatusCodeWithDevicePath 0000000000010188     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000008       $unwind$AsciiStrnCmp       0000000000010188     BaseLib:String.obj
+ 0005:00000008       $unwind$CopyGuid           0000000000010188     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000008       $unwind$BasePrintLibValueToString 0000000000010188     BasePrintLib:PrintLibInternal.obj
+ 0005:00000008       $unwind$IsLanguageSupported 0000000000010188     UefiLib:UefiLib.obj
+ 0005:00000008       $unwind$SerialPortWrite    0000000000010188     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:00000018       $unwind$ProcessModuleEntryPointList 0000000000010198     PciBusDxe:AutoGen.obj
+ 0005:00000024       $unwind$PciBusDriverBindingSupported 00000000000101a4     PciBusDxe:PciBus.obj
+ 0005:00000034       $unwind$PciBusDriverBindingStart 00000000000101b4     PciBusDxe:PciBus.obj
+ 0005:00000044       $unwind$PciBusComponentNameGetDriverName 00000000000101c4     PciBusDxe:ComponentName.obj
+ 0005:00000044       $unwind$PciBusDriverBindingStop 00000000000101c4     PciBusDxe:PciBus.obj
+ 0005:00000044       $unwind$PciRomAddImageMapping 00000000000101c4     PciBusDxe:PciRomTable.obj
+ 0005:0000005c       $unwind$PciEnumerator      00000000000101dc     PciBusDxe:PciEnumerator.obj
+ 0005:00000068       $unwind$PciRootBridgeEnumerator 00000000000101e8     PciBusDxe:PciEnumerator.obj
+ 0005:0000007c       $unwind$ProcessOptionRom   00000000000101fc     PciBusDxe:PciEnumerator.obj
+ 0005:0000007c       $unwind$FindResourceNode   00000000000101fc     PciBusDxe:PciLib.obj
+ 0005:0000007c       $unwind$CreateResourceNode 00000000000101fc     PciBusDxe:PciResourceSupport.obj
+ 0005:0000007c       $unwind$InsertResourceNode 00000000000101fc     PciBusDxe:PciResourceSupport.obj
+ 0005:0000007c       $unwind$MergeResourceTree  00000000000101fc     PciBusDxe:PciResourceSupport.obj
+ 0005:00000094       $unwind$PciAssignBusNumber 0000000000010214     PciBusDxe:PciEnumerator.obj
+ 0005:000000ac       $unwind$GetMaxOptionRomSize 000000000001022c     PciBusDxe:PciEnumerator.obj
+ 0005:000000ac       $unwind$ProcessOptionRomLight 000000000001022c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000000ac       $unwind$PciIoGetLocation   000000000001022c     PciBusDxe:PciIo.obj
+ 0005:000000c0       $unwind$PciHostBridgeAdjustAllocation 0000000000010240     PciBusDxe:PciEnumerator.obj
+ 0005:000000e0       $unwind$ConstructAcpiResourceRequestor 0000000000010260     PciBusDxe:PciEnumerator.obj
+ 0005:000000fc       $unwind$PciBridgeEnumerator 000000000001027c     PciBusDxe:PciEnumerator.obj
+ 0005:00000108       $unwind$PciBridgeResourceAllocator 0000000000010288     PciBusDxe:PciEnumerator.obj
+ 0005:00000120       $unwind$NotifyPhase        00000000000102a0     PciBusDxe:PciEnumerator.obj
+ 0005:00000130       $unwind$PreprocessController 00000000000102b0     PciBusDxe:PciEnumerator.obj
+ 0005:00000144       $unwind$PciHotPlugRequestNotify 00000000000102c4     PciBusDxe:PciEnumerator.obj
+ 0005:0000015c       $unwind$DestroyPciDeviceTree 00000000000102dc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000015c       $unwind$GetRootBridgeByHandle 00000000000102dc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000015c       $unwind$LocateVgaDevice    00000000000102dc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000015c       $unwind$LocateVgaDeviceOnHostBridge 00000000000102dc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000015c       $unwind$PciIoFlush         00000000000102dc     PciBusDxe:PciIo.obj
+ 0005:0000015c       $unwind$PciIoUnmap         00000000000102dc     PciBusDxe:PciIo.obj
+ 0005:0000015c       $unwind$InitializeResourcePool 00000000000102dc     PciBusDxe:PciResourceSupport.obj
+ 0005:0000015c       $unwind$LShiftU64          00000000000102dc     BaseLib:LShiftU64.obj
+ 0005:0000015c       $unwind$InsertHeadList     00000000000102dc     BaseLib:LinkedList.obj
+ 0005:0000015c       $unwind$InsertTailList     00000000000102dc     BaseLib:LinkedList.obj
+ 0005:0000015c       $unwind$IsNull             00000000000102dc     BaseLib:LinkedList.obj
+ 0005:0000015c       $unwind$AsciiStrLen        00000000000102dc     BaseLib:String.obj
+ 0005:0000015c       $unwind$ZeroMem            00000000000102dc     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:0000015c       $unwind$IsDevicePathEnd    00000000000102dc     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:0000015c       $unwind$SetDevicePathNodeLength 00000000000102dc     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000168       $unwind$RegisterPciDevice  00000000000102e8     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000017c       $unwind$PciDeviceExisted   00000000000102fc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000017c       $unwind$RemoveAllPciDeviceOnBridge 00000000000102fc     PciBusDxe:PciDeviceSupport.obj
+ 0005:0000017c       $unwind$AddDriver          00000000000102fc     PciBusDxe:PciDriverOverride.obj
+ 0005:0000017c       $unwind$CompareMem         00000000000102fc     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:0000017c       $unwind$CopyMem            00000000000102fc     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:0000017c       $unwind$InternalReallocatePool 00000000000102fc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000190       $unwind$DeRegisterPciDevice 0000000000010310     PciBusDxe:PciDeviceSupport.obj
+ 0005:000001a4       $unwind$StartPciDevicesOnBridge 0000000000010324     PciBusDxe:PciDeviceSupport.obj
+ 0005:000001c0       $unwind$StartPciDevices    0000000000010340     PciBusDxe:PciDeviceSupport.obj
+ 0005:000001cc       $unwind$CreateRootBridge   000000000001034c     PciBusDxe:PciDeviceSupport.obj
+ 0005:000001dc       $unwind$GatherDeviceInfo   000000000001035c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000001dc       $unwind$PciDevicePresent   000000000001035c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000001ec       $unwind$PciPciDeviceInfoCollector 000000000001036c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000200       $unwind$PciSearchDevice    0000000000010380     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000218       $unwind$DumpPciBars        0000000000010398     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000230       $unwind$GatherPpbInfo      00000000000103b0     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000244       $unwind$VfBarExisted       00000000000103c4     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:0000025c       $unwind$BarExisted         00000000000103dc     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000270       $unwind$PciTestSupportedAttribute 00000000000103f0     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000288       $unwind$PciSetDeviceAttribute 0000000000010408     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000294       $unwind$DetermineDeviceAttribute 0000000000010414     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002ac       $unwind$UpdatePciInfo      000000000001042c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002c0       $unwind$PciIovParseVfBar   0000000000010440     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002d0       $unwind$PciParseBar        0000000000010450     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002d0       $unwind$PciIoMap           0000000000010450     PciBusDxe:PciIo.obj
+ 0005:000002d0       $unwind$ApplyResourcePadding 0000000000010450     PciBusDxe:PciResourceSupport.obj
+ 0005:000002e8       $unwind$InitializePpb      0000000000010468     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002fc       $unwind$InitializeP2C      000000000001047c     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:000002fc       $unwind$PciIoAllocateBuffer 000000000001047c     PciBusDxe:PciIo.obj
+ 0005:00000314       $unwind$AuthenticatePciDevice 0000000000010494     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000324       $unwind$CreatePciIoDevice  00000000000104a4     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000340       $unwind$PciEnumeratorLight 00000000000104c0     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000350       $unwind$ResetAllPpbBusNumber 00000000000104d0     PciBusDxe:PciEnumeratorSupport.obj
+ 0005:00000368       $unwind$GetBackPcCardBar   00000000000104e8     PciBusDxe:PciLib.obj
+ 0005:0000037c       $unwind$RemoveRejectedPciDevices 00000000000104fc     PciBusDxe:PciLib.obj
+ 0005:00000394       $unwind$DumpBridgeResource 0000000000010514     PciBusDxe:PciLib.obj
+ 0005:000003ac       $unwind$DumpResourceMap    000000000001052c     PciBusDxe:PciLib.obj
+ 0005:000003c8       $unwind$PciHostBridgeResourceAllocator 0000000000010548     PciBusDxe:PciLib.obj
+ 0005:000003e0       $unwind$PciAllocateBusNumber 0000000000010560     PciBusDxe:PciLib.obj
+ 0005:000003e8       $unwind$PciScanBus         0000000000010568     PciBusDxe:PciLib.obj
+ 0005:00000400       $unwind$PciRootBridgeP2CProcess 0000000000010580     PciBusDxe:PciLib.obj
+ 0005:00000410       $unwind$PciHostBridgeEnumerator 0000000000010590     PciBusDxe:PciLib.obj
+ 0005:00000420       $unwind$LocalLoadFile2     00000000000105a0     PciBusDxe:PciOptionRomSupport.obj
+ 0005:00000434       $unwind$GetOpRomInfo       00000000000105b4     PciBusDxe:PciOptionRomSupport.obj
+ 0005:00000444       $unwind$LoadOpRomImage     00000000000105c4     PciBusDxe:PciOptionRomSupport.obj
+ 0005:0000045c       $unwind$RomDecode          00000000000105dc     PciBusDxe:PciOptionRomSupport.obj
+ 0005:00000470       $unwind$ProcessOpRomImage  00000000000105f0     PciBusDxe:PciOptionRomSupport.obj
+ 0005:00000488       $unwind$CalculateApertureIo16 0000000000010608     PciBusDxe:PciResourceSupport.obj
+ 0005:000004a0       $unwind$CalculateResourceAperture 0000000000010620     PciBusDxe:PciResourceSupport.obj
+ 0005:000004b8       $unwind$GetResourceFromDevice 0000000000010638     PciBusDxe:PciResourceSupport.obj
+ 0005:000004d4       $unwind$CreateResourceMap  0000000000010654     PciBusDxe:PciResourceSupport.obj
+ 0005:000004f0       $unwind$DegradeResource    0000000000010670     PciBusDxe:PciResourceSupport.obj
+ 0005:00000508       $unwind$ProgramResource    0000000000010688     PciBusDxe:PciResourceSupport.obj
+ 0005:00000508       $unwind$ProgramUpstreamBridgeForRom 0000000000010688     PciBusDxe:PciResourceSupport.obj
+ 0005:0000051c       $unwind$ProgramVfBar       000000000001069c     PciBusDxe:PciResourceSupport.obj
+ 0005:0000052c       $unwind$ProgramPpbApperture 00000000000106ac     PciBusDxe:PciResourceSupport.obj
+ 0005:0000053c       $unwind$ProgramP2C         00000000000106bc     PciBusDxe:PciResourceSupport.obj
+ 0005:0000054c       $unwind$PciIoPollIo        00000000000106cc     PciBusDxe:PciIo.obj
+ 0005:0000054c       $unwind$PciIoPollMem       00000000000106cc     PciBusDxe:PciIo.obj
+ 0005:0000055c       $unwind$PciIoIoRead        00000000000106dc     PciBusDxe:PciIo.obj
+ 0005:0000055c       $unwind$PciIoIoWrite       00000000000106dc     PciBusDxe:PciIo.obj
+ 0005:0000055c       $unwind$PciIoMemRead       00000000000106dc     PciBusDxe:PciIo.obj
+ 0005:0000055c       $unwind$PciIoMemWrite      00000000000106dc     PciBusDxe:PciIo.obj
+ 0005:00000570       $unwind$PciIoConfigRead    00000000000106f0     PciBusDxe:PciIo.obj
+ 0005:00000570       $unwind$PciIoConfigWrite   00000000000106f0     PciBusDxe:PciIo.obj
+ 0005:00000584       $unwind$PciIoCopyMem       0000000000010704     PciBusDxe:PciIo.obj
+ 0005:00000598       $unwind$SupportPaletteSnoopAttributes 0000000000010718     PciBusDxe:PciIo.obj
+ 0005:000005ac       $unwind$PciIoAttributes    000000000001072c     PciBusDxe:PciIo.obj
+ 0005:000005c8       $unwind$PciIoGetBarAttributes 0000000000010748     PciBusDxe:PciIo.obj
+ 0005:000005dc       $unwind$PciIoSetBarAttributes 000000000001075c     PciBusDxe:PciIo.obj
+ 0005:000005dc       $unwind$InternalReportStatusCode 000000000001075c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000005f0       $unwind$GetDriver          0000000000010770     PciBusDxe:PciDriverOverride.obj
+ 0005:00000608       $unwind$PciOperateRegister 0000000000010788     PciBusDxe:PciCommand.obj
+ 0005:0000061c       $unwind$LocateCapabilityRegBlock 000000000001079c     PciBusDxe:PciCommand.obj
+ 0005:0000062c       $unwind$LocatePciExpressCapabilityRegBlock 00000000000107ac     PciBusDxe:PciCommand.obj
+ 0005:00000640       $unwind$SupportsPcieHotplug 00000000000107c0     PciBusDxe:PciHotPlugSupport.obj
+ 0005:0000064c       $unwind$GetResourcePaddingForHpb 00000000000107cc     PciBusDxe:PciHotPlugSupport.obj
+ 0005:0000064c       $unwind$TdIoWrite8         00000000000107cc     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000654       $unwind$IsPciHotPlugBus    00000000000107d4     PciBusDxe:PciHotPlugSupport.obj
+ 0005:00000664       $unwind$DebugPrint         00000000000107e4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000066c       $unwind$DebugPrintMarker   00000000000107ec     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000680       $unwind$DebugAssert        0000000000010800     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000688       $unwind$FreePool           0000000000010808     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000688       $unwind$InternalAllocatePool 0000000000010808     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000690       $unwind$UefiDevicePathLibLocateProtocol 0000000000010810     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000698       $unwind$ReportStatusCodeWithExtendedData 0000000000010818     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000006b0       $unwind$AsciiSPrint        0000000000010830     BasePrintLib:PrintLib.obj
+ 0005:000006b8       $unwind$BasePrintLibSPrintMarker 0000000000010838     BasePrintLib:PrintLibInternal.obj
+ 0005:000006d4       $unwind$TdIoRead8          0000000000010854     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000006d4       $unwind$BasePrintLibSPrint 0000000000010854     BasePrintLib:PrintLibInternal.obj

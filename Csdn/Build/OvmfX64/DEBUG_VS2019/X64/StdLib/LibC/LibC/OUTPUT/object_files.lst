@@ -1,0 +1,15 @@
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/errno.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/assert.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/isinfd_ieee754.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/isinff_ieee754.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/isnand_ieee754.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/isnanf_ieee754.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/infinityf_ieee754.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/Main.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/HtoNtoH.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/ByteSwap.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/longjmp.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/x86flt_rounds.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/fpu_rmode.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/isinfl.obj
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/isnanl.obj

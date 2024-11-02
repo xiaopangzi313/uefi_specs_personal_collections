@@ -1,0 +1,1 @@
+  D:\uefi_specs_personal_collections\edk2\CryptoPkg\Library\OpensslLib\openssl\crypto\sm3\legacy_sm3.c D:\uefi_specs_personal_collections\edk2\CryptoPkg\Library\OpensslLib\openssl\crypto\sm3\sm3.c

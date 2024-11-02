@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\1A1E4886-9517-440e-9FDE-3BE44CEE2136CpuDxe\1A1E4886-9517-440e-9FDE-3BE44CEE2136SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\CpuDxe\CpuDxe\OUTPUT\CpuDxe.efi

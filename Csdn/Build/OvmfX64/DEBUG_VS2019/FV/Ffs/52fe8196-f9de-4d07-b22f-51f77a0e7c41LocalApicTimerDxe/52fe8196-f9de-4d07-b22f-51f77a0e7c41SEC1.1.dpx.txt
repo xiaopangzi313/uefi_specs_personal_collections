@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\52fe8196-f9de-4d07-b22f-51f77a0e7c41LocalApicTimerDxe\52fe8196-f9de-4d07-b22f-51f77a0e7c41SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\LocalApicTimerDxe\LocalApicTimerDxe\OUTPUT\LocalApicTimerDxe.depex

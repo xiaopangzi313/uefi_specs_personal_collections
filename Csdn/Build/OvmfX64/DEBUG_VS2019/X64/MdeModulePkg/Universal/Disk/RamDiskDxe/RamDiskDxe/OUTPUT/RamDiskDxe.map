@@ -1,0 +1,515 @@
+ RamDiskDxe
+
+ Timestamp is 6725e49a (Sat Nov  2 16:36:42 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000218H .text                   CODE
+ 0001:00000218 0000787cH .text$mn                CODE
+ 0002:00000000 00002518H .rdata                  DATA
+ 0002:00002518 00000030H .rdata$voltmd           DATA
+ 0002:00002548 00000164H .rdata$zzzdbg           DATA
+ 0003:00000000 00001400H .data                   DATA
+ 0003:00001400 00000140H .bss                    DATA
+ 0004:00000000 000004b0H .pdata                  DATA
+ 0005:00000000 000003a8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemCompareMem      0000000000000300     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemZeroMem         0000000000000340     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000000a0       InternalMemSetMem16        0000000000000360     BaseMemoryLibRepStr:SetMem16.obj
+ 0001:000000c0       InternalMemIsZeroBuffer    0000000000000380     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000f0       InternalMemSetMem64        00000000000003b0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000110       InternalMemSetMem32        00000000000003d0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000130       CpuPause                   00000000000003f0     BaseLib:CpuPause.obj
+ 0001:00000140       TdVmCall                   0000000000000400     BaseLib:TdVmcall.obj
+ 0001:000001c0       TdCall                     0000000000000480     BaseLib:TdCall.obj
+ 0001:00000218       _DriverUnloadHandler       00000000000004d8 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000002bc       _ModuleEntryPoint          000000000000057c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000344       ProcessLibraryConstructorList 0000000000000604 f   RamDiskDxe:AutoGen.obj
+ 0001:000007f8       ProcessLibraryDestructorList 0000000000000ab8 f   RamDiskDxe:AutoGen.obj
+ 0001:000008bc       ProcessModuleEntryPointList 0000000000000b7c f   RamDiskDxe:AutoGen.obj
+ 0001:000009fc       RamDiskAcpiCheck           0000000000000cbc f   RamDiskDxe:RamDiskDriver.obj
+ 0001:00000ad8       RamDiskInitDeviceNode      0000000000000d98 f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:00000b84       RamDiskPublishSsdt         0000000000000e44 f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:00000c4c       RamDiskPublishNfit         0000000000000f0c f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:00000ff0       RamDiskUnpublishNfit       00000000000012b0 f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:0000126c       RamDiskRegister            000000000000152c f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:00001544       RamDiskUnregister          0000000000001804 f   RamDiskDxe:RamDiskProtocol.obj
+ 0001:0000172c       InstallRamDiskConfigForm   00000000000019ec f   RamDiskDxe:RamDiskImpl.obj
+ 0001:000017f4       UninstallRamDiskConfigForm 0000000000001ab4 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:0000185c       UnregisterAllRamDisks      0000000000001b1c f   RamDiskDxe:RamDiskImpl.obj
+ 0001:00001960       LibExtractConfig           0000000000001c20 f   FileExplorerLib:FileExplorer.obj
+ 0001:00001960       RamDiskExtractConfig       0000000000001c20 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:00001984       LibRouteConfig             0000000000001c44 f   FileExplorerLib:FileExplorer.obj
+ 0001:00001984       RamDiskRouteConfig         0000000000001c44 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:000019a8       HiiCreateRamDisk           0000000000001c68 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:00001e90       UpdateMainForm             0000000000002150 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:000020e8       RamDiskCallback            00000000000023a8 f   RamDiskDxe:RamDiskImpl.obj
+ 0001:00002574       RamDiskInitBlockIo         0000000000002834 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002638       RamDiskBlkIoFlushBlocks    00000000000028f8 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002638       RamDiskBlkIo2Reset         00000000000028f8 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002638       RamDiskBlkIoReset          00000000000028f8 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:0000263c       RamDiskBlkIoReadBlocks     00000000000028fc f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002714       RamDiskBlkIoWriteBlocks    00000000000029d4 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:000027fc       RamDiskBlkIo2ReadBlocksEx  0000000000002abc f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002898       RamDiskBlkIo2WriteBlocksEx 0000000000002b58 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:00002934       RamDiskBlkIo2FlushBlocksEx 0000000000002bf4 f   RamDiskDxe:RamDiskBlockIo.obj
+ 0001:000029a8       CopyGuid                   0000000000002c68 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00002a58       CompareGuid                0000000000002d18 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00002b1c       CopyMem                    0000000000002ddc f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002bb8       CompareMem                 0000000000002e78 f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00002c90       InternalBaseLibIsListValid 0000000000002f50 f   BaseLib:LinkedList.obj
+ 0001:00002cfc       InsertTailList             0000000000002fbc f   BaseLib:LinkedList.obj
+ 0001:00002d50       IsListEmpty                0000000000003010 f   BaseLib:LinkedList.obj
+ 0001:00002d88       RemoveEntryList            0000000000003048 f   BaseLib:LinkedList.obj
+ 0001:00002dd0       CalculateCheckSum8         0000000000003090 f   BaseLib:CheckSum.obj
+ 0001:00002e4c       DivU64x32Remainder         000000000000310c f   BaseLib:DivU64x32Remainder.obj
+ 0001:00002eac       UnicodeSPrint              000000000000316c f   BasePrintLib:PrintLib.obj
+ 0001:00002f30       AsciiSPrint                00000000000031f0 f   BasePrintLib:PrintLib.obj
+ 0001:00002f5c       BasePrintLibFillBuffer     000000000000321c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002f90       BasePrintLibValueToString  0000000000003250 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002fe0       BasePrintLibSPrintMarker   00000000000032a0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003ef8       BasePrintLibSPrint         00000000000041b8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003f1c       DebugPrint                 00000000000041dc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00003f40       DebugPrintMarker           0000000000004200 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00003fcc       DebugAssert                000000000000428c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004048       InternalAllocatePool       0000000000004308 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004078       AllocateZeroPool           0000000000004338 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000040a0       InternalAllocateCopyPool   0000000000004360 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004118       InternalReallocatePool     00000000000043d8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004194       FreePool                   0000000000004454 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000041d8       NextDevicePathNode         0000000000004498 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00004248       IsDevicePathEnd            0000000000004508 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000042c0       SetDevicePathNodeLength    0000000000004580 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00004340       DevicePathFromHandle       0000000000004600 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00004374       FileDevicePath             0000000000004634 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00004460       GetBestLanguage            0000000000004720 f   UefiLib:UefiLib.obj
+ 0001:00004598       EfiOpenFileByDevicePath    0000000000004858 f   UefiLib:UefiLib.obj
+ 0001:000047cc       EfiCreateEventReadyToBootEx 0000000000004a8c f   UefiLib:UefiNotTiano.obj
+ 0001:00004870       UefiLibGetStringWidth      0000000000004b30 f   UefiLib:Console.obj
+ 0001:0000491c       CreatePopUp                0000000000004bdc f   UefiLib:Console.obj
+ 0001:00004cd4       HiiSetString               0000000000004f94 f   UefiHiiLib:HiiString.obj
+ 0001:00004e24       HiiGetStringEx             00000000000050e4 f   UefiHiiLib:HiiString.obj
+ 0001:00005040       HiiAddPackages             0000000000005300 f   UefiHiiLib:HiiLib.obj
+ 0001:0000518c       HiiRemovePackages          000000000000544c f   UefiHiiLib:HiiLib.obj
+ 0001:000051fc       HiiAllocateOpCodeHandle    00000000000054bc f   UefiHiiLib:HiiLib.obj
+ 0001:0000524c       InternalHiiGrowOpCodeHandle 000000000000550c f   UefiHiiLib:HiiLib.obj
+ 0001:000052f4       InternalHiiCreateOpCodeExtended 00000000000055b4 f   UefiHiiLib:HiiLib.obj
+ 0001:000053a8       HiiCreateGuidOpCode        0000000000005668 f   UefiHiiLib:HiiLib.obj
+ 0001:000053fc       HiiCreateGotoOpCode        00000000000056bc f   UefiHiiLib:HiiLib.obj
+ 0001:00005484       InternalHiiUpdateFormPackageData 0000000000005744 f   UefiHiiLib:HiiLib.obj
+ 0001:000056f0       HiiUpdateForm              00000000000059b0 f   UefiHiiLib:HiiLib.obj
+ 0001:0000597c       HiiGetSupportedLanguages   0000000000005c3c f   UefiHiiLib:HiiLanguage.obj
+ 0001:00005a20       GetHobList                 0000000000005ce0 f   DxeHobLib:HobLib.obj
+ 0001:00005b00       LibCallback                0000000000005dc0 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005d48       LibCreateMenuEntry         0000000000006008 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005d94       LibGetMenuEntry            0000000000006054 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005e0c       LibDestroyMenuEntry        00000000000060cc f   FileExplorerLib:FileExplorer.obj
+ 0001:00005e88       LibFreeMenu                0000000000006148 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005f00       LibStrDuplicate            00000000000061c0 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005f6c       LibAppendFileName          000000000000622c f   FileExplorerLib:FileExplorer.obj
+ 0001:00006118       LibFindFileSystem          00000000000063d8 f   FileExplorerLib:FileExplorer.obj
+ 0001:000063fc       LibGetFileHandleFromDevicePath 00000000000066bc f   FileExplorerLib:FileExplorer.obj
+ 0001:00006658       LibCreateNewFile           0000000000006918 f   FileExplorerLib:FileExplorer.obj
+ 0001:0000672c       LibFindFiles               00000000000069ec f   FileExplorerLib:FileExplorer.obj
+ 0001:000069ac       LibUpdateFileExplorePage   0000000000006c6c f   FileExplorerLib:FileExplorer.obj
+ 0001:00006c50       LibUpdateFileExplorer      0000000000006f10 f   FileExplorerLib:FileExplorer.obj
+ 0001:00006d24       LibGetDevicePath           0000000000006fe4 f   FileExplorerLib:FileExplorer.obj
+ 0001:00006d78       ChooseFile                 0000000000007038 f   FileExplorerLib:FileExplorer.obj
+ 0001:00006e50       InternalImageHandleToFvHandle 0000000000007110 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00006ed8       InternalGetSectionFromFv   0000000000007198 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00006fb0       ZeroMem                    0000000000007270 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00007020       SetMem16                   00000000000072e0 f   BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0001:000070e8       StrnLenS                   00000000000073a8 f   BaseLib:SafeString.obj
+ 0001:00007150       StrCpyS                    0000000000007410 f   BaseLib:SafeString.obj
+ 0001:000072f4       StrnCpyS                   00000000000075b4 f   BaseLib:SafeString.obj
+ 0001:000074cc       StrCatS                    000000000000778c f   BaseLib:SafeString.obj
+ 0001:000076b4       StrLen                     0000000000007974 f   BaseLib:String.obj
+ 0001:0000773c       StrStr                     00000000000079fc f   BaseLib:String.obj
+ 0001:00007804       AsciiStrLen                0000000000007ac4 f   BaseLib:String.obj
+ 0001:00007870       AsciiStrnCmp               0000000000007b30 f   BaseLib:String.obj
+ 0001:0000793c       SerialPortWrite            0000000000007bfc f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:000079c0       IsTdxGuest                 0000000000007c80 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:000079ec       TdIoRead8                  0000000000007cac f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00007a44       TdIoWrite8                 0000000000007d04 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000007d60     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000007d88     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0FP@ODLELCIC@D?3?2uefi_specs_personal_collecti@ 0000000000007db0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:000000b0       ??_C@_0L@KBBALGDJ@RamDiskDxe@ 0000000000007e10     RamDiskDxe:AutoGen.obj
+ 0002:000000c0       ??_C@_0IJ@PBODAJKM@d?3?2uefi_specs_personal_collecti@ 0000000000007e20     RamDiskDxe:AutoGen.obj
+ 0002:0000014c       _gPcd_FixedAtBuild_PcdAcpiDefaultOemId 0000000000007eac     RamDiskDxe:AutoGen.obj
+ 0002:00000160       ??_C@_0GD@BNLIKAOG@RamDiskAcpiCheck?3?5Cannot?5locate@ 0000000000007ec0     RamDiskDxe:RamDiskDriver.obj
+ 0002:000001d0       ??_C@_0GB@MEOCDBHF@RamDiskAcpiCheck?3?5Cannot?5locate@ 0000000000007f30     RamDiskDxe:RamDiskDriver.obj
+ 0002:00000238       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000007f98     RamDiskDxe:RamDiskDriver.obj
+ 0002:00000250       ??_C@_0FP@DPEFJGPP@D?3?2uefi_specs_personal_collecti@ 0000000000007fb0     RamDiskDxe:RamDiskDriver.obj
+ 0002:000002b0       ??_C@_0BJ@KGHECGOD@Driver?5already?5started?$CB?6@ 0000000000008010     RamDiskDxe:RamDiskDriver.obj
+ 0002:000002d0       ??_C@_0FC@PHDEKBJC@ConfigPrivate?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI@ 0000000000008030     RamDiskDxe:RamDiskDriver.obj
+ 0002:00000330       ??_C@_0GB@IIFBIBKJ@D?3?2uefi_specs_personal_collecti@ 0000000000008090     RamDiskDxe:RamDiskProtocol.obj
+ 0002:00000398       ??_C@_0DJ@CIDFFKAG@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 00000000000080f8     RamDiskDxe:RamDiskProtocol.obj
+ 0002:000003d8       ??_C@_0BK@BEMEMBP@MemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008138     RamDiskDxe:RamDiskProtocol.obj
+ 0002:00000400       ??_C@_0EP@DLAOFOF@RamDiskPublishNfit?3?5RAM?5disk?5wi@ 0000000000008160     RamDiskDxe:RamDiskProtocol.obj
+ 0002:00000450       ??_C@_0EA@CHLMIELN@RamDiskPublishNfit?3?5A?5NFIT?5is?5a@ 00000000000081b0     RamDiskDxe:RamDiskProtocol.obj
+ 0002:00000490       ??_C@_0EE@JOJIMDHM@RamDiskPublishNfit?3?5No?5NFIT?5is?5@ 00000000000081f0     RamDiskDxe:RamDiskProtocol.obj
+ 0002:000004e0       ??_C@_0FN@KNHCDNIL@D?3?2uefi_specs_personal_collecti@ 0000000000008240     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000540       ??_C@_11LOCGONAA@@         00000000000082a0     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000548       ??_C@_1DI@OGKNCJLH@?$AAP?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAE?$AAN?$AAT?$AAE?$AAR?$AA?5?$AAt?$AAo?$AA?5@ 00000000000082a8     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000580       ??_C@_1FO@LPLEAKEO@?$AAN?$AAo?$AAt?$AA?5?$AAe?$AAn?$AAo?$AAu?$AAg?$AAh?$AA?5?$AAm?$AAe?$AAm?$AAo@ 00000000000082e0     RamDiskDxe:RamDiskImpl.obj
+ 0002:000005e0       ??_C@_1FE@INMJPINH@?$AAN?$AAo?$AAt?$AA?5?$AAe?$AAn?$AAo?$AAu?$AAg?$AAh?$AA?5?$AAm?$AAe?$AAm?$AAo@ 0000000000008340     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000638       ??_C@_1DC@FPBJCKFI@?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAc?$AAo?$AAn?$AAt?$AAe?$AAn?$AAt?$AA?5?$AAr?$AAe@ 0000000000008398     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000670       ??_C@_1FK@CHJMPKHK@?$AAF?$AAa?$AAi?$AAl?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe@ 00000000000083d0     RamDiskDxe:RamDiskImpl.obj
+ 0002:000006d0       ??_C@_0CC@PIBHJFDN@StartOpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008430     RamDiskDxe:RamDiskImpl.obj
+ 0002:000006f8       ??_C@_0CA@FMKGPAPI@EndOpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008458     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000718       ??_C@_1DO@IMLEIFHC@?$AA?5?$AA?5?$AAR?$AAA?$AAM?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5@ 0000000000008478     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000758       ??_C@_0O@EMMLPDMJ@StringId?5?$CB?$DN?50@ 00000000000084b8     RamDiskDxe:RamDiskImpl.obj
+ 0002:00000768       ??_C@_0BG@CJDFNAOE@Media?9?$DOBlockSize?5?$CB?$DN?50@ 00000000000084c8     RamDiskDxe:RamDiskBlockIo.obj
+ 0002:00000780       ??_C@_0GA@EOGJAIBJ@D?3?2uefi_specs_personal_collecti@ 00000000000084e0     RamDiskDxe:RamDiskBlockIo.obj
+ 0002:000007e0       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000008540     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000820       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008580     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000870       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 00000000000085d0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000008d0       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008630     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000910       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008670     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000940       ??_C@_0FP@MJKEJMKF@D?3?2uefi_specs_personal_collecti@ 00000000000086a0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:000009a0       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008700     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:000009c0       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008720     BaseLib:LinkedList.obj
+ 0002:000009e0       ??_C@_0EM@NCJPOFNN@D?3?2uefi_specs_personal_collecti@ 0000000000008740     BaseLib:LinkedList.obj
+ 0002:00000a30       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008790     BaseLib:LinkedList.obj
+ 0002:00000a58       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000087b8     BaseLib:LinkedList.obj
+ 0002:00000a78       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000087d8     BaseLib:LinkedList.obj
+ 0002:00000a98       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 00000000000087f8     BaseLib:LinkedList.obj
+ 0002:00000ac0       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000008820     BaseLib:LinkedList.obj
+ 0002:00000ad8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008838     BaseLib:CheckSum.obj
+ 0002:00000af0       ??_C@_0EK@EIAGJCGN@D?3?2uefi_specs_personal_collecti@ 0000000000008850     BaseLib:CheckSum.obj
+ 0002:00000b40       ??_C@_0DI@FAOGOFLE@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000088a0     BaseLib:CheckSum.obj
+ 0002:00000b80       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 00000000000088e0     BaseLib:Unaligned.obj
+ 0002:00000bd0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000008930     BaseLib:DivU64x32Remainder.obj
+ 0002:00000be0       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000008940     BaseLib:DivU64x32Remainder.obj
+ 0002:00000c38       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 0000000000008998     BasePrintLib:PrintLib.obj
+ 0002:00000c60       ??_C@_0EP@OFLCNDBG@D?3?2uefi_specs_personal_collecti@ 00000000000089c0     BasePrintLib:PrintLib.obj
+ 0002:00000cb0       ??_C@_0CH@KJLBGOBB@?$CI?$CI?$CIUINTN?$CJ?5?$CIFormatString?$CJ?$CJ?5?$CG?50x0@ 0000000000008a10     BasePrintLib:PrintLib.obj
+ 0002:00000ce0       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000008a40     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d38       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000008a98     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d60       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000008ac0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000da8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000008b08     BasePrintLib:PrintLibInternal.obj
+ 0002:00000dd0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000008b30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e20       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000008b80     BasePrintLib:PrintLibInternal.obj
+ 0002:00000eb0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000008c10     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f38       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000008c98     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f48       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000008ca8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f58       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000008cb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f90       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000008cf0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fa0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000008d00     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fbc       ??_C@_04JIMNDDED@?$CF08X@  0000000000008d1c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fc4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000008d24     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fc8       ??_C@_01LIIJDEN@?$AN@      0000000000008d28     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fd0       mWarningString             0000000000008d30     BasePrintLib:PrintLibInternal.obj
+ 0002:000010a0       mErrorString               0000000000008e00     BasePrintLib:PrintLibInternal.obj
+ 0002:00001380       mHexStr                    00000000000090e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001390       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000090f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000013b0       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000009110     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001410       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000009170     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001428       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009188     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001450       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 00000000000091b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000014c0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009220     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000014d8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009238     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000014f0       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 0000000000009250     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001558       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 00000000000092b8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001598       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000092f8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000015b0       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000009310     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001630       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000009390     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000016a0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000009400     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000016d8       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009438     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000016f0       ??_C@_0EH@ENCEEKKL@?$CILength?5?$DO?$DN?5sizeof?5?$CIEFI_DEVICE_P@ 0000000000009450     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001738       ??_C@_0BF@MBJFHGBE@Size?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009498     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001750       mUefiDevicePathLibEndDevicePath 00000000000094b0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001760       ??_C@_0GF@MFAMBDAB@D?3?2uefi_specs_personal_collecti@ 00000000000094c0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000017d0       ??_C@_0EJ@PPOMJLJB@D?3?2uefi_specs_personal_collecti@ 0000000000009530     UefiLib:UefiLib.obj
+ 0002:00001820       ??_C@_0BH@FMEOEIBC@?$CKValue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009580     UefiLib:UefiLib.obj
+ 0002:00001838       ??_C@_0CD@OLFKAJF@SupportedLanguages?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000009598     UefiLib:UefiLib.obj
+ 0002:00001860       ??_C@_0CG@CADOKAGM@?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus?$CJ@ 00000000000095c0     UefiLib:UefiLib.obj
+ 0002:00001890       ??_C@_0EO@FMFPDNNA@D?3?2uefi_specs_personal_collecti@ 00000000000095f0     UefiLib:UefiNotTiano.obj
+ 0002:000018e0       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000009640     UefiLib:UefiNotTiano.obj
+ 0002:000018f8       ??_C@_0CB@LNNMJOKK@ReadyToBootEvent?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000009658     UefiLib:UefiNotTiano.obj
+ 0002:00001920       ??_C@_0CH@LOBIJKLE@EFI1?41?5can?8t?5support?5ReadyToBoo@ 0000000000009680     UefiLib:UefiNotTiano.obj
+ 0002:00001948       ??_C@_0BD@BHENKNKP@NumberOfLines?5?$CB?$DN?50@ 00000000000096a8     UefiLib:Console.obj
+ 0002:00001960       ??_C@_0EJ@IEDGPIME@D?3?2uefi_specs_personal_collecti@ 00000000000096c0     UefiLib:Console.obj
+ 0002:000019b0       ??_C@_0P@ICDOOCHP@MaxLength?5?$CB?$DN?50@ 0000000000009710     UefiLib:Console.obj
+ 0002:000019c0       ??_C@_0BF@DMEONNDO@Line?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009720     UefiLib:Console.obj
+ 0002:000019d8       ??_C@_0BK@IHAIHFJE@TmpString?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009738     UefiLib:Console.obj
+ 0002:000019f8       ??_C@_17LGKOMLJ@?$AA?4?$AA?4?$AA?4@ 0000000000009758     UefiLib:Console.obj
+ 0002:00001a00       ??_C@_0BK@KLJHMMPJ@HiiHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009760     UefiHiiLib:HiiString.obj
+ 0002:00001a20       ??_C@_0FE@MDBONEFA@D?3?2uefi_specs_personal_collecti@ 0000000000009780     UefiHiiLib:HiiString.obj
+ 0002:00001a78       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000097d8     UefiHiiLib:HiiString.obj
+ 0002:00001a90       ??_C@_06PLDEFKP@x?9UEFI@   00000000000097f0     UefiHiiLib:HiiString.obj
+ 0002:00001a98       ??_C@_0CA@OEKIMLLB@PackageListGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000097f8     UefiHiiLib:HiiString.obj
+ 0002:00001ab8       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000009818     UefiHiiLib:HiiString.obj
+ 0002:00001ad2       ??_C@_00CNPNBAHC@@         0000000000009832     UefiHiiLib:HiiString.obj
+ 0002:00001ae0       ??_C@_0FB@IJGKLPLP@D?3?2uefi_specs_personal_collecti@ 0000000000009840     UefiHiiLib:HiiLib.obj
+ 0002:00001b38       ??_C@_0BN@OKKMNGPH@OpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009898     UefiHiiLib:HiiLib.obj
+ 0002:00001b58       ??_C@_0BP@IOABAFLF@OpCodeTemplate?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000098b8     UefiHiiLib:HiiLib.obj
+ 0002:00001b78       ??_C@_0CF@DPHCOLMP@?$CIOpCodeSize?5?$CL?5ExtensionSize?$CJ?5?$DM?$DN@ 00000000000098d8     UefiHiiLib:HiiLib.obj
+ 0002:00001ba0       mEndOfPakageList           0000000000009900     UefiHiiLib:HiiLib.obj
+ 0002:00001bb0       ??_C@_0FG@CHPJEMDC@D?3?2uefi_specs_personal_collecti@ 0000000000009910     UefiHiiLib:HiiLanguage.obj
+ 0002:00001c10       ??_C@_0EK@CGIIDOCH@D?3?2uefi_specs_personal_collecti@ 0000000000009970     DxeHobLib:HobLib.obj
+ 0002:00001c60       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000099c0     DxeHobLib:HobLib.obj
+ 0002:00001c80       ??_C@_0CE@MDBJFLCA@MenuNumber?5?$DM?5MenuOption?9?$DOMenuNu@ 00000000000099e0     FileExplorerLib:FileExplorer.obj
+ 0002:00001cb0       ??_C@_0FM@OOPJOJGB@D?3?2uefi_specs_personal_collecti@ 0000000000009a10     FileExplorerLib:FileExplorer.obj
+ 0002:00001d10       ??_C@_0BH@GHAKFHML@ToText?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009a70     FileExplorerLib:FileExplorer.obj
+ 0002:00001d28       ??_C@_0BF@CPBCKIGP@Dest?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009a88     FileExplorerLib:FileExplorer.obj
+ 0002:00001d40       ??_C@_0BH@FMMHHFDB@TmpStr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009aa0     FileExplorerLib:FileExplorer.obj
+ 0002:00001d58       ??_C@_0BE@LNIAOOBG@Str?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009ab8     FileExplorerLib:FileExplorer.obj
+ 0002:00001d6c       ??_C@_13FPGAJAPJ@?$AA?2@   0000000000009acc     FileExplorerLib:FileExplorer.obj
+ 0002:00001d70       ??_C@_1CI@JGIGCDAN@?$AAN?$AAO?$AA?5?$AAF?$AAI?$AAL?$AAE?$AA?5?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA?5@ 0000000000009ad0     FileExplorerLib:FileExplorer.obj
+ 0002:00001d98       ??_C@_1CA@KOPNEOKK@?$AAN?$AAO?$AA?5?$AAV?$AAO?$AAL?$AAU?$AAM?$AAE?$AA?5?$AAL?$AAA?$AAB?$AAE?$AAL@ 0000000000009af8     FileExplorerLib:FileExplorer.obj
+ 0002:00001db8       ??_C@_0CJ@CDKCBEKC@MenuEntry?9?$DODisplayString?5?$CB?$DN?5?$CI?$CIv@ 0000000000009b18     FileExplorerLib:FileExplorer.obj
+ 0002:00001de8       ??_C@_1BC@GMOFGFBO@?$AA?$CF?$AAs?$AA?0?$AA?5?$AA?$FL?$AA?$CF?$AAs?$AA?$FN@ 0000000000009b48     FileExplorerLib:FileExplorer.obj
+ 0002:00001e00       ??_C@_19ECGOGJPA@?$AA?$DM?$AA?$CF?$AAs?$AA?$DO@ 0000000000009b60     FileExplorerLib:FileExplorer.obj
+ 0002:00001e10       ??_C@_0CF@KMPENEEM@gHiiVendorDevicePath?5?$CB?$DN?5?$CI?$CIvoid?5@ 0000000000009b70     FileExplorerLib:FileExplorer.obj
+ 0002:00001e38       ??_C@_0DB@BODFOPAI@gFileExplorerPrivate?4FeHiiHandl@ 0000000000009b98     FileExplorerLib:FileExplorer.obj
+ 0002:00001e70       ??_C@_0BM@PHFBGKMM@ImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009bd0     DxeServicesLib:DxeServicesLib.obj
+ 0002:00001e90       ??_C@_0FH@ONKDGBKO@D?3?2uefi_specs_personal_collecti@ 0000000000009bf0     DxeServicesLib:DxeServicesLib.obj
+ 0002:00001ee8       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000009c48     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001f20       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 0000000000009c80     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001f80       ??_C@_0FN@FGCCNHON@D?3?2uefi_specs_personal_collecti@ 0000000000009ce0     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0002:00001fe0       ??_C@_0CO@LECKNDNC@?$CI?$CI?$CIUINTN?$CJBuffer?$CJ?5?$CG?5?$CIsizeof?5?$CIVal@ 0000000000009d40     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0002:00002010       ??_C@_0CF@LEICOABD@?$CILength?5?$CG?5?$CIsizeof?5?$CIValue?$CJ?5?9?51?$CJ?$CJ@ 0000000000009d70     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0002:00002040       ??_C@_0GB@IELKNBGB@D?3?2uefi_specs_personal_collecti@ 0000000000009da0     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0002:000020a8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000009e08     BaseLib:SafeString.obj
+ 0002:000020d0       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000009e30     BaseLib:SafeString.obj
+ 0002:00002120       ??_C@_0CH@LALFPBMC@?$CI?$CIUINTN?$CJDestination?5?$CG?50x0000000@ 0000000000009e80     BaseLib:SafeString.obj
+ 0002:00002148       ??_C@_0CC@HEBCMBPF@?$CI?$CIUINTN?$CJSource?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000009ea8     BaseLib:SafeString.obj
+ 0002:00002170       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000009ed0     BaseLib:SafeString.obj
+ 0002:00002190       ??_C@_07KBGDFDAM@StrCpyS@  0000000000009ef0     BaseLib:SafeString.obj
+ 0002:000021a0       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 0000000000009f00     BaseLib:SafeString.obj
+ 0002:000021e0       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000009f40     BaseLib:SafeString.obj
+ 0002:00002200       ??_C@_0EA@BBALOHPI@?$CIDestMax?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild@ 0000000000009f60     BaseLib:SafeString.obj
+ 0002:00002240       ??_C@_0P@PMIMLIHM@?$CIDestMax?5?$CB?$DN?50?$CJ@ 0000000000009fa0     BaseLib:SafeString.obj
+ 0002:00002250       ??_C@_0BG@EEGIIOKH@?$CIDestMax?5?$DO?5SourceLen?$CJ@ 0000000000009fb0     BaseLib:SafeString.obj
+ 0002:00002270       ??_C@_0FH@PPBLBDBJ@InternalSafeStringNoStrOverlap?5@ 0000000000009fd0     BaseLib:SafeString.obj
+ 0002:000022c8       ??_C@_08INOAHJON@StrnCpyS@ 000000000000a028     BaseLib:SafeString.obj
+ 0002:000022d8       ??_C@_0DP@PBOJGJC@?$CILength?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild_@ 000000000000a038     BaseLib:SafeString.obj
+ 0002:00002318       ??_C@_07EBBOPAKF@StrCatS@  000000000000a078     BaseLib:SafeString.obj
+ 0002:00002320       ??_C@_0P@BHOOOJPD@?$CICopyLen?5?$CB?$DN?50?$CJ@ 000000000000a080     BaseLib:SafeString.obj
+ 0002:00002330       ??_C@_0BG@BPGICNPK@?$CICopyLen?5?$DO?5SourceLen?$CJ@ 000000000000a090     BaseLib:SafeString.obj
+ 0002:00002350       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 000000000000a0b0     BaseLib:String.obj
+ 0002:00002398       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000a0f8     BaseLib:String.obj
+ 0002:000023d8       ??_C@_0BG@KBNOLIGE@StrSize?5?$CIString?$CJ?5?$CB?$DN?50@ 000000000000a138     BaseLib:String.obj
+ 0002:000023f0       ??_C@_0BM@NNBLOHJD@StrSize?5?$CISearchString?$CJ?5?$CB?$DN?50@ 000000000000a150     BaseLib:String.obj
+ 0002:00002410       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000a170     BaseLib:String.obj
+ 0002:00002448       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 000000000000a1a8     BaseLib:String.obj
+ 0002:00002468       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 000000000000a1c8     BaseLib:String.obj
+ 0002:00002488       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 000000000000a1e8     BaseLib:String.obj
+ 0002:00002518       __volatile_metadata        000000000000a278     <linker-defined>
+ 0003:00000000       gEfiLoadedImageProtocolGuid 000000000000a420     RamDiskDxe:AutoGen.obj
+ 0003:00000010       gEfiGlobalVariableGuid     000000000000a430     RamDiskDxe:AutoGen.obj
+ 0003:00000020       gEfiIfrTianoGuid           000000000000a440     RamDiskDxe:AutoGen.obj
+ 0003:00000030       gEfiRamDiskProtocolGuid    000000000000a450     RamDiskDxe:AutoGen.obj
+ 0003:00000040       gEfiEventReadyToBootGuid   000000000000a460     RamDiskDxe:AutoGen.obj
+ 0003:00000050       gEfiBlockIo2ProtocolGuid   000000000000a470     RamDiskDxe:AutoGen.obj
+ 0003:00000060       gEfiFileInfoGuid           000000000000a480     RamDiskDxe:AutoGen.obj
+ 0003:00000070       gEfiDevicePathProtocolGuid 000000000000a490     RamDiskDxe:AutoGen.obj
+ 0003:00000080       gEfiFirmwareVolume2ProtocolGuid 000000000000a4a0     RamDiskDxe:AutoGen.obj
+ 0003:00000090       gRamDiskFormSetGuid        000000000000a4b0     RamDiskDxe:AutoGen.obj
+ 0003:000000a0       gEfiDevicePathToTextProtocolGuid 000000000000a4c0     RamDiskDxe:AutoGen.obj
+ 0003:000000b0       gEfiHiiConfigRoutingProtocolGuid 000000000000a4d0     RamDiskDxe:AutoGen.obj
+ 0003:000000c0       gEfiHiiImageProtocolGuid   000000000000a4e0     RamDiskDxe:AutoGen.obj
+ 0003:000000d0       gEfiDevicePathUtilitiesProtocolGuid 000000000000a4f0     RamDiskDxe:AutoGen.obj
+ 0003:000000e0       gEfiHiiDatabaseProtocolGuid 000000000000a500     RamDiskDxe:AutoGen.obj
+ 0003:000000f0       gEfiSimpleFileSystemProtocolGuid 000000000000a510     RamDiskDxe:AutoGen.obj
+ 0003:00000100       gEfiHiiStringProtocolGuid  000000000000a520     RamDiskDxe:AutoGen.obj
+ 0003:00000110       gEfiAcpiTableProtocolGuid  000000000000a530     RamDiskDxe:AutoGen.obj
+ 0003:00000120       gEfiAcpiSdtProtocolGuid    000000000000a540     RamDiskDxe:AutoGen.obj
+ 0003:00000130       RamDiskDxeStrings          000000000000a550     RamDiskDxe:AutoGen.obj
+ 0003:00000670       gEfiHiiConfigAccessProtocolGuid 000000000000aa90     RamDiskDxe:AutoGen.obj
+ 0003:00000680       gEfiHobListGuid            000000000000aaa0     RamDiskDxe:AutoGen.obj
+ 0003:00000690       gEfiFileSystemVolumeLabelInfoIdGuid 000000000000aab0     RamDiskDxe:AutoGen.obj
+ 0003:000006a0       gEfiFormBrowser2ProtocolGuid 000000000000aac0     RamDiskDxe:AutoGen.obj
+ 0003:000006b0       gEfiVirtualDiskGuid        000000000000aad0     RamDiskDxe:AutoGen.obj
+ 0003:000006c0       gEfiBlockIoProtocolGuid    000000000000aae0     RamDiskDxe:AutoGen.obj
+ 0003:000006d0       gEfiCallerIdGuid           000000000000aaf0     RamDiskDxe:AutoGen.obj
+ 0003:000006e0       gEfiHiiFontProtocolGuid    000000000000ab00     RamDiskDxe:AutoGen.obj
+ 0003:000006f0       mRamDiskProtocol           000000000000ab10     RamDiskDxe:RamDiskDriver.obj
+ 0003:00000700       mRamDiskPrivateDataTemplate 000000000000ab20     RamDiskDxe:RamDiskProtocol.obj
+ 0003:000007e0       mRamDiskDeviceNodeTemplate 000000000000ac00     RamDiskDxe:RamDiskProtocol.obj
+ 0003:00000810       mRamDiskConfigPrivateDataTemplate 000000000000ac30     RamDiskDxe:RamDiskImpl.obj
+ 0003:00000850       mRamDiskHiiVendorDevicePath 000000000000ac70     RamDiskDxe:RamDiskImpl.obj
+ 0003:00000868       mRamDiskBlockIoTemplate    000000000000ac88     RamDiskDxe:RamDiskBlockIo.obj
+ 0003:00000898       mRamDiskBlockIo2Template   000000000000acb8     RamDiskDxe:RamDiskBlockIo.obj
+ 0003:000008c0       RamDiskHiiBin              000000000000ace0     RamDiskDxe:RamDiskHii.obj
+ 0003:00000a08       FeHiiVendorDevicePath      000000000000ae28     FileExplorerLib:FileExplorer.obj
+ 0003:00000a20       FileExplorerGuid           000000000000ae40     FileExplorerLib:FileExplorer.obj
+ 0003:00000a30       mNewFolderQuestionId       000000000000ae50     FileExplorerLib:FileExplorer.obj
+ 0003:00000a40       gFileExplorerPrivate       000000000000ae60     FileExplorerLib:FileExplorer.obj
+ 0003:00000a98       mNewFileQuestionId         000000000000aeb8     FileExplorerLib:FileExplorer.obj
+ 0003:00000aa0       mFsOptionMenu              000000000000aec0     FileExplorerLib:FileExplorer.obj
+ 0003:00000ad0       FileExplorerVfrBin         000000000000aef0     FileExplorerLib:FileExplorerVfr.obj
+ 0003:00000bd0       FileExplorerLibStrings     000000000000aff0     FileExplorerLib:AutoGen.obj
+ 0003:00001400       mAcpiTableProtocol         000000000000b820     RamDiskDxe:RamDiskDriver.obj
+ 0003:00001408       mAcpiSdtProtocol           000000000000b828     RamDiskDxe:RamDiskDriver.obj
+ 0003:00001410       mRamDiskHandle             000000000000b830     RamDiskDxe:RamDiskDriver.obj
+ 0003:00001418       mRamDiskSsdtTableKeyValid  000000000000b838     RamDiskDxe:RamDiskProtocol.obj
+ 0003:00001420       gST                        000000000000b840     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001428       gBS                        000000000000b848     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001430       gImageHandle               000000000000b850     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001438       gRT                        000000000000b858     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00001440       mDevicePathLibDevicePathUtilities 000000000000b860     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00001448       gHiiString                 000000000000b868     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00001450       gHiiFont                   000000000000b870     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00001458       gHiiConfigRouting          000000000000b878     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00001460       gHiiImage                  000000000000b880     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00001468       gHiiDatabase               000000000000b888     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00001470       mHobList                   000000000000b890     DxeHobLib:HobLib.obj
+ 0003:00001478       mLibEndOpCodeHandle        000000000000b898     FileExplorerLib:FileExplorer.obj
+ 0003:00001480       mLibStartLabel             000000000000b8a0     FileExplorerLib:FileExplorer.obj
+ 0003:00001488       mLibStartOpCodeHandle      000000000000b8a8     FileExplorerLib:FileExplorer.obj
+ 0003:00001490       mLibEndLabel               000000000000b8b0     FileExplorerLib:FileExplorer.obj
+ 0003:000014a0       gParity                    000000000000b8c0     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000014a1       gBreakSet                  000000000000b8c1     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000014a2       mQuestionIdUpdate          000000000000b8c2     <common>
+ 0003:000014c0       mNewFolderName             000000000000b8e0     <common>
+ 0003:000014e8       gHiiVendorDevicePath       000000000000b908     <common>
+ 0003:00001500       mNewFileName               000000000000b920     <common>
+ 0003:00001528       mRamDiskSsdtTableKey       000000000000b948     <common>
+ 0003:00001530       RegisteredRamDisks         000000000000b950     <common>
+
+ entry point at        0001:000002bc
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000e5       @ReturnFalse               00000000000003a5     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:00000199       TdVmCall.no_return_data    0000000000000459     BaseLib:TdVmcall.obj
+ 0001:0000020b       TdCall.exit                00000000000004cb     BaseLib:TdCall.obj
+ 0003:00001419       mCcProbeGuestType          000000000000b839     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:0000141a       mCcProbed                  000000000000b83a     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00001498       mDeadLoopComparator        000000000000b8b8     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$ProcessLibraryDestructorList 000000000000be20     RamDiskDxe:AutoGen.obj
+ 0005:00000000       $unwind$_DriverUnloadHandler 000000000000be20     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$LibCreateMenuEntry 000000000000be28     FileExplorerLib:FileExplorer.obj
+ 0005:00000008       $unwind$LibGetDevicePath   000000000000be28     FileExplorerLib:FileExplorer.obj
+ 0005:00000008       $unwind$HiiAllocateOpCodeHandle 000000000000be28     UefiHiiLib:HiiLib.obj
+ 0005:00000008       $unwind$HiiRemovePackages  000000000000be28     UefiHiiLib:HiiLib.obj
+ 0005:00000008       $unwind$InternalBaseLibIsListValid 000000000000be28     BaseLib:LinkedList.obj
+ 0005:00000008       $unwind$IsListEmpty        000000000000be28     BaseLib:LinkedList.obj
+ 0005:00000008       $unwind$RemoveEntryList    000000000000be28     BaseLib:LinkedList.obj
+ 0005:00000008       $unwind$_ModuleEntryPoint  000000000000be28     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$AllocateZeroPool   000000000000be28     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000010       $unwind$ProcessLibraryConstructorList 000000000000be30     RamDiskDxe:AutoGen.obj
+ 0005:00000024       $unwind$ProcessModuleEntryPointList 000000000000be44     RamDiskDxe:AutoGen.obj
+ 0005:00000034       $unwind$LibCallback        000000000000be54     FileExplorerLib:FileExplorer.obj
+ 0005:00000034       $unwind$LibDestroyMenuEntry 000000000000be54     FileExplorerLib:FileExplorer.obj
+ 0005:00000034       $unwind$LibGetMenuEntry    000000000000be54     FileExplorerLib:FileExplorer.obj
+ 0005:00000034       $unwind$HiiGetSupportedLanguages 000000000000be54     UefiHiiLib:HiiLanguage.obj
+ 0005:00000034       $unwind$RamDiskBlkIo2FlushBlocksEx 000000000000be54     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:00000034       $unwind$RamDiskAcpiCheck   000000000000be54     RamDiskDxe:RamDiskDriver.obj
+ 0005:00000034       $unwind$InsertTailList     000000000000be54     BaseLib:LinkedList.obj
+ 0005:00000034       $unwind$StrnLenS           000000000000be54     BaseLib:SafeString.obj
+ 0005:00000034       $unwind$AsciiStrLen        000000000000be54     BaseLib:String.obj
+ 0005:00000034       $unwind$ZeroMem            000000000000be54     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000034       $unwind$IsDevicePathEnd    000000000000be54     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000034       $unwind$NextDevicePathNode 000000000000be54     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000034       $unwind$SetDevicePathNodeLength 000000000000be54     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000034       $unwind$InternalAllocateCopyPool 000000000000be54     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000040       $unwind$RamDiskBlkIoReadBlocks 000000000000be60     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:00000040       $unwind$RamDiskBlkIoWriteBlocks 000000000000be60     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:00000040       $unwind$RamDiskInitBlockIo 000000000000be60     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:00000040       $unwind$RamDiskInitDeviceNode 000000000000be60     RamDiskDxe:RamDiskProtocol.obj
+ 0005:00000040       $unwind$CompareMem         000000000000be60     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:00000040       $unwind$CopyMem            000000000000be60     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000040       $unwind$InternalReallocatePool 000000000000be60     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000054       $unwind$UninstallRamDiskConfigForm 000000000000be74     RamDiskDxe:RamDiskImpl.obj
+ 0005:00000054       $unwind$RamDiskPublishSsdt 000000000000be74     RamDiskDxe:RamDiskProtocol.obj
+ 0005:00000054       $unwind$TdIoWrite8         000000000000be74     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000054       $unwind$EfiCreateEventReadyToBootEx 000000000000be74     UefiLib:UefiNotTiano.obj
+ 0005:0000005c       $unwind$RamDiskPublishNfit 000000000000be7c     RamDiskDxe:RamDiskProtocol.obj
+ 0005:00000074       $unwind$RamDiskUnpublishNfit 000000000000be94     RamDiskDxe:RamDiskProtocol.obj
+ 0005:0000008c       $unwind$RamDiskRegister    000000000000beac     RamDiskDxe:RamDiskProtocol.obj
+ 0005:0000008c       $unwind$StrCatS            000000000000beac     BaseLib:SafeString.obj
+ 0005:000000a8       $unwind$RamDiskUnregister  000000000000bec8     RamDiskDxe:RamDiskProtocol.obj
+ 0005:000000a8       $unwind$StrnCpyS           000000000000bec8     BaseLib:SafeString.obj
+ 0005:000000c0       $unwind$InstallRamDiskConfigForm 000000000000bee0     RamDiskDxe:RamDiskImpl.obj
+ 0005:000000cc       $unwind$ChooseFile         000000000000beec     FileExplorerLib:FileExplorer.obj
+ 0005:000000cc       $unwind$UnregisterAllRamDisks 000000000000beec     RamDiskDxe:RamDiskImpl.obj
+ 0005:000000dc       $unwind$HiiCreateRamDisk   000000000000befc     RamDiskDxe:RamDiskImpl.obj
+ 0005:000000f4       $unwind$UpdateMainForm     000000000000bf14     RamDiskDxe:RamDiskImpl.obj
+ 0005:00000114       $unwind$RamDiskCallback    000000000000bf34     RamDiskDxe:RamDiskImpl.obj
+ 0005:0000012c       $unwind$RamDiskBlkIo2ReadBlocksEx 000000000000bf4c     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:0000012c       $unwind$RamDiskBlkIo2WriteBlocksEx 000000000000bf4c     RamDiskDxe:RamDiskBlockIo.obj
+ 0005:00000140       $unwind$LibFreeMenu        000000000000bf60     FileExplorerLib:FileExplorer.obj
+ 0005:00000140       $unwind$LibStrDuplicate    000000000000bf60     FileExplorerLib:FileExplorer.obj
+ 0005:00000140       $unwind$InternalHiiGrowOpCodeHandle 000000000000bf60     UefiHiiLib:HiiLib.obj
+ 0005:00000140       $unwind$CalculateCheckSum8 000000000000bf60     BaseLib:CheckSum.obj
+ 0005:00000140       $unwind$DivU64x32Remainder 000000000000bf60     BaseLib:DivU64x32Remainder.obj
+ 0005:00000140       $unwind$AsciiStrnCmp       000000000000bf60     BaseLib:String.obj
+ 0005:00000140       $unwind$StrLen             000000000000bf60     BaseLib:String.obj
+ 0005:00000140       $unwind$StrStr             000000000000bf60     BaseLib:String.obj
+ 0005:00000140       $unwind$CopyGuid           000000000000bf60     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000140       $unwind$SetMem16           000000000000bf60     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0005:00000140       $unwind$GetHobList         000000000000bf60     DxeHobLib:HobLib.obj
+ 0005:00000140       $unwind$SerialPortWrite    000000000000bf60     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:00000150       $unwind$CompareGuid        000000000000bf70     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000168       $unwind$UnicodeSPrint      000000000000bf88     BasePrintLib:PrintLib.obj
+ 0005:00000174       $unwind$AsciiSPrint        000000000000bf94     BasePrintLib:PrintLib.obj
+ 0005:0000017c       $unwind$BasePrintLibValueToString 000000000000bf9c     BasePrintLib:PrintLibInternal.obj
+ 0005:00000188       $unwind$BasePrintLibSPrintMarker 000000000000bfa8     BasePrintLib:PrintLibInternal.obj
+ 0005:000001a4       $unwind$TdIoRead8          000000000000bfc4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000001a4       $unwind$BasePrintLibSPrint 000000000000bfc4     BasePrintLib:PrintLibInternal.obj
+ 0005:000001ac       $unwind$DebugPrint         000000000000bfcc     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001b4       $unwind$DebugPrintMarker   000000000000bfd4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001c8       $unwind$DebugAssert        000000000000bfe8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001d0       $unwind$DevicePathFromHandle 000000000000bff0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000001d0       $unwind$FreePool           000000000000bff0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000001d0       $unwind$InternalAllocatePool 000000000000bff0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000001d8       $unwind$InternalHiiCreateOpCodeExtended 000000000000bff8     UefiHiiLib:HiiLib.obj
+ 0005:000001d8       $unwind$FileDevicePath     000000000000bff8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000001f0       $unwind$GetBestLanguage    000000000000c010     UefiLib:UefiLib.obj
+ 0005:00000204       $unwind$EfiOpenFileByDevicePath 000000000000c024     UefiLib:UefiLib.obj
+ 0005:00000218       $unwind$UefiLibGetStringWidth 000000000000c038     UefiLib:Console.obj
+ 0005:0000022c       $unwind$CreatePopUp        000000000000c04c     UefiLib:Console.obj
+ 0005:00000244       $unwind$HiiSetString       000000000000c064     UefiHiiLib:HiiString.obj
+ 0005:00000260       $unwind$HiiGetStringEx     000000000000c080     UefiHiiLib:HiiString.obj
+ 0005:00000278       $unwind$HiiAddPackages     000000000000c098     UefiHiiLib:HiiLib.obj
+ 0005:0000028c       $unwind$HiiCreateGuidOpCode 000000000000c0ac     UefiHiiLib:HiiLib.obj
+ 0005:00000294       $unwind$HiiCreateGotoOpCode 000000000000c0b4     UefiHiiLib:HiiLib.obj
+ 0005:000002a8       $unwind$InternalHiiUpdateFormPackageData 000000000000c0c8     UefiHiiLib:HiiLib.obj
+ 0005:000002c0       $unwind$HiiUpdateForm      000000000000c0e0     UefiHiiLib:HiiLib.obj
+ 0005:000002d8       $unwind$LibAppendFileName  000000000000c0f8     FileExplorerLib:FileExplorer.obj
+ 0005:000002f4       $unwind$LibFindFileSystem  000000000000c114     FileExplorerLib:FileExplorer.obj
+ 0005:00000308       $unwind$LibGetFileHandleFromDevicePath 000000000000c128     FileExplorerLib:FileExplorer.obj
+ 0005:00000320       $unwind$LibCreateNewFile   000000000000c140     FileExplorerLib:FileExplorer.obj
+ 0005:00000330       $unwind$LibFindFiles       000000000000c150     FileExplorerLib:FileExplorer.obj
+ 0005:00000348       $unwind$LibUpdateFileExplorePage 000000000000c168     FileExplorerLib:FileExplorer.obj
+ 0005:00000364       $unwind$LibUpdateFileExplorer 000000000000c184     FileExplorerLib:FileExplorer.obj
+ 0005:00000378       $unwind$InternalImageHandleToFvHandle 000000000000c198     DxeServicesLib:DxeServicesLib.obj
+ 0005:00000380       $unwind$InternalGetSectionFromFv 000000000000c1a0     DxeServicesLib:DxeServicesLib.obj
+ 0005:00000390       $unwind$StrCpyS            000000000000c1b0     BaseLib:SafeString.obj

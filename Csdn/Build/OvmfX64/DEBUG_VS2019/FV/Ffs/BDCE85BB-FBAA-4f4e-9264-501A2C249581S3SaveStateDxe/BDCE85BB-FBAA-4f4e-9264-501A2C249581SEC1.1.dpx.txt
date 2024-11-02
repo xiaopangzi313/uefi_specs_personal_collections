@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\BDCE85BB-FBAA-4f4e-9264-501A2C249581S3SaveStateDxe\BDCE85BB-FBAA-4f4e-9264-501A2C249581SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\Acpi\S3SaveStateDxe\S3SaveStateDxe\OUTPUT\S3SaveStateDxe.depex

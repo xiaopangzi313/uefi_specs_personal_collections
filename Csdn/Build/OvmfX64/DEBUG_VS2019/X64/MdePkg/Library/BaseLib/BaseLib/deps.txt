@@ -1,0 +1,1 @@
+D:\uefi_specs_personal_collections\edk2\MdePkg\Include\X64\Nasm.inc

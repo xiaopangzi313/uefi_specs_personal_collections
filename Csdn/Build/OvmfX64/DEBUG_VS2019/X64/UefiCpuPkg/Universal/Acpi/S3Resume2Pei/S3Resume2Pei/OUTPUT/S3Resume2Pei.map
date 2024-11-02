@@ -1,0 +1,384 @@
+ S3Resume2Pei
+
+ Timestamp is 6725e498 (Sat Nov  2 16:36:40 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000003a8H .text                   CODE
+ 0001:000003a8 00003945H .text$mn                CODE
+ 0002:00000000 00001dc4H .rdata                  DATA
+ 0002:00001dc4 0000003cH .rdata$voltmd           DATA
+ 0002:00001e00 00000168H .rdata$zzzdbg           DATA
+ 0003:00000000 000001c0H .data                   DATA
+ 0003:000001c0 00000030H .bss                    DATA
+ 0004:00000000 00000300H .pdata                  DATA
+ 0005:00000000 000001ecH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       AsmSetDataSelectors        00000000000002c0     S3Resume2Pei:AsmFuncs.obj
+ 0001:00000010       InternalMemZeroMem         00000000000002d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000030       InternalMemCopyMem         00000000000002f0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000070       AsmReadCr0                 0000000000000330     BaseLib:ReadCr0.obj
+ 0001:00000080       AsmWriteCr0                0000000000000340     BaseLib:WriteCr0.obj
+ 0001:00000090       AsmCpuid                   0000000000000350     BaseLib:CpuId.obj
+ 0001:000000c0       AsmWriteCr3                0000000000000380     BaseLib:WriteCr3.obj
+ 0001:000000d0       AsmReadCs                  0000000000000390     BaseLib:ReadCs.obj
+ 0001:000000e0       InternalX86DisablePaging64 00000000000003a0     BaseLib:DisablePaging64.obj
+ 0001:00000150       InternalX86WriteGdtr       0000000000000410     BaseLib:WriteGdtr.obj
+ 0001:00000160       InternalX86ReadIdtr        0000000000000420     BaseLib:ReadIdtr.obj
+ 0001:00000170       InternalX86WriteIdtr       0000000000000430     BaseLib:WriteIdtr.obj
+ 0001:00000180       EnableInterrupts           0000000000000440     BaseLib:EnableInterrupts.obj
+ 0001:00000190       DisableInterrupts          0000000000000450     BaseLib:DisableInterrupts.obj
+ 0001:000001a0       InternalSwitchStack        0000000000000460     BaseLib:SwitchStack.obj
+ 0001:000001b0       CpuPause                   0000000000000470     BaseLib:CpuPause.obj
+ 0001:000001c0       AsmReadEflags              0000000000000480     BaseLib:ReadEflags.obj
+ 0001:000001d0       InternalMemSetMem          0000000000000490     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000001f0       InternalMemSetMem64        00000000000004b0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000210       InternalMemSetMem32        00000000000004d0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000230       AsmCpuidEx                 00000000000004f0     BaseLib:CpuIdEx.obj
+ 0001:00000260       TdVmCall                   0000000000000520     BaseLib:TdVmcall.obj
+ 0001:000002e0       AsmEnableCache             00000000000005a0     BaseLib:EnableCache.obj
+ 0001:00000300       AsmDisableCache            00000000000005c0     BaseLib:DisableCache.obj
+ 0001:00000320       AsmWriteCr4                00000000000005e0     BaseLib:WriteCr4.obj
+ 0001:00000330       AsmReadCr4                 00000000000005f0     BaseLib:ReadCr4.obj
+ 0001:00000340       AsmReadCr3                 0000000000000600     BaseLib:ReadCr3.obj
+ 0001:00000350       TdCall                     0000000000000610     BaseLib:TdCall.obj
+ 0001:000003a8       _ModuleEntryPoint          0000000000000668 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000594       SignalToSmmByCommunication 0000000000000854 f   S3Resume2Pei:S3Resume.obj
+ 0001:00000650       S3ResumeBootOs             0000000000000910 f   S3Resume2Pei:S3Resume.obj
+ 0001:000008fc       RestoreS3PageTables        0000000000000bbc f   S3Resume2Pei:S3Resume.obj
+ 0001:00000b5c       S3ResumeExecuteBootScript  0000000000000e1c f   S3Resume2Pei:S3Resume.obj
+ 0001:00000db0       LoadMtrrData               0000000000001070 f   S3Resume2Pei:S3Resume.obj
+ 0001:00000ef4       S3RestoreConfig2           00000000000011b4 f   S3Resume2Pei:S3Resume.obj
+ 0001:0000152c       AllocatePool               00000000000017ec f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001568       CopyGuid                   0000000000001828 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001618       CompareGuid                00000000000018d8 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000016dc       ZeroMem                    000000000000199c f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0000173c       CopyMem                    00000000000019fc f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000017d8       GetPcdPpiPointer           0000000000001a98 f   PeiPcdLib:PeiPcdLib.obj
+ 0001:00001828       AsmEnablePaging64          0000000000001ae8 f   BaseLib:X86EnablePaging64.obj
+ 0001:00001888       SaveAndDisableInterrupts   0000000000001b48 f   BaseLib:Cpu.obj
+ 0001:000018ac       SwitchStack                0000000000001b6c f   BaseLib:SwitchStack.obj
+ 0001:00001960       LShiftU64                  0000000000001c20 f   BaseLib:LShiftU64.obj
+ 0001:000019a4       CpuDeadLoop                0000000000001c64 f   BaseLib:CpuDeadLoop.obj
+ 0001:000019d4       PeiServicesLocatePpi       0000000000001c94 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00001a0c       GetHobList                 0000000000001ccc f   PeiHobLib:HobLib.obj
+ 0001:00001a80       GetFirstGuidHob            0000000000001d40 f   PeiHobLib:HobLib.obj
+ 0001:00001b08       GetPeiServicesTablePointer 0000000000001dc8 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001b48       DebugPrint                 0000000000001e08 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001b6c       DebugPrintMarker           0000000000001e2c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001bf8       DebugAssert                0000000000001eb8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001c50       AccessMsrTdxCall           0000000000001f10 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001d6c       LocalApicReadMsrReg64      000000000000202c f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001dd8       LocalApicBaseAddressMsrSupported 0000000000002098 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001e14       GetLocalApicBaseAddress    00000000000020d4 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001e50       ReadLocalApicReg           0000000000002110 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001e80       SendIpi                    0000000000002140 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001f78       GetApicMode                0000000000002238 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001fc8       GetApicId                  0000000000002288 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00002080       InternalReportStatusCode   0000000000002340 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000214c       RestoreLockBox             000000000000240c f   LockBoxBaseLib:LockBoxLib.obj
+ 0001:00002228       MtrrLibIsMtrrSupported     00000000000024e8 f   MtrrLib:MtrrLib.obj
+ 0001:000022bc       GetVariableMtrrCountWorker 000000000000257c f   MtrrLib:MtrrLib.obj
+ 0001:000022f8       MtrrLibPreMtrrChange       00000000000025b8 f   MtrrLib:MtrrLib.obj
+ 0001:00002364       AsciiStrLen                0000000000002624 f   BaseLib:String.obj
+ 0001:000023d0       StrnLenS                   0000000000002690 f   BaseLib:SafeString.obj
+ 0001:00002428       IoWrite8                   00000000000026e8 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00002454       IoRead32                   0000000000002714 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000024a0       IoWrite32                  0000000000002760 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000024f8       MmioRead32                 00000000000027b8 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0000256c       MmioWrite32                000000000000282c f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00002608       TdIoRead8                  00000000000028c8 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00002658       TdIoRead16                 0000000000002918 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:000026b0       TdIoRead32                 0000000000002970 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00002724       TdIoWrite8                 00000000000029e4 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00002774       TdIoWrite32                0000000000002a34 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:000027f0       AsciiSPrint                0000000000002ab0 f   BasePrintLib:PrintLib.obj
+ 0001:0000281c       BasePrintLibFillBuffer     0000000000002adc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002850       BasePrintLibValueToString  0000000000002b10 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000028a0       BasePrintLibSPrintMarker   0000000000002b60 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000037ac       BasePrintLibSPrint         0000000000003a6c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000037d0       SerialPortWrite            0000000000003a90 f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00003850       PciOr8                     0000000000003b10 f   BasePciLibCf8:PciLib.obj
+ 0001:00003938       PciAndThenOr32             0000000000003bf8 f   BasePciLibCf8:PciLib.obj
+ 0001:00003a04       DivU64x32Remainder         0000000000003cc4 f   BaseLib:DivU64x32Remainder.obj
+ 0001:00003a64       GetTdInfo                  0000000000003d24 f   TdxLib:TdInfo.obj
+ 0001:00003ac8       TdSharedPageMask           0000000000003d88 f   TdxLib:TdInfo.obj
+ 0001:00003af4       PciCf8Read8                0000000000003db4 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00003bbc       PciCf8Read16               0000000000003e7c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00003c44       PciCf8Read32               0000000000003f04 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00000000       ??_C@_0N@EFGJEDKO@S3Resume2Pei@ 0000000000003fc0     S3Resume2Pei:AutoGen.obj
+ 0002:00000010       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000003fd0     S3Resume2Pei:AutoGen.obj
+ 0002:00000038       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000003ff8     S3Resume2Pei:AutoGen.obj
+ 0002:00000060       ??_C@_0IL@HJPDBJOJ@d?3?2uefi_specs_personal_collecti@ 0000000000004020     S3Resume2Pei:AutoGen.obj
+ 0002:000000f0       ??_C@_0FK@MHFHBAMG@D?3?2uefi_specs_personal_collecti@ 00000000000040b0     S3Resume2Pei:S3Resume.obj
+ 0002:00000150       ??_C@_0BK@PNNDCHII@Signal?5?$CFg?5to?5SMM?5?9?5Enter?6@ 0000000000004110     S3Resume2Pei:S3Resume.obj
+ 0002:00000170       ??_C@_0CJ@KHPNKNJL@Locate?5Smm?5Communicate?5Ppi?5fail@ 0000000000004130     S3Resume2Pei:S3Resume.obj
+ 0002:000001a0       ??_C@_0DH@GGCLHKIP@SmmCommunicationPpi?9?$DOCommunicat@ 0000000000004160     S3Resume2Pei:S3Resume.obj
+ 0002:000001d8       ??_C@_0BO@EAJCLCNF@Signal?5?$CFg?5to?5SMM?5?9?5Exit?5?$CI?$CFr?$CJ?6@ 0000000000004198     S3Resume2Pei:S3Resume.obj
+ 0002:000001f8       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000041b8     S3Resume2Pei:S3Resume.obj
+ 0002:00000220       ??_C@_0BG@NMDDNLCI@Signal?5EndOfS3Resume?6@ 00000000000041e0     S3Resume2Pei:S3Resume.obj
+ 0002:00000238       ??_C@_0P@FBACNGFM@S3ResumeBootOs@ 00000000000041f8     S3Resume2Pei:S3Resume.obj
+ 0002:00000248       ??_C@_0CJ@IJHEGIAG@?$CFa?$CI?$CJ?5Stack?5Base?3?50x?$CFx?0?5Stack?5Si@ 0000000000004208     S3Resume2Pei:S3Resume.obj
+ 0002:00000278       ??_C@_0DD@EHJCEGBB@Transfer?5from?5PEI?5to?564bit?5OS?5w@ 0000000000004238     S3Resume2Pei:S3Resume.obj
+ 0002:000002b0       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000004270     S3Resume2Pei:S3Resume.obj
+ 0002:000002c8       ??_C@_0CK@KECEMKCP@Transfer?5to?532bit?5OS?5waking?5vec@ 0000000000004288     S3Resume2Pei:S3Resume.obj
+ 0002:000002f8       ??_C@_0CK@ILILGOOO@Transfer?5to?516bit?5OS?5waking?5vec@ 00000000000042b8     S3Resume2Pei:S3Resume.obj
+ 0002:00000328       ??_C@_0CB@JIOMEIML@S3NvsPageTableAddress?5?9?5?$CFx?5?$CI?$CFx?$CJ@ 00000000000042e8     S3Resume2Pei:S3Resume.obj
+ 0002:00000350       ??_C@_0BK@EENFIALI@PhysicalAddressBits?5?$DM?$DN?552@ 0000000000004310     S3Resume2Pei:S3Resume.obj
+ 0002:00000370       ??_C@_0BN@PJOJBCGB@S3ResumeExecuteBootScript?$CI?$CJ?6@ 0000000000004330     S3Resume2Pei:S3Resume.obj
+ 0002:00000390       ??_C@_0DG@BDLANGMP@Close?5all?5SMRAM?5regions?5before?5@ 0000000000004350     S3Resume2Pei:S3Resume.obj
+ 0002:000003c8       ??_C@_0DF@MOMJOEFO@Lock?5all?5SMRAM?5regions?5before?5e@ 0000000000004388     S3Resume2Pei:S3Resume.obj
+ 0002:00000400       ??_C@_0BG@MHOHKIO@Signal?5S3SmmInitDone?6@ 00000000000043c0     S3Resume2Pei:S3Resume.obj
+ 0002:00000418       ??_C@_0BI@HAGAGHG@PeiS3ResumeState?5?9?5?$CFx?$AN?6@ 00000000000043d8     S3Resume2Pei:S3Resume.obj
+ 0002:00000430       ??_C@_0DG@IJDMLFPD@transfer?5control?5to?5Standalone?5@ 00000000000043f0     S3Resume2Pei:S3Resume.obj
+ 0002:00000468       ??_C@_0BA@EINPBHBM@Enter?5S3?5PEIM?$AN?6@ 0000000000004428     S3Resume2Pei:S3Resume.obj
+ 0002:00000478       ??_C@_0BO@MGPPIMH@AcpiS3Context?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004438     S3Resume2Pei:S3Resume.obj
+ 0002:00000498       ??_C@_0CO@EOCOPNN@EfiBootScriptExecutorVariable?5?$CB@ 0000000000004458     S3Resume2Pei:S3Resume.obj
+ 0002:000004c8       ??_C@_0BE@MBAKONCC@AcpiS3Context?5?$DN?5?$CFx?6@ 0000000000004488     S3Resume2Pei:S3Resume.obj
+ 0002:000004e0       ??_C@_0BE@LODFIACE@Waking?5Vector?5?$DN?5?$CFx?6@ 00000000000044a0     S3Resume2Pei:S3Resume.obj
+ 0002:000004f8       ??_C@_0CD@OELMKHIC@AcpiS3Context?9?$DOAcpiFacsTable?5?$DN?5@ 00000000000044b8     S3Resume2Pei:S3Resume.obj
+ 0002:00000520       ??_C@_0CB@FPMBCIEO@AcpiS3Context?9?$DOIdtrProfile?5?$DN?5?$CFx@ 00000000000044e0     S3Resume2Pei:S3Resume.obj
+ 0002:00000548       ??_C@_0CL@BBLBEOOE@AcpiS3Context?9?$DOS3NvsPageTableAd@ 0000000000004508     S3Resume2Pei:S3Resume.obj
+ 0002:00000578       ??_C@_0CK@BJBJEOOI@AcpiS3Context?9?$DOS3DebugBufferAdd@ 0000000000004538     S3Resume2Pei:S3Resume.obj
+ 0002:000005a8       ??_C@_0CJ@JICOIFAE@AcpiS3Context?9?$DOBootScriptStackB@ 0000000000004568     S3Resume2Pei:S3Resume.obj
+ 0002:000005d8       ??_C@_0CJ@EICCGIKA@AcpiS3Context?9?$DOBootScriptStackS@ 0000000000004598     S3Resume2Pei:S3Resume.obj
+ 0002:00000610       ??_C@_0EC@JGEFLEHN@EfiBootScriptExecutorVariable?9?$DO@ 00000000000045d0     S3Resume2Pei:S3Resume.obj
+ 0002:00000658       ??_C@_0CG@PKIFKHFM@SMM?5S3?5Signature?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000004618     S3Resume2Pei:S3Resume.obj
+ 0002:00000680       ??_C@_0CG@NDLFPCNM@SMM?5S3?5Stack?5Base?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000004640     S3Resume2Pei:S3Resume.obj
+ 0002:000006a8       ??_C@_0CG@GHOONAPA@SMM?5S3?5Stack?5Size?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000004668     S3Resume2Pei:S3Resume.obj
+ 0002:000006d0       ??_C@_0CG@JMLLLJOM@SMM?5S3?5Resume?5Entry?5Point?5?5?5?5?5?5@ 0000000000004690     S3Resume2Pei:S3Resume.obj
+ 0002:000006f8       ??_C@_0CG@LFDNCJJJ@SMM?5S3?5CR0?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00000000000046b8     S3Resume2Pei:S3Resume.obj
+ 0002:00000720       ??_C@_0CG@BADFECPF@SMM?5S3?5CR3?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00000000000046e0     S3Resume2Pei:S3Resume.obj
+ 0002:00000748       ??_C@_0CG@OCFDELEI@SMM?5S3?5CR4?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000004708     S3Resume2Pei:S3Resume.obj
+ 0002:00000770       ??_C@_0CG@FOGBMEEL@SMM?5S3?5Return?5CS?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000004730     S3Resume2Pei:S3Resume.obj
+ 0002:00000798       ??_C@_0CG@IHIAELEM@SMM?5S3?5Return?5Entry?5Point?5?5?5?5?5?5@ 0000000000004758     S3Resume2Pei:S3Resume.obj
+ 0002:000007c0       ??_C@_0CG@LHPLLLCF@SMM?5S3?5Return?5Context1?5?5?5?5?5?5?5?5?5@ 0000000000004780     S3Resume2Pei:S3Resume.obj
+ 0002:000007e8       ??_C@_0CG@OEGBOAKB@SMM?5S3?5Return?5Context2?5?5?5?5?5?5?5?5?5@ 00000000000047a8     S3Resume2Pei:S3Resume.obj
+ 0002:00000810       ??_C@_0CG@MICBGHND@SMM?5S3?5Return?5Stack?5Pointer?5?5?5?5@ 00000000000047d0     S3Resume2Pei:S3Resume.obj
+ 0002:00000838       ??_C@_0CG@OEGNGAOJ@SMM?5S3?5Smst?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00000000000047f8     S3Resume2Pei:S3Resume.obj
+ 0002:00000860       ??_C@_0CC@PCHMDNOA@sizeof?5?$CIUINTN?$CJ?5?$DN?$DN?5sizeof?5?$CIUINT3@ 0000000000004820     S3Resume2Pei:S3Resume.obj
+ 0002:00000888       mGdt                       0000000000004848     S3Resume2Pei:S3Resume.obj
+ 0002:00000898       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004858     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000008b0       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000004870     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:000008f0       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 00000000000048b0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000950       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004910     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000009a0       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 0000000000004960     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a00       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000049c0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a40       ??_C@_0EN@LBMAKKKE@D?3?2uefi_specs_personal_collecti@ 0000000000004a00     PeiPcdLib:PeiPcdLib.obj
+ 0002:00000a90       ??_C@_0BA@BDDFCMFO@EntryPoint?5?$CB?$DN?50@ 0000000000004a50     BaseLib:X86DisablePaging64.obj
+ 0002:00000aa0       ??_C@_0FE@MLLIBOIH@D?3?2uefi_specs_personal_collecti@ 0000000000004a60     BaseLib:X86DisablePaging64.obj
+ 0002:00000af8       ??_C@_0O@HLBMMCPF@NewStack?5?$CB?$DN?50@ 0000000000004ab8     BaseLib:X86DisablePaging64.obj
+ 0002:00000b10       ??_C@_0FD@CBKLAGPI@D?3?2uefi_specs_personal_collecti@ 0000000000004ad0     BaseLib:X86EnablePaging64.obj
+ 0002:00000b68       ??_C@_0BF@KGOGCKLE@Idtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004b28     BaseLib:X86ReadIdtr.obj
+ 0002:00000b80       ??_C@_0EN@DMMBJEJK@D?3?2uefi_specs_personal_collecti@ 0000000000004b40     BaseLib:X86ReadIdtr.obj
+ 0002:00000bd0       ??_C@_0EO@ILPDFBIA@D?3?2uefi_specs_personal_collecti@ 0000000000004b90     BaseLib:X86WriteIdtr.obj
+ 0002:00000c20       ??_C@_0BL@OOFMKHJH@EntryPoint?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004be0     BaseLib:SwitchStack.obj
+ 0002:00000c40       ??_C@_0EN@IBNPPBNO@D?3?2uefi_specs_personal_collecti@ 0000000000004c00     BaseLib:SwitchStack.obj
+ 0002:00000c90       ??_C@_0BJ@DIHHCIKP@NewStack?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004c50     BaseLib:SwitchStack.obj
+ 0002:00000cb0       ??_C@_0CC@MPFKDGJI@?$CI?$CIUINTN?$CJNewStack?5?$CG?5?$CI16?5?9?51?$CJ?$CJ?5?$DN?$DN@ 0000000000004c70     BaseLib:SwitchStack.obj
+ 0002:00000cd8       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 0000000000004c98     BaseLib:LShiftU64.obj
+ 0002:00000cf0       ??_C@_0EL@PKACDBFD@D?3?2uefi_specs_personal_collecti@ 0000000000004cb0     BaseLib:LShiftU64.obj
+ 0002:00000d40       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 0000000000004d00     BaseLib:Unaligned.obj
+ 0002:00000d90       ??_C@_0FC@GBEOOIKB@D?3?2uefi_specs_personal_collecti@ 0000000000004d50     BaseLib:Non-existing.obj
+ 0002:00000df0       ??_C@_0EK@JELCPDGN@D?3?2uefi_specs_personal_collecti@ 0000000000004db0     PeiHobLib:HobLib.obj
+ 0002:00000e40       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004e00     PeiHobLib:HobLib.obj
+ 0002:00000e58       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004e18     PeiHobLib:HobLib.obj
+ 0002:00000e78       ??_C@_0BM@DAJCEFAH@PeiServices?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004e38     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00000ea0       ??_C@_0GP@GHNMHLFN@D?3?2uefi_specs_personal_collecti@ 0000000000004e60     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00000f10       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004ed0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000f30       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000004ef0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000f90       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000004f50     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000fa8       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000004f68     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00000fc0       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000004f80     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00000ff0       ??_C@_0FI@INNPDNOC@D?3?2uefi_specs_personal_collecti@ 0000000000004fb0     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00001050       ??_C@_0GD@BIPDCFCA@D?3?2uefi_specs_personal_collecti@ 0000000000005010     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:000010b8       ??_C@_0P@PMDMEMJF@ApicId?5?$DM?$DN?50xff@ 0000000000005078     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:000010c8       ??_C@_0BJ@MBLFAKBO@ApicBaseMsr?4Bits?4EN?5?$CB?$DN?50@ 0000000000005088     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:000010e8       ??_C@_0P@PHGFCONN@RestoreLockBox@ 00000000000050a8     LockBoxBaseLib:LockBoxLib.obj
+ 0002:000010f8       ??_C@_0BH@NJEMLHJE@?$CFa?3?5Guid?$DN?$CFg?5Buffer?$DN?$CFp?6@ 00000000000050b8     LockBoxBaseLib:LockBoxLib.obj
+ 0002:00001110       ??_C@_0BJ@PGJGCDMD@RestoreAllLockBoxInPlace@ 00000000000050d0     LockBoxBaseLib:LockBoxLib.obj
+ 0002:00001130       ??_C@_0HI@LHOLANAP@MtrrCap?4Bits?4VCNT?5?$DM?$DN?5?$CIsizeof?5?$CI?$CI@ 00000000000050f0     MtrrLib:MtrrLib.obj
+ 0002:000011b0       ??_C@_0EN@BLCGNHJO@D?3?2uefi_specs_personal_collecti@ 0000000000005170     MtrrLib:MtrrLib.obj
+ 0002:00001200       ??_C@_0FO@JGPNAKHH@VariableMtrrCount?5?$DM?$DN?5?$CIsizeof?5?$CIV@ 00000000000051c0     MtrrLib:MtrrLib.obj
+ 0002:00001260       ??_C@_0DC@ICGAHGHE@FixedMtrrSupported?5?$HM?$HM?5?$CIMtrrDefT@ 0000000000005220     MtrrLib:MtrrLib.obj
+ 0002:000012a0       mMtrrLibFixedMtrrTable     0000000000005260     MtrrLib:MtrrLib.obj
+ 0002:00001328       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000052e8     BaseLib:String.obj
+ 0002:00001340       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 0000000000005300     BaseLib:String.obj
+ 0002:00001388       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005348     BaseLib:String.obj
+ 0002:000013b0       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005370     BaseLib:String.obj
+ 0002:000013f0       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 00000000000053b0     BaseLib:SafeString.obj
+ 0002:00001440       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005400     BaseLib:SafeString.obj
+ 0002:00001460       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000005420     BaseLib:DivU64x32.obj
+ 0002:00001470       ??_C@_0FF@GCKLFLDF@D?3?2uefi_specs_personal_collecti@ 0000000000005430     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:000014c8       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000005488     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:000014e0       ??_C@_0FC@MAJHMCGF@D?3?2uefi_specs_personal_collecti@ 00000000000054a0     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00001538       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000054f8     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00001550       ??_C@_0FN@DOAHIAPG@D?3?2uefi_specs_personal_collecti@ 0000000000005510     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:000015b0       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000005570     BasePrintLib:PrintLibInternal.obj
+ 0002:00001610       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000055d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001658       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005618     BasePrintLib:PrintLibInternal.obj
+ 0002:00001680       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000005640     BasePrintLib:PrintLibInternal.obj
+ 0002:000016d0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000005690     BasePrintLib:PrintLibInternal.obj
+ 0002:00001760       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000005720     BasePrintLib:PrintLibInternal.obj
+ 0002:000017e8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000057a8     BasePrintLib:PrintLibInternal.obj
+ 0002:000017f8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000057b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001808       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000057c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001840       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000005800     BasePrintLib:PrintLibInternal.obj
+ 0002:00001850       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000005810     BasePrintLib:PrintLibInternal.obj
+ 0002:0000186c       ??_C@_04JIMNDDED@?$CF08X@  000000000000582c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001874       ??_C@_02PCIJFNDE@?$AN?6@   0000000000005834     BasePrintLib:PrintLibInternal.obj
+ 0002:00001878       ??_C@_01LIIJDEN@?$AN@      0000000000005838     BasePrintLib:PrintLibInternal.obj
+ 0002:00001880       mWarningString             0000000000005840     BasePrintLib:PrintLibInternal.obj
+ 0002:00001950       mErrorString               0000000000005910     BasePrintLib:PrintLibInternal.obj
+ 0002:00001c30       mHexStr                    0000000000005bf0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001c40       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000005c00     BaseLib:DivU64x32Remainder.obj
+ 0002:00001c98       ??_C@_0CB@GEABOFIF@Failed?5call?5TDCALL_TDINFO?4?5?$CFllx@ 0000000000005c58     TdxLib:TdInfo.obj
+ 0002:00001cc0       ??_C@_0CG@KIJMJHBN@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI0?$CJ?$CJ@ 0000000000005c80     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001cf0       ??_C@_0FB@PDIKDBMH@D?3?2uefi_specs_personal_collecti@ 0000000000005cb0     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001d48       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 0000000000005d08     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001dc4       __volatile_metadata        0000000000005d84     <linker-defined>
+ 0003:00000000       gPeiSmmAccessPpiGuid       0000000000005f40     S3Resume2Pei:AutoGen.obj
+ 0003:00000010       gEfiBootScriptExecutorVariableGuid 0000000000005f50     S3Resume2Pei:AutoGen.obj
+ 0003:00000020       gEfiAcpiVariableGuid       0000000000005f60     S3Resume2Pei:AutoGen.obj
+ 0003:00000030       gPeiPostScriptTablePpiGuid 0000000000005f70     S3Resume2Pei:AutoGen.obj
+ 0003:00000040       gEdkiiS3MtrrSettingGuid    0000000000005f80     S3Resume2Pei:AutoGen.obj
+ 0003:00000050       gEfiPeiSmmCommunicationPpiGuid 0000000000005f90     S3Resume2Pei:AutoGen.obj
+ 0003:00000060       gEfiAcpiS3ContextGuid      0000000000005fa0     S3Resume2Pei:AutoGen.obj
+ 0003:00000070       gEdkiiS3SmmInitDoneGuid    0000000000005fb0     S3Resume2Pei:AutoGen.obj
+ 0003:00000080       gEfiBootScriptExecutorContextGuid 0000000000005fc0     S3Resume2Pei:AutoGen.obj
+ 0003:00000090       gEfiEndOfPeiSignalPpiGuid  0000000000005fd0     S3Resume2Pei:AutoGen.obj
+ 0003:000000a0       gEdkiiEndOfS3ResumeGuid    0000000000005fe0     S3Resume2Pei:AutoGen.obj
+ 0003:000000b0       gEfiPeiS3Resume2PpiGuid    0000000000005ff0     S3Resume2Pei:AutoGen.obj
+ 0003:000000c0       gEdkiiPeiMpServices2PpiGuid 0000000000006000     S3Resume2Pei:AutoGen.obj
+ 0003:000000d0       gEfiCallerIdGuid           0000000000006010     S3Resume2Pei:AutoGen.obj
+ 0003:000000e0       gPcdPpiGuid                0000000000006020     S3Resume2Pei:AutoGen.obj
+ 0003:000000f0       mS3ResumePpi               0000000000006030     S3Resume2Pei:S3Resume.obj
+ 0003:000000f8       mPpiListS3SmmInitDoneTable 0000000000006038     S3Resume2Pei:S3Resume.obj
+ 0003:00000110       mPpiListEndOfPeiTable      0000000000006050     S3Resume2Pei:S3Resume.obj
+ 0003:00000128       mPpiListEndOfS3ResumeTable 0000000000006068     S3Resume2Pei:S3Resume.obj
+ 0003:00000140       mPpiList                   0000000000006080     S3Resume2Pei:S3Resume.obj
+ 0003:00000160       mGdtEntries                00000000000060a0     S3Resume2Pei:S3Resume.obj
+ 0003:000001a8       mPpiListPostScriptTable    00000000000060e8     S3Resume2Pei:S3Resume.obj
+ 0003:000001c8       mLockBoxGlobal             0000000000006108     LockBoxBaseLib:LockBoxLib.obj
+ 0003:000001e0       gParity                    0000000000006120     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000001e1       gBreakSet                  0000000000006121     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000001e2       mTdDataReturned            0000000000006122     TdxLib:TdInfo.obj
+ 0003:000001e8       mTdSharedPageMask          0000000000006128     TdxLib:TdInfo.obj
+
+ entry point at        0001:000003a8
+
+ Static symbols
+
+ 0001:0000004a       InternalMemCopyMem.0       000000000000030a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000005a       @CopyBackward              000000000000031a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000063       @CopyBytes                 0000000000000323     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009f       AsmCpuid.0                 000000000000035f     BaseLib:CpuId.obj
+ 0001:000000a4       AsmCpuid.1                 0000000000000364     BaseLib:CpuId.obj
+ 0001:000000ab       AsmCpuid.2                 000000000000036b     BaseLib:CpuId.obj
+ 0001:000000b4       AsmCpuid.3                 0000000000000374     BaseLib:CpuId.obj
+ 0001:0000011a       InternalX86DisablePaging64.0 00000000000003da     BaseLib:DisablePaging64.obj
+ 0001:00000141       mTransitionEnd             0000000000000401     BaseLib:DisablePaging64.obj
+ 0001:00000245       AsmCpuidEx.0               0000000000000505     BaseLib:CpuIdEx.obj
+ 0001:0000024c       AsmCpuidEx.1               000000000000050c     BaseLib:CpuIdEx.obj
+ 0001:00000253       AsmCpuidEx.2               0000000000000513     BaseLib:CpuIdEx.obj
+ 0001:0000025c       AsmCpuidEx.3               000000000000051c     BaseLib:CpuIdEx.obj
+ 0001:000002b9       TdVmCall.no_return_data    0000000000000579     BaseLib:TdVmcall.obj
+ 0001:0000039b       TdCall.exit                000000000000065b     BaseLib:TdCall.obj
+ 0001:00001d44       $LN47                      0000000000002004     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001d4c       $LN46                      000000000000200c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00002100       FindHeaderByGuid           00000000000023c0 f   LockBoxBaseLib:LockBoxLib.obj
+ 0003:000001c0       mDeadLoopComparator        0000000000006100     BaseLib:CpuDeadLoop.obj
+ 0003:000001d0       StartOfEntries             0000000000006110     LockBoxBaseLib:LockBoxLib.obj
+ 0003:000001d8       EndOfEntries               0000000000006118     LockBoxBaseLib:LockBoxLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000006440     PeimEntryPoint:PeimEntryPoint.obj
+ 0005:0000001c       $unwind$SignalToSmmByCommunication 000000000000645c     S3Resume2Pei:S3Resume.obj
+ 0005:00000028       $unwind$S3ResumeBootOs     0000000000006468     S3Resume2Pei:S3Resume.obj
+ 0005:00000040       $unwind$RestoreS3PageTables 0000000000006480     S3Resume2Pei:S3Resume.obj
+ 0005:00000058       $unwind$S3ResumeExecuteBootScript 0000000000006498     S3Resume2Pei:S3Resume.obj
+ 0005:0000006c       $unwind$LoadMtrrData       00000000000064ac     S3Resume2Pei:S3Resume.obj
+ 0005:0000007c       $unwind$S3RestoreConfig2   00000000000064bc     S3Resume2Pei:S3Resume.obj
+ 0005:00000094       $unwind$AllocatePool       00000000000064d4     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000009c       $unwind$DivU64x32Remainder 00000000000064dc     BaseLib:DivU64x32Remainder.obj
+ 0005:0000009c       $unwind$CopyGuid           00000000000064dc     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:0000009c       $unwind$GetFirstGuidHob    00000000000064dc     PeiHobLib:HobLib.obj
+ 0005:000000ac       $unwind$CompareGuid        00000000000064ec     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000c4       $unwind$IoRead32           0000000000006504     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:000000c4       $unwind$IoWrite8           0000000000006504     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:000000c4       $unwind$SaveAndDisableInterrupts 0000000000006504     BaseLib:Cpu.obj
+ 0005:000000c4       $unwind$StrnLenS           0000000000006504     BaseLib:SafeString.obj
+ 0005:000000c4       $unwind$ZeroMem            0000000000006504     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:000000c4       $unwind$GetApicMode        0000000000006504     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000c4       $unwind$GetVariableMtrrCountWorker 0000000000006504     MtrrLib:MtrrLib.obj
+ 0005:000000c4       $unwind$MtrrLibPreMtrrChange 0000000000006504     MtrrLib:MtrrLib.obj
+ 0005:000000cc       $unwind$CopyMem            000000000000650c     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000cc       $unwind$PciCf8Read16       000000000000650c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$PciCf8Read32       000000000000650c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$PciCf8Read8        000000000000650c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000e0       $unwind$CpuDeadLoop        0000000000006520     BaseLib:CpuDeadLoop.obj
+ 0005:000000e0       $unwind$AsmEnablePaging64  0000000000006520     BaseLib:X86EnablePaging64.obj
+ 0005:000000e0       $unwind$GetHobList         0000000000006520     PeiHobLib:HobLib.obj
+ 0005:000000e0       $unwind$GetPcdPpiPointer   0000000000006520     PeiPcdLib:PeiPcdLib.obj
+ 0005:000000e0       $unwind$TdSharedPageMask   0000000000006520     TdxLib:TdInfo.obj
+ 0005:000000e0       $unwind$GetLocalApicBaseAddress 0000000000006520     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000e0       $unwind$ReadLocalApicReg   0000000000006520     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000e8       $unwind$SwitchStack        0000000000006528     BaseLib:SwitchStack.obj
+ 0005:000000f4       $unwind$IoWrite32          0000000000006534     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:000000f4       $unwind$LShiftU64          0000000000006534     BaseLib:LShiftU64.obj
+ 0005:000000f4       $unwind$AsciiStrLen        0000000000006534     BaseLib:String.obj
+ 0005:000000f4       $unwind$FindHeaderByGuid   0000000000006534     LockBoxBaseLib:LockBoxLib.obj
+ 0005:00000100       $unwind$TdIoWrite32        0000000000006540     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000100       $unwind$PeiServicesLocatePpi 0000000000006540     PeiServicesLib:PeiServicesLib.obj
+ 0005:0000010c       $unwind$MmioRead32         000000000000654c     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:0000010c       $unwind$TdIoRead32         000000000000654c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:0000010c       $unwind$TdIoWrite8         000000000000654c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:0000010c       $unwind$GetPeiServicesTablePointer 000000000000654c     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0005:0000010c       $unwind$GetApicId          000000000000654c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:0000010c       $unwind$LocalApicReadMsrReg64 000000000000654c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000114       $unwind$DebugPrint         0000000000006554     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000011c       $unwind$DebugPrintMarker   000000000000655c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000130       $unwind$DebugAssert        0000000000006570     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000138       $unwind$AccessMsrTdxCall   0000000000006578     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000144       $unwind$TdIoRead8          0000000000006584     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000144       $unwind$LocalApicBaseAddressMsrSupported 0000000000006584     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:0000014c       $unwind$PciAndThenOr32     000000000000658c     BasePciLibCf8:PciLib.obj
+ 0005:0000014c       $unwind$SendIpi            000000000000658c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000164       $unwind$InternalReportStatusCode 00000000000065a4     PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000164       $unwind$MmioWrite32        00000000000065a4     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000164       $unwind$RestoreLockBox     00000000000065a4     LockBoxBaseLib:LockBoxLib.obj
+ 0005:00000174       $unwind$MtrrLibIsMtrrSupported 00000000000065b4     MtrrLib:MtrrLib.obj
+ 0005:00000180       $unwind$TdIoRead16         00000000000065c0     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000180       $unwind$BasePrintLibSPrint 00000000000065c0     BasePrintLib:PrintLibInternal.obj
+ 0005:00000188       $unwind$AsciiSPrint        00000000000065c8     BasePrintLib:PrintLib.obj
+ 0005:00000190       $unwind$BasePrintLibValueToString 00000000000065d0     BasePrintLib:PrintLibInternal.obj
+ 0005:0000019c       $unwind$BasePrintLibSPrintMarker 00000000000065dc     BasePrintLib:PrintLibInternal.obj
+ 0005:000001b8       $unwind$SerialPortWrite    00000000000065f8     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:000001cc       $unwind$PciOr8             000000000000660c     BasePciLibCf8:PciLib.obj
+ 0005:000001e4       $unwind$GetTdInfo          0000000000006624     TdxLib:TdInfo.obj

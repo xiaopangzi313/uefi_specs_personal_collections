@@ -1,0 +1,22 @@
+
+
+DefinitionBlock ("csdn.asl","CSDN",2,"ICSDN","PLATCSDN",3)
+{
+
+  Scope (\_SB) {
+    Name(TEMP,0)   
+  
+    Device(CSDN) {
+      Name(_HID,EISAID("PNP0C03"))
+      
+
+
+  
+      Method(_STA, 0)
+      {
+        Return (0)
+      }
+    }
+  }
+
+} // end of DSDT

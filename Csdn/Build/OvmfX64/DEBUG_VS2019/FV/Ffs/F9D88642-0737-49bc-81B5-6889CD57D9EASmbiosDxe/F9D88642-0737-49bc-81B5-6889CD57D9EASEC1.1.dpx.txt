@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\F9D88642-0737-49bc-81B5-6889CD57D9EASmbiosDxe\F9D88642-0737-49bc-81B5-6889CD57D9EASEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\SmbiosDxe\SmbiosDxe\OUTPUT\SmbiosDxe.depex

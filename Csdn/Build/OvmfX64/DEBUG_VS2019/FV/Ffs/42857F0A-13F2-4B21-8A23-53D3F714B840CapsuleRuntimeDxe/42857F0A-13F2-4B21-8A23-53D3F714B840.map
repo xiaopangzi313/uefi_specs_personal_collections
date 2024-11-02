@@ -1,0 +1,174 @@
+ CapsuleRuntimeDxe
+
+ Timestamp is 6725e4ac (Sat Nov  2 16:37:00 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 00001a98H .text$mn                CODE
+ 0002:00000000 00000d78H .rdata                  DATA
+ 0002:00000d78 00000030H .rdata$voltmd           DATA
+ 0002:00000da8 00000174H .rdata$zzzdbg           DATA
+ 0003:00000000 00000030H .data                   DATA
+ 0003:00000030 00000070H .bss                    DATA
+ 0004:00000000 000000d8H .pdata                  DATA
+ 0005:00000000 000000e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       AsmCpuid                   00000000000002a0     BaseLib:CpuId.obj
+ 0001:00000050       InternalMemCopyMem         00000000000002d0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000090       InternalMemSetMem          0000000000000310     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000330     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000350     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       AsmWbinvd                  0000000000000370     BaseLib:Wbinvd.obj
+ 0001:00000100       AsmFlushCacheLine          0000000000000380     BaseLib:FlushCacheLine.obj
+ 0001:00000110       AsmInvd                    0000000000000390     BaseLib:Invd.obj
+ 0001:00000120       CpuPause                   00000000000003a0     BaseLib:CpuPause.obj
+ 0001:00000130       TdVmCall                   00000000000003b0     BaseLib:TdVmcall.obj
+ 0001:000001b0       TdCall                     0000000000000430     BaseLib:TdCall.obj
+ 0001:00000208       _ModuleEntryPoint          0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000002a8       ProcessLibraryConstructorList 0000000000000528 f   CapsuleRuntimeDxe:AutoGen.obj
+ 0001:000005f4       ProcessLibraryDestructorList 0000000000000874 f   CapsuleRuntimeDxe:AutoGen.obj
+ 0001:000006e0       UpdateCapsule              0000000000000960 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:000007c0       QueryCapsuleCapabilities   0000000000000a40 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:000008a0       CompareGuid                0000000000000b20 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000928       AsciiStrLen                0000000000000ba8 f   BaseLib:String.obj
+ 0001:00000994       StrnLenS                   0000000000000c14 f   BaseLib:SafeString.obj
+ 0001:000009f8       AsciiSPrint                0000000000000c78 f   BasePrintLib:PrintLib.obj
+ 0001:00000a24       BasePrintLibFillBuffer     0000000000000ca4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000a58       BasePrintLibValueToString  0000000000000cd8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000ac4       BasePrintLibSPrintMarker   0000000000000d44 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000019dc       BasePrintLibSPrint         0000000000001c5c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001a00       DebugPrint                 0000000000001c80 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001a24       DebugPrintMarker           0000000000001ca4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001ab0       DebugAssert                0000000000001d30 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001b2c       RuntimeLibExitBootServicesEvent 0000000000001dac f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001b34       RuntimeLibVirtualNotifyEvent 0000000000001db4 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001b48       SerialPortWrite            0000000000001dc8 f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00001bcc       IsTdxGuest                 0000000000001e4c f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00001bf8       TdIoRead8                  0000000000001e78 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00001c50       TdIoWrite8                 0000000000001ed0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000001f20     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000001f48     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0BC@JPBOMMCO@CapsuleRuntimeDxe@ 0000000000001f70     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000070       ??_C@_0JC@PACBBGLC@d?3?2uefi_specs_personal_collecti@ 0000000000001f90     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000110       ??_C@_0GC@CEMMEDPM@D?3?2uefi_specs_personal_collecti@ 0000000000002030     CapsuleRuntimeDxe:CapsuleService.obj
+ 0002:00000178       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002098     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000190       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000020b0     BaseLib:String.obj
+ 0002:000001b0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 00000000000020d0     BaseLib:String.obj
+ 0002:000001f8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000002118     BaseLib:String.obj
+ 0002:00000220       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000002140     BaseLib:String.obj
+ 0002:00000260       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000002180     BaseLib:SafeString.obj
+ 0002:000002b0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000021d0     BaseLib:SafeString.obj
+ 0002:000002d0       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 00000000000021f0     BaseLib:Unaligned.obj
+ 0002:00000320       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000002240     BaseLib:DivU64x32.obj
+ 0002:00000330       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000002250     BasePrintLib:PrintLibInternal.obj
+ 0002:00000390       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000022b0     BasePrintLib:PrintLibInternal.obj
+ 0002:000003d8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000022f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000400       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000002320     BasePrintLib:PrintLibInternal.obj
+ 0002:00000450       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000002370     BasePrintLib:PrintLibInternal.obj
+ 0002:000004e0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000002400     BasePrintLib:PrintLibInternal.obj
+ 0002:00000568       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000002488     BasePrintLib:PrintLibInternal.obj
+ 0002:00000578       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000002498     BasePrintLib:PrintLibInternal.obj
+ 0002:00000588       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000024a8     BasePrintLib:PrintLibInternal.obj
+ 0002:000005c0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 00000000000024e0     BasePrintLib:PrintLibInternal.obj
+ 0002:000005d0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000024f0     BasePrintLib:PrintLibInternal.obj
+ 0002:000005ec       ??_C@_04JIMNDDED@?$CF08X@  000000000000250c     BasePrintLib:PrintLibInternal.obj
+ 0002:000005f4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000002514     BasePrintLib:PrintLibInternal.obj
+ 0002:000005f8       ??_C@_01LIIJDEN@?$AN@      0000000000002518     BasePrintLib:PrintLibInternal.obj
+ 0002:00000600       mWarningString             0000000000002520     BasePrintLib:PrintLibInternal.obj
+ 0002:000006d0       mErrorString               00000000000025f0     BasePrintLib:PrintLibInternal.obj
+ 0002:000009b0       mHexStr                    00000000000028d0     BasePrintLib:PrintLibInternal.obj
+ 0002:000009c0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000028e0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000009e0       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000002900     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000a40       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000002960     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000a58       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002978     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a80       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 00000000000029a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000af0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a10     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000b08       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000b20       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a40     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000b40       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000002a60     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000bc0       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000002ae0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000c30       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000002b50     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000c70       ??_C@_0FD@PFFCCHBO@D?3?2uefi_specs_personal_collecti@ 0000000000002b90     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000cd0       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000002bf0     BaseLib:DivU64x32Remainder.obj
+ 0002:00000d78       __volatile_metadata        0000000000002c98     <linker-defined>
+ 0003:00000000       gEfiCapsuleArchProtocolGuid 0000000000002e40     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000010       gEfiFmpCapsuleGuid         0000000000002e50     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000002e60     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000030       mNewHandle                 0000000000002e70     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:00000038       mMaxSizeNonPopulateCapsule 0000000000002e78     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:0000003c       mMaxSizePopulateCapsule    0000000000002e7c     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:00000048       gST                        0000000000002e88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000050       gBS                        0000000000002e90     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000058       gImageHandle               0000000000002e98     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000060       gRT                        0000000000002ea0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000068       mDevicePathLibDevicePathUtilities 0000000000002ea8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000070       mEfiAtRuntime              0000000000002eb0     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000080       gParity                    0000000000002ec0     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000081       gBreakSet                  0000000000002ec1     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000088       mEfiVirtualNotifyEvent     0000000000002ec8     <common>
+ 0003:00000090       mInternalRT                0000000000002ed0     <common>
+ 0003:00000098       mEfiExitBootServicesEvent  0000000000002ed8     <common>
+
+ entry point at        0001:00000208
+
+ Static symbols
+
+ 0001:0000002f       AsmCpuid.0                 00000000000002af     BaseLib:CpuId.obj
+ 0001:00000034       AsmCpuid.1                 00000000000002b4     BaseLib:CpuId.obj
+ 0001:0000003b       AsmCpuid.2                 00000000000002bb     BaseLib:CpuId.obj
+ 0001:00000044       AsmCpuid.3                 00000000000002c4     BaseLib:CpuId.obj
+ 0001:0000006a       InternalMemCopyMem.0       00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000007a       @CopyBackward              00000000000002fa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000083       @CopyBytes                 0000000000000303     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000189       TdVmCall.no_return_data    0000000000000409     BaseLib:TdVmcall.obj
+ 0001:000001fb       TdCall.exit                000000000000047b     BaseLib:TdCall.obj
+ 0003:00000040       mCcProbeGuestType          0000000000002e80     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000041       mCcProbed                  0000000000002e81     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000078       mDeadLoopComparator        0000000000002eb8     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000002fc0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000002fc8     CapsuleRuntimeDxe:AutoGen.obj
+ 0005:00000020       $unwind$ProcessLibraryDestructorList 0000000000002fe0     CapsuleRuntimeDxe:AutoGen.obj
+ 0005:0000002c       $unwind$UpdateCapsule      0000000000002fec     CapsuleRuntimeDxe:CapsuleService.obj
+ 0005:00000044       $unwind$QueryCapsuleCapabilities 0000000000003004     CapsuleRuntimeDxe:CapsuleService.obj
+ 0005:0000005c       $unwind$CompareGuid        000000000000301c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000070       $unwind$StrnLenS           0000000000003030     BaseLib:SafeString.obj
+ 0005:00000070       $unwind$AsciiStrLen        0000000000003030     BaseLib:String.obj
+ 0005:0000007c       $unwind$AsciiSPrint        000000000000303c     BasePrintLib:PrintLib.obj
+ 0005:00000084       $unwind$BasePrintLibValueToString 0000000000003044     BasePrintLib:PrintLibInternal.obj
+ 0005:00000084       $unwind$SerialPortWrite    0000000000003044     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:00000094       $unwind$BasePrintLibSPrintMarker 0000000000003054     BasePrintLib:PrintLibInternal.obj
+ 0005:000000b0       $unwind$TdIoRead8          0000000000003070     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000000b0       $unwind$BasePrintLibSPrint 0000000000003070     BasePrintLib:PrintLibInternal.obj
+ 0005:000000b8       $unwind$DebugPrint         0000000000003078     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000c0       $unwind$DebugPrintMarker   0000000000003080     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000d4       $unwind$DebugAssert        0000000000003094     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000dc       $unwind$TdIoWrite8         000000000000309c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj

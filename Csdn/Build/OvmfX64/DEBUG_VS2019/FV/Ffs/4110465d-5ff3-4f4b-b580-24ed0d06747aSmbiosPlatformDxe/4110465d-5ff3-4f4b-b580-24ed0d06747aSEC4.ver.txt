@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\4110465d-5ff3-4f4b-b580-24ed0d06747aSmbiosPlatformDxe\4110465d-5ff3-4f4b-b580-24ed0d06747aSEC4.ver

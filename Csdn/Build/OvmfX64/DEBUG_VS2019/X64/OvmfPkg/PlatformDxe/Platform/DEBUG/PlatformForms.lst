@@ -1,0 +1,286 @@
+//
+//  VFR compiler version  2.01 (UEFI 2.4) Developer Build based on Revision: Unknown
+//
+#line 1 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\PlatformForms.vfr"
+#line 1 "d:\\uefi_specs_personal_collections\\csdn\\Build\\OvmfX64\\DEBUG_VS2019\\X64\\OvmfPkg\\PlatformDxe\\Platform\\DEBUG\\PlatformDxeStrDefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned char PlatformDxeStrings[];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 54 "d:\\uefi_specs_personal_collections\\csdn\\Build\\OvmfX64\\DEBUG_VS2019\\X64\\OvmfPkg\\PlatformDxe\\Platform\\DEBUG\\PlatformDxeStrDefs.h"
+
+#line 56 "d:\\uefi_specs_personal_collections\\csdn\\Build\\OvmfX64\\DEBUG_VS2019\\X64\\OvmfPkg\\PlatformDxe\\Platform\\DEBUG\\PlatformDxeStrDefs.h"
+#line 1 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\PlatformForms.vfr"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\Include\\Guid/OvmfPlatformConfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID  {0x7235c51c, 0x0c80, 0x4cab, {0x87, 0xac, 0x3b, 0x08, 0x4a, 0x63, 0x04, 0xb1}};
+
+#line 19 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\Include\\Guid/OvmfPlatformConfig.h"
+#line 19 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\PlatformForms.vfr"
+#line 1 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\Platform.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+  UINT16    CurrentPreferredResolution[16];
+  UINT32    NextPreferredResolution;
+} MAIN_FORM_STATE;
+
+#line 38 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\Platform.h"
+#line 20 "D:\\uefi_specs_personal_collections\\edk2\\OvmfPkg\\PlatformDxe\\PlatformForms.vfr"
+
+formset
+>00000000: 0E A7 1C C5 35 72 80 0C AB 4C 87 AC 3B 08 4A 63 04 B1 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+  guid  = {0x7235c51c, 0x0c80, 0x4cab, {0x87, 0xac, 0x3b, 0x08, 0x4a, 0x63, 0x04, 0xb1}},
+  title = STRING_TOKEN(0x0002),
+  help  = STRING_TOKEN(0x0003),
+
+  varstore MAIN_FORM_STATE,
+>00000033: 24 24 1C C5 35 72 80 0C AB 4C 87 AC 3B 08 4A 63 04 B1 01 00 24 00 4D 61 69 6E 46 6F 72 6D 53 74 61 74 65 00 
+    varid = 1,
+    name  = MainFormState,
+    guid  = {0x7235c51c, 0x0c80, 0x4cab, {0x87, 0xac, 0x3b, 0x08, 0x4a, 0x63, 0x04, 0xb1}};
+
+  form
+>00000057: 01 86 01 00 04 00 
+    formid = 1,
+    title  = STRING_TOKEN(0x0004);
+
+    
+    
+    
+    string
+>0000005D: 1C 90 05 00 06 00 01 00 01 00 00 00 01 00 10 00 
+      varid      = MainFormState.CurrentPreferredResolution,
+      questionid = 1,
+      prompt     = STRING_TOKEN(0x0005),
+      help       = STRING_TOKEN(0x0006),
+      flags      = READ_ONLY,
+      minsize    = 0,
+      maxsize    = 16,
+    endstring;
+>0000006D: 29 02 
+
+    
+    
+    
+    label 1;
+>0000006F: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 00 
+
+    text
+      help  = STRING_TOKEN(0x0009),
+      text  = STRING_TOKEN(0x0009),
+      flags = INTERACTIVE,
+>00000084: 0C 8F 09 00 09 00 03 00 00 00 FF FF 04 00 00 
+      key   = 3;
+>00000093: 29 02 
+
+    text
+      help  = STRING_TOKEN(0x000A),
+      text  = STRING_TOKEN(0x000A),
+      flags = INTERACTIVE,
+>00000095: 0C 8F 0A 00 0A 00 04 00 00 00 FF FF 04 00 00 
+      key   = 4;
+>000000A4: 29 02 
+
+  endform;
+>000000A6: 29 02 
+
+endformset;
+>000000A8: 29 02 
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 1C C5 35 72 80 0C AB 4C 87 AC 3B 08 4A 63 04 B1 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+>00000033: 24 24 1C C5 35 72 80 0C AB 4C 87 AC 3B 08 4A 63 04 B1 01 00 24 00 4D 61 69 6E 46 6F 72 6D 53 74 61 74 65 00 
+>00000057: 01 86 01 00 04 00 
+>0000005D: 1C 90 05 00 06 00 01 00 01 00 00 00 01 00 10 00 
+>0000006D: 29 02 
+>0000006F: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 00 
+>00000084: 0C 8F 09 00 09 00 03 00 00 00 FF FF 04 00 00 
+>00000093: 29 02 
+>00000095: 0C 8F 0A 00 0A 00 04 00 00 00 FF FF 04 00 00 
+>000000A4: 29 02 
+>000000A6: 29 02 
+>000000A8: 29 02 
+
+Total Size of all record is 0x000000AA
+
+
+***************************************************************
+		mPackAlign = 8
+		struct MAIN_FORM_STATE : mAlign [4] mTotalSize [0x24]
+
+		struct MAIN_FORM_STATE {
+			+00000000[00000000] CurrentPreferredResolution[16] <UINT16>
+			+00000032[00000020] NextPreferredResolution <UINT32>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

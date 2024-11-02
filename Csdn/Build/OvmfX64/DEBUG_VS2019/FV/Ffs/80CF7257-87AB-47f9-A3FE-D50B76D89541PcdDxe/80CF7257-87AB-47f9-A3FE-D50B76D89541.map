@@ -1,0 +1,402 @@
+ PcdDxe
+
+ Timestamp is 6725e498 (Sat Nov  2 16:36:40 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001a8H .text                   CODE
+ 0001:000001a8 000045e8H .text$mn                CODE
+ 0002:00000000 00001a38H .rdata                  DATA
+ 0002:00001a38 00000030H .rdata$voltmd           DATA
+ 0002:00001a68 00000150H .rdata$zzzdbg           DATA
+ 0003:00000000 000002a0H .data                   DATA
+ 0003:000002a0 000000d8H .bss                    DATA
+ 0004:00000000 000003ccH .pdata                  DATA
+ 0005:00000000 00000204H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000b0       InternalMemSetMem32        0000000000000370     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d0       TdVmCall                   0000000000000390     BaseLib:TdVmcall.obj
+ 0001:00000150       TdCall                     0000000000000410     BaseLib:TdCall.obj
+ 0001:000001a8       _ModuleEntryPoint          0000000000000468 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001bc       ProcessLibraryConstructorList 000000000000047c f   PcdDxe:AutoGen.obj
+ 0001:000003e8       PcdDxeInit                 00000000000006a8 f   PcdDxe:Pcd.obj
+ 0001:000005ec       DxeGetPcdInfoGetInfo       00000000000008ac f   PcdDxe:Pcd.obj
+ 0001:000005fc       DxeGetPcdInfoGetInfoEx     00000000000008bc f   PcdDxe:Pcd.obj
+ 0001:00000604       DxeGetPcdInfoGetSku        00000000000008c4 f   PcdDxe:Pcd.obj
+ 0001:00000610       DxePcdSetSku               00000000000008d0 f   PcdDxe:Pcd.obj
+ 0001:0000073c       DxePcdGet8                 00000000000009fc f   PcdDxe:Pcd.obj
+ 0001:0000073c       DxePcdGetBool              00000000000009fc f   PcdDxe:Pcd.obj
+ 0001:00000754       DxePcdGet16                0000000000000a14 f   PcdDxe:Pcd.obj
+ 0001:0000078c       DxePcdGet32                0000000000000a4c f   PcdDxe:Pcd.obj
+ 0001:000007c4       DxePcdGet64                0000000000000a84 f   PcdDxe:Pcd.obj
+ 0001:00000800       DxePcdGetPtr               0000000000000ac0 f   PcdDxe:Pcd.obj
+ 0001:00000808       DxePcdGetSize              0000000000000ac8 f   PcdDxe:Pcd.obj
+ 0001:0000088c       DxePcdGetBoolEx            0000000000000b4c f   PcdDxe:Pcd.obj
+ 0001:0000088c       DxePcdGet8Ex               0000000000000b4c f   PcdDxe:Pcd.obj
+ 0001:000008ac       DxePcdGet16Ex              0000000000000b6c f   PcdDxe:Pcd.obj
+ 0001:000008ec       DxePcdGet32Ex              0000000000000bac f   PcdDxe:Pcd.obj
+ 0001:0000092c       DxePcdGet64Ex              0000000000000bec f   PcdDxe:Pcd.obj
+ 0001:00000970       DxePcdGetPtrEx             0000000000000c30 f   PcdDxe:Pcd.obj
+ 0001:00000988       DxePcdGetSizeEx            0000000000000c48 f   PcdDxe:Pcd.obj
+ 0001:000009a0       DxePcdSet8                 0000000000000c60 f   PcdDxe:Pcd.obj
+ 0001:000009a0       DxePcdSetBool              0000000000000c60 f   PcdDxe:Pcd.obj
+ 0001:000009c8       DxePcdSet16                0000000000000c88 f   PcdDxe:Pcd.obj
+ 0001:000009f0       DxePcdSet32                0000000000000cb0 f   PcdDxe:Pcd.obj
+ 0001:00000a18       DxePcdSet64                0000000000000cd8 f   PcdDxe:Pcd.obj
+ 0001:00000a40       DxePcdSetPtr               0000000000000d00 f   PcdDxe:Pcd.obj
+ 0001:00000a54       DxePcdSetBoolEx            0000000000000d14 f   PcdDxe:Pcd.obj
+ 0001:00000a54       DxePcdSet8Ex               0000000000000d14 f   PcdDxe:Pcd.obj
+ 0001:00000a88       DxePcdSet16Ex              0000000000000d48 f   PcdDxe:Pcd.obj
+ 0001:00000b00       DxePcdSet32Ex              0000000000000dc0 f   PcdDxe:Pcd.obj
+ 0001:00000b34       DxePcdSet64Ex              0000000000000df4 f   PcdDxe:Pcd.obj
+ 0001:00000b68       DxePcdSetPtrEx             0000000000000e28 f   PcdDxe:Pcd.obj
+ 0001:00000b90       DxeRegisterCallBackOnSet   0000000000000e50 f   PcdDxe:Pcd.obj
+ 0001:00000be8       DxeUnRegisterCallBackOnSet 0000000000000ea8 f   PcdDxe:Pcd.obj
+ 0001:00000cbc       DxePcdGetNextToken         0000000000000f7c f   PcdDxe:Pcd.obj
+ 0001:00000de8       GetDistinctTokenSpace      00000000000010a8 f   PcdDxe:Pcd.obj
+ 0001:00000ea0       DxePcdGetNextTokenSpace    0000000000001160 f   PcdDxe:Pcd.obj
+ 0001:00001084       GetLocalTokenNumber        0000000000001344 f   PcdDxe:Service.obj
+ 0001:000010c4       GetPcdType                 0000000000001384 f   PcdDxe:Service.obj
+ 0001:00001134       GetPcdName                 00000000000013f4 f   PcdDxe:Service.obj
+ 0001:00001244       ExGetPcdInfo               0000000000001504 f   PcdDxe:Service.obj
+ 0001:00001348       DxeGetPcdInfo              0000000000001608 f   PcdDxe:Service.obj
+ 0001:00001474       GetWorker                  0000000000001734 f   PcdDxe:Service.obj
+ 0001:000016a8       DxeRegisterCallBackWorker  0000000000001968 f   PcdDxe:Service.obj
+ 0001:00001770       ExGetNextTokeNumber        0000000000001a30 f   PcdDxe:Service.obj
+ 0001:00001848       UpdatePcdDatabase          0000000000001b08 f   PcdDxe:Service.obj
+ 0001:00001960       BuildPcdDxeDataBase        0000000000001c20 f   PcdDxe:Service.obj
+ 0001:00001ca8       GetHiiVariable             0000000000001f68 f   PcdDxe:Service.obj
+ 0001:00001db8       InvokeCallbackOnSet        0000000000002078 f   PcdDxe:Service.obj
+ 0001:00001e60       SetWorker                  0000000000002120 f   PcdDxe:Service.obj
+ 0001:00002120       ExSetWorker                00000000000023e0 f   PcdDxe:Service.obj
+ 0001:00002198       GetVariableSizeAndDataFromHiiPcd 0000000000002458 f   PcdDxe:Service.obj
+ 0001:00002348       SetHiiVariable             0000000000002608 f   PcdDxe:Service.obj
+ 0001:0000252c       GetExPcdTokenNumber        00000000000027ec f   PcdDxe:Service.obj
+ 0001:00002694       GetPtrTypeSize             0000000000002954 f   PcdDxe:Service.obj
+ 0001:0000278c       SetPtrTypeSize             0000000000002a4c f   PcdDxe:Service.obj
+ 0001:000028b0       VariableLockDynamicHiiPcd  0000000000002b70 f   PcdDxe:Service.obj
+ 0001:000029d0       VariableLockCallBack       0000000000002c90 f   PcdDxe:Service.obj
+ 0001:00002a14       InternalBaseLibIsListValid 0000000000002cd4 f   BaseLib:LinkedList.obj
+ 0001:00002a80       InsertTailList             0000000000002d40 f   BaseLib:LinkedList.obj
+ 0001:00002ad4       GetFirstNode               0000000000002d94 f   BaseLib:LinkedList.obj
+ 0001:00002b08       RemoveEntryList            0000000000002dc8 f   BaseLib:LinkedList.obj
+ 0001:00002b70       StrSize                    0000000000002e30 f   BaseLib:String.obj
+ 0001:00002bfc       AsciiStrLen                0000000000002ebc f   BaseLib:String.obj
+ 0001:00002c68       StrnLenS                   0000000000002f28 f   BaseLib:SafeString.obj
+ 0001:00002cc0       AsciiStrCatS               0000000000002f80 f   BaseLib:SafeString.obj
+ 0001:00002e68       CopyMem                    0000000000003128 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002f04       CompareGuid                00000000000031c4 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00002fc8       ScanGuid                   0000000000003288 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00003080       ZeroMem                    0000000000003340 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:000030f0       DebugPrint                 00000000000033b0 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00003114       DebugPrintMarker           00000000000033d4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000031a0       DebugAssert                0000000000003460 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000321c       InternalAllocatePool       00000000000034dc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000324c       AllocateZeroPool           000000000000350c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003274       InternalAllocateCopyPool   0000000000003534 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000032ec       FreePool                   00000000000035ac f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003330       EfiAcquireLock             00000000000035f0 f   UefiLib:UefiLib.obj
+ 0001:0000337c       EfiReleaseLock             000000000000363c f   UefiLib:UefiLib.obj
+ 0001:000033c4       GetHobList                 0000000000003684 f   DxeHobLib:HobLib.obj
+ 0001:000034a4       GetNextGuidHob             0000000000003764 f   DxeHobLib:HobLib.obj
+ 0001:00003528       InternalImageHandleToFvHandle 00000000000037e8 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:000035b0       InternalGetSectionFromFv   0000000000003870 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:0000363c       AsciiSPrint                00000000000038fc f   BasePrintLib:PrintLib.obj
+ 0001:00003668       BasePrintLibFillBuffer     0000000000003928 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000369c       BasePrintLibValueToString  000000000000395c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003708       BasePrintLibSPrintMarker   00000000000039c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004614       BasePrintLibSPrint         00000000000048d4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004638       SerialPortWrite            00000000000048f8 f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:000046bc       IsTdxGuest                 000000000000497c f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:000046e8       TdIoRead8                  00000000000049a8 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00004740       TdIoWrite8                 0000000000004a00 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000004a60     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000004a88     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_06PFIKAMCP@PcdDxe@   0000000000004ab0     PcdDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0HK@ENIHHKOD@d?3?2uefi_specs_personal_collecti@ 0000000000004ac0     PcdDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_0EN@FKMFIEMC@D?3?2uefi_specs_personal_collecti@ 0000000000004b40     PcdDxe:Pcd.obj
+ 0002:00000130       ??_C@_0DA@FIJCPHJE@?$CGgPcdProtocolGuid?5already?5insta@ 0000000000004b90     PcdDxe:Pcd.obj
+ 0002:00000160       ??_C@_0CE@CGBAHFII@PcdDxe?5?9?5SkuId?50x?$CFlx?5is?5to?5be?5s@ 0000000000004bc0     PcdDxe:Pcd.obj
+ 0002:00000188       ??_C@_0CP@NONLLMFK@PcdDxe?5?9?5SkuId?5is?5same?5to?5curre@ 0000000000004be8     PcdDxe:Pcd.obj
+ 0002:000001b8       ??_C@_0DA@GKIIFAJ@PcdDxe?5?9?5The?5SKU?5Id?5could?5be?5ch@ 0000000000004c18     PcdDxe:Pcd.obj
+ 0002:000001f0       ??_C@_0FF@NBNIHPOH@PcdDxe?5?9?5The?5SKU?5Id?5was?5set?5to?5@ 0000000000004c50     PcdDxe:Pcd.obj
+ 0002:00000248       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000004ca8     PcdDxe:Pcd.obj
+ 0002:00000260       ??_C@_0CJ@NNFNMIHA@PcdDxe?5?9?5SkuId?5is?5found?5in?5SkuI@ 0000000000004cc0     PcdDxe:Pcd.obj
+ 0002:00000290       ??_C@_0CH@KGMOLEFJ@PcdDxe?5?9?5Set?5current?5SKU?5Id?5to?5@ 0000000000004cf0     PcdDxe:Pcd.obj
+ 0002:000002c0       ??_C@_0EG@EOHJCGJJ@PcdDxe?5?9?5Invalid?5input?5SkuId?0?5t@ 0000000000004d20     PcdDxe:Pcd.obj
+ 0002:00000308       ??_C@_0CK@COKGHBL@TokenNumber?5?$CL?51?5?$DM?5mPcdTotalToke@ 0000000000004d68     PcdDxe:Pcd.obj
+ 0002:00000340       ??_C@_0FF@GDJFLDAJ@?$CB?$CICompareGuid?5?$CIGuid?0?5?$CGgEfiMdeMo@ 0000000000004da0     PcdDxe:Pcd.obj
+ 0002:00000398       ??_C@_0CD@PEJBICDC@DistinctTokenSpace?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000004df8     PcdDxe:Pcd.obj
+ 0002:000003c0       ??_C@_0BF@PEDOPNMP@Guid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004e20     PcdDxe:Pcd.obj
+ 0002:000003e0       ??_C@_0FB@DKHKCJIB@D?3?2uefi_specs_personal_collecti@ 0000000000004e40     PcdDxe:Service.obj
+ 0002:00000438       ??_C@_0BF@OGAHIMFI@Name?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004e98     PcdDxe:Service.obj
+ 0002:00000450       ??_C@_0BI@JPMFKADA@PcdInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004eb0     PcdDxe:Service.obj
+ 0002:00000468       ??_C@_0BA@KCGHGKF@TokenNumber?5?$DO?50@ 0000000000004ec8     PcdDxe:Service.obj
+ 0002:00000478       ??_C@_0DP@EJHMAPDE@?$CIGetSize?5?$DN?$DN?5DxePcdGetSize?5?$CIToke@ 0000000000004ed8     PcdDxe:Service.obj
+ 0002:000004b8       ??_C@_0BF@BPKNCILJ@mVpdBaseAddress?5?$CB?$DN?50@ 0000000000004f18     PcdDxe:Service.obj
+ 0002:000004d0       ??_C@_0BN@PCHAHDHH@FnTableEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004f30     PcdDxe:Service.obj
+ 0002:000004f0       ??_C@_0CD@NAFLEDJN@mPcdDatabase?4DxeDb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000004f50     PcdDxe:Service.obj
+ 0002:00000518       ??_C@_0BJ@MBGLGKNG@PcdDxeDb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004f78     PcdDxe:Service.obj
+ 0002:00000538       ??_C@_0CD@BFAODLII@mPcdDatabase?4PeiDb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000004f98     PcdDxe:Service.obj
+ 0002:00000560       ??_C@_0CB@FFGOOHEB@mCallbackFnTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000004fc0     PcdDxe:Service.obj
+ 0002:00000588       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004fe8     PcdDxe:Service.obj
+ 0002:000005a0       ??_C@_0BN@BDINJONM@Status?5?$DN?$DN?5?$CIRETURN_STATUS?$CJ?$CI0?$CJ@ 0000000000005000     PcdDxe:Service.obj
+ 0002:000005c0       ??_C@_0DK@KOOMBOKB@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 0000000000005020     PcdDxe:Service.obj
+ 0002:00000600       ??_C@_0BK@KMBLOHLH@MatchGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005060     PcdDxe:Service.obj
+ 0002:00000620       ??_C@_0BE@OMCCOLOM@GetExPcdTokenNumber@ 0000000000005080     PcdDxe:Service.obj
+ 0002:00000638       ??_C@_0DL@LMEDHJPO@?$CFa?3?5Failed?5to?5find?5PCD?5with?5GUI@ 0000000000005098     PcdDxe:Service.obj
+ 0002:00000680       ??_C@_0HA@NINFNLNG@?$CILocalTokenNumber?5?$CG?5?$CI?$CI0x0U?5?$DM?$DM?52@ 00000000000050e0     PcdDxe:Service.obj
+ 0002:000006f0       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 0000000000005150     BaseLib:Unaligned.obj
+ 0002:00000740       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000051a0     BaseLib:LinkedList.obj
+ 0002:00000760       ??_C@_0EM@NCJPOFNN@D?3?2uefi_specs_personal_collecti@ 00000000000051c0     BaseLib:LinkedList.obj
+ 0002:000007b0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005210     BaseLib:LinkedList.obj
+ 0002:000007d8       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005238     BaseLib:LinkedList.obj
+ 0002:000007f8       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005258     BaseLib:LinkedList.obj
+ 0002:00000818       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000005278     BaseLib:LinkedList.obj
+ 0002:00000840       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 00000000000052a0     BaseLib:LinkedList.obj
+ 0002:00000868       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000052c8     BaseLib:LinkedList.obj
+ 0002:00000880       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000052e0     BaseLib:String.obj
+ 0002:000008a0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 0000000000005300     BaseLib:String.obj
+ 0002:000008e8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005348     BaseLib:String.obj
+ 0002:00000910       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005370     BaseLib:String.obj
+ 0002:00000950       ??_C@_0BL@JAAMOCAJ@StrSize?5?$CIFirstString?$CJ?5?$CB?$DN?50@ 00000000000053b0     BaseLib:String.obj
+ 0002:00000970       ??_C@_0BM@DALBOILC@StrSize?5?$CISecondString?$CJ?5?$CB?$DN?50@ 00000000000053d0     BaseLib:String.obj
+ 0002:00000990       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000053f0     BaseLib:String.obj
+ 0002:000009d0       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000005430     BaseLib:SafeString.obj
+ 0002:00000a20       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005480     BaseLib:SafeString.obj
+ 0002:00000a40       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 00000000000054a0     BaseLib:SafeString.obj
+ 0002:00000a80       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000054e0     BaseLib:SafeString.obj
+ 0002:00000aa0       ??_C@_0P@PMIMLIHM@?$CIDestMax?5?$CB?$DN?50?$CJ@ 0000000000005500     BaseLib:SafeString.obj
+ 0002:00000ab0       ??_C@_0P@BHOOOJPD@?$CICopyLen?5?$CB?$DN?50?$CJ@ 0000000000005510     BaseLib:SafeString.obj
+ 0002:00000ac0       ??_C@_0BG@BPGICNPK@?$CICopyLen?5?$DO?5SourceLen?$CJ@ 0000000000005520     BaseLib:SafeString.obj
+ 0002:00000ad8       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005538     BaseLib:SafeString.obj
+ 0002:00000af8       ??_C@_0DO@LJFOOPII@?$CIDestMax?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild@ 0000000000005558     BaseLib:SafeString.obj
+ 0002:00000b40       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 00000000000055a0     BaseLib:SafeString.obj
+ 0002:00000ba0       ??_C@_0N@MIDJKBI@AsciiStrCatS@ 0000000000005600     BaseLib:SafeString.obj
+ 0002:00000bb0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000005610     BaseLib:DivU64x32.obj
+ 0002:00000bc0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005620     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000c10       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 0000000000005670     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000c70       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000056d0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000cb0       ??_C@_0DC@LJGHDAJN@?$CI?$CIUINTN?$CJBuffer?5?$CG?5?$CIsizeof?5?$CIGuid?9@ 0000000000005710     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000cf0       ??_C@_0FI@LANDFKKB@D?3?2uefi_specs_personal_collecti@ 0000000000005750     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000d48       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000057a8     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000d80       ??_C@_0CI@FMMOALAD@?$CILength?5?$CG?5?$CIsizeof?5?$CI?$CKGuidPtr?$CJ?5?9?5@ 00000000000057e0     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000db0       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 0000000000005810     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000e10       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005870     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000e30       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000005890     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000e90       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000058f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000ea8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005908     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000ed0       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 0000000000005930     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000f40       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000059a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000f58       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000059b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000f70       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 00000000000059d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000fd8       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000005a38     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001020       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000005a80     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001090       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000005af0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000010c8       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b28     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000010e0       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000005b40     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001160       ??_C@_0EJ@PPOMJLJB@D?3?2uefi_specs_personal_collecti@ 0000000000005bc0     UefiLib:UefiLib.obj
+ 0002:000011b0       ??_C@_0BO@IJOPPPFL@Lock?9?$DOLock?5?$DN?$DN?5EfiLockReleased@ 0000000000005c10     UefiLib:UefiLib.obj
+ 0002:000011d0       ??_C@_0BO@FHNOFLFJ@Lock?9?$DOLock?5?$DN?$DN?5EfiLockAcquired@ 0000000000005c30     UefiLib:UefiLib.obj
+ 0002:000011f0       ??_C@_0EK@CGIIDOCH@D?3?2uefi_specs_personal_collecti@ 0000000000005c50     DxeHobLib:HobLib.obj
+ 0002:00001240       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ca0     DxeHobLib:HobLib.obj
+ 0002:00001260       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005cc0     DxeHobLib:HobLib.obj
+ 0002:00001280       ??_C@_0BM@PHFBGKMM@ImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ce0     DxeServicesLib:DxeServicesLib.obj
+ 0002:000012a0       ??_C@_0FH@ONKDGBKO@D?3?2uefi_specs_personal_collecti@ 0000000000005d00     DxeServicesLib:DxeServicesLib.obj
+ 0002:00001300       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000005d60     BasePrintLib:PrintLibInternal.obj
+ 0002:00001360       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000005dc0     BasePrintLib:PrintLibInternal.obj
+ 0002:000013a8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005e08     BasePrintLib:PrintLibInternal.obj
+ 0002:000013d0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000005e30     BasePrintLib:PrintLibInternal.obj
+ 0002:00001420       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000005e80     BasePrintLib:PrintLibInternal.obj
+ 0002:000014b0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000005f10     BasePrintLib:PrintLibInternal.obj
+ 0002:00001538       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000005f98     BasePrintLib:PrintLibInternal.obj
+ 0002:00001548       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000005fa8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001558       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000005fb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001590       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000005ff0     BasePrintLib:PrintLibInternal.obj
+ 0002:000015a0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000006000     BasePrintLib:PrintLibInternal.obj
+ 0002:000015bc       ??_C@_04JIMNDDED@?$CF08X@  000000000000601c     BasePrintLib:PrintLibInternal.obj
+ 0002:000015c4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006024     BasePrintLib:PrintLibInternal.obj
+ 0002:000015c8       ??_C@_01LIIJDEN@?$AN@      0000000000006028     BasePrintLib:PrintLibInternal.obj
+ 0002:000015d0       mWarningString             0000000000006030     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a0       mErrorString               0000000000006100     BasePrintLib:PrintLibInternal.obj
+ 0002:00001980       mHexStr                    00000000000063e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001990       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 00000000000063f0     BaseLib:DivU64x32Remainder.obj
+ 0002:00001a38       __volatile_metadata        0000000000006498     <linker-defined>
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000006620     PcdDxe:AutoGen.obj
+ 0003:00000010       gEdkiiVariableLockProtocolGuid 0000000000006630     PcdDxe:AutoGen.obj
+ 0003:00000020       gPcdProtocolGuid           0000000000006640     PcdDxe:AutoGen.obj
+ 0003:00000030       gEfiGetPcdInfoProtocolGuid 0000000000006650     PcdDxe:AutoGen.obj
+ 0003:00000040       gEfiFirmwareVolume2ProtocolGuid 0000000000006660     PcdDxe:AutoGen.obj
+ 0003:00000050       gEfiPcdProtocolGuid        0000000000006670     PcdDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathUtilitiesProtocolGuid 0000000000006680     PcdDxe:AutoGen.obj
+ 0003:00000070       gEfiMdeModulePkgTokenSpaceGuid 0000000000006690     PcdDxe:AutoGen.obj
+ 0003:00000080       gEfiHobListGuid            00000000000066a0     PcdDxe:AutoGen.obj
+ 0003:00000090       gPcdDataBaseHobGuid        00000000000066b0     PcdDxe:AutoGen.obj
+ 0003:000000a0       gPcdDataBaseSignatureGuid  00000000000066c0     PcdDxe:AutoGen.obj
+ 0003:000000b0       gEfiCallerIdGuid           00000000000066d0     PcdDxe:AutoGen.obj
+ 0003:000000c0       gGetPcdInfoProtocolGuid    00000000000066e0     PcdDxe:AutoGen.obj
+ 0003:000000d0       mEfiPcdInstance            00000000000066f0     PcdDxe:Pcd.obj
+ 0003:00000160       mEfiGetPcdInfoInstance     0000000000006780     PcdDxe:Pcd.obj
+ 0003:00000170       mPcdInstance               0000000000006790     PcdDxe:Pcd.obj
+ 0003:00000268       mPcdDatabaseLock           0000000000006888     PcdDxe:Pcd.obj
+ 0003:00000280       mGetPcdInfoInstance        00000000000068a0     PcdDxe:Pcd.obj
+ 0003:000002a0       mVpdBaseAddress            00000000000068c0     PcdDxe:Pcd.obj
+ 0003:000002a8       mPcdHandle                 00000000000068c8     PcdDxe:Pcd.obj
+ 0003:000002b0       mDxePcdDbBinary            00000000000068d0     PcdDxe:Service.obj
+ 0003:000002b8       mDxePcdDbSize              00000000000068d8     PcdDxe:Service.obj
+ 0003:000002c0       mPeiPcdDbSize              00000000000068e0     PcdDxe:Service.obj
+ 0003:000002c8       mPeiPcdDbBinary            00000000000068e8     PcdDxe:Service.obj
+ 0003:000002d8       gST                        00000000000068f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000002e0       gBS                        0000000000006900     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000002e8       gImageHandle               0000000000006908     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000002f0       mDevicePathLibDevicePathUtilities 0000000000006910     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000002f8       gRT                        0000000000006918     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000300       mHobList                   0000000000006920     DxeHobLib:HobLib.obj
+ 0003:00000310       gParity                    0000000000006930     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000311       gBreakSet                  0000000000006931     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000318       mCallbackFnTable           0000000000006938     <common>
+ 0003:00000320       mDxeLocalTokenCount        0000000000006940     <common>
+ 0003:00000324       mPeiDatabaseEmpty          0000000000006944     <common>
+ 0003:00000330       mPcdDatabase               0000000000006950     <common>
+ 0003:00000340       TmpTokenSpaceBuffer        0000000000006960     <common>
+ 0003:00000348       TmpTokenSpaceBufferCount   0000000000006968     <common>
+ 0003:00000350       mPcdTotalTokenCount        0000000000006970     <common>
+ 0003:00000354       mDxeExMapTableEmpty        0000000000006974     <common>
+ 0003:00000358       mDxeNexTokenCount          0000000000006978     <common>
+ 0003:0000035c       mDxeExMapppingTableSize    000000000000697c     <common>
+ 0003:00000360       mPeiGuidTableSize          0000000000006980     <common>
+ 0003:00000364       mDxeGuidTableSize          0000000000006984     <common>
+ 0003:00000368       mPeiExMapppingTableSize    0000000000006988     <common>
+ 0003:0000036c       mPeiLocalTokenCount        000000000000698c     <common>
+ 0003:00000370       mPeiExMapTableEmpty        0000000000006990     <common>
+ 0003:00000374       mPeiNexTokenCount          0000000000006994     <common>
+
+ entry point at        0001:000001a8
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000129       TdVmCall.no_return_data    00000000000003e9     BaseLib:TdVmcall.obj
+ 0001:0000019b       TdCall.exit                000000000000045b     BaseLib:TdCall.obj
+ 0003:000002d0       mCcProbeGuestType          00000000000068f0     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000002d1       mCcProbed                  00000000000068f1     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000308       mDeadLoopComparator        0000000000006928     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$DxePcdGet8         0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$DxePcdGet8Ex       0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$DxePcdGetBool      0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$DxePcdGetBoolEx    0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$DxePcdGetPtrEx     0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$DxePcdGetSizeEx    0000000000006d80     PcdDxe:Pcd.obj
+ 0005:00000000       $unwind$GetPcdType         0000000000006d80     PcdDxe:Service.obj
+ 0005:00000000       $unwind$VariableLockCallBack 0000000000006d80     PcdDxe:Service.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000006d80     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$EfiAcquireLock     0000000000006d80     UefiLib:UefiLib.obj
+ 0005:00000000       $unwind$EfiReleaseLock     0000000000006d80     UefiLib:UefiLib.obj
+ 0005:00000000       $unwind$FreePool           0000000000006d80     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$InternalAllocatePool 0000000000006d80     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000006d88     PcdDxe:AutoGen.obj
+ 0005:00000008       $unwind$DxeRegisterCallBackOnSet 0000000000006d88     PcdDxe:Pcd.obj
+ 0005:00000008       $unwind$DxeRegisterCallBackWorker 0000000000006d88     PcdDxe:Service.obj
+ 0005:00000008       $unwind$StrSize            0000000000006d88     BaseLib:String.obj
+ 0005:00000008       $unwind$BasePrintLibValueToString 0000000000006d88     BasePrintLib:PrintLibInternal.obj
+ 0005:00000008       $unwind$GetHobList         0000000000006d88     DxeHobLib:HobLib.obj
+ 0005:00000008       $unwind$GetNextGuidHob     0000000000006d88     DxeHobLib:HobLib.obj
+ 0005:00000008       $unwind$SerialPortWrite    0000000000006d88     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:00000018       $unwind$PcdDxeInit         0000000000006d98     PcdDxe:Pcd.obj
+ 0005:00000024       $unwind$DxePcdSetSku       0000000000006da4     PcdDxe:Pcd.obj
+ 0005:00000024       $unwind$DxeGetPcdInfo      0000000000006da4     PcdDxe:Service.obj
+ 0005:00000024       $unwind$VariableLockDynamicHiiPcd 0000000000006da4     PcdDxe:Service.obj
+ 0005:0000003c       $unwind$DxePcdGet16        0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGet16Ex      0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGet32        0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGet32Ex      0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGet64        0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGet64Ex      0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$DxePcdGetSize      0000000000006dbc     PcdDxe:Pcd.obj
+ 0005:0000003c       $unwind$GetFirstNode       0000000000006dbc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$InternalBaseLibIsListValid 0000000000006dbc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$RemoveEntryList    0000000000006dbc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$StrnLenS           0000000000006dbc     BaseLib:SafeString.obj
+ 0005:0000003c       $unwind$AllocateZeroPool   0000000000006dbc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000044       $unwind$DxePcdSet32        0000000000006dc4     PcdDxe:Pcd.obj
+ 0005:00000044       $unwind$DxePcdSet8         0000000000006dc4     PcdDxe:Pcd.obj
+ 0005:00000044       $unwind$DxePcdSetBool      0000000000006dc4     PcdDxe:Pcd.obj
+ 0005:0000004c       $unwind$DxePcdSet16        0000000000006dcc     PcdDxe:Pcd.obj
+ 0005:0000004c       $unwind$DxePcdSet64        0000000000006dcc     PcdDxe:Pcd.obj
+ 0005:00000054       $unwind$DxePcdSet32Ex      0000000000006dd4     PcdDxe:Pcd.obj
+ 0005:00000054       $unwind$DxePcdSet64Ex      0000000000006dd4     PcdDxe:Pcd.obj
+ 0005:00000054       $unwind$DxePcdSet8Ex       0000000000006dd4     PcdDxe:Pcd.obj
+ 0005:00000054       $unwind$DxePcdSetBoolEx    0000000000006dd4     PcdDxe:Pcd.obj
+ 0005:00000054       $unwind$TdIoRead8          0000000000006dd4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:00000054       $unwind$BasePrintLibSPrint 0000000000006dd4     BasePrintLib:PrintLibInternal.obj
+ 0005:0000005c       $unwind$DxePcdSet16Ex      0000000000006ddc     PcdDxe:Pcd.obj
+ 0005:00000068       $unwind$DxePcdSetPtrEx     0000000000006de8     PcdDxe:Pcd.obj
+ 0005:00000070       $unwind$DxeUnRegisterCallBackOnSet 0000000000006df0     PcdDxe:Pcd.obj
+ 0005:00000070       $unwind$GetDistinctTokenSpace 0000000000006df0     PcdDxe:Pcd.obj
+ 0005:00000070       $unwind$GetPcdName         0000000000006df0     PcdDxe:Service.obj
+ 0005:00000070       $unwind$CopyMem            0000000000006df0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000070       $unwind$ScanGuid           0000000000006df0     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000084       $unwind$DxePcdGetNextToken 0000000000006e04     PcdDxe:Pcd.obj
+ 0005:00000094       $unwind$DxePcdGetNextTokenSpace 0000000000006e14     PcdDxe:Pcd.obj
+ 0005:000000ac       $unwind$ExGetPcdInfo       0000000000006e2c     PcdDxe:Service.obj
+ 0005:000000ac       $unwind$GetPtrTypeSize     0000000000006e2c     PcdDxe:Service.obj
+ 0005:000000ac       $unwind$InvokeCallbackOnSet 0000000000006e2c     PcdDxe:Service.obj
+ 0005:000000ac       $unwind$SetPtrTypeSize     0000000000006e2c     PcdDxe:Service.obj
+ 0005:000000c4       $unwind$GetWorker          0000000000006e44     PcdDxe:Service.obj
+ 0005:000000d8       $unwind$ExGetNextTokeNumber 0000000000006e58     PcdDxe:Service.obj
+ 0005:000000d8       $unwind$InsertTailList     0000000000006e58     BaseLib:LinkedList.obj
+ 0005:000000d8       $unwind$AsciiStrLen        0000000000006e58     BaseLib:String.obj
+ 0005:000000d8       $unwind$ZeroMem            0000000000006e58     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:000000d8       $unwind$InternalAllocateCopyPool 0000000000006e58     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000e4       $unwind$UpdatePcdDatabase  0000000000006e64     PcdDxe:Service.obj
+ 0005:000000ec       $unwind$BuildPcdDxeDataBase 0000000000006e6c     PcdDxe:Service.obj
+ 0005:000000ec       $unwind$ExSetWorker        0000000000006e6c     PcdDxe:Service.obj
+ 0005:00000104       $unwind$GetHiiVariable     0000000000006e84     PcdDxe:Service.obj
+ 0005:0000011c       $unwind$SetWorker          0000000000006e9c     PcdDxe:Service.obj
+ 0005:00000138       $unwind$GetVariableSizeAndDataFromHiiPcd 0000000000006eb8     PcdDxe:Service.obj
+ 0005:00000150       $unwind$SetHiiVariable     0000000000006ed0     PcdDxe:Service.obj
+ 0005:0000016c       $unwind$GetExPcdTokenNumber 0000000000006eec     PcdDxe:Service.obj
+ 0005:00000184       $unwind$AsciiStrCatS       0000000000006f04     BaseLib:SafeString.obj
+ 0005:0000018c       $unwind$CompareGuid        0000000000006f0c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000001a4       $unwind$DebugPrint         0000000000006f24     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001ac       $unwind$DebugPrintMarker   0000000000006f2c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001c0       $unwind$DebugAssert        0000000000006f40     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001c8       $unwind$InternalImageHandleToFvHandle 0000000000006f48     DxeServicesLib:DxeServicesLib.obj
+ 0005:000001d0       $unwind$InternalGetSectionFromFv 0000000000006f50     DxeServicesLib:DxeServicesLib.obj
+ 0005:000001d8       $unwind$AsciiSPrint        0000000000006f58     BasePrintLib:PrintLib.obj
+ 0005:000001e0       $unwind$BasePrintLibSPrintMarker 0000000000006f60     BasePrintLib:PrintLibInternal.obj
+ 0005:000001fc       $unwind$TdIoWrite8         0000000000006f7c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj

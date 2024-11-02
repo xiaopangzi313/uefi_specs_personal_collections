@@ -1,0 +1,333 @@
+ DriverHealthManagerDxe
+
+ Timestamp is 6725e4a0 (Sat Nov  2 16:36:48 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001c8H .text                   CODE
+ 0001:000001c8 000040fcH .text$mn                CODE
+ 0002:00000000 000019b4H .rdata                  DATA
+ 0002:000019b4 00000030H .rdata$voltmd           DATA
+ 0002:000019e4 00000184H .rdata$zzzdbg           DATA
+ 0003:00000000 000005b8H .data                   DATA
+ 0003:000005b8 000000a0H .bss                    DATA
+ 0004:00000000 000002a0H .pdata                  DATA
+ 0005:00000000 00000228H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemCompareMem      0000000000000350     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000370     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000390     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       TdVmCall                   00000000000003b0     BaseLib:TdVmcall.obj
+ 0001:00000170       TdCall                     0000000000000430     BaseLib:TdCall.obj
+ 0001:000001c8       _ModuleEntryPoint          0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001dc       ProcessLibraryConstructorList 000000000000049c f   DriverHealthManagerDxe:AutoGen.obj
+ 0001:000005a4       ProcessModuleEntryPointList 0000000000000864 f   DriverHealthManagerDxe:AutoGen.obj
+ 0001:000006cc       DriverHealthManagerFakeExtractConfig 000000000000098c f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:000006f0       DriverHealthManagerFakeRouteConfig 00000000000009b0 f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:00000714       DriverHealthManagerGetComponentNameWorker 00000000000009d4 f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:0000081c       DriverHealthManagerGetControllerNameWorker 0000000000000adc f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:0000087c       DriverHealthManagerRepairNotify 0000000000000b3c f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:000008a0       DriverHealthManagerGetFormsetId 0000000000000b60 f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:00000a80       DriverHealthManagerUpdateForm 0000000000000d40 f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:0000119c       DriverHealthManagerCleanDynamicString 000000000000145c f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:00001288       DriverHealthManagerCallback 0000000000001548 f   DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0001:000013fc       StrLen                     00000000000016bc f   BaseLib:String.obj
+ 0001:00001484       AsciiStrLen                0000000000001744 f   BaseLib:String.obj
+ 0001:000014f0       AsciiStrnCmp               00000000000017b0 f   BaseLib:String.obj
+ 0001:000015bc       StrnLenS                   000000000000187c f   BaseLib:SafeString.obj
+ 0001:00001614       CopyMem                    00000000000018d4 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000016b0       CopyGuid                   0000000000001970 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001760       CompareGuid                0000000000001a20 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001824       ZeroMem                    0000000000001ae4 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001894       UnicodeVSPrint             0000000000001b54 f   BasePrintLib:PrintLib.obj
+ 0001:00001928       UnicodeSPrint              0000000000001be8 f   BasePrintLib:PrintLib.obj
+ 0001:00001948       AsciiSPrint                0000000000001c08 f   BasePrintLib:PrintLib.obj
+ 0001:00001974       BasePrintLibFillBuffer     0000000000001c34 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000019a8       BasePrintLibValueToString  0000000000001c68 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001a14       BasePrintLibSPrintMarker   0000000000001cd4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002920       BasePrintLibSPrint         0000000000002be0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002944       DebugPrint                 0000000000002c04 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002968       DebugPrintMarker           0000000000002c28 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000029f4       DebugAssert                0000000000002cb4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002a70       InternalAllocatePool       0000000000002d30 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002aa0       AllocateZeroPool           0000000000002d60 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002ac8       InternalAllocateCopyPool   0000000000002d88 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002b40       InternalReallocatePool     0000000000002e00 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002bbc       FreePool                   0000000000002e7c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002c00       DevicePathFromHandle       0000000000002ec0 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002c34       UefiDevicePathLibLocateProtocol 0000000000002ef4 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002c70       ConvertDevicePathToText    0000000000002f30 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002cb0       EfiGetSystemConfigurationTable 0000000000002f70 f   UefiLib:UefiLib.obj
+ 0001:00002d74       GetEfiGlobalVariable2      0000000000003034 f   UefiLib:UefiLib.obj
+ 0001:00002e74       GetBestLanguage            0000000000003134 f   UefiLib:UefiLib.obj
+ 0001:00002fac       GetHobList                 000000000000326c f   DxeHobLib:HobLib.obj
+ 0001:00003030       HiiSetString               00000000000032f0 f   UefiHiiLib:HiiString.obj
+ 0001:00003184       HiiGetString               0000000000003444 f   UefiHiiLib:HiiString.obj
+ 0001:00003324       HiiAddPackages             00000000000035e4 f   UefiHiiLib:HiiLib.obj
+ 0001:00003470       HiiAllocateOpCodeHandle    0000000000003730 f   UefiHiiLib:HiiLib.obj
+ 0001:000034c0       InternalHiiGrowOpCodeHandle 0000000000003780 f   UefiHiiLib:HiiLib.obj
+ 0001:00003568       InternalHiiCreateOpCodeExtended 0000000000003828 f   UefiHiiLib:HiiLib.obj
+ 0001:00003610       HiiCreateGuidOpCode        00000000000038d0 f   UefiHiiLib:HiiLib.obj
+ 0001:00003660       InternalHiiUpdateFormPackageData 0000000000003920 f   UefiHiiLib:HiiLib.obj
+ 0001:000038cc       HiiUpdateForm              0000000000003b8c f   UefiHiiLib:HiiLib.obj
+ 0001:00003b60       HiiGetSupportedLanguages   0000000000003e20 f   UefiHiiLib:HiiLanguage.obj
+ 0001:00003c04       BmGetSingleControllerHealthStatus 0000000000003ec4 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:00003e34       EfiBootManagerGetDriverHealthInfo 00000000000040f4 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:00004038       EfiBootManagerFreeDriverHealthInfo 00000000000042f8 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:00004094       CompareMem                 0000000000004354 f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:0000416c       SerialPortWrite            000000000000442c f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:000041f0       IsTdxGuest                 00000000000044b0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:0000421c       TdIoRead8                  00000000000044dc f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00004274       TdIoWrite8                 0000000000004534 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000045a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000045c8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0BH@NPGIJMFE@DriverHealthManagerDxe@ 00000000000045f0     DriverHealthManagerDxe:AutoGen.obj
+ 0002:00000070       ??_C@_0JM@MDKKJIDE@d?3?2uefi_specs_personal_collecti@ 0000000000004610     DriverHealthManagerDxe:AutoGen.obj
+ 0002:00000110       _gPcd_FixedAtBuild_PcdDriverHealthConfigureForm 00000000000046b0     DriverHealthManagerDxe:AutoGen.obj
+ 0002:00000120       ??_C@_0GP@HDBCGJN@D?3?2uefi_specs_personal_collecti@ 00000000000046c0     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000190       ??_C@_0CO@BJEDFFGE@mDriverHealthManagerHiiHandle?5?$CB@ 0000000000004730     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001c0       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg@ 0000000000004760     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001d0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000004770     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001ec       ??_C@_03LKLGDMJI@eng@      000000000000478c     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001f0       ??_C@_05JJLPJMLG@en?9US@   0000000000004790     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001f6       ??_C@_00CNPNBAHC@@         0000000000004796     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000001f8       ??_C@_0CN@NNKGKPOI@?$FLDriverHealthManagement?$FNRepairN@ 0000000000004798     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000228       ??_C@_0BP@JFMDNGDC@HiiPackageList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000047c8     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000248       ??_C@_0DL@BDCDAKMN@HealthStatus?5?$CB?$DN?5EfiDriverHealth@ 00000000000047e8     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000288       ??_C@_0CC@PIBHJFDN@StartOpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000004828     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000002b0       ??_C@_0CA@FMKGPAPI@EndOpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004850     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000002d0       ??_C@_0BL@EGCFIPKB@DriverName?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004870     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000002f0       ??_C@_0FD@BPFHPKGN@mDriverHealthManagerHealthInfo?$FL@ 0000000000004890     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000344       ??_C@_15GANGMFKL@?$AA?$CF?$AAs@ 00000000000048e4     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000350       ??_C@_0BP@MCNCAMEI@ControllerName?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000048f0     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000370       ??_C@_1BC@JKGDLHNP@?$AA?$CF?$AAs?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$CF?$AAs@ 0000000000004910     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000388       ??_C@_17MJEANDKP@?$AA?$CF?$AAs?$AA?6@ 0000000000004928     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000390       ??_C@_17CFPGKHKJ@?$AA?6?$AA?$CF?$AAs@ 0000000000004930     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:000003a0       ??_C@_0KI@PHHBOCDF@mDriverHealthManagerHealthInfo?$FL@ 0000000000004940     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000448       ??_C@_0BB@NNHELLFP@QuestionId?5?$DN?5?$CFx?6@ 00000000000049e8     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000460       ??_C@_0CM@KHEOHFO@Index?5?$DM?5mDriverHealthManagerHea@ 0000000000004a00     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0002:00000490       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004a30     BaseLib:String.obj
+ 0002:000004b0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 0000000000004a50     BaseLib:String.obj
+ 0002:000004f8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000004a98     BaseLib:String.obj
+ 0002:00000520       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000004ac0     BaseLib:String.obj
+ 0002:00000560       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000004b00     BaseLib:String.obj
+ 0002:00000598       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000004b38     BaseLib:String.obj
+ 0002:000005b8       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000004b58     BaseLib:String.obj
+ 0002:000005d8       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000004b78     BaseLib:String.obj
+ 0002:00000618       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004bb8     BaseLib:Unaligned.obj
+ 0002:00000630       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 0000000000004bd0     BaseLib:Unaligned.obj
+ 0002:00000680       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000004c20     BaseLib:SafeString.obj
+ 0002:000006d0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000004c70     BaseLib:SafeString.obj
+ 0002:000006f0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000004c90     BaseLib:DivU64x32.obj
+ 0002:00000700       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004ca0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000750       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 0000000000004cf0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000007b0       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004d50     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000007f0       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000004d90     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000830       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 0000000000004dd0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000890       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 0000000000004e30     BasePrintLib:PrintLib.obj
+ 0002:000008c0       ??_C@_0EP@OFLCNDBG@D?3?2uefi_specs_personal_collecti@ 0000000000004e60     BasePrintLib:PrintLib.obj
+ 0002:00000910       ??_C@_0CH@KJLBGOBB@?$CI?$CI?$CIUINTN?$CJ?5?$CIFormatString?$CJ?$CJ?5?$CG?50x0@ 0000000000004eb0     BasePrintLib:PrintLib.obj
+ 0002:00000940       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000004ee0     BasePrintLib:PrintLibInternal.obj
+ 0002:000009a0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000004f40     BasePrintLib:PrintLibInternal.obj
+ 0002:000009e8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000004f88     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a10       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000004fb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a60       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000005000     BasePrintLib:PrintLibInternal.obj
+ 0002:00000af0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000005090     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b78       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000005118     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b88       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000005128     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b98       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000005138     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bd0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000005170     BasePrintLib:PrintLibInternal.obj
+ 0002:00000be0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000005180     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bfc       ??_C@_04JIMNDDED@?$CF08X@  000000000000519c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c04       ??_C@_02PCIJFNDE@?$AN?6@   00000000000051a4     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c08       ??_C@_01LIIJDEN@?$AN@      00000000000051a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c10       mWarningString             00000000000051b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ce0       mErrorString               0000000000005280     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fc0       mHexStr                    0000000000005560     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fd0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005570     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000ff0       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000005590     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001050       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000055f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001068       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005608     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001090       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 0000000000005630     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001100       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000056a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001118       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000056b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001130       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 00000000000056d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001198       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000005738     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000011e0       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000005780     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001250       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000057f0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001288       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005828     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000012a0       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000005840     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001318       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000058b8     UefiLib:UefiLib.obj
+ 0002:00001340       ??_C@_0EJ@PPOMJLJB@D?3?2uefi_specs_personal_collecti@ 00000000000058e0     UefiLib:UefiLib.obj
+ 0002:00001390       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005930     UefiLib:UefiLib.obj
+ 0002:000013b0       ??_C@_0EG@GOBFPEEP@Name?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Guid?5?$CB?$DN@ 0000000000005950     UefiLib:UefiLib.obj
+ 0002:000013f8       ??_C@_0BH@FMEOEIBC@?$CKValue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005998     UefiLib:UefiLib.obj
+ 0002:00001410       ??_C@_0CD@OLFKAJF@SupportedLanguages?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 00000000000059b0     UefiLib:UefiLib.obj
+ 0002:00001440       ??_C@_0EK@CGIIDOCH@D?3?2uefi_specs_personal_collecti@ 00000000000059e0     DxeHobLib:HobLib.obj
+ 0002:00001490       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a30     DxeHobLib:HobLib.obj
+ 0002:000014b0       ??_C@_0GF@MFAMBDAB@D?3?2uefi_specs_personal_collecti@ 0000000000005a50     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001520       ??_C@_0GB@FAJPOEDK@D?3?2uefi_specs_personal_collecti@ 0000000000005ac0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001588       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b28     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:000015a0       ??_C@_0BK@KLJHMMPJ@HiiHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b40     UefiHiiLib:HiiString.obj
+ 0002:000015c0       ??_C@_0FE@MDBONEFA@D?3?2uefi_specs_personal_collecti@ 0000000000005b60     UefiHiiLib:HiiString.obj
+ 0002:00001614       ??_C@_06PLDEFKP@x?9UEFI@   0000000000005bb4     UefiHiiLib:HiiString.obj
+ 0002:00001620       ??_C@_0CA@OEKIMLLB@PackageListGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005bc0     UefiHiiLib:HiiString.obj
+ 0002:00001640       ??_C@_0O@EMMLPDMJ@StringId?5?$CB?$DN?50@ 0000000000005be0     UefiHiiLib:HiiString.obj
+ 0002:00001650       ??_C@_0FB@IJGKLPLP@D?3?2uefi_specs_personal_collecti@ 0000000000005bf0     UefiHiiLib:HiiLib.obj
+ 0002:000016a8       ??_C@_0BN@OKKMNGPH@OpCodeHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c48     UefiHiiLib:HiiLib.obj
+ 0002:000016c8       ??_C@_0BP@IOABAFLF@OpCodeTemplate?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c68     UefiHiiLib:HiiLib.obj
+ 0002:000016e8       ??_C@_0CF@DPHCOLMP@?$CIOpCodeSize?5?$CL?5ExtensionSize?$CJ?5?$DM?$DN@ 0000000000005c88     UefiHiiLib:HiiLib.obj
+ 0002:00001710       mEndOfPakageList           0000000000005cb0     UefiHiiLib:HiiLib.obj
+ 0002:00001720       ??_C@_0FG@CHPJEMDC@D?3?2uefi_specs_personal_collecti@ 0000000000005cc0     UefiHiiLib:HiiLanguage.obj
+ 0002:00001778       ??_C@_0CD@BOOHEENM@DriverHealthHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000005d18     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:000017a0       ??_C@_0GB@EGHLMNFA@D?3?2uefi_specs_personal_collecti@ 0000000000005d40     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001808       ??_C@_0CC@KGLGCPCA@?$CKDriverHealthInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005da8     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001830       ??_C@_0CE@MFGOGKIA@DriverHealthHandles?5?$CB?$DN?5?$CI?$CIvoid?5?$CK@ 0000000000005dd0     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001860       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000005e00     BaseLib:DivU64x32Remainder.obj
+ 0002:000018b8       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005e58     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:000018e0       ??_C@_0FP@MJKEJMKF@D?3?2uefi_specs_personal_collecti@ 0000000000005e80     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001940       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ee0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:000019b4       __volatile_metadata        0000000000005f54     <linker-defined>
+ 0003:00000000       gEfiDriverHealthProtocolGuid 0000000000006120     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000010       gEfiGlobalVariableGuid     0000000000006130     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000020       gEfiIfrTianoGuid           0000000000006140     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000030       gEfiComponentName2ProtocolGuid 0000000000006150     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000040       gEfiHiiDriverHealthFormsetGuid 0000000000006160     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathProtocolGuid 0000000000006170     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathToTextProtocolGuid 0000000000006180     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000070       gEfiHiiConfigRoutingProtocolGuid 0000000000006190     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000080       gEfiHiiImageProtocolGuid   00000000000061a0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000090       gEfiDevicePathUtilitiesProtocolGuid 00000000000061b0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000a0       gEfiHiiDatabaseProtocolGuid 00000000000061c0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000b0       gEfiHiiStringProtocolGuid  00000000000061d0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000c0       gEfiHiiConfigAccessProtocolGuid 00000000000061e0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000d0       gEfiHobListGuid            00000000000061f0     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000e0       gEfiComponentNameProtocolGuid 0000000000006200     DriverHealthManagerDxe:AutoGen.obj
+ 0003:000000f0       gEfiDxeServicesTableGuid   0000000000006210     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000100       gEfiCallerIdGuid           0000000000006220     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000110       DriverHealthManagerDxeStrings 0000000000006230     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000448       gEfiHiiFontProtocolGuid    0000000000006568     DriverHealthManagerDxe:AutoGen.obj
+ 0003:00000458       mDriverHealthManagerConfigAccess 0000000000006578     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0003:00000470       mDriverHealthManagerFormDevicePath 0000000000006590     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0003:00000488       mDriverHealthManagerForm   00000000000065a8     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0003:000004a0       DriverHealthConfigureVfrBin 00000000000065c0     DriverHealthManagerDxe:DriverHealthConfigureVfr.obj
+ 0003:00000530       DriverHealthManagerVfrBin  0000000000006650     DriverHealthManagerDxe:DriverHealthManagerVfr.obj
+ 0003:000005b8       mDriverHealthManagerHealthInfoCount 00000000000066d8     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0003:000005c0       mDriverHealthManagerHealthInfo 00000000000066e0     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0003:000005d0       gST                        00000000000066f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005d8       gBS                        00000000000066f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005e0       gImageHandle               0000000000006700     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005e8       mDevicePathLibDevicePathToText 0000000000006708     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000005f0       mDevicePathLibDevicePathUtilities 0000000000006710     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000005f8       gRT                        0000000000006718     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000600       mHobList                   0000000000006720     DxeHobLib:HobLib.obj
+ 0003:00000608       gHiiString                 0000000000006728     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000610       gHiiFont                   0000000000006730     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000618       gHiiConfigRouting          0000000000006738     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000620       gHiiImage                  0000000000006740     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000628       gHiiDatabase               0000000000006748     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000630       gDS                        0000000000006750     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00000640       gParity                    0000000000006760     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000641       gBreakSet                  0000000000006761     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000648       mDriverHealthManagerDatabase 0000000000006768     <common>
+ 0003:00000650       mDriverHealthManagerHiiHandle 0000000000006770     <common>
+
+ entry point at        0001:000001c8
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000149       TdVmCall.no_return_data    0000000000000409     BaseLib:TdVmcall.obj
+ 0001:000001bb       TdCall.exit                000000000000047b     BaseLib:TdCall.obj
+ 0003:000005c8       mCcProbeGuestType          00000000000066e8     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000005c9       mCcProbed                  00000000000066e9     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000638       mDeadLoopComparator        0000000000006758     BaseLib:CpuDeadLoop.obj
+ 0005:00000000       $unwind$DriverHealthManagerRepairNotify 0000000000006a20     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:00000000       $unwind$GetHobList         0000000000006a20     DxeHobLib:HobLib.obj
+ 0005:00000000       $unwind$DevicePathFromHandle 0000000000006a20     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000006a20     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$FreePool           0000000000006a20     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$InternalAllocatePool 0000000000006a20     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000006a28     DriverHealthManagerDxe:AutoGen.obj
+ 0005:00000020       $unwind$ProcessModuleEntryPointList 0000000000006a40     DriverHealthManagerDxe:AutoGen.obj
+ 0005:00000028       $unwind$DriverHealthManagerGetComponentNameWorker 0000000000006a48     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:00000040       $unwind$DriverHealthManagerGetControllerNameWorker 0000000000006a60     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:0000004c       $unwind$DriverHealthManagerGetFormsetId 0000000000006a6c     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:00000064       $unwind$DriverHealthManagerUpdateForm 0000000000006a84     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:0000007c       $unwind$EfiBootManagerFreeDriverHealthInfo 0000000000006a9c     UefiBootManagerLib:BmDriverHealth.obj
+ 0005:0000007c       $unwind$InternalHiiGrowOpCodeHandle 0000000000006a9c     UefiHiiLib:HiiLib.obj
+ 0005:0000007c       $unwind$DriverHealthManagerCleanDynamicString 0000000000006a9c     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:0000007c       $unwind$AsciiStrnCmp       0000000000006a9c     BaseLib:String.obj
+ 0005:0000007c       $unwind$StrLen             0000000000006a9c     BaseLib:String.obj
+ 0005:0000007c       $unwind$CopyGuid           0000000000006a9c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:0000007c       $unwind$BasePrintLibValueToString 0000000000006a9c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000007c       $unwind$SerialPortWrite    0000000000006a9c     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:0000008c       $unwind$HiiGetSupportedLanguages 0000000000006aac     UefiHiiLib:HiiLanguage.obj
+ 0005:0000008c       $unwind$DriverHealthManagerCallback 0000000000006aac     DriverHealthManagerDxe:DriverHealthManagerDxe.obj
+ 0005:0000008c       $unwind$AsciiStrLen        0000000000006aac     BaseLib:String.obj
+ 0005:0000008c       $unwind$ZeroMem            0000000000006aac     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:0000008c       $unwind$InternalAllocateCopyPool 0000000000006aac     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000098       $unwind$HiiAllocateOpCodeHandle 0000000000006ab8     UefiHiiLib:HiiLib.obj
+ 0005:00000098       $unwind$StrnLenS           0000000000006ab8     BaseLib:SafeString.obj
+ 0005:00000098       $unwind$ConvertDevicePathToText 0000000000006ab8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000098       $unwind$AllocateZeroPool   0000000000006ab8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000a0       $unwind$CompareMem         0000000000006ac0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:000000a0       $unwind$CopyMem            0000000000006ac0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000a0       $unwind$InternalReallocatePool 0000000000006ac0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000b4       $unwind$CompareGuid        0000000000006ad4     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000cc       $unwind$UnicodeVSPrint     0000000000006aec     BasePrintLib:PrintLib.obj
+ 0005:000000e0       $unwind$UnicodeSPrint      0000000000006b00     BasePrintLib:PrintLib.obj
+ 0005:000000e8       $unwind$AsciiSPrint        0000000000006b08     BasePrintLib:PrintLib.obj
+ 0005:000000f0       $unwind$BasePrintLibSPrintMarker 0000000000006b10     BasePrintLib:PrintLibInternal.obj
+ 0005:0000010c       $unwind$TdIoRead8          0000000000006b2c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:0000010c       $unwind$BasePrintLibSPrint 0000000000006b2c     BasePrintLib:PrintLibInternal.obj
+ 0005:00000114       $unwind$DebugPrint         0000000000006b34     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000011c       $unwind$DebugPrintMarker   0000000000006b3c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000130       $unwind$DebugAssert        0000000000006b50     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000138       $unwind$UefiDevicePathLibLocateProtocol 0000000000006b58     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000140       $unwind$InternalHiiCreateOpCodeExtended 0000000000006b60     UefiHiiLib:HiiLib.obj
+ 0005:00000140       $unwind$EfiGetSystemConfigurationTable 0000000000006b60     UefiLib:UefiLib.obj
+ 0005:00000158       $unwind$GetEfiGlobalVariable2 0000000000006b78     UefiLib:UefiLib.obj
+ 0005:00000168       $unwind$GetBestLanguage    0000000000006b88     UefiLib:UefiLib.obj
+ 0005:0000017c       $unwind$HiiSetString       0000000000006b9c     UefiHiiLib:HiiString.obj
+ 0005:00000198       $unwind$HiiGetString       0000000000006bb8     UefiHiiLib:HiiString.obj
+ 0005:000001ac       $unwind$HiiAddPackages     0000000000006bcc     UefiHiiLib:HiiLib.obj
+ 0005:000001c0       $unwind$HiiCreateGuidOpCode 0000000000006be0     UefiHiiLib:HiiLib.obj
+ 0005:000001c8       $unwind$InternalHiiUpdateFormPackageData 0000000000006be8     UefiHiiLib:HiiLib.obj
+ 0005:000001e0       $unwind$HiiUpdateForm      0000000000006c00     UefiHiiLib:HiiLib.obj
+ 0005:000001f8       $unwind$BmGetSingleControllerHealthStatus 0000000000006c18     UefiBootManagerLib:BmDriverHealth.obj
+ 0005:0000020c       $unwind$EfiBootManagerGetDriverHealthInfo 0000000000006c2c     UefiBootManagerLib:BmDriverHealth.obj
+ 0005:00000220       $unwind$TdIoWrite8         0000000000006c40     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj

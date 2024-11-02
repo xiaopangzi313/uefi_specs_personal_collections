@@ -1,0 +1,1 @@
+  D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Core\Dxe\Dispatcher\Dispatcher.c D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Core\Dxe\Dispatcher\Dependency.c

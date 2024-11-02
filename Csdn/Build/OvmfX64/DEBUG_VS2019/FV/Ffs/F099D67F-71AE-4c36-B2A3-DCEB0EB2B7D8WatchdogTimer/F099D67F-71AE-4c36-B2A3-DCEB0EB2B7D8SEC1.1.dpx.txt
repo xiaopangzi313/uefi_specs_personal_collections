@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\F099D67F-71AE-4c36-B2A3-DCEB0EB2B7D8WatchdogTimer\F099D67F-71AE-4c36-B2A3-DCEB0EB2B7D8SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\WatchdogTimerDxe\WatchdogTimer\OUTPUT\WatchdogTimer.depex

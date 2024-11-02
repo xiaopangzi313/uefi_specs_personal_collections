@@ -1,0 +1,395 @@
+ QemuVideoDxe
+
+ Timestamp is 6725e49a (Sat Nov  2 16:36:42 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001d8H .text                   CODE
+ 0001:000001d8 00004b33H .text$mn                CODE
+ 0002:00000000 00001f28H .rdata                  DATA
+ 0002:00001f28 00000038H .rdata$voltmd           DATA
+ 0002:00001f60 00000154H .rdata$zzzdbg           DATA
+ 0003:00000000 000004a0H .data                   DATA
+ 0003:000004a0 00000061H .bss                    DATA
+ 0004:00000000 00000354H .pdata                  DATA
+ 0005:00000000 000002c0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000b0       InternalMemSetMem32        0000000000000370     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d0       TdVmCall                   0000000000000390     BaseLib:TdVmcall.obj
+ 0001:00000150       EnableInterrupts           0000000000000410     BaseLib:EnableInterrupts.obj
+ 0001:00000160       DisableInterrupts          0000000000000420     BaseLib:DisableInterrupts.obj
+ 0001:00000170       AsmReadEflags              0000000000000430     BaseLib:ReadEflags.obj
+ 0001:00000180       TdCall                     0000000000000440     BaseLib:TdCall.obj
+ 0001:000001d8       _ModuleEntryPoint          0000000000000498 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001f4       ProcessLibraryConstructorList 00000000000004b4 f   QemuVideoDxe:AutoGen.obj
+ 0001:000005f4       ProcessModuleEntryPointList 00000000000008b4 f   QemuVideoDxe:AutoGen.obj
+ 0001:0000071c       QemuVideoControllerDriverSupported 00000000000009dc f   QemuVideoDxe:Driver.obj
+ 0001:00000804       QemuVideoControllerDriverStart 0000000000000ac4 f   QemuVideoDxe:Driver.obj
+ 0001:00000d40       QemuVideoControllerDriverStop 0000000000001000 f   QemuVideoDxe:Driver.obj
+ 0001:00000ee0       outb                       00000000000011a0 f   QemuVideoDxe:Driver.obj
+ 0001:00000f14       outw                       00000000000011d4 f   QemuVideoDxe:Driver.obj
+ 0001:00000f48       SetDefaultPalette          0000000000001208 f   QemuVideoDxe:Driver.obj
+ 0001:00001014       InitializeCirrusGraphicsMode 00000000000012d4 f   QemuVideoDxe:Driver.obj
+ 0001:00001260       BochsWrite                 0000000000001520 f   QemuVideoDxe:Driver.obj
+ 0001:000012fc       BochsRead                  00000000000015bc f   QemuVideoDxe:Driver.obj
+ 0001:000013b4       VgaOutb                    0000000000001674 f   QemuVideoDxe:Driver.obj
+ 0001:00001428       InitializeBochsGraphicsMode 00000000000016e8 f   QemuVideoDxe:Driver.obj
+ 0001:00001770       QemuVideoGraphicsOutputQueryMode 0000000000001a30 f   QemuVideoDxe:Gop.obj
+ 0001:00001840       QemuVideoGraphicsOutputSetMode 0000000000001b00 f   QemuVideoDxe:Gop.obj
+ 0001:00001a5c       QemuVideoGraphicsOutputBlt 0000000000001d1c f   QemuVideoDxe:Gop.obj
+ 0001:00001b6c       QemuVideoGraphicsOutputConstructor 0000000000001e2c f   QemuVideoDxe:Gop.obj
+ 0001:00001c60       QemuVideoGraphicsOutputDestructor 0000000000001f20 f   QemuVideoDxe:Gop.obj
+ 0001:00001cac       QemuVideoCirrusModeSetup   0000000000001f6c f   QemuVideoDxe:Initialize.obj
+ 0001:00002000       QemuVideoBochsModeSetup    00000000000022c0 f   QemuVideoDxe:Initialize.obj
+ 0001:000021a4       QemuVideoComponentNameGetDriverName 0000000000002464 f   QemuVideoDxe:ComponentName.obj
+ 0001:000021d8       QemuVideoComponentNameGetControllerName 0000000000002498 f   QemuVideoDxe:ComponentName.obj
+ 0001:000022a8       GetPcdProtocol             0000000000002568 f   DxePcdLib:DxePcdLib.obj
+ 0001:00002334       ZeroMem                    00000000000025f4 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00002398       CopyMem                    0000000000002658 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002434       DebugPrint                 00000000000026f4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002458       DebugPrintMarker           0000000000002718 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000024e4       DebugAssert                00000000000027a4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002560       InternalAllocatePool       0000000000002820 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002590       FreePool                   0000000000002850 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000025d4       EfiGetSystemConfigurationTable 0000000000002894 f   UefiLib:UefiLib.obj
+ 0001:00002698       IsLanguageSupported        0000000000002958 f   UefiLib:UefiLib.obj
+ 0001:00002720       LookupUnicodeString2       00000000000029e0 f   UefiLib:UefiLib.obj
+ 0001:00002814       GetHobList                 0000000000002ad4 f   DxeHobLib:HobLib.obj
+ 0001:00002898       FrameBufferBltLibConfigurePixelFormat 0000000000002b58 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00002a08       FrameBufferBltConfigure    0000000000002cc8 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00002b68       FrameBufferBltLibVideoFill 0000000000002e28 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00002e90       FrameBufferBltLibVideoToBltBuffer 0000000000003150 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00003020       FrameBufferBltLibBufferToVideo 00000000000032e0 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:000031c4       FrameBufferBltLibVideoToVideo 0000000000003484 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:000032bc       FrameBufferBlt             000000000000357c f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00003418       AsciiStrLen                00000000000036d8 f   BaseLib:String.obj
+ 0001:00003484       AsciiStrnCmp               0000000000003744 f   BaseLib:String.obj
+ 0001:00003550       StrnLenS                   0000000000003810 f   BaseLib:SafeString.obj
+ 0001:000035a8       SetMem                     0000000000003868 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:0000360c       CompareGuid                00000000000038cc f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000036d0       SetMem64                   0000000000003990 f   BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0001:00003794       SetMem32                   0000000000003a54 f   BaseMemoryLibRepStr:SetMem32Wrapper.obj
+ 0001:00003858       IoRead8                    0000000000003b18 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0000387c       IoRead32                   0000000000003b3c f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000038c4       IoWrite32                  0000000000003b84 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000038f0       IsTdxGuest                 0000000000003bb0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:0000391c       TdIoRead8                  0000000000003bdc f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00003974       TdIoRead32                 0000000000003c34 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:000039e8       TdIoWrite8                 0000000000003ca8 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00003a38       TdIoWrite32                0000000000003cf8 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00003a8c       SerialPortWrite            0000000000003d4c f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00003afc       AsciiSPrint                0000000000003dbc f   BasePrintLib:PrintLib.obj
+ 0001:00003b28       BasePrintLibFillBuffer     0000000000003de8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003b5c       BasePrintLibValueToString  0000000000003e1c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003bc8       BasePrintLibSPrintMarker   0000000000003e88 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004ad4       BasePrintLibSPrint         0000000000004d94 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004af8       PciExpressRead32           0000000000004db8 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00004b48       PciCf8Read32               0000000000004e08 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00004be4       SaveAndDisableInterrupts   0000000000004ea4 f   BaseLib:Cpu.obj
+ 0001:00004c08       GetTdInfo                  0000000000004ec8 f   TdxLib:TdInfo.obj
+ 0001:00004c6c       TdSharedPageMask           0000000000004f2c f   TdxLib:TdInfo.obj
+ 0001:00004c98       MmioRead32                 0000000000004f58 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000004fe0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000005008     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0N@LLBGCFPN@QemuVideoDxe@ 0000000000005030     QemuVideoDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000005040     QemuVideoDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0HJ@NFJNGBCE@d?3?2uefi_specs_personal_collecti@ 0000000000005070     QemuVideoDxe:AutoGen.obj
+ 0002:00000110       ??_C@_1BI@NBGOPNMJ@?$AAC?$AAi?$AAr?$AAr?$AAu?$AAs?$AA?5?$AA5?$AA4?$AA3?$AA0@ 00000000000050f0     QemuVideoDxe:Driver.obj
+ 0002:00000128       ??_C@_1BI@OJAAJCKN@?$AAC?$AAi?$AAr?$AAr?$AAu?$AAs?$AA?5?$AA5?$AA4?$AA4?$AA6@ 0000000000005108     QemuVideoDxe:Driver.obj
+ 0002:00000140       ??_C@_1CE@PANPBOLC@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAV@ 0000000000005120     QemuVideoDxe:Driver.obj
+ 0002:00000168       ??_C@_1DM@JBODOLGA@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAV@ 0000000000005148     QemuVideoDxe:Driver.obj
+ 0002:000001a8       ??_C@_1BK@CGOEMBOF@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAQ?$AAX?$AAL?$AA?5?$AAV?$AAG?$AAA@ 0000000000005188     QemuVideoDxe:Driver.obj
+ 0002:000001c8       ??_C@_1CA@NBLGEFOK@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAV?$AAi?$AAr?$AAt?$AAI?$AAO?$AA?5?$AAV?$AAG?$AAA@ 00000000000051a8     QemuVideoDxe:Driver.obj
+ 0002:000001e8       ??_C@_1CC@JKGPCJEO@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAV?$AAM?$AAW?$AAa?$AAr?$AAe?$AA?5?$AAS?$AAV?$AAG@ 00000000000051c8     QemuVideoDxe:Driver.obj
+ 0002:00000210       ??_C@_0BI@CMEKGCIK@QemuVideo?3?5?$CFs?5detected?6@ 00000000000051f0     QemuVideoDxe:Driver.obj
+ 0002:00000228       ??_C@_0CN@PJBNFGIA@QemuVideo?3?5No?5mmio?5bar?0?5fallbac@ 0000000000005208     QemuVideoDxe:Driver.obj
+ 0002:00000258       ??_C@_0CD@OCJLGFHB@QemuVideo?3?5Using?5mmio?5bar?5?$EA?50x?$CF@ 0000000000005238     QemuVideoDxe:Driver.obj
+ 0002:00000280       ??_C@_0CI@NNNLJFHP@QemuVideo?3?5BochsID?5mismatch?5?$CIgo@ 0000000000005260     QemuVideoDxe:Driver.obj
+ 0002:000002a8       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000005288     QemuVideoDxe:Driver.obj
+ 0002:000002c0       ??_C@_0EG@FEJKKNAL@D?3?2uefi_specs_personal_collecti@ 00000000000052a0     QemuVideoDxe:Driver.obj
+ 0002:00000308       ??_C@_0BG@GHMKDGHJ@NumberOfChildren?5?$DN?$DN?51@ 00000000000052e8     QemuVideoDxe:Driver.obj
+ 0002:00000320       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000005300     QemuVideoDxe:Driver.obj
+ 0002:00000338       ??_C@_0CI@MBOBAPDE@Private?9?$DOHandle?5?$DN?$DN?5ChildHandleB@ 0000000000005318     QemuVideoDxe:Driver.obj
+ 0002:00000360       ??_C@_0CJ@MNBABJLA@InitializeBochsGraphicsMode?3?5?$CFd@ 0000000000005340     QemuVideoDxe:Driver.obj
+ 0002:00000390       ??_C@_0CH@IMBIJFHF@PixelBlueGreenRedReserved8BitPe@ 0000000000005370     QemuVideoDxe:Gop.obj
+ 0002:000003b8       ??_C@_0BK@IPKBGCHD@QemuVideoCompleteModeInfo@ 0000000000005398     QemuVideoDxe:Gop.obj
+ 0002:000003d8       ??_C@_0BK@JBLCIPMB@?$CFa?3?5Invalid?5ColorDepth?5?$CFu@ 00000000000053b8     QemuVideoDxe:Gop.obj
+ 0002:00000400       ??_C@_0ED@GCJFIIKA@D?3?2uefi_specs_personal_collecti@ 00000000000053e0     QemuVideoDxe:Gop.obj
+ 0002:00000448       ??_C@_0DA@PEPIACPF@FrameBufferBase?3?50x?$CFLx?0?5FrameBu@ 0000000000005428     QemuVideoDxe:Gop.obj
+ 0002:00000478       ??_C@_0DB@COJCBMHK@Private?9?$DOFrameBufferBltConfigur@ 0000000000005458     QemuVideoDxe:Gop.obj
+ 0002:000004b0       ??_C@_0BN@BDINJONM@Status?5?$DN?$DN?5?$CIRETURN_STATUS?$CJ?$CI0?$CJ@ 0000000000005490     QemuVideoDxe:Gop.obj
+ 0002:000004d0       GraphicsController         00000000000054b0     QemuVideoDxe:Initialize.obj
+ 0002:000004e0       AttributeController        00000000000054c0     QemuVideoDxe:Initialize.obj
+ 0002:000004f8       ??_C@_0DK@DHHBNDMH@Adding?5Mode?5?$CFd?5as?5Cirrus?5Intern@ 00000000000054d8     QemuVideoDxe:Initialize.obj
+ 0002:00000538       ??_C@_0DF@NBIIAIMP@Skipping?5Bochs?5Mode?5?$CFdx?$CFd?0?532?9b@ 0000000000005518     QemuVideoDxe:Initialize.obj
+ 0002:00000570       ??_C@_0CO@HIEDMFO@Adding?5Bochs?5Internal?5Mode?5?$CFd?3?5@ 0000000000005550     QemuVideoDxe:Initialize.obj
+ 0002:000005a0       ??_C@_0BD@EIKLHBPF@QemuVideoBochsEdid@ 0000000000005580     QemuVideoDxe:Initialize.obj
+ 0002:000005b8       ??_C@_0BG@PJAAHIIF@?$CFa?3?5mmio?5read?5failed?6@ 0000000000005598     QemuVideoDxe:Initialize.obj
+ 0002:000005d0       ??_C@_0BI@NJCNLEJD@?$CFa?3?5magic?5check?5failed?6@ 00000000000055b0     QemuVideoDxe:Initialize.obj
+ 0002:000005e8       ??_C@_0CB@MADDILEB@?$CFa?3?5blob?5found?5?$CIextensions?3?5?$CFd?$CJ@ 00000000000055c8     QemuVideoDxe:Initialize.obj
+ 0002:00000610       ??_C@_0CD@NENLIJMD@?$CFa?3?5no?5detailed?5timing?5descript@ 00000000000055f0     QemuVideoDxe:Initialize.obj
+ 0002:00000638       ??_C@_0BP@DHEHCNNI@?$CFa?3?5default?5resolution?3?5?$CFdx?$CFd?6@ 0000000000005618     QemuVideoDxe:Initialize.obj
+ 0002:00000660       ??_C@_0EK@OFEIAEK@D?3?2uefi_specs_personal_collecti@ 0000000000005640     QemuVideoDxe:Initialize.obj
+ 0002:000006b0       ??_C@_0BI@FALKMJPG@QemuVideoBochsModeSetup@ 0000000000005690     QemuVideoDxe:Initialize.obj
+ 0002:000006c8       ??_C@_0DF@MGANLHFJ@?$CFa?3?5can?8t?5read?5size?5of?5drawable@ 00000000000056a8     QemuVideoDxe:Initialize.obj
+ 0002:00000700       ??_C@_0BK@KNBCKMML@?$CFa?3?5AvailableFbSize?$DN0x?$CFx?6@ 00000000000056e0     QemuVideoDxe:Initialize.obj
+ 0002:0000071c       ??_C@_03LKLGDMJI@eng@      00000000000056fc     QemuVideoDxe:ComponentName.obj
+ 0002:00000720       ??_C@_02LFNMGJAP@en@       0000000000005700     QemuVideoDxe:ComponentName.obj
+ 0002:00000724       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000005704     QemuVideoDxe:ComponentName.obj
+ 0002:00000730       ??_C@_1CE@PPDLBEON@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAD?$AAr?$AAi?$AAv@ 0000000000005710     QemuVideoDxe:ComponentName.obj
+ 0002:00000758       ??_C@_1CO@HAPHIBDK@?$AAQ?$AAE?$AAM?$AAU?$AA?5?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAP?$AAC?$AAI?$AA?5@ 0000000000005738     QemuVideoDxe:ComponentName.obj
+ 0002:00000790       ??_C@_0EN@ENFGNHA@D?3?2uefi_specs_personal_collecti@ 0000000000005770     DxePcdLib:DxePcdLib.obj
+ 0002:000007e0       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000057c0     DxePcdLib:DxePcdLib.obj
+ 0002:000007f8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000057d8     DxePcdLib:DxePcdLib.obj
+ 0002:00000810       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 00000000000057f0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000870       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000005850     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000008b0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005890     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000900       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 00000000000058e0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000960       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005940     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000009a0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005980     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000009c0       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 00000000000059a0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000a20       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000005a00     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000a38       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a18     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a60       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 0000000000005a40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000ad0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ab0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000ae8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ac8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000b00       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 0000000000005ae0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000b68       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b48     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000b80       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000005b60     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000c00       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000005be0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000c70       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000005c50     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000ca8       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c88     UefiLib:UefiLib.obj
+ 0002:00000cd0       ??_C@_0EJ@PPOMJLJB@D?3?2uefi_specs_personal_collecti@ 0000000000005cb0     UefiLib:UefiLib.obj
+ 0002:00000d20       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005d00     UefiLib:UefiLib.obj
+ 0002:00000d40       ??_C@_0FB@KFBGMLJM@D?3?2uefi_specs_personal_collecti@ 0000000000005d20     UefiLib:UefiDriverModel.obj
+ 0002:00000da0       ??_C@_0EK@CGIIDOCH@D?3?2uefi_specs_personal_collecti@ 0000000000005d80     DxeHobLib:HobLib.obj
+ 0002:00000df0       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005dd0     DxeHobLib:HobLib.obj
+ 0002:00000e10       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005df0     DxeHobLib:HobLib.obj
+ 0002:00000e30       ??_C@_0GB@FAJPOEDK@D?3?2uefi_specs_personal_collecti@ 0000000000005e10     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000e98       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e78     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000eb0       ??_C@_0BO@CEBGFDFP@BytesPerPixel?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e90     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000ed0       ??_C@_0GD@OEECGOGD@D?3?2uefi_specs_personal_collecti@ 0000000000005eb0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000f38       ??_C@_0CC@IOJKJMJP@?$CIMergedMasks?5?$CG?5Masks?$FLIndex?$FN?$CJ?5?$DN?$DN@ 0000000000005f18     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000f60       ??_C@_0BL@IFADNIPL@?$CFd?3?5shl?3?$CFd?5shr?3?$CFd?5mask?3?$CFx?6@ 0000000000005f40     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000f80       ??_C@_0BB@OBCDAJNL@MergedMasks?5?$CB?$DN?50@ 0000000000005f60     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000f98       ??_C@_0BF@ONNGEJHN@Bytes?5per?5pixel?3?5?$CFd?6@ 0000000000005f78     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000fb0       ??_C@_0CN@LABNLNPC@FrameBufferInfo?9?$DOPixelFormat?5?$CB?$DN@ 0000000000005f90     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000fe0       ??_C@_0BM@DCDIIHCL@VideoFill?3?5Past?5screen?5?$CIY?$CJ?6@ 0000000000005fc0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00001000       ??_C@_0BM@IKIEOAEO@VideoFill?3?5Past?5screen?5?$CIX?$CJ?6@ 0000000000005fe0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00001020       ??_C@_0CB@KCLILPEE@VideoFill?3?5Width?5or?5Height?5is?50@ 0000000000006000     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00001048       ??_C@_0CH@NBIEGODH@VideoFill?3?5color?$DN0x?$CFx?0?5wide?9fil@ 0000000000006028     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00001070       ??_C@_0BM@FDOEAIKD@VideoFill?5?$CIwide?0?5one?9shot?$CJ?6@ 0000000000006050     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00001090       ??_C@_0BC@GMIMICOL@VideoFill?5?$CIwide?$CJ?6@ 0000000000006070     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:000010a8       ??_C@_0BG@HFFGFLFF@VideoFill?5?$CInot?5wide?$CJ?6@ 0000000000006088     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:000010c0       mBgrPixelMasks             00000000000060a0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:000010d0       mRgbPixelMasks             00000000000060b0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:000010e0       ??_C@_0BP@LHBKJBMC@PlatformInfoHob?5is?5not?5found?4?6@ 00000000000060c0     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001100       ??_C@_0FH@PGONMIHN@D?3?2uefi_specs_personal_collecti@ 00000000000060e0     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001158       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000006138     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001170       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000006150     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:000011a0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006180     BaseLib:String.obj
+ 0002:000011c0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 00000000000061a0     BaseLib:String.obj
+ 0002:00001208       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000061e8     BaseLib:String.obj
+ 0002:00001230       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000006210     BaseLib:String.obj
+ 0002:00001268       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000006248     BaseLib:String.obj
+ 0002:00001288       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000006268     BaseLib:String.obj
+ 0002:000012a8       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000006288     BaseLib:String.obj
+ 0002:000012f0       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 00000000000062d0     BaseLib:Unaligned.obj
+ 0002:00001340       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 0000000000006320     BaseLib:SafeString.obj
+ 0002:00001390       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006370     BaseLib:SafeString.obj
+ 0002:000013b0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000006390     BaseLib:DivU64x32.obj
+ 0002:000013c0       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000063a0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001400       ??_C@_0FL@MFFLICHL@D?3?2uefi_specs_personal_collecti@ 00000000000063e0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001460       ??_C@_0FN@HKNGIHKD@D?3?2uefi_specs_personal_collecti@ 0000000000006440     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:000014c0       ??_C@_0CO@LECKNDNC@?$CI?$CI?$CIUINTN?$CJBuffer?$CJ?5?$CG?5?$CIsizeof?5?$CIVal@ 00000000000064a0     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:000014f0       ??_C@_0CF@LEICOABD@?$CILength?5?$CG?5?$CIsizeof?5?$CIValue?$CJ?5?9?51?$CJ?$CJ@ 00000000000064d0     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00001520       ??_C@_0FN@KMADKPA@D?3?2uefi_specs_personal_collecti@ 0000000000006500     BaseMemoryLibRepStr:SetMem32Wrapper.obj
+ 0002:00001580       ??_C@_0FF@GCKLFLDF@D?3?2uefi_specs_personal_collecti@ 0000000000006560     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:000015d8       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000065b8     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:000015f0       ??_C@_0FN@DOAHIAPG@D?3?2uefi_specs_personal_collecti@ 00000000000065d0     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00001650       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000006630     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00001670       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 0000000000006650     BasePrintLib:PrintLibInternal.obj
+ 0002:000016d0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000066b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001718       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000066f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001740       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006720     BasePrintLib:PrintLibInternal.obj
+ 0002:00001790       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000006770     BasePrintLib:PrintLibInternal.obj
+ 0002:00001820       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000006800     BasePrintLib:PrintLibInternal.obj
+ 0002:000018a8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000006888     BasePrintLib:PrintLibInternal.obj
+ 0002:000018b8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000006898     BasePrintLib:PrintLibInternal.obj
+ 0002:000018c8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000068a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001900       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 00000000000068e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001910       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000068f0     BasePrintLib:PrintLibInternal.obj
+ 0002:0000192c       ??_C@_04JIMNDDED@?$CF08X@  000000000000690c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001934       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006914     BasePrintLib:PrintLibInternal.obj
+ 0002:00001938       ??_C@_01LIIJDEN@?$AN@      0000000000006918     BasePrintLib:PrintLibInternal.obj
+ 0002:00001940       mWarningString             0000000000006920     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a10       mErrorString               00000000000069f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001cf0       mHexStr                    0000000000006cd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d00       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 0000000000006ce0     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001d20       ??_C@_0FJ@LPMKGGAK@D?3?2uefi_specs_personal_collecti@ 0000000000006d00     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001d80       ??_C@_0FB@PDIKDBMH@D?3?2uefi_specs_personal_collecti@ 0000000000006d60     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001dd8       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 0000000000006db8     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001e00       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 0000000000006de0     BaseLib:DivU64x32Remainder.obj
+ 0002:00001e58       ??_C@_0CB@GEABOFIF@Failed?5call?5TDCALL_TDINFO?4?5?$CFllx@ 0000000000006e38     TdxLib:TdInfo.obj
+ 0002:00001e80       ??_C@_0FC@MAJHMCGF@D?3?2uefi_specs_personal_collecti@ 0000000000006e60     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00001f28       __volatile_metadata        0000000000006f08     <linker-defined>
+ 0003:00000000       gEfiComponentName2ProtocolGuid 00000000000070a0     QemuVideoDxe:AutoGen.obj
+ 0003:00000010       gPcdProtocolGuid           00000000000070b0     QemuVideoDxe:AutoGen.obj
+ 0003:00000020       gEfiDevicePathProtocolGuid 00000000000070c0     QemuVideoDxe:AutoGen.obj
+ 0003:00000030       gEfiPciIoProtocolGuid      00000000000070d0     QemuVideoDxe:AutoGen.obj
+ 0003:00000040       gUefiOvmfPkgPlatformInfoGuid 00000000000070e0     QemuVideoDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathUtilitiesProtocolGuid 00000000000070f0     QemuVideoDxe:AutoGen.obj
+ 0003:00000060       gEfiGraphicsOutputProtocolGuid 0000000000007100     QemuVideoDxe:AutoGen.obj
+ 0003:00000070       gEfiHobListGuid            0000000000007110     QemuVideoDxe:AutoGen.obj
+ 0003:00000080       gEfiDriverBindingProtocolGuid 0000000000007120     QemuVideoDxe:AutoGen.obj
+ 0003:00000090       gEfiComponentNameProtocolGuid 0000000000007130     QemuVideoDxe:AutoGen.obj
+ 0003:000000a0       gEfiDxeServicesTableGuid   0000000000007140     QemuVideoDxe:AutoGen.obj
+ 0003:000000b0       gQemuVideoDriverBinding    0000000000007150     QemuVideoDxe:Driver.obj
+ 0003:000000e0       gQemuVideoCardList         0000000000007180     QemuVideoDxe:Driver.obj
+ 0003:000001c0       QemuVideoCirrusModes       0000000000007260     QemuVideoDxe:Initialize.obj
+ 0003:00000238       Crtc_640_480_32bpp_60      00000000000072d8     QemuVideoDxe:Initialize.obj
+ 0003:00000258       Crtc_1024_768_24bpp_60     00000000000072f8     QemuVideoDxe:Initialize.obj
+ 0003:000003a8       Seq_640_480_32bpp_60       0000000000007448     QemuVideoDxe:Initialize.obj
+ 0003:000003c8       Seq_1024_768_24bpp_60      0000000000007468     QemuVideoDxe:Initialize.obj
+ 0003:000003e8       Crtc_800_600_32bpp_60      0000000000007488     QemuVideoDxe:Initialize.obj
+ 0003:00000408       Seq_800_600_32bpp_60       00000000000074a8     QemuVideoDxe:Initialize.obj
+ 0003:00000428       gQemuVideoComponentName2   00000000000074c8     QemuVideoDxe:ComponentName.obj
+ 0003:00000440       gQemuVideoComponentName    00000000000074e0     QemuVideoDxe:ComponentName.obj
+ 0003:00000460       mQemuVideoControllerNameTable 0000000000007500     QemuVideoDxe:ComponentName.obj
+ 0003:00000480       mQemuVideoDriverNameTable  0000000000007520     QemuVideoDxe:ComponentName.obj
+ 0003:000004a0       mPcd                       0000000000007540     DxePcdLib:DxePcdLib.obj
+ 0003:000004b0       gST                        0000000000007550     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004b8       gBS                        0000000000007558     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004c0       gImageHandle               0000000000007560     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004c8       gRT                        0000000000007568     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000004d0       mDevicePathLibDevicePathUtilities 0000000000007570     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000004d8       mHobList                   0000000000007578     DxeHobLib:HobLib.obj
+ 0003:000004e0       gDS                        0000000000007580     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:000004f0       gParity                    0000000000007590     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000004f1       gBreakSet                  0000000000007591     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000004f2       mTdDataReturned            0000000000007592     TdxLib:TdInfo.obj
+ 0003:000004f8       mTdSharedPageMask          0000000000007598     TdxLib:TdInfo.obj
+
+ entry point at        0001:000001d8
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002fa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              000000000000030a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 0000000000000313     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000129       TdVmCall.no_return_data    00000000000003e9     BaseLib:TdVmcall.obj
+ 0001:000001cb       TdCall.exit                000000000000048b     BaseLib:TdCall.obj
+ 0001:000006cc       QemuVideoDetect            000000000000098c f   QemuVideoDxe:Driver.obj
+ 0001:000015e8       QemuVideoCompleteModeInfo  00000000000018a8 f   QemuVideoDxe:Gop.obj
+ 0001:000016a8       QemuVideoCompleteModeData  0000000000001968 f   QemuVideoDxe:Gop.obj
+ 0001:00001d68       QemuVideoBochsAddMode      0000000000002028 f   QemuVideoDxe:Initialize.obj
+ 0001:00001df4       QemuVideoBochsEdid         00000000000020b4 f   QemuVideoDxe:Initialize.obj
+ 0003:00000280       QemuVideoBochsModes        0000000000007320     QemuVideoDxe:Initialize.obj
+ 0003:000004a8       mCcProbeGuestType          0000000000007548     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000004a9       mCcProbed                  0000000000007549     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000004e8       mDeadLoopComparator        0000000000007588     BaseLib:CpuDeadLoop.obj
+ 0003:00000500       mRunningOnQ35              00000000000075a0     DxePciLibI440FxQ35:PciLib.obj
+ 0005:00000000       $unwind$IoRead32           0000000000007920     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$IoWrite32          0000000000007920     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$SaveAndDisableInterrupts 0000000000007920     BaseLib:Cpu.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000007920     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PciExpressRead32   0000000000007920     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000007920     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$QemuVideoCompleteModeInfo 0000000000007920     QemuVideoDxe:Gop.obj
+ 0005:00000000       $unwind$QemuVideoGraphicsOutputDestructor 0000000000007920     QemuVideoDxe:Gop.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000007928     QemuVideoDxe:AutoGen.obj
+ 0005:00000020       $unwind$ProcessModuleEntryPointList 0000000000007940     QemuVideoDxe:AutoGen.obj
+ 0005:0000002c       $unwind$QemuVideoControllerDriverSupported 000000000000794c     QemuVideoDxe:Driver.obj
+ 0005:0000003c       $unwind$QemuVideoControllerDriverStart 000000000000795c     QemuVideoDxe:Driver.obj
+ 0005:00000058       $unwind$QemuVideoControllerDriverStop 0000000000007978     QemuVideoDxe:Driver.obj
+ 0005:0000006c       $unwind$TdIoRead8          000000000000798c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:0000006c       $unwind$BasePrintLibSPrint 000000000000798c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000006c       $unwind$VgaOutb            000000000000798c     QemuVideoDxe:Driver.obj
+ 0005:0000006c       $unwind$outb               000000000000798c     QemuVideoDxe:Driver.obj
+ 0005:00000074       $unwind$outw               0000000000007994     QemuVideoDxe:Driver.obj
+ 0005:0000007c       $unwind$SetDefaultPalette  000000000000799c     QemuVideoDxe:Driver.obj
+ 0005:00000098       $unwind$InitializeCirrusGraphicsMode 00000000000079b8     QemuVideoDxe:Driver.obj
+ 0005:000000ac       $unwind$BochsWrite         00000000000079cc     QemuVideoDxe:Driver.obj
+ 0005:000000b4       $unwind$MmioRead32         00000000000079d4     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:000000b4       $unwind$TdIoRead32         00000000000079d4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000000b4       $unwind$TdIoWrite32        00000000000079d4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000000b4       $unwind$TdIoWrite8         00000000000079d4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000000b4       $unwind$BochsRead          00000000000079d4     QemuVideoDxe:Driver.obj
+ 0005:000000bc       $unwind$InitializeBochsGraphicsMode 00000000000079dc     QemuVideoDxe:Driver.obj
+ 0005:000000c8       $unwind$QemuVideoCompleteModeData 00000000000079e8     QemuVideoDxe:Gop.obj
+ 0005:000000dc       $unwind$FrameBufferBltLibVideoToVideo 00000000000079fc     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:000000dc       $unwind$EfiGetSystemConfigurationTable 00000000000079fc     UefiLib:UefiLib.obj
+ 0005:000000dc       $unwind$QemuVideoGraphicsOutputQueryMode 00000000000079fc     QemuVideoDxe:Gop.obj
+ 0005:000000f4       $unwind$QemuVideoGraphicsOutputSetMode 0000000000007a14     QemuVideoDxe:Gop.obj
+ 0005:00000108       $unwind$QemuVideoGraphicsOutputBlt 0000000000007a28     QemuVideoDxe:Gop.obj
+ 0005:00000120       $unwind$QemuVideoGraphicsOutputConstructor 0000000000007a40     QemuVideoDxe:Gop.obj
+ 0005:00000138       $unwind$QemuVideoCirrusModeSetup 0000000000007a58     QemuVideoDxe:Initialize.obj
+ 0005:0000014c       $unwind$QemuVideoBochsAddMode 0000000000007a6c     QemuVideoDxe:Initialize.obj
+ 0005:00000158       $unwind$QemuVideoBochsEdid 0000000000007a78     QemuVideoDxe:Initialize.obj
+ 0005:0000016c       $unwind$QemuVideoBochsModeSetup 0000000000007a8c     QemuVideoDxe:Initialize.obj
+ 0005:00000180       $unwind$QemuVideoComponentNameGetDriverName 0000000000007aa0     QemuVideoDxe:ComponentName.obj
+ 0005:00000188       $unwind$QemuVideoComponentNameGetControllerName 0000000000007aa8     QemuVideoDxe:ComponentName.obj
+ 0005:0000019c       $unwind$IoRead8            0000000000007abc     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000019c       $unwind$GetHobList         0000000000007abc     DxeHobLib:HobLib.obj
+ 0005:0000019c       $unwind$GetPcdProtocol     0000000000007abc     DxePcdLib:DxePcdLib.obj
+ 0005:0000019c       $unwind$TdSharedPageMask   0000000000007abc     TdxLib:TdInfo.obj
+ 0005:0000019c       $unwind$FreePool           0000000000007abc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000019c       $unwind$InternalAllocatePool 0000000000007abc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000001a4       $unwind$AsciiStrLen        0000000000007ac4     BaseLib:String.obj
+ 0005:000001a4       $unwind$ZeroMem            0000000000007ac4     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:000001b0       $unwind$CopyMem            0000000000007ad0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000001c4       $unwind$DebugPrint         0000000000007ae4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001cc       $unwind$DebugPrintMarker   0000000000007aec     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001e0       $unwind$DebugAssert        0000000000007b00     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000001e8       $unwind$AsciiStrnCmp       0000000000007b08     BaseLib:String.obj
+ 0005:000001e8       $unwind$SetMem32           0000000000007b08     BaseMemoryLibRepStr:SetMem32Wrapper.obj
+ 0005:000001e8       $unwind$SetMem64           0000000000007b08     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0005:000001e8       $unwind$SetMem             0000000000007b08     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:000001e8       $unwind$PciCf8Read32       0000000000007b08     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000001e8       $unwind$BasePrintLibValueToString 0000000000007b08     BasePrintLib:PrintLibInternal.obj
+ 0005:000001e8       $unwind$IsLanguageSupported 0000000000007b08     UefiLib:UefiLib.obj
+ 0005:000001e8       $unwind$SerialPortWrite    0000000000007b08     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:000001f8       $unwind$LookupUnicodeString2 0000000000007b18     UefiLib:UefiLib.obj
+ 0005:00000210       $unwind$FrameBufferBltLibConfigurePixelFormat 0000000000007b30     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:0000022c       $unwind$FrameBufferBltConfigure 0000000000007b4c     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:00000244       $unwind$FrameBufferBltLibVideoFill 0000000000007b64     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:0000025c       $unwind$FrameBufferBltLibBufferToVideo 0000000000007b7c     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:0000025c       $unwind$FrameBufferBltLibVideoToBltBuffer 0000000000007b7c     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:00000274       $unwind$FrameBufferBlt     0000000000007b94     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0005:0000027c       $unwind$CompareGuid        0000000000007b9c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000294       $unwind$AsciiSPrint        0000000000007bb4     BasePrintLib:PrintLib.obj
+ 0005:0000029c       $unwind$BasePrintLibSPrintMarker 0000000000007bbc     BasePrintLib:PrintLibInternal.obj
+ 0005:000002b8       $unwind$GetTdInfo          0000000000007bd8     TdxLib:TdInfo.obj

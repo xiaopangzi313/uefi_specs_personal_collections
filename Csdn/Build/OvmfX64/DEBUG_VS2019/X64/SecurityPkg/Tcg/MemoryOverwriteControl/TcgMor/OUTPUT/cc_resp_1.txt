@@ -1,0 +1,1 @@
+  d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\SecurityPkg\Tcg\MemoryOverwriteControl\TcgMor\DEBUG\AutoGen.c D:\uefi_specs_personal_collections\edk2\SecurityPkg\Tcg\MemoryOverwriteControl\TcgMor.c

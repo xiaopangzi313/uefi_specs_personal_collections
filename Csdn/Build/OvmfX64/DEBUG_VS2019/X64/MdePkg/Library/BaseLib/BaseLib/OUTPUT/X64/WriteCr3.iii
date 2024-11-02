@@ -1,0 +1,33 @@
+;------------------------------------------------------------------------------
+;
+; Copyright (c) 2006, Intel Corporation. All rights reserved.<BR>
+; SPDX-License-Identifier: BSD-2-Clause-Patent
+;
+; Module Name:
+;
+;   WriteCr3.Asm
+;
+; Abstract:
+;
+;   AsmWriteCr3 function
+;
+; Notes:
+;
+;------------------------------------------------------------------------------
+
+    DEFAULT REL
+    SECTION .text
+
+;------------------------------------------------------------------------------
+; UINTN
+; __cdecl
+; AsmWriteCr3 (
+;   UINTN  Cr3
+;   );
+;------------------------------------------------------------------------------
+global AsmWriteCr3
+AsmWriteCr3:
+    mov     cr3, rcx
+    mov     rax, rcx
+    ret
+

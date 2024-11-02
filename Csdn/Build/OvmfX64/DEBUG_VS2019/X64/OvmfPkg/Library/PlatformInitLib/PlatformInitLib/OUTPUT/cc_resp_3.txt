@@ -1,0 +1,1 @@
+  D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\PlatformInitLib\Platform.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\PlatformInitLib\Cmos.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\PlatformInitLib\IntelTdx.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\PlatformInitLib\MemDetect.c

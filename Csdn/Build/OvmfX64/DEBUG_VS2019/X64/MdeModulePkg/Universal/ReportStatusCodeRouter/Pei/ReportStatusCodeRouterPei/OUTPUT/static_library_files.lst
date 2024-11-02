@@ -1,0 +1,17 @@
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdeModulePkg/Universal/ReportStatusCodeRouter/Pei/ReportStatusCodeRouterPei/OUTPUT/ReportStatusCodeRouterPei.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib/OUTPUT/PeiMemoryAllocationLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr/OUTPUT/BaseMemoryLibRepStr.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/PeiHobLib/PeiHobLib/OUTPUT/PeiHobLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/PeiServicesLib/PeiServicesLib/OUTPUT/PeiServicesLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/TdxLib/TdxLib/OUTPUT/TdxLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/Library/CcProbeLib/SecPeiCcProbeLib/OUTPUT/SecPeiCcProbeLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev/OUTPUT/BaseIoLibIntrinsicSev.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/PcAtChipsetPkg/Library/SerialIoLib/SerialIoLib/OUTPUT/PcAtSerialPortLib.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib
+d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/PeimEntryPoint/PeimEntryPoint/OUTPUT/PeimEntryPoint.lib

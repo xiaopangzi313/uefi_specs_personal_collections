@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\AD416CE3-A483-45b1-94C2-4B4E4D575562TcgMor\AD416CE3-A483-45b1-94C2-4B4E4D575562SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\SecurityPkg\Tcg\MemoryOverwriteControl\TcgMor\OUTPUT\TcgMor.efi

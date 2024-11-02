@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\11A6EDF6-A9BE-426D-A6CC-B22FE51D9224PciHotPlugInitDxe\11A6EDF6-A9BE-426D-A6CC-B22FE51D9224SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\PciHotPlugInitDxe\PciHotPlugInit\OUTPUT\PciHotPlugInitDxe.depex

@@ -1,0 +1,606 @@
+ PciHostBridgeDxe
+
+ Timestamp is 6725e49d (Sat Nov  2 16:36:45 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000344H .text                   CODE
+ 0001:00000344 00008368H .text$mn                CODE
+ 0002:00000000 00002c28H .rdata                  DATA
+ 0002:00002c28 00000070H .rdata$voltmd           DATA
+ 0002:00002c98 00000170H .rdata$zzzdbg           DATA
+ 0003:00000000 000000c8H .data                   DATA
+ 0003:000000c8 000000b0H .bss                    DATA
+ 0004:00000000 000005acH .pdata                  DATA
+ 0005:00000000 0000036cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       SevNoRepIo                 0000000000000320     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a0       SevIoReadFifo8             0000000000000360     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c2       SevIoReadFifo16            0000000000000382     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e8       SevIoReadFifo32            00000000000003a8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000010b       SevIoWriteFifo8            00000000000003cb     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012d       SevIoWriteFifo16           00000000000003ed     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000153       SevIoWriteFifo32           0000000000000413     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000180       CpuPause                   0000000000000440     BaseLib:CpuPause.obj
+ 0001:00000190       TdVmCall                   0000000000000450     BaseLib:TdVmcall.obj
+ 0001:00000210       InternalMemSetMem          00000000000004d0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000230       InternalMemSetMem64        00000000000004f0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000250       InternalMemSetMem32        0000000000000510     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000270       AsmReadCr0                 0000000000000530     BaseLib:ReadCr0.obj
+ 0001:00000280       AsmReadCr3                 0000000000000540     BaseLib:ReadCr3.obj
+ 0001:00000290       AsmWriteCr0                0000000000000550     BaseLib:WriteCr0.obj
+ 0001:000002a0       AsmReadCr4                 0000000000000560     BaseLib:ReadCr4.obj
+ 0001:000002b0       AsmWriteCr3                0000000000000570     BaseLib:WriteCr3.obj
+ 0001:000002c0       TdCall                     0000000000000580     BaseLib:TdCall.obj
+ 0001:00000320       EnableInterrupts           00000000000005e0     BaseLib:EnableInterrupts.obj
+ 0001:00000330       DisableInterrupts          00000000000005f0     BaseLib:DisableInterrupts.obj
+ 0001:00000340       AsmReadEflags              0000000000000600     BaseLib:ReadEflags.obj
+ 0001:00000344       _ModuleEntryPoint          0000000000000604 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000370       ProcessLibraryConstructorList 0000000000000630 f   PciHostBridgeDxe:AutoGen.obj
+ 0001:000008c8       GetTranslationByResourceType 0000000000000b88 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00000940       AddIoSpace                 0000000000000c00 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00000b58       AddMemoryMappedIoSpace     0000000000000e18 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00000dc0       IoMmuProtocolCallback      0000000000001080 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00000dfc       InitializePciHostBridge    00000000000010bc f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:000015e4       ResourceConflict           00000000000018a4 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00001874       AllocateResource           0000000000001b34 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:0000197c       NotifyPhase                0000000000001c3c f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:000020f8       GetNextRootBridge          00000000000023b8 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:0000220c       GetAttributes              00000000000024cc f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:000022dc       StartBusEnumeration        000000000000259c f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00002418       SetBusNumbers              00000000000026d8 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00002544       SubmitResources            0000000000002804 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00002834       GetProposedResources       0000000000002af4 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00002a24       PreprocessController       0000000000002ce4 f   PciHostBridgeDxe:PciHostBridge.obj
+ 0001:00002ae4       CreateRootBridge           0000000000002da4 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003204       RootBridgeIoCheckParameter 00000000000034c4 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:0000341c       RootBridgeIoGetMemTranslationByAddress 00000000000036dc f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003498       MultThenDivU64x64x32       0000000000003758 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003568       RootBridgeIoPollMem        0000000000003828 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000036ac       RootBridgeIoPollIo         000000000000396c f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000037f0       RootBridgeIoMemRead        0000000000003ab0 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000038b0       RootBridgeIoMemWrite       0000000000003b70 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003974       RootBridgeIoIoRead         0000000000003c34 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003a20       RootBridgeIoIoWrite        0000000000003ce0 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003acc       RootBridgeIoCopyMem        0000000000003d8c f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00003be0       RootBridgeIoPciAccess      0000000000003ea0 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004010       RootBridgeIoPciRead        00000000000042d0 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004038       RootBridgeIoPciWrite       00000000000042f8 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004060       RootBridgeIoMap            0000000000004320 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000042c4       RootBridgeIoUnmap          0000000000004584 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000043ec       RootBridgeIoAllocateBuffer 00000000000046ac f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:0000451c       RootBridgeIoFreeBuffer     00000000000047dc f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004540       RootBridgeIoFlush          0000000000004800 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004544       RootBridgeIoGetAttributes  0000000000004804 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:000045c8       RootBridgeIoSetAttributes  0000000000004888 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004630       RootBridgeIoConfiguration  00000000000048f0 f   PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0001:00004770       InternalAllocatePool       0000000000004a30 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000047a0       InternalAllocateCopyPool   0000000000004a60 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000047f8       FreePool                   0000000000004ab8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000483c       InternalBaseLibIsListValid 0000000000004afc f   BaseLib:LinkedList.obj
+ 0001:000048a8       InsertTailList             0000000000004b68 f   BaseLib:LinkedList.obj
+ 0001:000048fc       GetFirstNode               0000000000004bbc f   BaseLib:LinkedList.obj
+ 0001:00004930       GetNextNode                0000000000004bf0 f   BaseLib:LinkedList.obj
+ 0001:00004964       IsListEmpty                0000000000004c24 f   BaseLib:LinkedList.obj
+ 0001:0000499c       IsNull                     0000000000004c5c f   BaseLib:LinkedList.obj
+ 0001:000049e0       RemoveEntryList            0000000000004ca0 f   BaseLib:LinkedList.obj
+ 0001:00004a28       LShiftU64                  0000000000004ce8 f   BaseLib:LShiftU64.obj
+ 0001:00004a6c       DivU64x32                  0000000000004d2c f   BaseLib:DivU64x32.obj
+ 0001:00004aa0       DivU64x32Remainder         0000000000004d60 f   BaseLib:DivU64x32Remainder.obj
+ 0001:00004b00       CopyMem                    0000000000004dc0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00004b9c       ZeroMem                    0000000000004e5c f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00004c0c       DebugPrint                 0000000000004ecc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004c30       DebugPrintMarker           0000000000004ef0 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004cbc       DebugAssert                0000000000004f7c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004d14       UefiDevicePathLibLocateProtocol 0000000000004fd4 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00004d50       EfiGetSystemConfigurationTable 0000000000005010 f   UefiLib:UefiLib.obj
+ 0001:00004e14       GetHobList                 00000000000050d4 f   DxeHobLib:HobLib.obj
+ 0001:00005244       InternalQemuFwCfgDmaBytes  0000000000005504 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005440       QemuFwCfgSelectItem        0000000000005700 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00005470       QemuFwCfgReadBytes         0000000000005730 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:000054b0       QemuFwCfgFindFile          0000000000005770 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00005680       PciSegmentRead8            0000000000005940 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:000056cc       PciSegmentWrite8           000000000000598c f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00005724       PciSegmentRead16           00000000000059e4 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00005770       PciSegmentWrite16          0000000000005a30 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:000057c8       PciSegmentRead32           0000000000005a88 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00005814       PciSegmentWrite32          0000000000005ad4 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:000058c0       GetPcdProtocol             0000000000005b80 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000594c       IoRead8                    0000000000005c0c f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005970       IoRead16                   0000000000005c30 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000059bc       IoWrite16                  0000000000005c7c f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005a18       IoRead32                   0000000000005cd8 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005a60       IoWrite32                  0000000000005d20 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005ab8       IoReadFifo8                0000000000005d78 f   BaseIoLibIntrinsicSev:IoLibFifoCc.obj
+ 0001:00005b10       IsTdxGuest                 0000000000005dd0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005b3c       TdIoRead8                  0000000000005dfc f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005b8c       TdIoRead16                 0000000000005e4c f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005c00       TdIoRead32                 0000000000005ec0 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005c74       TdIoWrite8                 0000000000005f34 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005cc4       TdIoWrite16                0000000000005f84 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005d40       TdIoWrite32                0000000000006000 f   BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0001:00005dbc       AsciiStrLen                000000000000607c f   BaseLib:String.obj
+ 0001:00005e28       CpuDeadLoop                00000000000060e8 f   BaseLib:CpuDeadLoop.obj
+ 0001:00005e58       StrnLenS                   0000000000006118 f   BaseLib:SafeString.obj
+ 0001:00005eb0       CompareGuid                0000000000006170 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00005f74       SerialPortWrite            0000000000006234 f   PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00005fec       AsciiSPrint                00000000000062ac f   BasePrintLib:PrintLib.obj
+ 0001:00006018       BasePrintLibFillBuffer     00000000000062d8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000604c       BasePrintLibValueToString  000000000000630c f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000609c       BasePrintLibSPrintMarker   000000000000635c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006fa8       BasePrintLibSPrint         0000000000007268 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006fcc       PciExpressRead8            000000000000728c f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000701c       PciExpressWrite8           00000000000072dc f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00007078       PciExpressRead16           0000000000007338 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:000070c8       PciExpressWrite16          0000000000007388 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00007124       PciExpressRead32           00000000000073e4 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00007174       PciExpressWrite32          0000000000007434 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:000071cc       PciCf8Read8                000000000000748c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00007284       PciCf8Write8               0000000000007544 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00007364       PciCf8Read16               0000000000007624 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000741c       PciCf8Write16              00000000000076dc f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000074e8       PciCf8Read32               00000000000077a8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00007594       PciCf8Write32              0000000000007854 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00007654       PciHostBridgeUtilityInitRootBridge 0000000000007914 f   PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0001:00007e38       GetTdInfo                  00000000000080f8 f   TdxLib:TdInfo.obj
+ 0001:00007e9c       TdSharedPageMask           000000000000815c f   TdxLib:TdInfo.obj
+ 0001:00007ec8       MmioRead8                  0000000000008188 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00007f20       MmioWrite8                 00000000000081e0 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00007f84       MmioRead16                 0000000000008244 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00007ffc       MmioWrite16                00000000000082bc f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0000809c       MmioRead32                 000000000000835c f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00008110       MmioWrite32                00000000000083d0 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:000081ac       SaveAndDisableInterrupts   000000000000846c f   BaseLib:Cpu.obj
+ 0001:000081d0       CreateHardwareInfoList     0000000000008490 f   DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0001:00008318       FreeHardwareInfoList       00000000000085d8 f   DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0001:00008374       GetFirstHardwareInfoByType 0000000000008634 f   DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0001:000083d4       GetNextHardwareInfoByType  0000000000008694 f   DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0001:00008510       HardwareInfoPciHostBridgeGetApertures 00000000000087d0 f   DxeHardwareInfoLib:HardwareInfoPciHostBridgeLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000008980     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000089a8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0BB@PIPEEMPM@PciHostBridgeDxe@ 00000000000089d0     PciHostBridgeDxe:AutoGen.obj
+ 0002:00000068       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 00000000000089e8     PciHostBridgeDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0IO@DPBIDNOD@d?3?2uefi_specs_personal_collecti@ 0000000000008a10     PciHostBridgeDxe:AutoGen.obj
+ 0002:00000120       ??_C@_17LJDAEGJN@?$AAM?$AAe?$AAm@ 0000000000008aa0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000128       ??_C@_17JJICAGNI@?$AAI?$AA?1?$AAO@ 0000000000008aa8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000130       ??_C@_17NDAAHGAG@?$AAB?$AAu?$AAs@ 0000000000008ab0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000138       ??_C@_19IGIMHHMK@?$AAP?$AAM?$AAe?$AAm@ 0000000000008ab8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000148       ??_C@_1M@PLKMHOJG@?$AAM?$AAe?$AAm?$AA6?$AA4@ 0000000000008ac8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000158       ??_C@_1O@HGMJAKKD@?$AAP?$AAM?$AAe?$AAm?$AA6?$AA4@ 0000000000008ad8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000168       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000008ae8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000180       ??_C@_0FO@NNJGGDOO@D?3?2uefi_specs_personal_collecti@ 0000000000008b00     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000001e0       ??_C@_0BG@POPMIPNJ@IntersectIoDescriptor@ 0000000000008b60     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000001f8       ??_C@_0BM@JJMLODKH@?$CFa?3?5?$CFa?3?5add?5?$FL?$CFLx?0?5?$CFLx?$CJ?3?5?$CFr?6@ 0000000000008b78     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000220       ??_C@_0EE@KONAPNF@?$CFa?3?5?$CFa?3?5desc?5?$FL?$CFLx?0?5?$CFLx?$CJ?5type?5?$CFu@ 0000000000008ba0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000268       ??_C@_0L@LDFIPJDP@AddIoSpace@ 0000000000008be8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000278       ??_C@_0BN@BIDPIHKJ@?$CFa?3?5?$CFa?3?5GetIoSpaceMap?$CI?$CJ?3?5?$CFr?6@ 0000000000008bf8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000298       ??_C@_0CM@MKPOEDON@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CICheckS@ 0000000000008c18     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000002c8       ??_C@_0CH@PEOFOOKM@Descriptor?4GcdIoType?5?$DN?$DN?5EfiGcdI@ 0000000000008c48     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000002f0       ??_C@_0BK@HKLOEDII@IntersectMemoryDescriptor@ 0000000000008c70     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000310       ??_C@_0FE@JNHFBLAO@?$CFa?3?5?$CFa?3?5desc?5?$FL?$CFLx?0?5?$CFLx?$CJ?5type?5?$CFu@ 0000000000008c90     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000368       ??_C@_0BH@DGMKCGG@AddMemoryMappedIoSpace@ 0000000000008ce8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000380       ??_C@_0CB@PDOLHJBG@?$CFa?3?5?$CFa?3?5GetMemorySpaceMap?$CI?$CJ?3?5?$CFr@ 0000000000008d00     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000003a8       ??_C@_0DL@PPFDNOML@Descriptor?4GcdMemoryType?5?$DN?$DN?5Efi@ 0000000000008d28     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000003e8       ??_C@_0DJ@EOEGKLBI@?$CIDescriptor?4Capabilities?5?$CG?5Capa@ 0000000000008d68     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000428       ??_C@_0BL@DGLJNGLF@HostBridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008da8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000448       ??_C@_0BL@PIPGGDMK@RootBridge?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008dc8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000468       ??_C@_0DI@IOEIOLKG@ResourceAssigned?5?$DN?$DN?5RootBridges@ 0000000000008de8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000004a0       ??_C@_0EJ@JKJOCHOJ@PciHostBridge?5driver?5failed?5to?5@ 0000000000008e20     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000004f0       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000008e70     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000508       ??_C@_0BK@HACOBH@Resources?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008e88     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000528       ??_C@_0CH@HDDLMD@Call?5PciHostBridgeResourceConfl@ 0000000000008ea8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000550       ??_C@_0DA@BGIEOEEN@PciHostBridge?3?5NotifyPhase?5?$CIAll@ 0000000000008ed0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000580       ??_C@_0BB@OLKHOHOD@?5RootBridge?3?5?$CFs?6@ 0000000000008f00     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000598       ??_C@_0BA@KIKEKPJO@Index?5?$DM?5TypeMax@ 0000000000008f18     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000005a8       ??_C@_0M@JGCJPMKP@NotifyPhase@ 0000000000008f28     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000005b8       ??_C@_0DA@FGKPJHNG@?$FL?$CFa?3?$CFd?$FN?5Translation?5?$CFlx?5is?5not?5@ 0000000000008f38     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000005e8       ??_C@_0BP@HNJNPAHG@?$CITranslation?5?$CG?5Alignment?$CJ?5?$DN?$DN?50@ 0000000000008f68     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000608       ??_C@_0CN@DNHIPJAF@?5?5?$CFs?3?5Base?1Length?1Alignment?5?$DN?5?$CF@ 0000000000008f88     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000638       ??_C@_08GKHOLFG@Success?6@ 0000000000008fb8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000648       ??_C@_0BC@FINNOBFI@Out?5Of?5Resource?$CB?6@ 0000000000008fc8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000660       ??_C@_0CI@EONFFFIA@IsNull?5?$CI?$CGHostBridge?9?$DORootBridge@ 0000000000008fe0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000688       ??_C@_0CH@POIFIKGI@PciHostBridge?3?5SubmitResources?5@ 0000000000009008     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000006b0       ??_C@_1CA@IKDGKAAG@?$AA?5?$AA?$CI?$AAP?$AAr?$AAe?$AAf?$AAe?$AAt?$AAc?$AAh?$AAa?$AAb?$AAl?$AAe?$AA?$CJ@ 0000000000009030     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000006d0       ??_C@_11LOCGONAA@@         0000000000009050     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000006d8       ??_C@_0CO@DIINLMJH@?5?$CFs?3?5Granularity?1SpecificFlag?5?$DN@ 0000000000009058     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000708       ??_C@_0CI@NNLOHOHB@?5?5?5?5?5?5Length?1Alignment?5?$DN?50x?$CFlx?5@ 0000000000009088     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000730       ??_C@_0CH@BPPFENJH@Descriptor?9?$DOAddrSpaceGranularit@ 00000000000090b0     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000758       ??_C@_0BM@DMPMBFJI@Descriptor?9?$DOResType?5?$DN?$DN?50x01@ 00000000000090d8     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000780       mAcpiAddressSpaceTypeStr   0000000000009100     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:00000780       mPciHostBridgeUtilityLibAcpiAddressSpaceTypeStr 0000000000009100     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000007a0       mPciResourceTypeStr        0000000000009120     PciHostBridgeDxe:PciHostBridge.obj
+ 0002:000007d0       ??_C@_0N@PHNNJOLM@RootBridge?3?5@ 0000000000009150     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000007e0       ??_C@_03OFAPEBGM@?$CFs?6@  0000000000009160     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000007e8       ??_C@_0BL@KJOBKLGG@?5?5Support?1Attr?3?5?$CFlx?5?1?5?$CFlx?6@ 0000000000009168     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000808       ??_C@_17PBAHFJOA@?$AAY?$AAe?$AAs@ 0000000000009188     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000810       ??_C@_15BICKNCBF@?$AAN?$AAo@ 0000000000009190     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000818       ??_C@_0BE@LPFILOCJ@?5?5?5?5DmaAbove4G?3?5?$CFs?6@ 0000000000009198     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000830       ??_C@_0BE@JFHLNMNI@NoExtConfSpace?3?5?$CFs?6@ 00000000000091b0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000848       ??_C@_1BI@MMBDMNPK@?$AAM?$AAe?$AAm?$AA6?$AA4?$AAD?$AAe?$AAc?$AAo?$AAd?$AAe@ 00000000000091c8     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000860       ??_C@_1CA@MNDANCGA@?$AAC?$AAo?$AAm?$AAb?$AAi?$AAn?$AAe?$AAM?$AAe?$AAm?$AAP?$AAM?$AAe?$AAm?$AA?5@ 00000000000091e0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000880       ??_C@_0BM@NFCHNIGO@?5?5?5?5?5AllocAttr?3?5?$CFlx?5?$CI?$CFs?$CFs?$CJ?6@ 0000000000009200     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000008a0       ??_C@_0CL@MEJGBPBE@?5?5?5?5?5?5?5?5?5?5?5Bus?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 0000000000009220     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000008d0       ??_C@_0BN@DJGCPLEB@Bridge?9?$DOBus?4Translation?5?$DN?$DN?50@ 0000000000009250     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000008f0       ??_C@_0GA@EFBIJAF@D?3?2uefi_specs_personal_collecti@ 0000000000009270     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000950       ??_C@_0CL@KPMPKOOJ@?5?5?5?5?5?5?5?5?5?5?5?5Io?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 00000000000092d0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000980       ??_C@_0CL@LALBNMPG@?5?5?5?5?5?5?5?5?5?5?5Mem?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 0000000000009300     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000009b0       ??_C@_0CL@DADJBGP@?5?5?5?5MemAbove4G?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 0000000000009330     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:000009e0       ??_C@_0CL@NAFDNMCL@?5?5?5?5?5?5?5?5?5?5PMem?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 0000000000009360     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000a10       ??_C@_0CL@KACFJAFG@?5?5?5PMemAbove4G?3?5?$CFlx?5?9?5?$CFlx?5Trans@ 0000000000009390     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000a40       ??_C@_0CK@FMEPHIC@Bridge?9?$DOMem?4Limit?5?$DM?50x000000010@ 00000000000093c0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000a70       ??_C@_0DB@JODNLIEL@Bridge?9?$DOMemAbove4G?4Base?5?$DO?$DN?50x00@ 00000000000093f0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000aa8       ??_C@_0CL@JCFNOGFM@Bridge?9?$DOPMem?4Limit?5?$DM?50x00000001@ 0000000000009428     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000ad8       ??_C@_0DC@FBMKINBB@Bridge?9?$DOPMemAbove4G?4Base?5?$DO?$DN?50x0@ 0000000000009458     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000b10       ??_C@_0DD@MJJDJFMD@?$CB?$CI?$CI?$CGBridge?9?$DOPMem?$CJ?9?$DOBase?5?$DM?$DN?5?$CI?$CGBr@ 0000000000009490     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000b50       ??_C@_0EB@OMNLMGMK@?$CB?$CI?$CI?$CGBridge?9?$DOPMemAbove4G?$CJ?9?$DOBase?5@ 00000000000094d0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000b98       ??_C@_0DP@CBKJHNHM@?$CB?$CI?$CI?$CGBridge?9?$DOMemAbove4G?$CJ?9?$DOBase?5?$DM@ 0000000000009518     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000bd8       ??_C@_0CJ@KKDOLLFD@RootBridge?9?$DOConfigBuffer?5?$CB?$DN?5?$CI?$CIv@ 0000000000009558     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000c08       mInStride                  0000000000009588     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000c18       mOutStride                 0000000000009598     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0002:00000c30       ??_C@_0GF@KMHDEKMA@D?3?2uefi_specs_personal_collecti@ 00000000000095b0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000c98       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009618     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000cb0       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000009630     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000cf0       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009670     BaseLib:LinkedList.obj
+ 0002:00000d10       ??_C@_0EM@NCJPOFNN@D?3?2uefi_specs_personal_collecti@ 0000000000009690     BaseLib:LinkedList.obj
+ 0002:00000d60       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000096e0     BaseLib:LinkedList.obj
+ 0002:00000d88       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009708     BaseLib:LinkedList.obj
+ 0002:00000da8       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009728     BaseLib:LinkedList.obj
+ 0002:00000dc8       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000009748     BaseLib:LinkedList.obj
+ 0002:00000df0       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000009770     BaseLib:LinkedList.obj
+ 0002:00000e18       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000009798     BaseLib:LinkedList.obj
+ 0002:00000e30       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 00000000000097b0     BaseLib:LShiftU64.obj
+ 0002:00000e40       ??_C@_0EL@PKACDBFD@D?3?2uefi_specs_personal_collecti@ 00000000000097c0     BaseLib:LShiftU64.obj
+ 0002:00000e90       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000009810     BaseLib:DivU64x32.obj
+ 0002:00000ea0       ??_C@_0EL@IADNJGFD@D?3?2uefi_specs_personal_collecti@ 0000000000009820     BaseLib:DivU64x32.obj
+ 0002:00000ef0       ??_C@_0FE@JMCJLPOO@D?3?2uefi_specs_personal_collecti@ 0000000000009870     BaseLib:DivU64x64Remainder.obj
+ 0002:00000f50       ??_C@_0FE@LIGPAOFO@D?3?2uefi_specs_personal_collecti@ 00000000000098d0     BaseLib:DivU64x32Remainder.obj
+ 0002:00000fb0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000009930     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001000       ??_C@_0FM@IDPIEKJH@D?3?2uefi_specs_personal_collecti@ 0000000000009980     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001060       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000099e0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000010a0       ??_C@_0FM@DHFKCLFA@D?3?2uefi_specs_personal_collecti@ 0000000000009a20     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001100       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000009a80     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001138       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009ab8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001150       ??_C@_0FJ@BNNHJMAJ@D?3?2uefi_specs_personal_collecti@ 0000000000009ad0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000011b0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000009b30     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000011c8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009b48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000011f0       ??_C@_0GL@PJCPJLGM@D?3?2uefi_specs_personal_collecti@ 0000000000009b70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001260       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009be0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001278       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009bf8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001290       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009c10     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000012b0       ??_C@_0HB@NCAPNEDO@D?3?2uefi_specs_personal_collecti@ 0000000000009c30     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001330       ??_C@_0GP@HEOOPGAM@D?3?2uefi_specs_personal_collecti@ 0000000000009cb0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000013a0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000009d20     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000013d8       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009d58     UefiLib:UefiLib.obj
+ 0002:00001400       ??_C@_0EJ@PPOMJLJB@D?3?2uefi_specs_personal_collecti@ 0000000000009d80     UefiLib:UefiLib.obj
+ 0002:00001450       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009dd0     UefiLib:UefiLib.obj
+ 0002:00001470       ??_C@_0EK@CGIIDOCH@D?3?2uefi_specs_personal_collecti@ 0000000000009df0     DxeHobLib:HobLib.obj
+ 0002:000014c0       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009e40     DxeHobLib:HobLib.obj
+ 0002:000014e0       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009e60     DxeHobLib:HobLib.obj
+ 0002:00001500       ??_C@_0BP@LHBKJBMC@PlatformInfoHob?5is?5not?5found?4?6@ 0000000000009e80     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001520       ??_C@_0FH@PGONMIHN@D?3?2uefi_specs_personal_collecti@ 0000000000009ea0     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001578       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000009ef8     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00001590       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000009f10     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:000015c0       ??_C@_0BI@IJEGBDOG@FW?5CFG?5Signature?3?50x?$CFx?6@ 0000000000009f40     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000015d8       ??_C@_0BH@IDHABEEK@FW?5CFG?5Revision?3?50x?$CFx?6@ 0000000000009f58     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000015f0       ??_C@_0CE@MJBGNOEJ@QemuFwCfg?5interface?5not?5support@ 0000000000009f70     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001618       ??_C@_0CN@HEOCCDJJ@QemuFwCfg?5interface?5?$CIIO?5Port?$CJ?5i@ 0000000000009f98     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001648       ??_C@_0CJ@KLCLHHDJ@QemuFwCfg?5interface?5?$CIDMA?$CJ?5is?5su@ 0000000000009fc8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001678       ??_C@_0BE@ICMOEABH@QemuFwCfgInitialize@ 0000000000009ff8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001690       ??_C@_0DF@DPBJNHOO@QemuFwCfgDma?5?$CFa?3?$CFa?5Failed?5to?5lo@ 000000000000a010     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000016d0       ??_C@_0FE@HOPLGIPD@D?3?2uefi_specs_personal_collecti@ 000000000000a050     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001728       ??_C@_0BK@BCAAPLAN@AllocFwCfgDmaAccessBuffer@ 000000000000a0a8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001748       ??_C@_0CM@GFEJKPGJ@?$CFa?3?$CFa?5failed?5to?5allocate?5FW_CFG@ 000000000000a0c8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001778       ??_C@_0CJ@KEMBAJAO@?$CFa?3?$CFa?5failed?5to?5Map?$CI?$CJ?5FW_CFG_DM@ 000000000000a0f8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000017a8       ??_C@_0DD@JKOFAKBE@?$CFa?3?$CFa?5failed?5to?5Map?$CI?$CJ?5?9?5request@ 000000000000a128     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000017e0       ??_C@_0BJ@PJCCKKKO@FreeFwCfgDmaAccessBuffer@ 000000000000a160     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001800       ??_C@_0CH@ECJOHDLF@?$CFa?3?$CFa?5failed?5to?5UnMap?$CI?$CJ?5Mapping@ 000000000000a180     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001828       ??_C@_0BO@GNFEKELG@?$CFa?3?$CFa?5failed?5to?5Free?$CI?$CJ?50x?$CFLx?6@ 000000000000a1a8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001848       ??_C@_0BG@IBBEPALH@MapFwCfgDmaDataBuffer@ 000000000000a1c8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001860       ??_C@_0DA@PGHOGGFB@?$CFa?3?$CFa?5failed?5to?5Map?$CI?$CJ?5Address?50@ 000000000000a1e0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001890       ??_C@_0DC@GIJFHMNI@?$CFa?3?$CFa?5failed?5to?5Map?$CI?$CJ?5?9?5request@ 000000000000a210     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000018c8       ??_C@_0BI@FJKLEDLA@UnmapFwCfgDmaDataBuffer@ 000000000000a248     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000018e0       ??_C@_0BL@NIDDMANE@?$CIStatus?5?$CG?50x00000001?$CJ?5?$DN?$DN?50@ 000000000000a260     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001900       ??_C@_0BD@DFJLKIGA@Select?5Item?3?50x?$CFx?6@ 000000000000a280     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0002:00001920       ??_C@_0GB@FAJPOEDK@D?3?2uefi_specs_personal_collecti@ 000000000000a2a0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001988       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000a308     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:000019a0       ??_C@_0DB@KLAMONNG@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 000000000000a320     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:000019e0       ??_C@_0FM@DFPPBAEL@D?3?2uefi_specs_personal_collecti@ 000000000000a360     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00001a40       ??_C@_0DB@EEMOIGOI@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 000000000000a3c0     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00001a78       ??_C@_0DB@EADLFGNF@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 000000000000a3f8     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00001ab0       ??_C@_0DG@PCBDBMGC@?$CI?$CIStartAddress?$CJ?5?$CG?5?$CI0xfffffffff0@ 000000000000a430     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00001ae8       ??_C@_0CK@GEPHNHLO@?$CI?$CIStartAddress?5?$CG?50xFFF?$CJ?5?$CL?5Size?$CJ@ 000000000000a468     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00001b20       ??_C@_0EN@ENFGNHA@D?3?2uefi_specs_personal_collecti@ 000000000000a4a0     DxePcdLib:DxePcdLib.obj
+ 0002:00001b70       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000a4f0     DxePcdLib:DxePcdLib.obj
+ 0002:00001b88       ??_C@_0BA@DAGHIEBA@?$CIPort?5?$CG?51?$CJ?5?$DN?$DN?50@ 000000000000a508     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00001ba0       ??_C@_0FF@GCKLFLDF@D?3?2uefi_specs_personal_collecti@ 000000000000a520     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00001bf8       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000a578     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00001c10       ??_C@_0FN@DOAHIAPG@D?3?2uefi_specs_personal_collecti@ 000000000000a590     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00001c70       ??_C@_0BD@KOOFJLFH@?$CIAddress?5?$CG?51?$CJ?5?$DN?$DN?50@ 000000000000a5f0     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00001c88       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000a608     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0002:00001ca0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000a620     BaseLib:String.obj
+ 0002:00001cc0       ??_C@_0EI@LOLLHGDK@D?3?2uefi_specs_personal_collecti@ 000000000000a640     BaseLib:String.obj
+ 0002:00001d08       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 000000000000a688     BaseLib:String.obj
+ 0002:00001d30       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000a6b0     BaseLib:String.obj
+ 0002:00001d68       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 000000000000a6e8     BaseLib:String.obj
+ 0002:00001d88       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 000000000000a708     BaseLib:String.obj
+ 0002:00001db0       ??_C@_0EL@GLNKFHII@D?3?2uefi_specs_personal_collecti@ 000000000000a730     BaseLib:Unaligned.obj
+ 0002:00001e00       ??_C@_0EM@OAPOMMAE@D?3?2uefi_specs_personal_collecti@ 000000000000a780     BaseLib:SafeString.obj
+ 0002:00001e50       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000a7d0     BaseLib:SafeString.obj
+ 0002:00001e70       ??_C@_0FH@MODEAFEI@D?3?2uefi_specs_personal_collecti@ 000000000000a7f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ed0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000a850     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f18       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000a898     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f40       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000a8c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f90       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000a910     BasePrintLib:PrintLibInternal.obj
+ 0002:00002020       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000a9a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000020a8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000aa28     BasePrintLib:PrintLibInternal.obj
+ 0002:000020b8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000aa38     BasePrintLib:PrintLibInternal.obj
+ 0002:000020c8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000aa48     BasePrintLib:PrintLibInternal.obj
+ 0002:00002100       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000aa80     BasePrintLib:PrintLibInternal.obj
+ 0002:00002110       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000aa90     BasePrintLib:PrintLibInternal.obj
+ 0002:0000212c       ??_C@_04JIMNDDED@?$CF08X@  000000000000aaac     BasePrintLib:PrintLibInternal.obj
+ 0002:00002134       ??_C@_02PCIJFNDE@?$AN?6@   000000000000aab4     BasePrintLib:PrintLibInternal.obj
+ 0002:00002138       ??_C@_01LIIJDEN@?$AN@      000000000000aab8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002140       mWarningString             000000000000aac0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002210       mErrorString               000000000000ab90     BasePrintLib:PrintLibInternal.obj
+ 0002:000024f0       mHexStr                    000000000000ae70     BasePrintLib:PrintLibInternal.obj
+ 0002:00002500       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 000000000000ae80     BasePciExpressLib:PciExpressLib.obj
+ 0002:00002520       ??_C@_0FJ@LPMKGGAK@D?3?2uefi_specs_personal_collecti@ 000000000000aea0     BasePciExpressLib:PciExpressLib.obj
+ 0002:00002580       ??_C@_0CG@KIJMJHBN@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI0?$CJ?$CJ@ 000000000000af00     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:000025b0       ??_C@_0FB@PDIKDBMH@D?3?2uefi_specs_personal_collecti@ 000000000000af30     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002608       ??_C@_0CG@EHFOPMCD@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI1?$CJ?$CJ@ 000000000000af88     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002630       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 000000000000afb0     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002658       ??_C@_0CD@KGIDCLJC@PciHostBridgeUtilityInitRootBri@ 000000000000afd8     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002680       ??_C@_07FINMALIC@?$CFa?3?5?$CFr?6@ 000000000000b000     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002690       ??_C@_0EB@IOGGNDGD@?$CFa?3?5populated?5root?5bus?5?$CFd?0?5with@ 000000000000b010     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000026d8       ??_C@_0CK@LJGLOMHN@PciHostBridgeUtilityGetRootBrid@ 000000000000b058     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002708       ??_C@_0DG@JKDHOGOK@?$CFa?3?5invalid?5bus?5range?5with?5BusM@ 000000000000b088     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002740       ??_C@_0BE@EGHJDHKK@etc?1extra?9pci?9roots@ 000000000000b0c0     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002758       ??_C@_0DO@FNFMMLGL@?$CFa?3?5invalid?5count?5of?5extra?5root@ 000000000000b0d8     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002798       ??_C@_0CL@MFFLKEAE@?$CFa?3?5?$CFLu?5extra?5root?5buses?5report@ 000000000000b118     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000027d0       ??_C@_0BC@DGJAGBGN@etc?1hardware?9info@ 000000000000b150     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000027e8       ??_C@_0CP@GMPAGNGL@PciHostBridgeUtilityGetRootBrid@ 000000000000b168     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002818       ??_C@_0DL@NGICKHCA@?$CFa?3?5Failed?5to?5allocate?5memory?5f@ 000000000000b198     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002860       ??_C@_0FK@PDNEPJFC@?$CFa?3?5Failed?5to?5create?5hardware?5i@ 000000000000b1e0     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000028c0       ??_C@_0DE@CGGAMHAG@?$CFa?3?5Host?5provided?5description?5f@ 000000000000b240     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000028f8       ??_C@_0CF@CNNCCNOC@Bridges?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Coun@ 000000000000b278     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002920       ??_C@_0GK@GKOMDIBO@D?3?2uefi_specs_personal_collecti@ 000000000000b2a0     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002990       ??_C@_0CL@BKIJEDOD@PciHostBridge?3?5Resource?5conflic@ 000000000000b310     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000029c0       ??_C@_0BB@EMKMOAOJ@RootBridge?$FL?$CFd?$FN?3?6@ 000000000000b340     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:000029e0       ??_C@_0JB@MKCBCFHD@Descriptor?9?$DOResType?5?$DM?5?$CIsizeof?5?$CI@ 000000000000b360     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002a78       ??_C@_0CH@FLILNNIF@?5?$CFs?3?5Length?1Alignment?5?$DN?50x?$CFlx?5?1@ 000000000000b3f8     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002aa0       ??_C@_0CO@DCCKOOLI@?5?5?5?5?5Granularity?1SpecificFlag?5?$DN@ 000000000000b420     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002ad0       ??_C@_0BJ@NHPOGCCD@Descriptor?9?$DODesc?5?$DN?$DN?50x79@ 000000000000b450     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0002:00002b00       ??_C@_0CB@GEABOFIF@Failed?5call?5TDCALL_TDINFO?4?5?$CFllx@ 000000000000b480     TdxLib:TdInfo.obj
+ 0002:00002b30       ??_C@_0FC@MAJHMCGF@D?3?2uefi_specs_personal_collecti@ 000000000000b4b0     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00002b88       ??_C@_0BH@JPIBGPDG@CreateHardwareInfoList@ 000000000000b508     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0002:00002ba0       ??_C@_0DB@HKMKPAAJ@?$CFa?3?5Failed?5to?5allocate?5memory?5f@ 000000000000b520     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0002:00002c28       __volatile_metadata        000000000000b5a8     <linker-defined>
+ 0003:00000000       gEfiPciRootBridgeIoProtocolGuid 000000000000b7a0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000010       gPcdProtocolGuid           000000000000b7b0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000020       gEfiDevicePathProtocolGuid 000000000000b7c0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000030       gEfiPciHostBridgeResourceAllocationProtocolGuid 000000000000b7d0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000040       gEfiDevicePathToTextProtocolGuid 000000000000b7e0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000050       gUefiOvmfPkgPlatformInfoGuid 000000000000b7f0     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathUtilitiesProtocolGuid 000000000000b800     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000070       gEfiHobListGuid            000000000000b810     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000080       gEdkiiIoMmuProtocolGuid    000000000000b820     PciHostBridgeDxe:AutoGen.obj
+ 0003:00000090       gEfiCpuIo2ProtocolGuid     000000000000b830     PciHostBridgeDxe:AutoGen.obj
+ 0003:000000a0       gEfiDxeServicesTableGuid   000000000000b840     PciHostBridgeDxe:AutoGen.obj
+ 0003:000000d0       gST                        000000000000b870     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000d8       gBS                        000000000000b878     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000e0       gImageHandle               000000000000b880     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000e8       gRT                        000000000000b888     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000000f0       mDevicePathLibDevicePathToText 000000000000b890     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000000f8       mDevicePathLibDevicePathUtilities 000000000000b898     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000100       mHobList                   000000000000b8a0     DxeHobLib:HobLib.obj
+ 0003:00000110       gDS                        000000000000b8b0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00000128       mPcd                       000000000000b8c8     DxePcdLib:DxePcdLib.obj
+ 0003:00000138       gParity                    000000000000b8d8     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000139       gBreakSet                  000000000000b8d9     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:0000013a       mTdDataReturned            000000000000b8da     TdxLib:TdInfo.obj
+ 0003:00000140       mTdSharedPageMask          000000000000b8e0     TdxLib:TdInfo.obj
+ 0003:00000158       mCpuIo                     000000000000b8f8     <common>
+ 0003:00000160       mIoMmuRegistration         000000000000b900     <common>
+ 0003:00000168       mIoMmu                     000000000000b908     <common>
+ 0003:00000170       mIoMmuEvent                000000000000b910     <common>
+
+ entry point at        0001:00000344
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009a       @UseRepIo                  000000000000035a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009c       @SevNoRepIo_Done           000000000000035c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b4       @IoReadFifo8_NoRep         0000000000000374     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b6       @IoReadFifo8_Loop          0000000000000376     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000be       @IoReadFifo8_Done          000000000000037e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d7       @IoReadFifo16_NoRep        0000000000000397     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d9       @IoReadFifo16_Loop         0000000000000399     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoReadFifo16_Done         00000000000003a4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fc       @IoReadFifo32_NoRep        00000000000003bc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fe       @IoReadFifo32_Loop         00000000000003be     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoReadFifo32_Done         00000000000003c7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011f       @IoWriteFifo8_NoRep        00000000000003df     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000121       @IoWriteFifo8_Loop         00000000000003e1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000129       @IoWriteFifo8_Done         00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000142       @IoWriteFifo16_NoRep       0000000000000402     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoWriteFifo16_Loop        0000000000000404     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014f       @IoWriteFifo16_Done        000000000000040f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoWriteFifo32_NoRep       0000000000000427     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoWriteFifo32_Loop        0000000000000429     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       @IoWriteFifo32_Done        0000000000000432     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e9       TdVmCall.no_return_data    00000000000004a9     BaseLib:TdVmcall.obj
+ 0001:0000030b       TdCall.exit                00000000000005cb     BaseLib:TdCall.obj
+ 0001:00004e98       AllocFwCfgDmaAccessBuffer  0000000000005158 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005044       FreeFwCfgDmaAccessBuffer   0000000000005304 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005118       MapFwCfgDmaDataBuffer      00000000000053d8 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005868       ConfidentialComputingGuestHas 0000000000005b28 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0001:000077a8       PciHostBridgeUtilityGetRootBridgesBusScan 0000000000007a68 f   PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0001:00007a68       PciHostBridgeUtilityGetRootBridgesHostProvided 0000000000007d28 f   PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0001:0000842c       FillHostBridgeAperture     00000000000086ec f   DxeHardwareInfoLib:HardwareInfoPciHostBridgeLib.obj
+ 0001:0000847c       MergeHostBridgeApertures   000000000000873c f   DxeHardwareInfoLib:HardwareInfoPciHostBridgeLib.obj
+ 0002:00002af0       mRootBridgeDevicePathTemplate 000000000000b470     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0003:000000b0       mNonExistAperture          000000000000b850     PciHostBridgeLib:PciHostBridgeLib.obj
+ 0003:000000c8       mCcProbeGuestType          000000000000b868     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:000000c9       mCcProbed                  000000000000b869     DxeCcProbeLib:DxeCcProbeLib.obj
+ 0003:00000108       mQemuFwCfgSupported        000000000000b8a8     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0003:00000118       mCurrentAttr               000000000000b8b8     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000120       mCurrentAttrRead           000000000000b8c0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000130       mDeadLoopComparator        000000000000b8d0     BaseLib:CpuDeadLoop.obj
+ 0003:00000148       mRunningOnQ35              000000000000b8e8     DxePciLibI440FxQ35:PciLib.obj
+ 0003:00000149       mQemuFwCfgDmaSupported     000000000000b8e9     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0003:0000014c       mAcpiTimerIoAddr           000000000000b8ec     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0003:00000150       mIoMmuProtocol             000000000000b8f0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0005:00000000       $unwind$RootBridgeIoSetAttributes 000000000000bee0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000000       $unwind$IoWrite16          000000000000bee0     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$IoWrite32          000000000000bee0     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$LShiftU64          000000000000bee0     BaseLib:LShiftU64.obj
+ 0005:00000000       $unwind$InsertTailList     000000000000bee0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$IsNull             000000000000bee0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$AsciiStrLen        000000000000bee0     BaseLib:String.obj
+ 0005:00000000       $unwind$ZeroMem            000000000000bee0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000000       $unwind$PciExpressWrite16  000000000000bee0     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$PciExpressWrite32  000000000000bee0     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$PciExpressWrite8   000000000000bee0     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$PciSegmentWrite16  000000000000bee0     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000000       $unwind$PciSegmentWrite32  000000000000bee0     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000000       $unwind$PciSegmentWrite8   000000000000bee0     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000000bee0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$GetFirstHardwareInfoByType 000000000000bee0     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0005:00000000       $unwind$GetNextHardwareInfoByType 000000000000bee0     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0005:0000000c       $unwind$ProcessLibraryConstructorList 000000000000beec     PciHostBridgeDxe:AutoGen.obj
+ 0005:00000020       $unwind$GetTranslationByResourceType 000000000000bf00     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000020       $unwind$IoMmuProtocolCallback 000000000000bf00     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000020       $unwind$IoRead8            000000000000bf00     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000020       $unwind$CpuDeadLoop        000000000000bf00     BaseLib:CpuDeadLoop.obj
+ 0005:00000020       $unwind$GetHobList         000000000000bf00     DxeHobLib:HobLib.obj
+ 0005:00000020       $unwind$GetPcdProtocol     000000000000bf00     DxePcdLib:DxePcdLib.obj
+ 0005:00000020       $unwind$TdSharedPageMask   000000000000bf00     TdxLib:TdInfo.obj
+ 0005:00000020       $unwind$FreePool           000000000000bf00     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000020       $unwind$InternalAllocateCopyPool 000000000000bf00     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000020       $unwind$InternalAllocatePool 000000000000bf00     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000020       $unwind$ConfidentialComputingGuestHas 000000000000bf00     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0005:00000028       $unwind$AddIoSpace         000000000000bf08     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000040       $unwind$AddMemoryMappedIoSpace 000000000000bf20     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:0000005c       $unwind$InitializePciHostBridge 000000000000bf3c     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000074       $unwind$ResourceConflict   000000000000bf54     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000088       $unwind$AllocateResource   000000000000bf68     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000a0       $unwind$NotifyPhase        000000000000bf80     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000b8       $unwind$GetAttributes      000000000000bf98     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000b8       $unwind$GetNextRootBridge  000000000000bf98     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000b8       $unwind$SetBusNumbers      000000000000bf98     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000b8       $unwind$RootBridgeIoUnmap  000000000000bf98     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000000b8       $unwind$CopyMem            000000000000bf98     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000b8       $unwind$PciCf8Read16       000000000000bf98     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000b8       $unwind$PciCf8Read32       000000000000bf98     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000b8       $unwind$PciCf8Read8        000000000000bf98     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$StartBusEnumeration 000000000000bfac     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:000000cc       $unwind$RootBridgeIoConfiguration 000000000000bfac     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000000cc       $unwind$PciCf8Write16      000000000000bfac     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$PciCf8Write32      000000000000bfac     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$PciCf8Write8       000000000000bfac     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000cc       $unwind$EfiGetSystemConfigurationTable 000000000000bfac     UefiLib:UefiLib.obj
+ 0005:000000e4       $unwind$SubmitResources    000000000000bfc4     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:00000100       $unwind$GetProposedResources 000000000000bfe0     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:0000011c       $unwind$PreprocessController 000000000000bffc     PciHostBridgeDxe:PciHostBridge.obj
+ 0005:0000011c       $unwind$RootBridgeIoGetAttributes 000000000000bffc     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:0000011c       $unwind$IoReadFifo8        000000000000bffc     BaseIoLibIntrinsicSev:IoLibFifoCc.obj
+ 0005:0000011c       $unwind$DivU64x32Remainder 000000000000bffc     BaseLib:DivU64x32Remainder.obj
+ 0005:0000011c       $unwind$FreeHardwareInfoList 000000000000bffc     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0005:0000011c       $unwind$SerialPortWrite    000000000000bffc     PcAtSerialPortLib:SerialPortLib.obj
+ 0005:0000012c       $unwind$CreateRootBridge   000000000000c00c     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:0000012c       $unwind$RootBridgeIoMap    000000000000c00c     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000148       $unwind$RootBridgeIoCheckParameter 000000000000c028     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000160       $unwind$MultThenDivU64x64x32 000000000000c040     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000174       $unwind$RootBridgeIoPollIo 000000000000c054     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000174       $unwind$RootBridgeIoPollMem 000000000000c054     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000190       $unwind$RootBridgeIoMemRead 000000000000c070     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000190       $unwind$RootBridgeIoMemWrite 000000000000c070     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001a8       $unwind$RootBridgeIoIoRead 000000000000c088     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001a8       $unwind$RootBridgeIoIoWrite 000000000000c088     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001a8       $unwind$PciHostBridgeUtilityInitRootBridge 000000000000c088     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0005:000001c0       $unwind$RootBridgeIoCopyMem 000000000000c0a0     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001dc       $unwind$RootBridgeIoPciAccess 000000000000c0bc     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001f4       $unwind$RootBridgeIoPciRead 000000000000c0d4     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001f4       $unwind$RootBridgeIoPciWrite 000000000000c0d4     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:000001f4       $unwind$TdIoRead8          000000000000c0d4     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000001fc       $unwind$RootBridgeIoAllocateBuffer 000000000000c0dc     PciHostBridgeDxe:PciRootBridgeIo.obj
+ 0005:00000214       $unwind$IoRead16           000000000000c0f4     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000214       $unwind$IoRead32           000000000000c0f4     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000214       $unwind$SaveAndDisableInterrupts 000000000000c0f4     BaseLib:Cpu.obj
+ 0005:00000214       $unwind$DivU64x32          000000000000c0f4     BaseLib:DivU64x32.obj
+ 0005:00000214       $unwind$GetFirstNode       000000000000c0f4     BaseLib:LinkedList.obj
+ 0005:00000214       $unwind$GetNextNode        000000000000c0f4     BaseLib:LinkedList.obj
+ 0005:00000214       $unwind$InternalBaseLibIsListValid 000000000000c0f4     BaseLib:LinkedList.obj
+ 0005:00000214       $unwind$IsListEmpty        000000000000c0f4     BaseLib:LinkedList.obj
+ 0005:00000214       $unwind$RemoveEntryList    000000000000c0f4     BaseLib:LinkedList.obj
+ 0005:00000214       $unwind$StrnLenS           000000000000c0f4     BaseLib:SafeString.obj
+ 0005:00000214       $unwind$PciExpressRead16   000000000000c0f4     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000214       $unwind$PciExpressRead32   000000000000c0f4     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000214       $unwind$PciExpressRead8    000000000000c0f4     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000214       $unwind$PciSegmentRead16   000000000000c0f4     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000214       $unwind$PciSegmentRead32   000000000000c0f4     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000214       $unwind$PciSegmentRead8    000000000000c0f4     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0005:00000214       $unwind$QemuFwCfgSelectItem 000000000000c0f4     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0005:0000021c       $unwind$DebugPrint         000000000000c0fc     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000224       $unwind$DebugPrintMarker   000000000000c104     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000238       $unwind$DebugAssert        000000000000c118     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000240       $unwind$UefiDevicePathLibLocateProtocol 000000000000c120     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000248       $unwind$AllocFwCfgDmaAccessBuffer 000000000000c128     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0005:00000258       $unwind$MmioWrite16        000000000000c138     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000258       $unwind$MmioWrite32        000000000000c138     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000258       $unwind$MmioWrite8         000000000000c138     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000258       $unwind$FreeFwCfgDmaAccessBuffer 000000000000c138     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0005:00000268       $unwind$MapFwCfgDmaDataBuffer 000000000000c148     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0005:0000027c       $unwind$InternalQemuFwCfgDmaBytes 000000000000c15c     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0005:0000028c       $unwind$QemuFwCfgFindFile  000000000000c16c     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0005:000002a4       $unwind$MmioRead16         000000000000c184     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:000002a4       $unwind$MmioRead32         000000000000c184     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:000002a4       $unwind$MmioRead8          000000000000c184     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:000002a4       $unwind$TdIoRead16         000000000000c184     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000002a4       $unwind$TdIoRead32         000000000000c184     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000002a4       $unwind$TdIoWrite8         000000000000c184     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000002ac       $unwind$TdIoWrite16        000000000000c18c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000002ac       $unwind$TdIoWrite32        000000000000c18c     BaseIoLibIntrinsicSev:IoLibInternalTdx.obj
+ 0005:000002b8       $unwind$CompareGuid        000000000000c198     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000002d0       $unwind$AsciiSPrint        000000000000c1b0     BasePrintLib:PrintLib.obj
+ 0005:000002d8       $unwind$BasePrintLibValueToString 000000000000c1b8     BasePrintLib:PrintLibInternal.obj
+ 0005:000002e4       $unwind$BasePrintLibSPrintMarker 000000000000c1c4     BasePrintLib:PrintLibInternal.obj
+ 0005:00000300       $unwind$BasePrintLibSPrint 000000000000c1e0     BasePrintLib:PrintLibInternal.obj
+ 0005:00000308       $unwind$PciHostBridgeUtilityGetRootBridgesBusScan 000000000000c1e8     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0005:00000320       $unwind$PciHostBridgeUtilityGetRootBridgesHostProvided 000000000000c200     PciHostBridgeUtilityLib:PciHostBridgeUtilityLib.obj
+ 0005:00000338       $unwind$GetTdInfo          000000000000c218     TdxLib:TdInfo.obj
+ 0005:00000340       $unwind$CreateHardwareInfoList 000000000000c220     DxeHardwareInfoLib:HardwareInfoDxe.obj
+ 0005:00000358       $unwind$HardwareInfoPciHostBridgeGetApertures 000000000000c238     DxeHardwareInfoLib:HardwareInfoPciHostBridgeLib.obj

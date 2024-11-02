@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\A3610442-E69F-4DF3-82CA-2360C4031A23ReportStatusCodeRouterPei\A3610442-E69F-4DF3-82CA-2360C4031A23SEC4.ver
