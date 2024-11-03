@@ -363,6 +363,8 @@ INF  OvmfPkg/AmdSevDxe/AmdSevDxe.inf
 INF  OvmfPkg/IoMmuDxe/IoMmuDxe.inf
 INF  OvmfPkg/VirtHstiDxe/VirtHstiDxe.inf
 
+!include CsdnPcPkg/Include/Fdf/CsdnComponentsSmm.fdf.inc
+
 !if $(SMM_REQUIRE) == TRUE
 INF  OvmfPkg/SmmAccess/SmmAccess2Dxe.inf
 INF  OvmfPkg/SmmControl2Dxe/SmmControl2Dxe.inf

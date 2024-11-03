@@ -22,8 +22,6 @@ MyHelloWorldSmbiosAppEntry(
 
   DEBUG ((EFI_D_ERROR , "[MyHelloWorldSmbios] MyHelloWorldSmbiosAppEntry Start..\n"));
   
-
-
   
   //
   // Find the SMBIOS protocol
@@ -42,23 +40,23 @@ MyHelloWorldSmbiosAppEntry(
   Status = Smbios->GetNext (Smbios, &SmbiosHandle, NULL, &Record, NULL);
   while (!EFI_ERROR(Status)) {
 	DEBUG ((EFI_D_ERROR, "[MyHelloWorldSmbios] %d ..\n", Record->Type));
-    // if (Record->Type == SMBIOS_TYPE_BIOS_INFORMATION) {
-      // Type0Record = (SMBIOS_TABLE_TYPE0 *) Record;
-      // StrIndex = Type0Record->BiosVersion;
-      // GetOptionalStringByIndex ((CHAR8*)((UINT8*)Type0Record + Type0Record->Hdr.Length), StrIndex, &NewString);
+    if (Record->Type == SMBIOS_TYPE_BIOS_INFORMATION) {
+      Type0Record = (SMBIOS_TABLE_TYPE0 *) Record;
+      StrIndex = Type0Record->BiosVersion;
+      GetOptionalStringByIndex ((CHAR8*)((UINT8*)Type0Record + Type0Record->Hdr.Length), StrIndex, &NewString);
 
-      // FirmwareVersionString = (CHAR16 *) PcdGetPtr (PcdFirmwareVersionString);
-      // if (*FirmwareVersionString != 0x0000 ) {
-        // FreePool (NewString);
-        // NewString = (CHAR16 *) PcdGetPtr (PcdFirmwareVersionString);
-        // UiCustomizeFrontPageBanner (3, TRUE, &NewString);
-        // HiiSetString (gFrontPagePrivate.HiiHandle, STRING_TOKEN (STR_FRONT_PAGE_BIOS_VERSION), NewString, NULL);
-      // } else {
-        // UiCustomizeFrontPageBanner (3, TRUE, &NewString);
-        // HiiSetString (gFrontPagePrivate.HiiHandle, STRING_TOKEN (STR_FRONT_PAGE_BIOS_VERSION), NewString, NULL);
-        // FreePool (NewString);
-      // }
-    // }
+      FirmwareVersionString = (CHAR16 *) PcdGetPtr (PcdFirmwareVersionString);
+      if (*FirmwareVersionString != 0x0000 ) {
+        FreePool (NewString);
+        NewString = (CHAR16 *) PcdGetPtr (PcdFirmwareVersionString);
+        UiCustomizeFrontPageBanner (3, TRUE, &NewString);
+        HiiSetString (gFrontPagePrivate.HiiHandle, STRING_TOKEN (STR_FRONT_PAGE_BIOS_VERSION), NewString, NULL);
+      } else {
+        UiCustomizeFrontPageBanner (3, TRUE, &NewString);
+        HiiSetString (gFrontPagePrivate.HiiHandle, STRING_TOKEN (STR_FRONT_PAGE_BIOS_VERSION), NewString, NULL);
+        FreePool (NewString);
+      }
+    }
 	Status = Smbios->GetNext (Smbios, &SmbiosHandle, NULL, &Record, NULL);
   }
 

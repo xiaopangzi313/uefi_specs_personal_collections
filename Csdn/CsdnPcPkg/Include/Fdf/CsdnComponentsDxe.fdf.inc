@@ -7,3 +7,5 @@
 INF  CsdnPcPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
 INF  CsdnPcPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
 INF  CsdnPcPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
+INF  CsdnPcPkg/MyHelloworldInstallAcpiDxe/MyHelloworldInstallAcpiDxe.inf
+INF  CsdnPcPkg/PlatformSmbiosTable/PlatformSmbiosTable.inf

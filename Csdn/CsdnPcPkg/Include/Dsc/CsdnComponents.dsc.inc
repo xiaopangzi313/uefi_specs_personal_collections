@@ -31,6 +31,8 @@
   CsdnPcPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
   CsdnPcPkg/MyHelloworldInstallAcpiDxe/MyHelloworldInstallAcpiDxe.inf
   CsdnPcPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
+  CsdnPcPkg/PlatformSmbiosTable/PlatformSmbiosTable.inf
+
 
   #
   # SMM Phase modules

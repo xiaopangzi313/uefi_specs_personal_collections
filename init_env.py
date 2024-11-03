@@ -47,7 +47,7 @@ lauch_script_linux = "{qemu_exe}  -bios {root}/Csdn/Build/OvmfX64/DEBUG_GCC48/FV
 )
 
 lauch_script_linux_tcp = "{qemu_exe}  -bios {root}/Csdn/Build/OvmfX64/DEBUG_GCC48/FV/OVMF.fd" \
-"-M \"pc\" -m 512 -cpu \"qemu64\"  -boot order=dc -usbdevice   disk:HDD_BOOT.img -serial telnet:localhost:4321,server,nowait".format (
+"-M \"pc\" -m 512 -cpu \"qemu64\" -smp cpus=4 -boot order=dc -usbdevice   disk:HDD_BOOT.img -serial telnet:localhost:4321,server,nowait".format (
     qemu_exe="qemu-system-x86_64",
     root=root_work_space
 )
