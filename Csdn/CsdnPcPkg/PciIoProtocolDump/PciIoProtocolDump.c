@@ -118,12 +118,12 @@ CsdnCallBackPciIo (
     DEBUG ((
           DEBUG_ERROR,
           " [Csdn]: [%02x:%02x:%02x:%02x] VendorId:%02x DeviceId:%02x \n",
-          TmpVendorId,
-          TmpDeviceId,
           SegmentNumber,
           BusNumber,
           DeviceNumber,
-          FunctionNumber
+          FunctionNumber,
+          TmpVendorId,
+          TmpDeviceId
           ));
   }
 
