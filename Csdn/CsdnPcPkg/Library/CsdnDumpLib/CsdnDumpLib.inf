@@ -1,0 +1,35 @@
+## @file
+#  NULL instance of CsdnDumpLib
+#
+#  (C) Copyright 2020 Hewlett Packard Enterprise Development LP<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x0001000b
+  BASE_NAME                      = CsdnDumpLib
+  FILE_GUID                      = D5ECB7F2-4906-A4E2-45B1-31BF4FDA0122
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = CsdnDumpLib
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  CsdnDumpLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  MemoryAllocationLib
+  PcdLib
+  UefiLib
+

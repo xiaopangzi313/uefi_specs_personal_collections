@@ -37,6 +37,7 @@
   HobLib
   UefiBootServicesTableLib
   PrintLib
+  CsdnDumpLib
 
 [Protocols]
   gEfiSimpleFileSystemProtocolGuid                        # ALWAYS_CONSUMED
