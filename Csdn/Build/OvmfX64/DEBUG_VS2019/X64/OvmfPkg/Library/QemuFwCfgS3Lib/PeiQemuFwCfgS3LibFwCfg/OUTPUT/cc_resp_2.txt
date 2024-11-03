@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3Pei.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3BasePei.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3PeiDxe.c

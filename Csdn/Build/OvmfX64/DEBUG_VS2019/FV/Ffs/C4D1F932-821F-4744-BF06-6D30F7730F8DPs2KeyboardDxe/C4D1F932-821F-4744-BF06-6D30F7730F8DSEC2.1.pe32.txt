@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\C4D1F932-821F-4744-BF06-6D30F7730F8DPs2KeyboardDxe\C4D1F932-821F-4744-BF06-6D30F7730F8DSEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Bus\Isa\Ps2KeyboardDxe\Ps2KeyboardDxe\OUTPUT\Ps2KeyboardDxe.efi

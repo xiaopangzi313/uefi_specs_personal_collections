@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\F80697E9-7FD6-4665-8646-88E33EF71DFCSecurityStubDxe\F80697E9-7FD6-4665-8646-88E33EF71DFCSEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\SecurityStubDxe\SecurityStubDxe\OUTPUT\SecurityStubDxe.efi

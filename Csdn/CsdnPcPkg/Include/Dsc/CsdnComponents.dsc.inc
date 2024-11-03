@@ -21,6 +21,7 @@
   CsdnPcPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
   CsdnPcPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
   CsdnPcPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+  CsdnPcPkg/MpServicePei/MpServicePei.inf
 
   #
   # DXE Phase modules

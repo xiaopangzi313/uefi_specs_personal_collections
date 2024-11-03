@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\60740CF3-D428-4500-80E6-04A5798241EDVirtHstiDxe\60740CF3-D428-4500-80E6-04A5798241EDSEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\VirtHstiDxe\VirtHstiDxe\OUTPUT\VirtHstiDxe.depex

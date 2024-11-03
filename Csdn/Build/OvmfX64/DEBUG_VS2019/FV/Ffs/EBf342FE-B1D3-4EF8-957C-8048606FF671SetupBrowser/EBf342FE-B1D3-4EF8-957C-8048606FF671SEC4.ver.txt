@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_VERSION -n 2.0 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\EBf342FE-B1D3-4EF8-957C-8048606FF671SetupBrowser\EBf342FE-B1D3-4EF8-957C-8048606FF671SEC4.ver

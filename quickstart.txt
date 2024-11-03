@@ -8,7 +8,7 @@ make sure that installed python, 7z, qemu
 opt1:
   1) edk2\edksetup.bat
   2) cd Csdn
-  3) build -a  X64  -p CsdnPkg\CsdnPkg.dsc  -D DEBUG_ON_SERIAL_PORT
+  3) build -a  X64  -p CsdnPcPkg\CsdnPcPkg.dsc  -D DEBUG_ON_SERIAL_PORT
   4) 3)  "C:\Program Files\qemu\qemu-system-x86_64.exe" -bios "Csdn\Build\OvmfX64\DEBUG_VS2019\FV\OVMF.fd"   -M "pc" -m 512 -cpu "qemu64"  -boot order=dc -usbdevice   disk:HDD_BOOT.img -serial stdio 
 
 opt2:

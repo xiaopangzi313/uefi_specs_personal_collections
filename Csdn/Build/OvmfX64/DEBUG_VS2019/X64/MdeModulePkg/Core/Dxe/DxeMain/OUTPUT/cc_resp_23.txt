@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Core\Dxe\Event\Tpl.c D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Core\Dxe\Event\Timer.c D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Core\Dxe\Event\Event.c

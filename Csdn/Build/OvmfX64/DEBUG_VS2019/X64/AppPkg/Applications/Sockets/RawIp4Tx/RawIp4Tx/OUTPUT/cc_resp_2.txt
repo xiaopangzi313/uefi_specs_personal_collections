@@ -1,1 +1,0 @@
-  d:\uefi_specs_personal_collections\csdn\AppPkg\Applications\Sockets\RawIp4Tx\RawIp4Tx.c d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\AppPkg\Applications\Sockets\RawIp4Tx\RawIp4Tx\DEBUG\AutoGen.c d:\uefi_specs_personal_collections\csdn\AppPkg\Applications\Sockets\RawIp4Tx\Main.c

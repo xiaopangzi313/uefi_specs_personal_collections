@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\EBf342FE-B1D3-4EF8-957C-8048606FF671SetupBrowser\EBf342FE-B1D3-4EF8-957C-8048606FF671SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\SetupBrowserDxe\SetupBrowserDxe\OUTPUT\SetupBrowser.efi

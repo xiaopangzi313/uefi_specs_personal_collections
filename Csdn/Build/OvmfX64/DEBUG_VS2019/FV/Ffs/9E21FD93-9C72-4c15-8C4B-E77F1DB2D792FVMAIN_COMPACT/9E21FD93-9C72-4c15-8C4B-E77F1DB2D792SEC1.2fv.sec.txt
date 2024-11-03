@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_FIRMWARE_VOLUME_IMAGE -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\9E21FD93-9C72-4c15-8C4B-E77F1DB2D792FVMAIN_COMPACT\9E21FD93-9C72-4c15-8C4B-E77F1DB2D792SEC1.2fv.sec d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\DXEFV.Fv

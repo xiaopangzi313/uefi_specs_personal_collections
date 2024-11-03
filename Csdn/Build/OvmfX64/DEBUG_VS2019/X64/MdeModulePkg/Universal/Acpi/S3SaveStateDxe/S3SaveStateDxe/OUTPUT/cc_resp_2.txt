@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Universal\Acpi\S3SaveStateDxe\AcpiS3ContextSave.c d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\Acpi\S3SaveStateDxe\S3SaveStateDxe\DEBUG\AutoGen.c D:\uefi_specs_personal_collections\edk2\MdeModulePkg\Universal\Acpi\S3SaveStateDxe\S3SaveState.c

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\222c386d-5abc-4fb4-b124-fbb82488acf4PlatformPei\222c386d-5abc-4fb4-b124-fbb82488acf4SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\PlatformPei\PlatformPei\OUTPUT\PlatformPei.efi

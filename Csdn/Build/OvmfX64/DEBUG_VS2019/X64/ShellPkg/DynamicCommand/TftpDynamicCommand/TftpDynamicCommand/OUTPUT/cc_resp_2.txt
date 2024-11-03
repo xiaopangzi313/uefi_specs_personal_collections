@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\ShellPkg\DynamicCommand\TftpDynamicCommand\TftpDynamicCommand.c D:\uefi_specs_personal_collections\edk2\ShellPkg\DynamicCommand\TftpDynamicCommand\Tftp.c d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\ShellPkg\DynamicCommand\TftpDynamicCommand\TftpDynamicCommand\DEBUG\AutoGen.c

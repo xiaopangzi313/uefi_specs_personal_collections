@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\FAB5D4F4-83C0-4AAF-8480-442D11DF6CEAVirtioScsiDxe\FAB5D4F4-83C0-4AAF-8480-442D11DF6CEASEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\VirtioScsiDxe\VirtioScsi\OUTPUT\VirtioScsiDxe.efi

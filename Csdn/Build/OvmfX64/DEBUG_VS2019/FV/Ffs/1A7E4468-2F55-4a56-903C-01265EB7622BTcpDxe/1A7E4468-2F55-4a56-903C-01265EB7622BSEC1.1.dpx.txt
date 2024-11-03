@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\1A7E4468-2F55-4a56-903C-01265EB7622BTcpDxe\1A7E4468-2F55-4a56-903C-01265EB7622BSEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\NetworkPkg\TcpDxe\TcpDxe\OUTPUT\TcpDxe.depex

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\CBD2E4D5-7068-4FF5-B462-9822B4AD8D60VariableRuntimeDxe\CBD2E4D5-7068-4FF5-B462-9822B4AD8D60SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\Variable\RuntimeDxe\VariableRuntimeDxe\OUTPUT\VariableRuntimeDxe.efi

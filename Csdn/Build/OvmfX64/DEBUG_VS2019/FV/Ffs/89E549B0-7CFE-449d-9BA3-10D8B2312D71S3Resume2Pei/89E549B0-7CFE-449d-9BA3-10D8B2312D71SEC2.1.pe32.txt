@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\89E549B0-7CFE-449d-9BA3-10D8B2312D71S3Resume2Pei\89E549B0-7CFE-449d-9BA3-10D8B2312D71SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\Universal\Acpi\S3Resume2Pei\S3Resume2Pei\OUTPUT\S3Resume2Pei.efi

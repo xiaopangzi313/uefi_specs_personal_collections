@@ -1,1 +1,0 @@
-  d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\ShellPkg\Library\UefiHandleParsingLib\UefiHandleParsingLib\DEBUG\AutoGen.c D:\uefi_specs_personal_collections\edk2\ShellPkg\Library\UefiHandleParsingLib\UefiHandleParsingLib.c

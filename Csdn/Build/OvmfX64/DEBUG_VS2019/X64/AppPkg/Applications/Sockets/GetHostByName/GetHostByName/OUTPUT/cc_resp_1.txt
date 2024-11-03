@@ -1,1 +1,0 @@
-  d:\uefi_specs_personal_collections\csdn\AppPkg\Applications\Sockets\GetHostByName\GetHostByName.c d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\AppPkg\Applications\Sockets\GetHostByName\GetHostByName\DEBUG\AutoGen.c

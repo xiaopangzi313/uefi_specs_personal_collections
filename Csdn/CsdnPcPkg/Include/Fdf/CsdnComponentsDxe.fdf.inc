@@ -4,6 +4,6 @@
 #
 # DXE Phase modules
 #
-INF  CsdnPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
-INF  CsdnPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
-INF  CsdnPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
+INF  CsdnPcPkg/MyHelloWorldDXEHob/MyHelloWorldDXEHob.inf
+INF  CsdnPcPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
+INF  CsdnPcPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf

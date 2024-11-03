@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50PcdPeim\9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\PCD\Pei\Pcd\OUTPUT\PcdPeim.efi

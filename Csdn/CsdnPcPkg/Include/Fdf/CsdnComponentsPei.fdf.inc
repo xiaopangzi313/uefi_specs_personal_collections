@@ -5,7 +5,8 @@
 #
 #  PEI Phase modules
 #
-INF  CsdnPkg/MyHelloWorldPEIMHob/MyHelloWorldPEIMHob.inf
-INF  CsdnPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
-INF  CsdnPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
-INF  CsdnPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+INF  CsdnPcPkg/MyHelloWorldPEIMHob/MyHelloWorldPEIMHob.inf
+INF  CsdnPcPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
+INF  CsdnPcPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
+INF  CsdnPcPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
+INF  CsdnPcPkg/MpServicePei/MpServicePei.inf

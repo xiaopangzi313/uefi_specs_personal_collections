@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\NestedInterruptTplLib\Tpl.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\NestedInterruptTplLib\Iret.c

@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\HardwareInfoLib\QemuFwCfgHardwareInfoLib.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\HardwareInfoLib\HardwareInfoPciHostBridgeLib.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\HardwareInfoLib\HardwareInfoPei.c

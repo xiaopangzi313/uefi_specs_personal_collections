@@ -1,4 +1,0 @@
-gCommandLineDefines: {'DEBUG_ON_SERIAL_PORT': 'TRUE', 'ARCH': 'X64'}
-BuildOptionPcd: []
-Active Platform: d:\uefi_specs_personal_collections\csdn\CsdnPcPkg\CsdnPcPkg.dsc
-Flash Image Definition: d:\uefi_specs_personal_collections\csdn\CsdnPcPkg\CsdnPcPkg.fdf

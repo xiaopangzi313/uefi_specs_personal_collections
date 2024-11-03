@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PEI_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\86D70125-BAA3-4296-A62F-602BEBBB9081DxeIpl\86D70125-BAA3-4296-A62F-602BEBBB9081SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Core\DxeIplPeim\DxeIpl\OUTPUT\DxeIpl.depex

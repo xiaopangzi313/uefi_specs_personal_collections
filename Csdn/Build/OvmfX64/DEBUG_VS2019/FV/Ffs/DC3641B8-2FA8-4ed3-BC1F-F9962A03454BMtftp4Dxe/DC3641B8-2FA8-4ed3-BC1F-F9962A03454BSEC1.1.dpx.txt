@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\DC3641B8-2FA8-4ed3-BC1F-F9962A03454BMtftp4Dxe\DC3641B8-2FA8-4ed3-BC1F-F9962A03454BSEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\NetworkPkg\Mtftp4Dxe\Mtftp4Dxe\OUTPUT\Mtftp4Dxe.depex

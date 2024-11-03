@@ -1,1 +1,0 @@
-d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Bus\Isa\Ps2KeyboardDxe\Ps2KeyboardDxe\Makefile

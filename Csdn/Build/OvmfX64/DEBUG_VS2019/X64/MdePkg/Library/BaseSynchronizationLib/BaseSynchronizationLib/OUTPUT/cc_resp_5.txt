@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\MdePkg\Library\BaseSynchronizationLib\InterlockedDecrementMsc.c D:\uefi_specs_personal_collections\edk2\MdePkg\Library\BaseSynchronizationLib\SynchronizationMsc.c D:\uefi_specs_personal_collections\edk2\MdePkg\Library\BaseSynchronizationLib\InterlockedIncrementMsc.c

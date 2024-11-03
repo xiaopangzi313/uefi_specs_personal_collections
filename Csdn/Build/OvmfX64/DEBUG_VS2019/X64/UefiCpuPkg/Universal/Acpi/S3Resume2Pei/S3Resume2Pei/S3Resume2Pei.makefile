@@ -1,1 +1,0 @@
-d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\Universal\Acpi\S3Resume2Pei\S3Resume2Pei\Makefile

@@ -13,7 +13,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   ShellPkg/ShellPkg.dec 
-  CsdnPkg/Library/StdLib/StdLib.dec
+  CsdnPcPkg/Library/StdLib/StdLib.dec
   
 [LibraryClasses]
   LibC

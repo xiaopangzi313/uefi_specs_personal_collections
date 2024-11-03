@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\378D7B65-8DA9-4773-B6E4-A47826A833E1PcRtc\378D7B65-8DA9-4773-B6E4-A47826A833E1SEC1.1.dpx d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\PcAtChipsetPkg\PcatRealTimeClockRuntimeDxe\PcatRealTimeClockRuntimeDxe\OUTPUT\PcRtc.depex

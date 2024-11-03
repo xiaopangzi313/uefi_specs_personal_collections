@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\OvmfPkg\IntelTdx\TdxHelperLib\PeiTdxHelper.c D:\uefi_specs_personal_collections\edk2\OvmfPkg\IntelTdx\TdxHelperLib\TdxMeasurementHob.c

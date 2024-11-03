@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\17985e6f-e778-4d94-aefa-c5dd2b77e186QemuFwCfgAcpiPlatform\17985e6f-e778-4d94-aefa-c5dd2b77e186SEC4.ver

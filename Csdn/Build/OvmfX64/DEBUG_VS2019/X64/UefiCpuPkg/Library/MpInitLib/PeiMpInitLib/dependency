@@ -1,7 +1,0 @@
-
-
-!IF EXIST(d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\Library\MpInitLib\PeiMpInitLib\OUTPUT\X64\MpFuncs.nasm.trim.deps)
-!INCLUDE d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\Library\MpInitLib\PeiMpInitLib\OUTPUT\X64\MpFuncs.nasm.trim.deps
-!ENDIF
-
-               

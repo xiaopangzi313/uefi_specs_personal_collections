@@ -1,9 +1,0 @@
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\SecCcExitLib.inf
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\CcExitLib.c
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\CcInstruction.c
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\SecCcExitVcHandler.c
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\CcExitVcHandler.h
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\CcExitVeHandler.c
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\CcExitVcHandler.c
-D:\uefi_specs_personal_collections\edk2\OvmfPkg\Library\CcExitLib\X64\TdVmcallCpuid.nasm
-d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\Library\CcExitLib\SecCcExitLib\DEBUG\AutoGen.h

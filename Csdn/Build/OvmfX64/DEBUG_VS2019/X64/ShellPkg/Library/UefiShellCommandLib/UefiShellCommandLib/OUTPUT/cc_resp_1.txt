@@ -1,1 +1,0 @@
-  D:\uefi_specs_personal_collections\edk2\ShellPkg\Library\UefiShellCommandLib\UefiShellCommandLib.c D:\uefi_specs_personal_collections\edk2\ShellPkg\Library\UefiShellCommandLib\ConsistMapping.c

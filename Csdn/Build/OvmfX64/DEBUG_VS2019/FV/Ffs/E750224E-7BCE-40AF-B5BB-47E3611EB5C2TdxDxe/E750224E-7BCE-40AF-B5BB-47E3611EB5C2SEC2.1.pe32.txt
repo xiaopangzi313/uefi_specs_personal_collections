@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\E750224E-7BCE-40AF-B5BB-47E3611EB5C2TdxDxe\E750224E-7BCE-40AF-B5BB-47E3611EB5C2SEC2.1.pe32 d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\TdxDxe\TdxDxe\OUTPUT\TdxDxe.efi

@@ -1,1 +1,0 @@
-d:\uefi_specs_personal_collections\csdn\Build\OvmfX64\DEBUG_VS2019\X64\ShellPkg\Library\UefiShellDebug1CommandsLib\UefiShellDebug1CommandsLib\Makefile

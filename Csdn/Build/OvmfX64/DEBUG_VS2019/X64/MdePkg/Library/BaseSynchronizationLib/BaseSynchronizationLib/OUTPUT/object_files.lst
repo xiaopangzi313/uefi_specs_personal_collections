@@ -1,7 +1,0 @@
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/Ia32/InternalGetSpinLockProperties.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange64.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange32.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange16.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/InterlockedIncrementMsc.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/InterlockedDecrementMsc.obj
-d:/uefi_specs_personal_collections/csdn/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/SynchronizationMsc.obj
