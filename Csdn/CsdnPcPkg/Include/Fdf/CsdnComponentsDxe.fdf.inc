@@ -9,3 +9,5 @@ INF  CsdnPcPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
 INF  CsdnPcPkg/MyHelloWorldDXEDriver/MyHelloWorldDXEDriver.inf
 INF  CsdnPcPkg/MyHelloworldInstallAcpiDxe/MyHelloworldInstallAcpiDxe.inf
 INF  CsdnPcPkg/PlatformSmbiosTable/PlatformSmbiosTable.inf
+INF  CsdnPcPkg/PciIoProtocolDump/PciIoProtocolDump.inf
+INF  CsdnPcPkg/CreateUefiPhaseEvent/CreateUefiPhaseEvent.inf

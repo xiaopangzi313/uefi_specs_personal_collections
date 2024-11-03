@@ -22,6 +22,7 @@
   CsdnPcPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
   CsdnPcPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
   CsdnPcPkg/MpServicePei/MpServicePei.inf
+  CsdnPcPkg/PpiNotifty/PpiNotifty.inf
 
   #
   # DXE Phase modules
@@ -32,6 +33,8 @@
   CsdnPcPkg/MyHelloworldInstallAcpiDxe/MyHelloworldInstallAcpiDxe.inf
   CsdnPcPkg/MyHelloWorldDXEProtocol/MyHelloWorldDXEProtocol.inf
   CsdnPcPkg/PlatformSmbiosTable/PlatformSmbiosTable.inf
+  CsdnPcPkg/PciIoProtocolDump/PciIoProtocolDump.inf
+  CsdnPcPkg/CreateUefiPhaseEvent/CreateUefiPhaseEvent.inf
 
 
   #

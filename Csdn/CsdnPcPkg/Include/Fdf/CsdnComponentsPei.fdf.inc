@@ -10,3 +10,4 @@ INF  CsdnPcPkg/MyHelloWorldPEIMDriver/MyHelloWorldPEIMDriver.inf
 INF  CsdnPcPkg/MyHelloWorldInstallPPI/MyHelloWorldInstallPPI.inf
 INF  CsdnPcPkg/MyHelloWorldLocatePPI/MyHelloWorldLocatePPI.inf
 INF  CsdnPcPkg/MpServicePei/MpServicePei.inf
+INF  CsdnPcPkg/PpiNotifty/PpiNotifty.inf
