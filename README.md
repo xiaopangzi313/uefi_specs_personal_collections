@@ -41,7 +41,7 @@ This repo contains a documentation package including some opensouce spec about `
 ![link8](https://img-blog.csdnimg.cn/0a802d2273f741478b39d7d5baad8a6e.png#pic_center)
 
 ## Maintainers
-[Darren](https://github.com/xiaopangzi313/)
+[xiaopangzi313](https://github.com/xiaopangzi313/)
 
 ## Contributing
 Current maintainer is only me, and my email is 755056591@qq.com. If you want to view more detail, you can visit my 
