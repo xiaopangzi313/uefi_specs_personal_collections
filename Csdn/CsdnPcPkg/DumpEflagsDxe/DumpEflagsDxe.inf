@@ -1,0 +1,26 @@
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = DumpEflagsDxe
+  FILE_GUID                      = 11060169-5EBA-4155-B035-D98538477ECA
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = InitializeDumpIFforPxe
+
+[Sources]
+  DumpEflagsDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  BaseMemoryLib
+  DebugLib
+  HobLib
+  UefiLib
+  UefiBootServicesTableLib
+  UefiApplicationEntryPoint
+
+[Depex]
+  TRUE
