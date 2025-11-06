@@ -47,8 +47,10 @@ InitializeDumpIFforPxe (
     DEBUG((DEBUG_ERROR, "[PXE] WaitForEvent %r ...\n",Status));
     return Status;
   }
-  if (Index == 0x1) {
+  if (Index == 0x0) {
       DEBUG((DEBUG_ERROR, "[PXE]  Timer event is trigered ..\n"));
+  } else {
+      DEBUG((DEBUG_ERROR, "[PXE]  Timer event is not trigered ..\n"));
   }
 
   EFlags.UintN = 0x0;
