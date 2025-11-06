@@ -21,8 +21,10 @@ InitializeDumpIFforPxe (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 { 
-  EFI_STATUS     Status = EFI_SUCCESS;
-  EFI_TPL         OldTpl;
+  EFI_STATUS         Status = EFI_SUCCESS;
+  EFI_TPL            OldTpl;
+  UINTN              Index=0xff;
+  EFI_EVENT          myEvents[2] = {0};
 
   IA32_EFLAGS32  EFlags;
   
@@ -33,8 +35,21 @@ InitializeDumpIFforPxe (
   DEBUG((DEBUG_ERROR,"[PXE] EFlags.UintN = %x\n",EFlags.UintN));
   DEBUG((DEBUG_ERROR,"[PXE] EFlags.Bits.IF = %x Tpl: %x\n",EFlags.Bits.IF, OldTpl));
 
- 
   EnableInterrupts ();
+  Status = gBS->SetTimer(myEvents[0],TimerPeriodic , 1 * 1000 * 1000);
+  if(EFI_ERROR(Status)){
+    DEBUG((DEBUG_ERROR, "[PXE] SetTimer %r ...\n",Status));
+    return Status;
+  }
+
+  Status = gBS->WaitForEvent(1, myEvents, &Index);
+  if(EFI_ERROR(Status)){
+    DEBUG((DEBUG_ERROR, "[PXE] WaitForEvent %r ...\n",Status));
+    return Status;
+  }
+  if (Index == 0x1) {
+      DEBUG((DEBUG_ERROR, "[PXE]  Timer event is trigered ..\n"));
+  }
 
   EFlags.UintN = 0x0;
   EFlags.UintN = AsmReadEflags ();
